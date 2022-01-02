@@ -2,7 +2,7 @@
 #+startup: overview
 * Schedule
 
-   | NO | WEEK | DATE       | DATACAMP ASSIGNMENTS[fn:3]                                                                | GitHub[fn:4]       | TEXTBOOK CHAPTER[fn:2]      | TEST[fn:1] |
+   | NO | WEEK | DATE       | DATACAMP/H5P ASSIGNMENTS[fn:3]                                                            | GitHub[fn:4]       | TEXTBOOK CHAPTER[fn:2]      | TEST[fn:1] |
    |----+------+------------+-------------------------------------------------------------------------------------------+--------------------+-----------------------------+------------|
    |  1 |    1 | Tue-11-Jan | Registration                                                                              | Syllabus / Systems | 1 Fundamental Concepts      | Entry quiz |
    |  2 |      | Thu-13-Jan |                                                                                           |                    |                             |            |
@@ -16,22 +16,22 @@
    |  7 |    4 | Tue-01-Feb | Cloud Computing for Everyone: Cloud Providers and Case Studies                            | 3_sqlite_shell     |                             |            |
    |  8 |      | Thu-03-Feb |                                                                                           |                    |                             | Quiz 3     |
    |----+------+------------+-------------------------------------------------------------------------------------------+--------------------+-----------------------------+------------|
-   | 10 |    5 | Tue-08-Feb |                                                                                           | 4_import_export    | 3 Data Modeling             |            |
+   | 10 |    5 | Tue-08-Feb | H5P: Entity Relationship Diagram (ERD) Part 1                                             | 4_import_export    | 3 Data Modeling             |            |
    | 11 |      | Thu-10-Feb |                                                                                           |                    |                             | Test 1     |
    |----+------+------------+-------------------------------------------------------------------------------------------+--------------------+-----------------------------+------------|
-   | 13 |    6 | Tue-15-Feb | Introduction to SQL: Selecting columns                                                    | 5_select           |                             |            |
+   | 13 |    6 | Tue-15-Feb | H5P: Entity Relationship Diagram (ERD) Part 2                                             | 5_select           |                             |            |
    | 14 |      | Thu-17-Feb |                                                                                           |                    |                             | Quiz 4     |
    |----+------+------------+-------------------------------------------------------------------------------------------+--------------------+-----------------------------+------------|
-   | 16 |    7 | Tue-22-Feb | Introduction to SQL: Filtering rows                                                       | 6_functions        | 4 Organizational Aspects    |            |
+   | 16 |    7 | Tue-22-Feb | Introduction to SQL: Selecting columns                                                    | 6_functions        | 4 Organizational Aspects    |            |
    | 17 |      | Thu-24-Feb |                                                                                           |                    |                             | Quiz 5     |
    |----+------+------------+-------------------------------------------------------------------------------------------+--------------------+-----------------------------+------------|
-   | 19 |    8 | Tue-01-Feb | Introduction to SQL: Aggregate functions                                                  | 7_order_by         | 5 Legacy Databases          |            |
+   | 19 |    8 | Tue-01-Feb | Introduction to SQL: Filtering rows                                                       | 7_order_by         | 5 Legacy Databases          |            |
    | 20 |      | Thu-03-Mar |                                                                                           |                    |                             | Quiz 6     |
    |----+------+------------+-------------------------------------------------------------------------------------------+--------------------+-----------------------------+------------|
-   | 22 |    9 | Tue-08-Mar | Introduction to SQL: Sorting/Grouping                                                     | 8_group_by         | 6 Relational Databases      |            |
+   | 22 |    9 | Tue-08-Mar | Introduction to SQL: Aggregate functions                                                  | 8_group_by         | 6 Relational Databases      |            |
    | 23 |      | Thu-10-Mar |                                                                                           |                    |                             | Quiz 7     |
    |----+------+------------+-------------------------------------------------------------------------------------------+--------------------+-----------------------------+------------|
-   | 25 |   10 | Tue-15-Mar |                                                                                           | 9_create_table     |                             |            |
+   | 25 |   10 | Tue-15-Mar | Introduction to SQL: Sorting/Grouping                                                     | 9_create_table     |                             |            |
    | 26 |      | Thu-17-Mar |                                                                                           |                    |                             | Test 2     |
    |----+------+------------+-------------------------------------------------------------------------------------------+--------------------+-----------------------------+------------|
    | 28 |   11 | Tue-29-Mar | Introduction to Relational DB in SQL: Your first database                                 | 10_change_data     | 8 Object-oriented Databases |            |
@@ -46,7 +46,7 @@
    | 36 |   14 | Thu-19-Apr | Introduction to Relational DB in SQL: Glue together tables with foreign keys              | 13_sqlite_and_iot  | 17 Data Warehouses and BI   |            |
    | 37 |      | Fri-21-Apr |                                                                                           |                    |                             | Quiz 11    |
    |----+------+------------+-------------------------------------------------------------------------------------------+--------------------+-----------------------------+------------|
-   | 38 |   15 | Tue-26-Apr |                                                                                           |                    | 19 Big Data                 |            |
+   | 38 |   15 | Tue-26-Apr | Introduction to Tableau: Getting started with Tableau                                     |                    | 19 Big Data                 |            |
    | 39 |      | Thu-28-Apr |                                                                                           |                    |                             | Test 3     |
    |----+------+------------+-------------------------------------------------------------------------------------------+--------------------+-----------------------------+------------|
    | 41 |   16 | Tue-03-May |                                                                                           |                    |                             | Exit Quiz  |

@@ -20,13 +20,14 @@
 
    You will learn a fair amount about SQL, the (by far) dominant data
    science language in the real world (for relational databases), and
-   one of the oldest languages in use. We also work with SQLite, the
-   world's most common database, and we model databases with UML and
-   Entity-Relationship diagrams. We cover XML and NoSQL databases, Big
-   Data, and aspects of physical database organization. As a capstone,
-   we build our own database application, accessed with your
-   programming language of choice - C, C++, Java, Python, R, or
-   whatever you like. We will endeavour to cover most of chapters
+   one of the oldest languages in use. You will practice SQL and work
+   with relational databases as part of your weekly assignments in
+   DataCamp. We also work with SQLite, the world's most common
+   database, and we model databases with UML and Entity-Relationship
+   diagrams. We cover XML and NoSQL databases, Big Data, and aspects
+   of physical database organization. You learn to access databases
+   with your programming language of choice - C, C++, Java, Python, R,
+   or whatever you like. We will endeavour to cover most of chapters
    1-11, 17-19 of the textbook by Lemahieu et al (2021).
 
    #+attr_html: :width 600px
@@ -57,13 +58,13 @@
 
 ** Grading system
 
-   | WHEN[fn:1]    | DESCRIPTION          | IMPACT |
-   |---------------+----------------------+--------|
-   | Weekly        | Quizzes              |    10% |
-   | Every session | Class assignments    |    10% |
-   | Weekly        | DataCamp assignments |    30% |
-   | Monthly       | Tests                |    30% |
-   | End of term   | Final exam           |    20% |
+   | WHEN[fn:1]    | DESCRIPTION              | IMPACT |
+   |---------------+--------------------------+--------|
+   | Weekly        | Quizzes                  |    10% |
+   | Every session | Class assignments        |    10% |
+   | Weekly        | DataCamp/H5P assignments |    30% |
+   | Monthly       | Tests                    |    30% |
+   | End of term   | Final exam               |    20% |
 
    You should be able to see your current grade at any time using the
    Schoology gradebook for the course.
@@ -106,7 +107,7 @@
     - Complete assignments outside of class (homework)
     - Be ready to present your results
 
-*** Weekly DataCamp assignments (30%)
+*** Weekly DataCamp/H5P assignments (30%)
     - Complete weekly chapters of DataCamp assignments
     - Spend 30-45 min per week on an assignment
     - Bring questions and comments to class for discussion
@@ -268,7 +269,7 @@
 
    Changes are possible - an [[https://github.com/birkenkrahe/db330/blob/main/schedule.org][updated schedule with is available]].
 
-   | NO | WEEK | DATE       | DATACAMP ASSIGNMENTS                                                                      | TEXTBOOK CHAPTER            | TEST       |
+   | NO | WEEK | DATE       | DATACAMP/H5P ASSIGNMENTS                                                                  | TEXTBOOK CHAPTER            | TEST       |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
    |  1 |    1 | Tue-11-Jan | Registration                                                                              | 1 Fundamental Concepts      | Entry quiz |
    |  2 |      | Thu-13-Jan |                                                                                           |                             |            |
@@ -282,22 +283,22 @@
    |  7 |    4 | Tue-01-Feb | Cloud Computing for Everyone: Cloud Providers and Case Studies                            |                             |            |
    |  8 |      | Thu-03-Feb |                                                                                           |                             | Quiz 3     |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
-   |  9 |    5 | Tue-08-Feb |                                                                                           | 3 Data Modeling             |            |
+   |  9 |    5 | Tue-08-Feb | H5P: Entity Relationship Diagram (ERD) Part 1                                             | 3 Data Modeling             |            |
    | 10 |      | Thu-10-Feb |                                                                                           |                             | Test 1     |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
-   | 11 |    6 | Tue-15-Feb | Introduction to SQL: Selecting columns                                                    |                             |            |
+   | 11 |    6 | Tue-15-Feb | H5P: Entity Relationship Diagram (ERD) Part 2                                             |                             |            |
    | 12 |      | Thu-17-Feb |                                                                                           |                             | Quiz 4     |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
-   | 13 |    7 | Tue-22-Feb | Introduction to SQL: Filtering rows                                                       | 4 Organizational Aspects    |            |
+   | 13 |    7 | Tue-22-Feb | Introduction to SQL: Selecting columns                                                    | 4 Organizational Aspects    |            |
    | 14 |      | Thu-24-Feb |                                                                                           |                             | Quiz 5     |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
-   | 15 |    8 | Tue-01-Feb | Introduction to SQL: Aggregate functions                                                  | 5 Legacy Databases          |            |
+   | 15 |    8 | Tue-01-Feb | Introduction to SQL: Filtering rows                                                       | 5 Legacy Databases          |            |
    | 16 |      | Thu-03-Mar |                                                                                           |                             | Quiz 6     |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
-   | 17 |    9 | Tue-08-Mar | Introduction to SQL: Sorting/Grouping                                                     | 6 Relational Databases      |            |
+   | 17 |    9 | Tue-08-Mar | Introduction to SQL: Aggregate functions                                                  | 6 Relational Databases      |            |
    | 18 |      | Thu-10-Mar |                                                                                           |                             | Quiz 7     |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
-   | 19 |   10 | Tue-15-Mar |                                                                                           |                             |            |
+   | 19 |   10 | Tue-15-Mar | Introduction to SQL: Sorting/Grouping                                                     |                             |            |
    | 20 |      | Thu-17-Mar |                                                                                           |                             | Test 2     |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
    | 21 |   11 | Tue-29-Mar | Introduction to Relational DB in SQL: Your first database                                 | 8 Object-oriented Databases |            |
@@ -312,7 +313,7 @@
    | 27 |   14 | Thu-19-Apr | Introduction to Relational DB in SQL: Glue together tables with foreign keys              | 17 Data Warehouses and BI   |            |
    | 28 |      | Fri-21-Apr |                                                                                           |                             | Quiz 11    |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
-   | 29 |   15 | Tue-26-Apr |                                                                                           | 19 Big Data                 |            |
+   | 29 |   15 | Tue-26-Apr | Introduction to Tableau: Getting started with Tableau                                     | 19 Big Data                 |            |
    | 30 |      | Thu-28-Apr |                                                                                           |                             | Test 3     |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
    | 31 |   16 | Tue-03-May |                                                                                           |                             | Exit Quiz  |
