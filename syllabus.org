@@ -274,7 +274,7 @@
 
 ** Schedule and session content
 
-   Changes are possible - an [[https://github.com/birkenkrahe/db330/blob/main/schedule.org][updated schedule with is available]].
+   Changes are possible - an [[https://github.com/birkenkrahe/db330/blob/main/schedule.org][updated schedule is available in GitHub]].
 
    | NO | WEEK | DATE       | DATACAMP/H5P ASSIGNMENTS                                                                  | TEXTBOOK CHAPTER            | TEST       |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|

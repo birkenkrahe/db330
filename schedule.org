@@ -2,7 +2,7 @@
 #+startup: overview
 * Schedule
 
-   | NO | WEEK | DATE       | TEXTBOOK CHAPTER[fn:2]      | GitHub[fn:4]      | DATACAMP/H5P ASSIGNMENTS[fn:1]                                                            | TEST[fn:3] |
+   | NO | WEEK | DATE       | TEXTBOOK CHAPTER[fn:1]      | GitHub[fn:2]      | DATACAMP/H5P ASSIGNMENTS[fn:3]                                                            | TEST[fn:4] |
    |----+------+------------+-----------------------------+-------------------+-------------------------------------------------------------------------------------------+------------|
    |  1 |    1 | Tue-11-Jan | 1 Fundamental Concepts      | Syllabus/Systems  | Registration                                                                              | Entry quiz |
    |  2 |      | Thu-13-Jan |                             |                   |                                                                                           | Quiz 1     |
@@ -54,14 +54,13 @@
 
 * Footnotes
 
-[fn:4]The SQL/SQLite track picks up topics from the assignments and
-deepens them through classroom practice. 
+[fn:1]Chapter in Lemahieu et al. (2019).
 
-[fn:1]Lab sessions begin as soon as the Raspberry Pi equipment has
-arrived. Two students work on one Linux box together.
+[fn:2]The SQL/SQLite track picks up topics from the assignments and
+deepens them through classroom practice.
 
-[fn:2]Chapter in Silberschatz et al, Operating System Concepts, Wiley
-(2018).
+[fn:3]This course gives you an opportunity to gather a number of
+database and SQL related DataCamp certificates. 
 
-[fn:3]Quiz: covers the material of the past week. Usually 5 min at the
+[fn:4]Quiz: covers the material of the past week. Usually 5 min at the
 beginning of class, multiple choice. Test: in class exercises.
