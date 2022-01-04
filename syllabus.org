@@ -61,8 +61,8 @@
 
    | WHEN[fn:1]    | DESCRIPTION              | IMPACT |
    |---------------+--------------------------+--------|
-   | Weekly        | Quizzes                  |    10% |
    | Every session | Class assignments        |    10% |
+   | Weekly        | Quizzes                  |    10% |
    | Weekly        | DataCamp/H5P assignments |    30% |
    | Monthly       | Tests                    |    30% |
    | End of term   | Final exam               |    20% |
@@ -98,27 +98,32 @@
     |   49-0 | F               | F (failed)    |
     |--------+-----------------+---------------|
 
-*** Weekly Quizzes (10%)
-    - Answer multiple choice questions
-    - Complete quiz online outside of class
-    - Use for drills thereafter
-
 *** Class assignments (10%)
+
     - Complete small assignments in class (participation)
     - Complete assignments outside of class (homework)
-    - Be ready to present your results
+    - Be ready to present your results at any time
+
+*** Weekly Quizzes (10%)
+
+    - Answer multiple choice questions
+    - Complete quiz online in or outside of class
+    - Use quiz for drills to prepare final exam
 
 *** Weekly DataCamp/H5P assignments (30%)
+
     - Complete weekly chapters of DataCamp assignments
     - Spend 30-45 min per week on an assignment
     - Bring questions and comments to class for discussion
 
 *** Monthly tests (30%)
+
     - Complete 45 min online test in class
     - Recall last month of lectures and labs
     - Read relevant textbook chapters
 
 *** Final exam (20%)
+
     - 120 min multiple choice exam
     - Online in Schoology in the classroom
     - Sourced from the weekly quiz questions
