@@ -320,7 +320,7 @@
    | 27 |   14 | Thu-19-Apr | Introduction to Relational DB in SQL: Glue together tables with foreign keys              | 17 Data Warehouses and BI   |            |
    | 28 |      | Fri-21-Apr |                                                                                           |                             | Quiz 11    |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
-   | 29 |   15 | Tue-26-Apr | Introduction to Tableau: Getting started with Tableau                                     | 19 Big Data                 |            |
+   | 29 |   15 | Tue-26-Apr | Project: Analyze International Debt Statistics                                            | 19 Big Data                 |            |
    | 30 |      | Thu-28-Apr |                                                                                           |                             | Test 3     |
    |----+------+------------+-------------------------------------------------------------------------------------------+-----------------------------+------------|
    | 31 |   16 | Tue-03-May |                                                                                           |                             | Exit Quiz  |
