@@ -13,6 +13,9 @@
   * Homework assignments: *GitHub*, DataCamp, Emacs
   * What's next?
 
+  #+attr_html: :width 600px
+  [[./img/credo.png]]
+
 ** Aspirations and ambitions (DS program 2021-2023)
 
    | CLASS                                 | CODE    | TERM        | Topics                              |
@@ -37,27 +40,26 @@
    * Professor, [[https://en.wikipedia.org/wiki/Business_informatics#:~:text=Business%20informatics%20(BI)%20is%20a,and%20concepts%20of%20computer%20science.&text=The%20focus%20on%20programming%20and,of%20economics%20and%20information%20technology.][Business Informatics]] @Berlin Univ
 
    * Visiting Assoc Prof for Data Science @Lyon (2021-23)
-   
+
    * Syllabus for this course ([[https://lyon.schoology.com/course/5516220926/materials][Schoology]])
 
-     #+attr_html: :width 600px
-     [[./img/credo.png]]
-   
 ** Homework assignments week 1 (11-Jan/13-Jan-2022)
 
    #+attr_html: :width 600px
    [[./img/homework.png]]
-   
+
    * *GitHub Hello World Exercise ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#completing-the-github-hello-world-exercise][Info: FAQ]]) - by Thursday 13-Jan!*
    * DataCamp platform registration ([[https://lyon.schoology.com/course/5516220833/materials][Link: Schoology]])
    * GNU Emacs installation ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-install-emacs-ess-under-windows-and-macos][Info: FAQ]])
-   
+
 *** GitHub
 **** What is it?
 
-     * Software development platform
+     * Software development platform (like GitLab, BitBucket,
+       SourceForge, etc.)
      * Built around Git by Linus Torvalds
-     * Bought by Microsoft in 2018
+     * Bought by Microsoft in 2018 (like OpenAI - home of GPT3)
+     * 77 mio users (developers) + 200+ mio software projects
      * AI support (e.g. [[https://copilot.github.com/][GitHub Copilot]])
 
      Watch: "[[https://youtu.be/w3jLJU7DT5E][What is GitHub?]]" (GitHub, 2016)
@@ -130,20 +132,20 @@
 
     #+attr_html: :width 400px
     [[./img/datacamp.png]]
-    
+
     * Why are we using it?
     * How are we using it?
     * What will you have to do?
 
 *** GNU Emacs
-    
+
     #+attr_html: :width 400px
     [[./img/emacs.png]]
 
     * Why are we using it?
     * How are we using it?
     * What will you have to do?
-    
+
 ** What's next?
 
    * See schedule ([[https://github.com/birkenkrahe/os420/blob/main/schedule.org][GitHub]])
@@ -154,5 +156,3 @@
    #+caption: Victor N. installs Emacs @10:50 AM
    #+attr_html: :width 600px
    [[./img/victor.png]]
-
-
