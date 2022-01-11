@@ -27,25 +27,33 @@
 
 ** Introduction to the course & the lecturer
 
-   #+attr_html: :width 500px
-   #+caption: DESY APE research group, Hamburg/Rome, 1994
-   [[./img/desy.jpg]]
+   #+attr_html: :width 400px
+   [[./img/mb.jpg]]
 
-   * Why me?
-   * Syllabus for this course ([[https://lyon.schoology.com/course/5516220833/materials/gp/5549927065][Schoology]])
+   * PhD theoretical particle physics / WWW development
 
+   * SQL since 2005 (Why? Particle data = unstructured)
+
+   * Professor, [[https://en.wikipedia.org/wiki/Business_informatics#:~:text=Business%20informatics%20(BI)%20is%20a,and%20concepts%20of%20computer%20science.&text=The%20focus%20on%20programming%20and,of%20economics%20and%20information%20technology.][Business Informatics]] @Berlin Univ
+
+   * Visiting Assoc Prof for Data Science @Lyon (2021-23)
+   
+   * Syllabus for this course ([[https://lyon.schoology.com/course/5516220926/materials][Schoology]])
+
+     #+attr_html: :width 600px
+     [[./img/credo.png]]
+   
 ** Homework assignments week 1 (11-Jan/13-Jan-2022)
 
    #+attr_html: :width 600px
    [[./img/homework.png]]
    
-   * GitHub Hello World Exercise ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#completing-the-github-hello-world-exercise][Info: FAQ]])
+   * *GitHub Hello World Exercise ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#completing-the-github-hello-world-exercise][Info: FAQ]]) - by Thursday 13-Jan!*
    * DataCamp platform registration ([[https://lyon.schoology.com/course/5516220833/materials][Link: Schoology]])
    * GNU Emacs installation ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-install-emacs-ess-under-windows-and-macos][Info: FAQ]])
    
 *** GitHub
-
-p**** What is it?
+**** What is it?
 
      * Software development platform
      * Built around Git by Linus Torvalds
@@ -78,8 +86,8 @@ p**** What is it?
        e.g. ~MarcusBirkenkrahe~, or ~DonaldTrump~
      * [[https://docs.github.com/en/get-started/quickstart/hello-world][Complete the "Hello World" exercise]] ([[https://github.com/birkenkrahe/org/blob/master/FAQ.md#completing-the-github-hello-world-exercise][FAQ]])
      * Give me your GitHub username so that I can add you as a
-       collaborator to my private ~os420~ repository
-     * [[https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository][Create an issue]] from the [[https://github.com/birkenkrahe/cc100/issues][~os420~ repository]] like in the example
+       collaborator to my private ~db330~ repository
+     * [[https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository][Create an issue]] from the [[https://github.com/birkenkrahe/cc100/issues][~db330~ repository]] like in the example
        below (except from your account instead of mine).
      -----
      /Image: Issue "Assignment completed"/
@@ -95,8 +103,8 @@ p**** What is it?
 
 **** What else can you do?
 
-     * You can [[https://docs.github.com/en/get-started/quickstart/fork-a-repo][fork]] the [[https://docs.github.com/en/get-started/quickstart/fork-a-repo][~os420~]] repository
-     * You can [[https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/managing-subscriptions-for-activity-on-github/viewing-your-subscriptions][watch]] the [[https://docs.github.com/en/get-started/quickstart/fork-a-repo][~os420~]] repository - and set [[https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications][~Notifications~]] to
+     * You can [[https://docs.github.com/en/get-started/quickstart/fork-a-repo][fork]] the [[https://docs.github.com/en/get-started/quickstart/fork-a-repo][~db330~]] repository
+     * You can [[https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/managing-subscriptions-for-activity-on-github/viewing-your-subscriptions][watch]] the [[https://docs.github.com/en/get-started/quickstart/fork-a-repo][~db330~]] repository - and set [[https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications][~Notifications~]] to
        ~Participating and @mentions~ so that you see my comments (see
        image below).
 
@@ -117,7 +125,6 @@ p**** What is it?
      /Image: GitHub desktop client commit/
      #+attr_html: :width 800px
      [[./img/gh.png]]
-
 
 *** DataCamp
 
@@ -144,5 +151,8 @@ p**** What is it?
    * Everything else = online summary
    * See you (hopefully) Thursday in class! (Lyon 104)
 
+   #+caption: Victor N. installs Emacs @10:50 AM
+   #+attr_html: :width 600px
+   [[./img/victor.png]]
 
 
