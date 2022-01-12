@@ -13,6 +13,7 @@
   * Homework assignments: *GitHub*, DataCamp, Emacs
   * What's next?
 
+** My new didactic credo    
   #+attr_html: :width 600px
   [[./img/credo.png]]
 

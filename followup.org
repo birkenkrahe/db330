@@ -20,8 +20,9 @@
 
    * Register with GitHub (2 min)
    * Complete the GitHub Hello World exercise (20 min)
-   * Give me your GitHub user name (email - with course ID - or
-     Thursday in class) - so that I can add you to the repo
+   * +Give me your GitHub user name (email - with course ID - or
+     Thursday in class) - so that I can add you to the repo+ - no
+     need, course is public now
    * Submit an issue to the course repo confirming that you completed
      the exercise.
 
