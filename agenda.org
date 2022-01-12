@@ -1,7 +1,7 @@
-#+TITLE:Agenda
-#+AUTHOR:Marcus Birkenkrahe
-#+SUBTITLE:Agenda DB330 Database Theory and Applications
-#+STARTUP:overview hideblocks
+#+TITLE: Agenda
+#+AUTHOR: Marcus Birkenkrahe
+#+SUBTITLE: Agenda DB330 Database Theory and Applications
+#+STARTUP: overview hideblocks
 #+OPTIONS: toc:nil num:nil ^:nil
 * Week 1 - Jan 11 + 13
 
