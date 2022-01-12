@@ -137,12 +137,16 @@
     * How are we using it?
     * What will you have to do?
 
-*** GNU Emacs
+*** GNU Emacs (1976...1985)
 
     #+attr_html: :width 400px
     [[./img/emacs.png]]
 
     * Why are we using it?
+      - To mix documentation + code + output = literate programming
+        (1984)
+      - It's the same thing as an interactive computing notebook
+        (Jupyter) ... except open to ALL languages and outputs
     * How are we using it?
     * What will you have to do?
 

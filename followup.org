@@ -1,0 +1,103 @@
+#+TITLE:Followup
+#+AUTHOR:Marcus Birkenkrahe
+#+SUBTITLE:Followup for CSC330 Database Theory & Applications Spring 2022
+#+STARTUP:overview hideblocks
+#+OPTIONS: toc:nil num:nil ^:nil
+* What is this?
+
+  Instead of bugging you with emails, I opt to summarize my course
+  observations regarding content, process, in this file. These often
+  contain additional links, articles, and musings.
+
+  I usually update it after each class - it also contains the homework
+  (if any). The first point of call for any questions should be the
+  FAQ. There are two FAQs - a [[https://github.com/birkenkrahe/org/blob/master/FAQ.org#frequently-asked-questions][general one]] (for all my courses), and a
+  [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org][FAQ for CSC 330]].
+
+* Week 1 - Jan 11
+
+** Homework (by Thursday 13-Jan)
+
+   * Register with GitHub (2 min)
+   * Complete the GitHub Hello World exercise (20 min)
+   * Give me your GitHub user name (email - with course ID - or
+     Thursday in class) - so that I can add you to the repo
+   * Submit an issue to the course repo confirming that you completed
+     the exercise.
+
+   Note: if you already did this as part of another course, you don't
+   have to do it again but you need to let me know in your email,
+   which of my courses you attend so that I can add you to one or more
+   GitHub repos.
+
+** Stuff
+
+   * [[https://github.com/birkenkrahe/db330/blob/main/agenda.org][Agenda]] - we covered all of it (and more) - agenda is available in
+     GitHub only
+
+   * Books:
+
+   * Showed GitHub, DataCamp teams and assignments, and GNU Emacs. We
+     talked about structured vs. unstructured data, and Torvald's Git
+     version control program: which follows a key-value data model -
+     all data (committed differences) are stored in tree-like
+     structures and indexed by hash codes. [[https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5][See here for more]] (Spajic,
+     2018).
+
+     #+attr_html: :width 600px
+     [[./img/homework.png]]
+
+   * The DataCamp platform supports the three most important data
+     science languages (in order of importance in the real world):
+     SQL, R, Python. You can do data science with the shell (bash), or
+     even with Java, C, or any other language of course. The season's
+     last assignment is a project where you can see all that you
+     learnt about SQL at work: an anlysis of international debt
+     statistics. You do not need to work on the assignments in any
+     particular order - as long as you don't miss the weekly
+     deadlines. A weekly assignment should take 20-30 minutes of your
+     time.
+
+     #+attr_html: :width 600px
+     [[./img/project.png]]
+
+   * Recorded a screencast for the missing 10 minutes at the end
+     (network outage in Batesville!) - [[https://youtu.be/8HJGz3IYoHI][see on YouTube here]]
+     (Birkenkrahe, 2022). This is a demonstration of the differences
+     of interactive shell scripting vs. interactive notebooks, using
+     SQLite as a sample language. You will get an assignment to create
+     a literate programming file next week. Don't be put off by the
+     level of detail of this demo - let it all just wash over you for
+     now - you'll learn this and much more in this course!
+
+     #+attr_html: :width 600px
+     [[./img/demo.png]]
+
+     In the screencast I talk about missing syntax highlighting in the
+     shell buffer on the left: "I could add it if I wanted to." This
+     is true - everything is Emacs is customizable, and I spent years,
+     literally, doing this. [[https://wikemacs.org/wiki/Shell][Here is the documentation]] specifically on
+     customizing the shell, if you're curious. The language to do this
+     is Emacs-Lisp, a Lisp dialect. I mentioned that Lisp was the
+     [[https://medium.com/ai-society/the-lisp-approach-to-ai-part-1-a48c7385a913][first and, for a long time, dominant AI language]] (Valencia,
+     2017). It's a great language to learn, and GNU Emacs is the
+     ticket if you feel like it.
+
+     #+attr_html: :width 600px
+     #+caption: Common Lisp code to create an n-inputs m-units one layer perceptron. Source: AIMA.
+     [[./img/lisp.png]]
+
+   
+** References
+
+   Russell/Norvig (2021). Artificial Intelligence - a Modern Approach
+   (AIMA). Pearson. URL: 
+   
+   Birkenkrahe (Jan 11, 2022). Interactive shell vs. interactive
+   notebook (literate programming demo). [[https://youtu.be/8HJGz3IYoHI][URL: youtu.be/8HJGz3IYoHI]].
+
+   Spajic (Jan 29, 2018). Understanding Git - Data Model. [[https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5][URL:
+   medium.com/hackernoon]].
+
+   Valencia (Feb 28, 2017). The Lisp approach to AI (Part 1). [[https://medium.com/ai-society/the-lisp-approach-to-ai-part-1-a48c7385a913][URL:
+   medium.com/ai-society.]]
