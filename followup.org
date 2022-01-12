@@ -99,20 +99,20 @@
      [[./img/lisp.png]]
 
    
-** References
+* References
+  
+  Birkenkrahe (Jan 11, 2022). Interactive shell vs. interactive
+  notebook (literate programming demo). [[https://youtu.be/8HJGz3IYoHI][URL: youtu.be/8HJGz3IYoHI]].
 
-   Russell/Norvig (2021). Artificial Intelligence - a Modern Approach
-   (AIMA). Pearson. URL: 
+  Nystrom (2021). Crafting Interpreters. Genever Benning. URL:
+  https://craftinginterpreters.com/
+
+  Russell/Norvig (2021). Artificial Intelligence - a Modern Approach
+  (AIMA). Pearson. URL: 
    
-   Birkenkrahe (Jan 11, 2022). Interactive shell vs. interactive
-   notebook (literate programming demo). [[https://youtu.be/8HJGz3IYoHI][URL: youtu.be/8HJGz3IYoHI]].
+  Spajic (Jan 29, 2018). Understanding Git - Data Model. [[https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5][URL:
+  medium.com/hackernoon]].
 
-   Nystrom (2021). Crafting Interpreters. Genever Benning. URL:
-   https://craftinginterpreters.com/
-   
-   Spajic (Jan 29, 2018). Understanding Git - Data Model. [[https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5][URL:
-   medium.com/hackernoon]].
-
-   Valencia (Feb 28, 2017). The Lisp approach to AI (Part 1). [[https://medium.com/ai-society/the-lisp-approach-to-ai-part-1-a48c7385a913][URL:
-   medium.com/ai-society.]]
+  Valencia (Feb 28, 2017). The Lisp approach to AI (Part 1). [[https://medium.com/ai-society/the-lisp-approach-to-ai-part-1-a48c7385a913][URL:
+  medium.com/ai-society.]]
 
