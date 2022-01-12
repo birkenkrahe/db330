@@ -35,7 +35,14 @@
    * [[https://github.com/birkenkrahe/db330/blob/main/agenda.org][Agenda]] - we covered all of it (and more) - agenda is available in
      GitHub only
 
-   * Books:
+   * Books: "Crafting Interpreters" by Nystrom (2021) is a fun book on
+     creating a small interpreted programming language. This would be
+     an extra cool (Honors) project in a course on programming
+     languages!
+
+     #+attr_html: :width 600px
+     [[./img/nystrom.png]]
+     
 
    * Showed GitHub, DataCamp teams and assignments, and GNU Emacs. We
      talked about structured vs. unstructured data, and Torvald's Git
@@ -98,8 +105,12 @@
    Birkenkrahe (Jan 11, 2022). Interactive shell vs. interactive
    notebook (literate programming demo). [[https://youtu.be/8HJGz3IYoHI][URL: youtu.be/8HJGz3IYoHI]].
 
+   Nystrom (2021). Crafting Interpreters. Genever Benning. URL:
+   https://craftinginterpreters.com/
+   
    Spajic (Jan 29, 2018). Understanding Git - Data Model. [[https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5][URL:
    medium.com/hackernoon]].
 
    Valencia (Feb 28, 2017). The Lisp approach to AI (Part 1). [[https://medium.com/ai-society/the-lisp-approach-to-ai-part-1-a48c7385a913][URL:
    medium.com/ai-society.]]
+
