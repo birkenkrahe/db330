@@ -45,7 +45,8 @@
      2018).
 
      #+attr_html: :width 600px
-     [[./img/homework.png]]
+     #+caption: GitHub desktop application
+     [[./img/gh1.png]]
 
    * The DataCamp platform supports the three most important data
      science languages (in order of importance in the real world):
@@ -59,6 +60,7 @@
      time.
 
      #+attr_html: :width 600px
+     #+caption: DataCamp project - Analyze Intern. Debt Stats
      [[./img/project.png]]
 
    * Recorded a screencast for the missing 10 minutes at the end
