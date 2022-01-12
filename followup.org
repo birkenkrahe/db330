@@ -33,7 +33,7 @@
 ** Stuff
 
    * [[https://github.com/birkenkrahe/db330/blob/main/agenda.org][Agenda]] - we covered all of it (and more) - agenda is available in
-     GitHub only
+     GitHub only.
 
    * Books: "Crafting Interpreters" by Nystrom (2021) is a fun book on
      creating a small interpreted programming language. This would be
