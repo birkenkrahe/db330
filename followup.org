@@ -42,7 +42,8 @@
 
      #+attr_html: :width 600px
      [[./img/nystrom.png]]
-     
+
+   * Pyret (thank you, Molly!) - [[https://www.pyret.org/index.html][check it out]]. 
 
    * Showed GitHub, DataCamp teams and assignments, and GNU Emacs. We
      talked about structured vs. unstructured data, and Torvald's Git
