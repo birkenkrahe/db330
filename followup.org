@@ -98,7 +98,18 @@
      #+caption: Common Lisp code to create an n-inputs m-units one layer perceptron. Source: AIMA.
      [[./img/lisp.png]]
 
-   
+* Week 1 - Jan 13 - DB intro / GNU Emacs
+
+  * GNU Emacs is more of an operating system OS, like macOS, Windows,
+    Linux, than just an editor
+
+  * Hello World is a time-honored way of starting people on their
+    programming language journey. Git is not a language (but almost).
+
+  * Git solves version control problems
+
+  * README files are another time-honored tradition - when you publish
+    software (esp. source code)
 * References
   
   Birkenkrahe (Jan 11, 2022). Interactive shell vs. interactive
