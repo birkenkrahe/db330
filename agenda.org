@@ -3,7 +3,7 @@
 #+SUBTITLE: Agenda DB330 Database Theory and Applications
 #+STARTUP: overview hideblocks
 #+OPTIONS: toc:nil num:nil ^:nil
-* Week 1 - Jan 11 + 13
+* Week 1 - January 11, 2022
 
   #+attr_html: :width 500px
   [[./img/fivearmies.jpg]]
@@ -13,9 +13,9 @@
   * Homework assignments: *GitHub*, DataCamp, Emacs
   * What's next?
 
-** My new didactic credo    
-  #+attr_html: :width 600px
-  [[./img/credo.png]]
+** My new didactic credo
+   #+attr_html: :width 600px
+   [[./img/credo.png]]
 
 ** Aspirations and ambitions (DS program 2021-2023)
 
@@ -161,3 +161,32 @@
    #+caption: Victor N. installs Emacs @10:50 AM
    #+attr_html: :width 600px
    [[./img/victor.png]]
+
+* Week 1 - January 13 , 2022
+** Overview
+
+   | HOW         | WHAT                                    |
+   |-------------+-----------------------------------------|
+   | Review      | [[file:~/Documents/GitHub/org/FAQ.org::Completing the GitHub "hello world" exercise][GitHub Hello World exercise]]             |
+   | Video       | [[https://youtu.be/KG-mqHoXOXY][History of Databases]]                    |
+   | Lecture     | [[https://lyon.schoology.com/link?a=&path=https%3A%2F%2Fwww.pdbmbook.com%2Flecturers%2Fslides%2Faccess][DB applications and basic definitions]]   |
+   | Application | [[https://youtu.be/718uGYbUmao][MooCall Calving Sensor App]]              |
+   | Practice    | [[file:~/Documents/GitHub/org/FAQ.org:: How to install Emacs (+ESS) under Windows and MacOS][Install GNU Emacs]]                       |
+   | Demo        | [[https://www.gnu.org/software/emacs/tour/][Emacs guided tour]]                       |
+   | Self        | [[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][Work through the Emacs onboard tutorial]] |
+
+** Objectives
+
+   * Understand the basics of Git
+
+   * Know basic definitions of database management systems
+
+   * Install the GNU Emacs editor on your OS
+
+   * Understand how GNU Emacs works
+
+   * Make GNU Emacs work for you
+
+** DB Application Example - MooCall
+
+   
