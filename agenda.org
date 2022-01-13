@@ -165,21 +165,23 @@
 * Week 1 - January 13 , 2022
 ** Overview
 
-   | HOW         | WHAT                                    |
-   |-------------+-----------------------------------------|
-   | Review      | [[file:~/Documents/GitHub/org/FAQ.org::Completing the GitHub "hello world" exercise][GitHub Hello World exercise]]             |
-   | Video       | [[https://youtu.be/KG-mqHoXOXY][History of Databases]]                    |
-   | Lecture     | [[https://lyon.schoology.com/link?a=&path=https%3A%2F%2Fwww.pdbmbook.com%2Flecturers%2Fslides%2Faccess][DB applications and basic definitions]]   |
-   | Application | [[https://youtu.be/718uGYbUmao][MooCall Calving Sensor App]]              |
-   | Practice    | [[file:~/Documents/GitHub/org/FAQ.org:: How to install Emacs (+ESS) under Windows and MacOS][Install GNU Emacs]]                       |
-   | Demo        | [[https://www.gnu.org/software/emacs/tour/][Emacs guided tour]]                       |
-   | Self        | [[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][Work through the Emacs onboard tutorial]] |
+   | HOW         | WHAT                                     |
+   |-------------+------------------------------------------|
+   | Review      | [[file:~/Documents/GitHub/org/FAQ.org::Completing the GitHub "hello world" exercise][GitHub Hello World exercise]]              |
+   | Video       | [[https://youtu.be/KG-mqHoXOXY][History of Databases]] (Codd, Oracle, IBM) |
+   | Lecture     | [[https://lyon.schoology.com/link?a=&path=https%3A%2F%2Fwww.pdbmbook.com%2Flecturers%2Fslides%2Faccess][DB applications and basic definitions]]    |
+   | Application | [[https://youtu.be/718uGYbUmao][MooCall Calving Sensor App]] (IoT network) |
+   | Practice    | [[file:~/Documents/GitHub/org/FAQ.org:: How to install Emacs (+ESS) under Windows and MacOS][Install GNU Emacs]] (ESS or vanilla)       |
+   | Demo        | [[https://www.gnu.org/software/emacs/tour/][Emacs guided tour]]                        |
+   | Self        | [[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][Work through the Emacs onboard tutorial]]  |
 
 ** Objectives
 
-   * Understand the basics of Git
+   * Review the basics of Git and GitHub
 
    * Know basic definitions of database management systems
+
+   * See a current example of an IoT-based DB application
 
    * Install the GNU Emacs editor on your OS
 
@@ -187,6 +189,16 @@
 
    * Make GNU Emacs work for you
 
-** DB Application Example - MooCall
+** DB application example - MooCall
+** File vs database approach
+
+   #+attr_html: :width 600px
+   #+caption: database dictionary example (tutorialcup.com)
+   [[./img/dict.png]]
 
    
+* References
+
+  TutorialCup (n.d.) System Catalog [website]. [[https://www.tutorialcup.com/dbms/system-catalog.htm][URL:
+  www.tutorialcup.com.]]
+  
