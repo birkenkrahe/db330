@@ -99,6 +99,16 @@
      [[./img/lisp.png]]
 
 * Week 1 - Jan 13 - DBS intro / GNU Emacs install
+** DataCamp membership
+
+   * DataCamp: You should all be in your courses now.
+     - Your assignments are on one page but you'll be notified via
+       schoology as soon as an assignment is due
+
+   #+attr_html: :width 400px
+   #+caption: DataCamp DB course member list
+   [[./img/members1.png]]
+   
 ** History of databases
 
    * [[https://youtu.be/KG-mqHoXOXY][YouTube video link]]
