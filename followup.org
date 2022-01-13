@@ -182,6 +182,10 @@
      #+caption:GNU Emacs v27 download online repo
      [[./img/download.png]]
 
+   * Demo: keyboard macros. I showed how to define a keyboard macro
+     (~C-x (~ [key sequence] ~C-x )~) and how to apply it repeatedly
+     (~C-u [times] C-x e~). [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html][Here's the documentation]]. 
+   
 * Week 2 - Jan 18 - DB intro / GNU Emacs tutorial
 
 ** File vs database approach
