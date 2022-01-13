@@ -44,7 +44,7 @@
      #+attr_html: :width 600px
      [[./img/nystrom.png]]
 
-   * Pyret (thank you, Molly!) - [[https://www.pyret.org/index.html][check it out]]. 
+   * Pyret (thank you, Molly!) - [[https://www.pyret.org/index.html][check it out]].
 
    * Showed GitHub, DataCamp teams and assignments, and GNU Emacs. We
      talked about structured vs. unstructured data, and Torvald's Git
@@ -99,31 +99,99 @@
      [[./img/lisp.png]]
 
 * Week 1 - Jan 13 - DB intro / GNU Emacs
+** History of databases
 
-  * GNU Emacs is more of an operating system OS, like macOS, Windows,
-    Linux, than just an editor
+   * [[https://youtu.be/KG-mqHoXOXY][YouTube video link]]
 
-  * Hello World is a time-honored way of starting people on their
-    programming language journey. Git is not a language (but almost).
+     #+attr_html: :width 400px
+     #+caption: Which of these founders has nothing to do with databases?
+     [[./img/founders.png]]
 
-  * Git solves version control problems
+   * DB are an old human interest (information is always gathered)
 
-  * README files are another time-honored tradition - when you publish
-    software (esp. source code)
+   * DB development happened in close "combat" with companies and
+     operating systems (market and a hardware aspect to it)
+
+   * Dominant language is SQL - in connection with relational DB
+
+   * Codd's 12 rules = everything you need to know about relational
+     DB design (these rules scale extremely well)
+
+   * There are MANY different types of DBMS
+
+   * We'll be installing SQLite, too, for local SQL experimentation
+
+** DBMS IoT example application (MooCall)
+
+   * Website for this [[https://www.moocall.com/#][Irish app]]
+
+     #+attr_html: :width 400px
+     #+caption: Two cows with MooCall sensors attached.
+     [[./img/moocall.jpg]]
+
+   * Sensor applications are small and look trivial, but they're
+     highly security relevant (Cernobyl disaster in USSR, 1986). See
+     The Logic of Failure (Dorner).
+
+   * Big Data ("starts" modern data science) = 3Vs = Volume +
+     Velocity + Variety [5V definitions add "value", "veracity"]
+
+   * IoT = "webservice"-enabled, cloud-networked, fast, big data
+     applications
+
+   * MooCall DB networking:
+     1) cow data are generated and pre-processed locally (e.g. cow ID,
+        temperature, motion etc.) = "[[https://en.wikipedia.org/wiki/Edge_computing][edge computing]]" example
+     2) cow data are processed globally (in the cloud) to generate
+        user signal ("this cow's calving!")
+     3) Signal is transmitted to the user = farmer for potential
+        action.
+
+   * DB system = DBMS + DB - the DBMS has a lot of fancy stuff on
+     board: performance optimizer, shell, API
+
+   * BC (Before Codd) = file system-based data management, and AC (After
+     Codd) = DB management system (DBMS)-based data management.
+
+** GNU Emacs installation
+
+   * Install vanilla[fn:1] GNU Emacs or a modified Emacs (for statistics
+     processing with R and other packages - [[https://ess.r-project.org/][ESS]])
+
+   * Vanilla GNU Emacs v27 Windows installation: you need the
+     ~emacs-27.1-x86_64-installer.exe~ [[http://gnu.freemirror.org/gnu/emacs/windows/emacs-27/][from this page]].
+
+   * MacOS: get the [[https://vigou3.gitlab.io/emacs-modified-macos/][modified version]] if you like (easiest), or the
+     binary using the command line terminal as shown [[https://www.gnu.org/software/emacs/download.html][here]], using the
+     ~Homebrew~ package manager.
+
+     #+attr_html: :width 300px
+     #+caption:GNU Emacs v27 download online repo
+     [[./img/download.png]]
+
 * References
-  
+
   Birkenkrahe (Jan 11, 2022). Interactive shell vs. interactive
   notebook (literate programming demo). [[https://youtu.be/8HJGz3IYoHI][URL: youtu.be/8HJGz3IYoHI]].
+
+  Moocall (Nov 27, 2020). Moocall Calving Sensor [video]. [[https://youtu.be/718uGYbUmao][URL:
+  youtu.be/718uGYbUmao]].
 
   Nystrom (2021). Crafting Interpreters. Genever Benning. URL:
   https://craftinginterpreters.com/
 
   Russell/Norvig (2021). Artificial Intelligence - a Modern Approach
-  (AIMA). Pearson. URL: 
-   
+  (AIMA). Pearson. URL:
+
   Spajic (Jan 29, 2018). Understanding Git - Data Model. [[https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5][URL:
   medium.com/hackernoon]].
 
   Valencia (Feb 28, 2017). The Lisp approach to AI (Part 1). [[https://medium.com/ai-society/the-lisp-approach-to-ai-part-1-a48c7385a913][URL:
   medium.com/ai-society.]]
 
+* Footnotes
+
+[fn:1]The term "vanilla" refers to the fact that this is the
+uncustomized, original version of Emacs. For large, old open source
+projects, this is a bit of a mystery, though, since so many versions
+exist that it may be difficult to identify "the original".
