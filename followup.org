@@ -107,7 +107,7 @@
 
    #+attr_html: :width 400px
    #+caption: DataCamp DB course member list
-   [[./img/members1.png]]
+   [[./img/members.png]]
    
 ** History of databases
 
