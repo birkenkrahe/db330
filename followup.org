@@ -98,7 +98,7 @@
      #+caption: Common Lisp code to create an n-inputs m-units one layer perceptron. Source: AIMA.
      [[./img/lisp.png]]
 
-* Week 1 - Jan 13 - DB intro / GNU Emacs
+* Week 1 - Jan 13 - DBS intro / GNU Emacs install
 ** History of databases
 
    * [[https://youtu.be/KG-mqHoXOXY][YouTube video link]]
@@ -168,6 +168,15 @@
      #+attr_html: :width 300px
      #+caption:GNU Emacs v27 download online repo
      [[./img/download.png]]
+
+* Week 2 - Jan 18 - DB intro / GNU Emacs tutorial
+
+** File vs database approach
+
+   #+attr_html: :width 600px
+   #+caption: database dictionary example (tutorialcup.com)
+   [[./img/dict.png]]
+  
 
 * References
 
