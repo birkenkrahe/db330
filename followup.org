@@ -141,7 +141,10 @@
 
    * Sensor applications are small and look trivial, but they're
      highly security relevant (Cernobyl disaster in USSR, 1986). See
-     The Logic of Failure (Dorner).
+     [[https://www.basicbooks.com/titles/dietrich-dorner/the-logic-of-failure/9780201479485/][The Logic of Failure (Dorner, 1997)]].
+
+     #+attr_html: :width 300px
+     [[./img/dorner.jpg]]
 
    * Big Data ("starts" modern data science) = 3Vs = Volume +
      Velocity + Variety [5V definitions add "value", "veracity"]
