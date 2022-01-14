@@ -8,6 +8,7 @@
 
 ** [[https://github.com/birkenkrahe/db330/blob/main/schedule.org][Schedule]] of the course (up to date)
 ** [[https://github.com/birkenkrahe/db330/blob/main/agenda.org][Agenda]] for every session
+** Notes after sessions
 ** [[https://github.com/birkenkrahe/db330/blob/main/diary.org][Course diary]] for further reading
 ** [[https://github.com/birkenkrahe/db330/discussions][Discussion forums]] for assignments
 ** [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org][Frequently Asked Questions (FAQ)]]
