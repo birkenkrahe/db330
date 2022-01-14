@@ -1,4 +1,4 @@
-#+TITLE:Followup
+#+TITLE:Followup notes
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:Followup for CSC330 Database Theory & Applications Spring 2022
 #+STARTUP:overview hideblocks
