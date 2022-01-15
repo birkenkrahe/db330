@@ -190,6 +190,13 @@
    * [ ] Make GNU Emacs work for you
 
 * Week 2 - January 18, 2022
+
+** Emacs tip
+
+   Start/stop session with ~org-timer-set-timer~ (C-c C-x ;)/
+   ~org-timer-stop~ (System Crafters, 2021)
+
+
 ** Overview
 
    | HOW      | WHAT                                    |
@@ -209,11 +216,11 @@
    * [ ] Understand how GNU Emacs works
 
    * [ ] Make GNU Emacs work for you
-  
 
-   
 * References
+
+  System Crafters (Aug 1, 2021). Emacs Has a Built-in Pomodoro Timer??
+  [video]. [[https://youtu.be/JbHE819kVGQ][URL: youtu.be/JbHE819kVGQ.]]
 
   TutorialCup (n.d.) System Catalog [website]. [[https://www.tutorialcup.com/dbms/system-catalog.htm][URL:
   www.tutorialcup.com.]]
-  
