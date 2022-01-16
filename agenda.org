@@ -191,6 +191,10 @@
 
 * Week 2 - January 18, 2022
 
+  #+caption: "I'm back, baby."
+  #+attr_html: :width 300px
+  [[./img/back.jpg]]
+  
 ** Emacs tip
 
    Start/stop session with ~org-timer-set-timer~ (C-c C-x ;)/

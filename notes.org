@@ -14,7 +14,7 @@
   FAQ. There are two FAQs - a [[https://github.com/birkenkrahe/org/blob/master/FAQ.org#frequently-asked-questions][general one]] (for all my courses), and a
   [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org][FAQ for CSC 330]].
 
-* Week 1 - Jan 11
+* 1.1 (01/11/22)
 
 ** Homework (by Thursday 13-Jan)
 
@@ -98,7 +98,7 @@
      #+caption: Common Lisp code to create an n-inputs m-units one layer perceptron. Source: AIMA.
      [[./img/lisp.png]]
 
-* Week 1 - Jan 13 - DBS intro / GNU Emacs install
+* 1.2 (01/13/22)
 ** DataCamp membership
 
    * DataCamp: You should all be in your courses now.
