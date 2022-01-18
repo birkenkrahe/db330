@@ -210,48 +210,53 @@
    #+caption: database dictionary example (tutorialcup.com)
    [[./img/dict.png]]
 
-* Captain's Log[fn:2]
+** Captain's Log[fn:2]
 
-   #+attr_html: :width 800px
-   #+caption: Entity Relationship Diagram (Source: Lucidchart).
-   [[./img/erd.png]]
+    #+attr_html: :width 600px
+    #+caption: Entity Relationship Diagram (Source: Lucidchart).
+    [[./img/erd.png]]
 
-   * strong vs. soft/loose coupling is an important design issue (it
-     relates directly to the resilience of the designed system).
+    * strong vs. soft/loose coupling is an important design issue (it
+      relates directly to the resilience of the designed system).
 
-   * *meta data* are data about data, used to control, manage other
-     data, and processes
+    * *meta data* are data about data, used to control, manage other
+      data, and processes
 
-   * SQL (Structured Query Language): dominant language for
-     structured, table-based (aka relational) databases
-     - DQL = Data Query Language (e.g. selecting data)
-     - DDL = Data Definition Language (e.g. creating tables)
-     - DML = Data Manipulation Language (e.g. input/output of data)
-     - DCL = Data Control Language (to alter meta data, e.g. rights)
+    * SQL (Structured Query Language): dominant language for
+      structured, table-based (aka relational) databases
+      - DQL = Data Query Language (e.g. selecting data)
+      - DDL = Data Definition Language (e.g. creating tables)
+      - DML = Data Manipulation Language (e.g. input/output of data)
+      - DCL = Data Control Language (to alter meta data, e.g. rights)
 
-   * Learning anything is best as a "variation on a theme" (as in
-     music)
+    * Learning anything is best as a "variation on a theme" (as in
+      music)
 
-   * MooCall: what do we want to store (cow temperature F, in C)
+    * MooCall: what do we want to store (cow temperature F, in C)
 
-   * State-based view of computing (von Neumann architecture) =
-     dominant paradigm (automata, Turing machines...)
+    * State-based view of computing (von Neumann architecture) =
+      dominant paradigm (automata, Turing machines...)
    
-* NEXT GNU Emacs tour
+** GNU Emacs tour
 
-  * Ctrl-h Ctrl-a RET : Startup screen
-  * Emacs written in C and Lisp (Emacs Lisp)
-  * Emacs is an IDE - we'll use it for SQL, SQLite, and bash
-  * Emacs contains a bunch of apps (e.g. file explorer)
-  * Try the Emacs onboard tutorial (CTRL-h t)
+   * Ctrl-h Ctrl-a RET : Startup screen
+   * Emacs written in C and Lisp (Emacs Lisp)
+   * Emacs is an IDE - we'll use it for SQL, SQLite, and bash
+   * Emacs contains a bunch of apps (e.g. file explorer)
+   * Try the Emacs onboard tutorial (CTRL-h t)
 
 * Glossary = the learning dictionary for your brain
 
   * Why is it important to have a glossary?
   
-  | TERM      | MEANING                                                  |
-  |-----------+----------------------------------------------------------|
-  | Meta data | Data about data, e.g. control information for a database |
+  | TERM      | MEANING                                                   |
+  |-----------+-----------------------------------------------------------|
+  | Meta data | Data about data, e.g. control information for a database  |
+  | DDL       | Data Definition Language                                  |
+  | DML       | Data Manipulation Language                                |
+  | DQL       | Data Query Language                                       |
+  | DCL       | Data Control Language                                     |
+  | Coupling  | (design) Relates to the independence of parts of a system |
   
 * References
 

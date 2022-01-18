@@ -208,7 +208,9 @@
 
    * [X] Learn about the elements of a database system
 
-   * [ ] Understand how GNU Emacs works (guided tour)
+   * [X] Understand DB system design structure/users
+
+   * [X] Understand how GNU Emacs works (guided tour)
 
    * [ ] Make GNU Emacs work for you
 
