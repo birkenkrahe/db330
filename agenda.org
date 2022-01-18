@@ -202,19 +202,15 @@
 
 ** Objectives
 
-   * [X] Review the basics of Git and GitHub
+   * [ ] Review last week's content with a quiz
 
-   * [X] Know basic definitions of database management systems
+   * [ ] Review file vs. db approach to data management
 
-   * [X] See a current example of an IoT-based DB application
+   * [ ] Learn about the elements of a database system
 
-   * [X] Install the GNU Emacs editor on your OS
-
-   * [ ] Understand how GNU Emacs works
+   * [ ] Understand how GNU Emacs works (guided tour)
 
    * [ ] Make GNU Emacs work for you
-
-
   
 * References
 

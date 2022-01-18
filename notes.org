@@ -190,7 +190,18 @@
 
 ** Quiz 1
 
-   
+   THE QUIZ IS ON ... Schoology 3 PM - 3.15 PM
+
+*** Feedback/discussion
+   FOLLOWED by brief FEEDBACK:
+
+   * We'll do one of these per week (I hope)
+   * Any content questions?
+   * Too much time? Too little?
+   * Questions too hard? Too easy?
+   * A subset of these questions will become the final exam
+   * After playing the quiz in class you can play it unlimited times
+   * Quizzes are now *ungraded* (final exam is now 30% of final grade)
   
 ** File vs database approach
 
