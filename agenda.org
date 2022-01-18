@@ -202,11 +202,11 @@
 
 ** Objectives
 
-   * [ ] Review last week's content with a quiz
+   * [X] Review last week's content with a quiz
 
-   * [ ] Review file vs. db approach to data management
+   * [X] Review file vs. db approach to data management
 
-   * [ ] Learn about the elements of a database system
+   * [X] Learn about the elements of a database system
 
    * [ ] Understand how GNU Emacs works (guided tour)
 
