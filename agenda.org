@@ -211,7 +211,13 @@
    * [ ] Understand how GNU Emacs works (guided tour)
 
    * [ ] Make GNU Emacs work for you
-  
+
+** What's next?
+
+   * Take a look at the Emacs tutorial (CTRL-h t)
+   * GNU Emacs practice exercises (in class)
+   * DataCamp assignments beginning next week (online)
+   
 * References
 
   System Crafters (Aug 1, 2021). Emacs Has a Built-in Pomodoro Timer??
