@@ -191,9 +191,30 @@
 
 * Week 2 - January 18, 2022
 
-  #+caption: "I'm back, baby."
-  #+attr_html: :width 300px
-  [[./img/back.jpg]]
+** Overview
+
+   | HOW         | WHAT                                     |
+   |-------------+------------------------------------------|
+   | Review      | [[https://lyon.schoology.com/assignment/5563835679][Quiz 1: Intro to course / databases]]      |
+   | Lecture     | [[file:notes.org::2.1 (01/18/22)][Elements of Database Systems]]             |
+   | Demo        | [[https://www.gnu.org/software/emacs/tour/][Emacs guided tour]]                        |
+   | Self        | [[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][Work through the Emacs onboard tutorial]]  |
+
+** Objectives
+
+   * [X] Review the basics of Git and GitHub
+
+   * [X] Know basic definitions of database management systems
+
+   * [X] See a current example of an IoT-based DB application
+
+   * [X] Install the GNU Emacs editor on your OS
+
+   * [ ] Understand how GNU Emacs works
+
+   * [ ] Make GNU Emacs work for you
+
+
   
 * References
 

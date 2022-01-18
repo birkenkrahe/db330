@@ -186,20 +186,36 @@
      (~C-x (~ [key sequence] ~C-x )~) and how to apply it repeatedly
      (~C-u [times] C-x e~). [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html][Here's the documentation]]. 
    
-* Week 2 - Jan 18 - DB intro / GNU Emacs tutorial
+* 2.1 (01/18/22)
 
+** Quiz 1
+
+   
+  
 ** File vs database approach
 
    #+attr_html: :width 600px
    #+caption: database dictionary example (tutorialcup.com)
    [[./img/dict.png]]
-  
 
+* Captain's Log[fn:2]
+
+* Glossary
+
+  * Why is it important to have a glossary?
+  
+  | TERM | MEANING |
+  |------+---------|
+  |      |         |
+  
 * References
 
   Birkenkrahe (Jan 11, 2022). Interactive shell vs. interactive
   notebook (literate programming demo). [[https://youtu.be/8HJGz3IYoHI][URL: youtu.be/8HJGz3IYoHI]].
 
+  bnewall1 (Apr 25, 2010). Star Trek: Captain's Log - 11/30/1994 - 2/7
+  [video]. [[https://youtu.be/T2bSMLEQX1o][URL: youtu.be/T2bSMLEQX1o]].
+  
   Moocall (Nov 27, 2020). Moocall Calving Sensor [video]. [[https://youtu.be/718uGYbUmao][URL:
   youtu.be/718uGYbUmao]].
 
@@ -211,11 +227,14 @@
 
   Spajic (Jan 29, 2018). Understanding Git - Data Model. [[https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5][URL:
   medium.com/hackernoon]].
-
+  
   Valencia (Feb 28, 2017). The Lisp approach to AI (Part 1). [[https://medium.com/ai-society/the-lisp-approach-to-ai-part-1-a48c7385a913][URL:
   medium.com/ai-society.]]
 
 * Footnotes
+
+[fn:2][[https://youtu.be/T2bSMLEQX1o]["Logic, logic...I'm sick to death of logic!"]] (Star Trek:
+Captain's Log)
 
 [fn:1]The term "vanilla" refers to the fact that this is the
 uncustomized, original version of Emacs. For large, old open source
