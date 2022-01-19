@@ -221,6 +221,10 @@
    * *meta data* are data about data, used to control, manage other
      data, and processes
 
+   * Example: [[https://en.wikipedia.org/wiki/Exif][Exif (Exchangeable Image File)]] data are an example of
+     common meta data associated with image files stored alongside
+     digital pictures.
+
    * SQL (Structured Query Language): dominant language for
      structured, table-based (aka relational) databases
      - DQL = Data Query Language (e.g. selecting data)
