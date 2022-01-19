@@ -108,7 +108,7 @@
    #+attr_html: :width 400px
    #+caption: DataCamp DB course member list
    [[./img/members.png]]
-   
+
 ** History of databases
 
    * [[https://youtu.be/KG-mqHoXOXY][YouTube video link]]
@@ -184,10 +184,9 @@
 
    * Demo: keyboard macros. I showed how to define a keyboard macro
      (~C-x (~ [key sequence] ~C-x )~) and how to apply it repeatedly
-     (~C-u [times] C-x e~). [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html][Here's the documentation]]. 
-   
-* 2.1 (01/18/22)
+     (~C-u [times] C-x e~). [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html][Here's the documentation]].
 
+* 2.1 (01/18/22)
 ** Quiz 1
 
    THE QUIZ IS ON ... SCHOOLOGY 1 PM - 1.15 PM
@@ -196,14 +195,14 @@
 
     FOLLOWED by brief FEEDBACK:
 
-   * We'll do one of these per week (I hope)
-   * Any content questions?
-   * Too much time? Too little?
-   * Questions too hard? Too easy?
-   * A subset of these questions will become the final exam
-   * After playing the quiz in class you can play it unlimited times
-   * Quizzes are now *ungraded* (final exam is now 30% of final grade)
-  
+    * We'll do one of these per week (I hope)
+    * Any content questions?
+    * Too much time? Too little?
+    * Questions too hard? Too easy?
+    * A subset of these questions will become the final exam
+    * After playing the quiz in class you can play it unlimited times
+    * Quizzes are now *ungraded* (final exam is now 30% of final grade)
+
 ** Review: file vs database approach
 
    #+attr_html: :width 600px
@@ -212,31 +211,31 @@
 
 ** Captain's Log[fn:2]
 
-    #+attr_html: :width 600px
-    #+caption: Entity Relationship Diagram (Source: Lucidchart).
-    [[./img/erd.png]]
+   #+attr_html: :width 600px
+   #+caption: Entity Relationship Diagram (Source: Lucidchart).
+   [[./img/erd.png]]
 
-    * strong vs. soft/loose coupling is an important design issue (it
-      relates directly to the resilience of the designed system).
+   * strong vs. soft/loose coupling is an important design issue (it
+     relates directly to the resilience of the designed system).
 
-    * *meta data* are data about data, used to control, manage other
-      data, and processes
+   * *meta data* are data about data, used to control, manage other
+     data, and processes
 
-    * SQL (Structured Query Language): dominant language for
-      structured, table-based (aka relational) databases
-      - DQL = Data Query Language (e.g. selecting data)
-      - DDL = Data Definition Language (e.g. creating tables)
-      - DML = Data Manipulation Language (e.g. input/output of data)
-      - DCL = Data Control Language (to alter meta data, e.g. rights)
+   * SQL (Structured Query Language): dominant language for
+     structured, table-based (aka relational) databases
+     - DQL = Data Query Language (e.g. selecting data)
+     - DDL = Data Definition Language (e.g. creating tables)
+     - DML = Data Manipulation Language (e.g. input/output of data)
+     - DCL = Data Control Language (to alter meta data, e.g. rights)
 
-    * Learning anything is best as a "variation on a theme" (as in
-      music)
+   * Learning anything is best as a "variation on a theme" (as in
+     music)
 
-    * MooCall: what do we want to store (cow temperature F, in C)
+   * MooCall: what do we want to store (cow temperature F, in C)
 
-    * State-based view of computing (von Neumann architecture) =
-      dominant paradigm (automata, Turing machines...)
-   
+   * State-based view of computing (von Neumann architecture) =
+     dominant paradigm (automata, Turing machines...)
+
 ** GNU Emacs tour
 
    * Ctrl-h Ctrl-a RET : Startup screen
@@ -244,11 +243,33 @@
    * Emacs is an IDE - we'll use it for SQL, SQLite, and bash
    * Emacs contains a bunch of apps (e.g. file explorer)
    * Try the Emacs onboard tutorial (CTRL-h t)
+   * What Emacs can do:
+     - Extension and full customization (with Emacs Lisp)
+     - Writing in many different human/programming/markup
+       languages (with major and minor modes)
+     - IDE work (compile, run, test programs) - gdb integration
+     - Compare and highlight file differences (with ediff)
+     - Manage files (with dired)
+     - Read mail, news, RSS feeds (gnus)
+     - You can use it as an IRC reader (#batesville@irc.freenode.net)
+     - Play games ([[https://www.masteringemacs.org/article/fun-games-in-emacs][examples]])
+
+       #+begin_quote
+       Whenever you decide to start using Emacs, you should take the Emacs tutorial. It's an interactive hands-on which will familiarize you with many things, including:
+
+       * Starting and exiting Emacs
+       * Basic text movement and editing commands
+       * Opening and saving files
+       * Emacs concepts: windows, frames, files, and buffers
+       * Invoking commands with keybindings and with M-x
+       * To run the tutorial, start Emacs and type C-h t, that is,
+         Ctrl-h followed by t.
+       #+end_quote
 
 * Glossary = the learning dictionary for your brain
 
   * Why is it important to have a glossary?
-  
+
   | TERM      | MEANING                                                   |
   |-----------+-----------------------------------------------------------|
   | Meta data | Data about data, e.g. control information for a database  |
@@ -257,7 +278,8 @@
   | DQL       | Data Query Language                                       |
   | DCL       | Data Control Language                                     |
   | Coupling  | (design) Relates to the independence of parts of a system |
-  
+  | gdb       | GNU debugger, [[https://www.sourceware.org/gdb/][supports many languages]]                     |
+
 * References
 
   Birkenkrahe (Jan 11, 2022). Interactive shell vs. interactive
@@ -268,7 +290,7 @@
 
   Lucidchart (2022). What is a Database Model [website]. [[https://www.lucidchart.com/pages/database-diagram/database-models][URL:
   www.lucidchart.com]].
-  
+
   Moocall (Nov 27, 2020). Moocall Calving Sensor [video]. [[https://youtu.be/718uGYbUmao][URL:
   youtu.be/718uGYbUmao]].
 
@@ -280,7 +302,7 @@
 
   Spajic (Jan 29, 2018). Understanding Git - Data Model. [[https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5][URL:
   medium.com/hackernoon]].
-  
+
   Valencia (Feb 28, 2017). The Lisp approach to AI (Part 1). [[https://medium.com/ai-society/the-lisp-approach-to-ai-part-1-a48c7385a913][URL:
   medium.com/ai-society.]]
 

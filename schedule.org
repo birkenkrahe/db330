@@ -64,5 +64,6 @@ deepens them through classroom practice.
 [fn:3]This course gives you an opportunity to gather a number of
 database and SQL related DataCamp certificates. 
 
-[fn:4]Quiz: covers the material of the past week. Usually 5 min at the
-beginning of class, multiple choice. Test: in class exercises.
+[fn:4]Quiz: covers the material of the past week. Usually 15 min at
+the beginning of the first class of each week, multiple choice. Test:
+in class exercises.
