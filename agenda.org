@@ -3,7 +3,7 @@
 #+SUBTITLE: Agenda DB330 Database Theory and Applications
 #+STARTUP: overview hideblocks
 #+OPTIONS: toc:nil num:nil ^:nil
-* Week 1 - January 11, 2022
+* w1s1 - January 11, 2022
 
   #+attr_html: :width 500px
   [[./img/fivearmies.jpg]]
@@ -162,7 +162,7 @@
    #+attr_html: :width 600px
    [[./img/victor.png]]
 
-* Week 1 - January 13 , 2022
+* w1s2 - January 13 , 2022
 ** Overview
 
    | HOW         | WHAT                                     |
@@ -189,8 +189,7 @@
 
    * [ ] Make GNU Emacs work for you
 
-* Week 2 - January 18, 2022
-
+* w2s1 - January 18, 2022
 ** Overview
 
    | HOW         | WHAT                                     |
@@ -219,6 +218,27 @@
    * Take a look at the Emacs tutorial (CTRL-h t)
    * GNU Emacs practice exercises (in class)
    * DataCamp assignments beginning next week (online)
+   
+* w2s2 - January 20, 2022
+** Overview
+
+   | HOW      | WHAT                                    |
+   |----------+-----------------------------------------|
+   | Demo     | Installing ~sqlite~ (done)              |
+   | Practice | [[file:~/Documents/GitHub/org/emacs/emacs.org::GNU Emacs][Emacs guided tour]] ([[https://www.gnu.org/software/emacs/tour/][tour]])([[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][web-tutorial]])  |
+   | Self     | [[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][Work through the Emacs onboard tutorial]] |
+
+** Objectives
+
+   * [ ] Understand how GNU Emacs works (guided tour)
+
+   * [ ] Make GNU Emacs work for you (tutorial)
+
+** What's next?
+
+   * Architecture and classification of databases
+   * DataCamp assignments beginning next week (online)
+   * Cloud computing - relevance for databases
    
 * References
 
