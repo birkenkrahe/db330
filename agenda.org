@@ -301,8 +301,8 @@ Late completion (after the due date): 5 points (50%).
 [fn:4]In Lyon 104 (Computer lab), the ~PATH~ variable is unfortunately
 stored in the personal user's app data so that I could not set it
 properly for your account (you can do this on your own PC
-easily). However, I seem to have found a solution for this (see course
-FAQ).
+easily). However, [[file:FAQ.org::How to run SQLite in Emacs][I seem to have found a solution]] for this ([[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#how-to-run-sqlite-in-emacs][see course
+FAQ]]).
 
 [fn:1]For installation on your PC, see [[https://github.com/birkenkrahe/org/blob/master/emacs/install.org][these instructions]] ([[https://github.com/birkenkrahe/org/blob/master/emacs/install.pdf][PDF]]). The
 installation is simple: download the ZIP file, unpack it, and set the

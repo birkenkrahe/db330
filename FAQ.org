@@ -17,10 +17,10 @@
 
   #+begin_src emacs-lisp
     (require 'ob-sqlite) 
-    (setq org-babel-sqlite3-command "c:/Program Files (x86)/sqlite-tools-win32-x86-3360000/sqlite3.exe")
+    (setq org-babel-sqlite3-command "\"c:/Program Files (x86)/sqlite-tools-win32-x86-3360000/sqlite3.exe\"")
   #+end_src
 
-  You can check that the variable is loaded properly by entering
+  You can check that the variable is loaded properly by entering:
 
   #+begin_example
   C-h v org-babel-sqlite3-command RET
