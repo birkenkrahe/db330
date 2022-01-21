@@ -7,3 +7,21 @@
 
   This is a Frequently Asked Questions (FAQ) file for this course. For
   the FAQs across courses, see the [[https://github.com/birkenkrahe/org][org repo]].
+
+* How to run SQLite in Emacs
+
+  This refers to running SQLite inside an Emacs Org-mode code block -
+  the ability to program SQLite in a literate way. This ability is
+  coded in the Org-mode Babel file ~ob-sqlite.el~. You need to have
+  the following code in your Emacs file *after* loading ~ob-sqlite~:
+
+  #+begin_src emacs-lisp
+    (require 'ob-sqlite) 
+    (setq org-babel-sqlite3-command "c:/Program Files (x86)/sqlite-tools-win32-x86-3360000/sqlite3.exe")
+  #+end_src
+
+  You can check that the variable is loaded properly by entering
+
+  #+begin_example
+  C-h v org-babel-sqlite3-command RET
+  #+end_example  

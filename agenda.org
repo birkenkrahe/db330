@@ -189,7 +189,7 @@
 
    * [ ] Make GNU Emacs work for you
 
-* w2s1 - January 18, 2022
+* w2s3 - January 18, 2022
 ** Overview
 
    | HOW         | WHAT                                     |
@@ -219,27 +219,75 @@
    * GNU Emacs practice exercises (in class)
    * DataCamp assignments beginning next week (online)
    
-* w2s2 - January 20, 2022
+* w2s4 - January 20, 2022
 ** Overview
 
    | HOW      | WHAT                                    |
    |----------+-----------------------------------------|
-   | Demo     | Installing ~sqlite~ (done)              |
+   | Demo     | Installing ~sqlite~[fn:1] (done[fn:4])              |
    | Practice | [[file:~/Documents/GitHub/org/emacs/emacs.org::GNU Emacs][Emacs guided tour]] ([[https://www.gnu.org/software/emacs/tour/][tour]])([[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][web-tutorial]])  |
    | Self     | [[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][Work through the Emacs onboard tutorial]] |
 
 ** Objectives
 
-   * [ ] Understand how GNU Emacs works (guided tour)
+   * [X] Understand how GNU Emacs works (guided tour)
 
-   * [ ] Make GNU Emacs work for you (tutorial)
+   * [X] Make GNU Emacs work for you (tutorial)
 
 ** What's next?
 
    * Architecture and classification of databases
-   * DataCamp assignments beginning next week (online)
+   * DataCamp assignments due next week (online)
    * Cloud computing - relevance for databases
+
+
+Cloud Computing for Everyone
+Cloud Computing for Everyone
+Introduction to Cloud Computing
+I forgot to mention this in the last class. This is the first DataCamp assignment. It is informational and very simple - nothing but drag and drop practice and a few videos. This should not take you longer than 15-20 minutes.
+
+We'll pick up on past assignments in class - short review including questions for the audience (you!)
+Completing this assignment on time gets you 10 points (100%).
+Late completion (after the due date): 5 points (50%).    
+* w3s5 - January 25, 2022
+** Overview
+
+   | HOW      | WHAT                                         |
+   |----------+----------------------------------------------|
+   | Review   | Quiz 2 - database foundations / Emacs        |
+   |          | DataCamp assignment 1: cloud computing intro |
+   | Lecture  | Emacs Org-mode                               |
+   | Practice | Create literate Org-mode file                |
+   |          | Run ~sqlite~ program in Emacs                |
+
+** Objectives
+
+   * [ ] Review db foundation and GNU Emacs (quiz 2)
+
+   * [ ] Review introduction to cloud computing (DataCamp 1)
+
+   * [ ] Understand GNU Emacs Org-mode
+
+   * [ ] Know how to create a literate Org-mode file
+
+   * [ ] Know how to run a literate Org-mode file
+
+** DataCamp assignment: Cloud Computing Introduction
+
+   * What's the main message of this lesson?
+   * What does cloud computing have to do with databases?
+   * What did you think about the assignment?
+   * What did I think about the assignment?
    
+   #+caption: Schoology assignment, Jan 21, 2022
+   #+attr_html: :width 600px
+   [[./img/datacamp1.png]]
+
+** What's next?
+
+   * Architecture and classification of databases
+   * Next DataCamp assignment due Feb 1 ("Cloud deployment")
+
 * References
 
   System Crafters (Aug 1, 2021). Emacs Has a Built-in Pomodoro Timer??
@@ -247,3 +295,15 @@
 
   TutorialCup (n.d.) System Catalog [website]. [[https://www.tutorialcup.com/dbms/system-catalog.htm][URL:
   www.tutorialcup.com.]]
+
+* Footnotes
+
+[fn:4]In Lyon 104 (Computer lab), the ~PATH~ variable is unfortunately
+stored in the personal user's app data so that I could not set it
+properly for your account (you can do this on your own PC
+easily). However, I seem to have found a solution for this (see course
+FAQ).
+
+[fn:1]For installation on your PC, see [[https://github.com/birkenkrahe/org/blob/master/emacs/install.org][these instructions]] ([[https://github.com/birkenkrahe/org/blob/master/emacs/install.pdf][PDF]]). The
+installation is simple: download the ZIP file, unpack it, and set the
+~PATH~ variable so that sqlite can be found.

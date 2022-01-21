@@ -62,10 +62,9 @@
    | WHEN[fn:1]    | DESCRIPTION              | IMPACT |
    |---------------+--------------------------+--------|
    | Every session | Class assignments        |    10% |
-   | Weekly        | Quizzes                  |    10% |
    | Weekly        | DataCamp/H5P assignments |    30% |
    | Monthly       | Tests                    |    30% |
-   | End of term   | Final exam               |    20% |
+   | End of term   | Final exam               |    30% |
 
    You should be able to see your current grade at any time using the
    Schoology gradebook for the course.
@@ -104,12 +103,6 @@
     - Complete assignments outside of class (homework)
     - Be ready to present your results at any time
 
-*** Weekly Quizzes (10%)
-
-    - Answer multiple choice questions
-    - Complete quiz online in or outside of class
-    - Use quiz for drills to prepare final exam
-
 *** Weekly DataCamp/H5P assignments (30%)
 
     - Complete weekly chapters of DataCamp assignments
@@ -122,7 +115,7 @@
     - Recall last month of lectures and labs
     - Read relevant textbook chapters
 
-*** Final exam (20%)
+*** Final exam (30%)
 
     - 120 min multiple choice exam
     - Online in Schoology in the classroom
