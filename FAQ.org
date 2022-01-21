@@ -15,10 +15,16 @@
   coded in the Org-mode Babel file ~ob-sqlite.el~. You need to have
   the following code in your Emacs file *after* loading ~ob-sqlite~:
 
-  #+begin_src emacs-lisp
-    (require 'ob-sqlite) 
-    (setq org-babel-sqlite3-command "\"c:/Program Files (x86)/sqlite-tools-win32-x86-3360000/sqlite3.exe\"")
+  #+begin_src emacs-lisp :exports both
+	(require 'ob-sqlite) 
+	(setq org-babel-sqlite3-command "\"c:/Program
+	Files (x86)/sqlite-tools-win32-x86-3360000/sqlite3.exe\"")
+
   #+end_src
+
+  #+RESULTS:
+  : "c:/Program
+  : Files (x86)/sqlite-tools-win32-x86-3360000/sqlite3.exe"
 
   You can check that the variable is loaded properly by entering:
 
