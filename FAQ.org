@@ -30,3 +30,6 @@
   #+begin_example
   C-h v org-babel-sqlite3-command RET
   #+end_example  
+
+  Babel reports that "this variable may be risky if used as a
+  file-local variable," but I suppose we've got to take our chances!
