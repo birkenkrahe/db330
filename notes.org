@@ -274,7 +274,7 @@
 
 ** Captain's Log
 
-   
+   * GNU Emacs reference car ("cheat sheet") [[https://github.com/birkenkrahe/org/blob/master/emacs/refcard.pdf][on GitHub (PDF)]]
 
 * Glossary = the learning dictionary for your brain
 
