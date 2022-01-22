@@ -14,6 +14,8 @@
   FAQ. There are two FAQs - a [[https://github.com/birkenkrahe/org/blob/master/FAQ.org#frequently-asked-questions][general one]] (for all my courses), and a
   [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org][FAQ for CSC 330]].
 
+  You find the whiteboard photos [[https://drive.google.com/drive/folders/1AUgfVPV26mCglrEPPPKPCwfkmiFhkx8R?usp=sharing][here in GDrive]].
+
 * 1.1 (01/11/22)
 
 ** Homework (by Thursday 13-Jan)
@@ -271,10 +273,22 @@
        #+end_quote
 
 * 2.2 (01/20/22)
-
 ** Captain's Log
 
    * GNU Emacs reference car ("cheat sheet") [[https://github.com/birkenkrahe/org/blob/master/emacs/refcard.pdf][on GitHub (PDF)]]
+
+   * We looked at different reasons to use the Emacs editor/IDE
+
+   * For installation of the software we need (Emacs, SQLite), which
+     is already done on the PCs in the computer lab, check [[https://github.com/birkenkrahe/org/blob/master/emacs/install.org][install.org]]
+     in GitHub
+
+   * To get better at moving through Emacs buffers, manage files etc.,
+     complete the GNU Emacs onboard tutorial (open it in Emacs with
+     ~C-h t~)
+
+   * We'll go through a more systematic training session (including
+     Org-mode) next week. 
 
 * Glossary = the learning dictionary for your brain
 
