@@ -16,7 +16,7 @@
 
   You find the whiteboard photos [[https://drive.google.com/drive/folders/1AUgfVPV26mCglrEPPPKPCwfkmiFhkx8R?usp=sharing][here in GDrive]].
 
-* 1.1 (01/11/22)
+* w1s1 (01/11/22)
 
 ** Homework (by Thursday 13-Jan)
 
@@ -100,7 +100,7 @@
      #+caption: Common Lisp code to create an n-inputs m-units one layer perceptron. Source: AIMA.
      [[./img/lisp.png]]
 
-* 1.2 (01/13/22)
+* w1s2 (01/13/22)
 ** DataCamp membership
 
    * DataCamp: You should all be in your courses now.
@@ -188,7 +188,7 @@
      (~C-x (~ [key sequence] ~C-x )~) and how to apply it repeatedly
      (~C-u [times] C-x e~). [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html][Here's the documentation]].
 
-* 2.1 (01/18/22)
+* w2s3 (01/18/22)
 ** Quiz 1
 
    THE QUIZ IS ON ... SCHOOLOGY 1 PM - 1.15 PM
@@ -272,7 +272,7 @@
          Ctrl-h followed by t.
        #+end_quote
 
-* 2.2 (01/20/22)
+* w2s4 (01/20/22)
 ** Captain's Log
 
    * GNU Emacs reference car ("cheat sheet") [[https://github.com/birkenkrahe/org/blob/master/emacs/refcard.pdf][on GitHub (PDF)]]
