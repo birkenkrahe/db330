@@ -288,21 +288,93 @@
      ~C-h t~)
 
    * We'll go through a more systematic training session (including
-     Org-mode) next week. 
+     Org-mode) next week.
+
+* w3s5 (01/25/22)
+
+** Cloud computing - "the old curmudgeon's view"
+
+   * Spending on cloud services in 2020: $bn 266 - projected to $bn 308
+     in 2021 (DataCamp). However ([[https://www.idc.com/getdoc.jsp?containerId=prUS48776122#:~:text=For%20the%20full%20year%202021,after%20two%20years%20of%20declines.][IDC, 2022]])
+
+     #+caption: Cloud service spending data (IDC, 2022)
+     #+attr_html: :width 600px
+     [[./img/cloud.png]]
+
+   * What's the GDP of [[https://en.wikipedia.org/wiki/Finland][Finland]] and [[https://en.wikipedia.org/wiki/Vietnam][Vietnam]]?
+
+   * On-premise vs cloud discussion - major business issue - why?
+
+   * Main messages: cloud is huge, good for access, scaling is an issue
+
+   * Amazon Web Services is highlighted (why?) What about other
+     providers? How do they differ? What kind of market is this?
+
+   * What do you think of the AWS products page from a logical point of
+     view?
+
+     #+caption: aws products and services (DataCamp, 2020).
+     #+attr_html: :width 600px
+     [[./img/aws.png]]
+
+   * Virtualization = your OS over the internet
+
+   * Vertical (server power) vs. horizontal scaling (server number)
+
+   * Data centers - cp. [[https://h5p.org/node/84879]["Inside Google's Data Centers" (H5P/YouTube)]]
+
+   * How are Lyon's data served - what about the safekeeping?
+
+     #+caption: On-demand cloud vs. on-premise data centers
+     #+attr_html: :width 400px
+     [[./img/datacenter.png]]
+
+   * IaaS/PaaS/SaaS: Socialist propaganda or brave new world of shared
+     services?  What're some key conditions for this to be beautiful?
+
+     #+caption: Cloud service models - car analogy (DataCamp, 2020)
+     #+attr_html: :width 600px
+     [[./img/services.png]]
+
+   * IT services
+     
+     #+caption: IaaS vs. PaaS vs. SaaS (DataCamp, 2020)
+     #+attr_html: :width 600px
+     [[./img/services1.png]]
+     
+   * Use cases (UML anyone?)
+
+     #+caption: IaaS vs. PaaS vs. SaaS (DataCamp, 2020)
+     #+attr_html: :width 600px
+     [[./img/usecase.png]]
+
+   * The cloud pyramid - "More complexity means less control"
+
+     #+caption: Control vs. Abstraction (DataCamp, 2020)
+     #+attr_html: :width 500px
+     [[./img/pyramid.png]]
 
 * Glossary = the learning dictionary for your brain
 
   * Why is it important to have a glossary?
 
-  | TERM      | MEANING                                                   |
-  |-----------+-----------------------------------------------------------|
-  | Meta data | Data about data, e.g. control information for a database  |
-  | DDL       | Data Definition Language                                  |
-  | DML       | Data Manipulation Language                                |
-  | DQL       | Data Query Language                                       |
-  | DCL       | Data Control Language                                     |
-  | Coupling  | (design) Relates to the independence of parts of a system |
-  | gdb       | GNU debugger, [[https://www.sourceware.org/gdb/][supports many languages]]                     |
+  | TERM           | MEANING                                                   |
+  |----------------+-----------------------------------------------------------|
+  | Meta data      | Data about data, e.g. control information for a database  |
+  | DDL            | Data Definition Language                                  |
+  | DML            | Data Manipulation Language                                |
+  | DQL            | Data Query Language                                       |
+  | DCL            | Data Control Language                                     |
+  | Coupling       | (design) Relates to the independence of parts of a system |
+  | gdb            | GNU debugger, [[https://www.sourceware.org/gdb/][supports many languages]]                     |
+  |----------------+-----------------------------------------------------------|
+  | Saas           |                                                           |
+  | IaaS           |                                                           |
+  | PaaS           |                                                           |
+  | FaaS           |                                                           |
+  | Scaling        |                                                           |
+  | On-premise     |                                                           |
+  | Virtualization |                                                           |
 
 * References
 

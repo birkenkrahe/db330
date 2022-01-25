@@ -252,13 +252,16 @@ Late completion (after the due date): 5 points (50%).
 * w3s5 - January 25, 2022
 ** Overview
 
-   | HOW      | WHAT                                         |
-   |----------+----------------------------------------------|
-   | Review   | Quiz 2 - database foundations / Emacs        |
-   |          | DataCamp assignment 1: cloud computing intro |
-   | Lecture  | Emacs Org-mode                               |
-   | Practice | Create literate Org-mode file                |
-   |          | Run ~sqlite~ program in Emacs                |
+   | HOW        | WHAT                                         |
+   |------------+----------------------------------------------|
+   | Review     | Quiz 2 - database foundations / Emacs        |
+   |            | DataCamp assignment 1: cloud computing intro |
+   | Assignment | [[https://h5p.org/node/84879][Inside Google's Data Center]] (Thu)            |
+   |------------+----------------------------------------------|
+   | Demo       | Emacs Org-/ code blocks                      |
+   | Practice   | Create literate Org-mode file                |
+   |            | Run ~sqlite~ program in Emacs                |
+   | Assignment | Do this on your PC (extra credit by Thu 1PM) |
 
 ** Objectives
 
@@ -277,7 +280,7 @@ Late completion (after the due date): 5 points (50%).
    * What's the main message of this lesson?
    * What does cloud computing have to do with databases?
    * What did you think about the assignment?
-   * What did I think about the assignment?
+   * What did I think about the assignment? ([[file:notes.org::DataCamp assignment - cloud computing introduction][notes]])
    
    #+caption: Schoology assignment, Jan 21, 2022
    #+attr_html: :width 600px
@@ -285,8 +288,9 @@ Late completion (after the due date): 5 points (50%).
 
 ** What's next?
 
-   * Architecture and classification of databases
+   * Architecture and classification of databases (book)
    * Next DataCamp assignment due Feb 1 ("Cloud deployment")
+   * Org-file assignment (in Schoology) coming your way
 
 * References
 
