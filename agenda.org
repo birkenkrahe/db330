@@ -256,7 +256,7 @@ Late completion (after the due date): 5 points (50%).
    |------------+----------------------------------------------|
    | Review     | Quiz 2 - database foundations / Emacs        |
    |            | DataCamp assignment 1: cloud computing intro |
-   | Assignment | [[https://h5p.org/node/84879][Inside Google's Data Center]] (Thu)            |
+   | Quiz (opt) | [[https://h5p.org/node/84879][Inside Google's Data Center]] (Thu)            |
    |------------+----------------------------------------------|
    | Demo       | Emacs Org-/ code blocks                      |
    | Practice   | Create literate Org-mode file                |

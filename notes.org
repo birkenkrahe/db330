@@ -368,13 +368,14 @@
   | Coupling       | (design) Relates to the independence of parts of a system |
   | gdb            | GNU debugger, [[https://www.sourceware.org/gdb/][supports many languages]]                     |
   |----------------+-----------------------------------------------------------|
-  | Saas           |                                                           |
-  | IaaS           |                                                           |
-  | PaaS           |                                                           |
-  | FaaS           |                                                           |
-  | Scaling        |                                                           |
-  | On-premise     |                                                           |
-  | Virtualization |                                                           |
+  | IaaS           | Infrastructure as a Service (roads)                       |
+  | PaaS           | Platform as a Service (roads + shops)                     |
+  | Saas           | Software as a Service (roads + shops + products)          |
+  | FaaS           | Function as a Service                                     |
+  | Scaling        | Horizontal or vertical - increase computing performance   |
+  | On-premise     | Application + data reside in the company or organization  |
+  | Cloud          | Application + data reside in the network                  |
+  | Virtualization | Split the server action up across different locations     |
 
 * References
 
