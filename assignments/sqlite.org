@@ -8,16 +8,17 @@ file. This file can have any name but it must end in ~.db~.
 To create an empty file in Windows, open a shell in Emacs and enter
 ~touch sqlite.db~ at the prompt, or execute the following code block:
 
+#+name: create db
 #+begin_src bash :results none
   touch sqlite.db
 #+end_src
 
 In the next code block, we use ~sqlite.db~ as a header argument.
 
+#+name: check db
 #+begin_src sqlite :db sqlite.db
   .database
 #+end_src
 
-#+RESULTS:
-: main: c:\Users\birkenkrahe\Documents\GitHub\db330\assignments\sqlite.db r/w
+
 
