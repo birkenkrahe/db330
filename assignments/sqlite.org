@@ -20,5 +20,8 @@ In the next code block, we use ~sqlite.db~ as a header argument.
   .database
 #+end_src
 
+#+RESULTS: check db
+: main: c:\Users\birkenkrahe\Documents\GitHub\db330\assignments\sqlite.db r/w
+
 
 
