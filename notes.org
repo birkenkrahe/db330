@@ -354,6 +354,36 @@
      #+attr_html: :width 500px
      [[./img/pyramid.png]]
 
+**   Captain's Log Star Date 99667.82
+
+   * Use case diagrams are part of the Unified Modeling Language
+     (UML). Here is a good, short, free [[https://youtu.be/zid-MVo7M-E][online video tutorial]]
+     ([[uml][Lucidchart, 2018]]). UML is a visual language to describe
+     information systems.
+
+   * We discussed a bank (more specifically a retail, or consumer
+     bank) as an example. It is not a good use case for cloud
+     computing, because the data are confidential, structured, don't
+     change much, and are small. Banks more often use on-premise
+     relational database management systems (RDBMS) and SQL, than
+     cloud-based systems.
+
+   * When we ask (about a table, or a diagram, or a graph, or any
+     scheme), "is this logical?", we mean "is this well ordered, or
+     ordered at all, fit for human understanding." There is a whole
+     method, the so-called "Minto Pyramid Principle" built around this
+     concept of ordering content so that it is fit for human
+     understanding. Here is a short [[https://vimeo.com/305393045][online video tutorial on Minto]]
+     ([[minto][Harrison Metal, 2019]]).
+
+   * "Shell inside a shell": when we open the Windows terminal, or
+     Command prompt (~cmd.exe~), and then start a program like
+     ~sqlite3~, we operate in a shell inside another shell.
+
+   * REPL = Read-Eval-Print-Loop - cloud-based application to learn
+     programming: [[https://replit.com][replit.com]].
+     
+   
 * Glossary = the learning dictionary for your brain
 
   * Why is it important to have a glossary?
@@ -379,29 +409,26 @@
 
 * References
 
-  Birkenkrahe (Jan 11, 2022). Interactive shell vs. interactive
-  notebook (literate programming demo). [[https://youtu.be/8HJGz3IYoHI][URL: youtu.be/8HJGz3IYoHI]].
-
-  bnewall1 (Apr 25, 2010). Star Trek: Captain's Log - 11/30/1994 - 2/7
-  [video]. [[https://youtu.be/T2bSMLEQX1o][URL: youtu.be/T2bSMLEQX1o]].
-
-  Lucidchart (2022). What is a Database Model [website]. [[https://www.lucidchart.com/pages/database-diagram/database-models][URL:
-  www.lucidchart.com]].
-
-  Moocall (Nov 27, 2020). Moocall Calving Sensor [video]. [[https://youtu.be/718uGYbUmao][URL:
-  youtu.be/718uGYbUmao]].
-
-  Nystrom (2021). Crafting Interpreters. Genever Benning. URL:
-  https://craftinginterpreters.com/
-
-  Russell/Norvig (2021). Artificial Intelligence - a Modern Approach
-  (AIMA). Pearson. URL:
-
-  Spajic (Jan 29, 2018). Understanding Git - Data Model. [[https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5][URL:
-  medium.com/hackernoon]].
-
-  Valencia (Feb 28, 2017). The Lisp approach to AI (Part 1). [[https://medium.com/ai-society/the-lisp-approach-to-ai-part-1-a48c7385a913][URL:
-  medium.com/ai-society.]]
+  * Birkenkrahe (Jan 11, 2022). Interactive shell vs. interactive
+    notebook (literate programming demo). [[https://youtu.be/8HJGz3IYoHI][URL: youtu.be/8HJGz3IYoHI]].
+  * bnewall1 (Apr 25, 2010). Star Trek: Captain's Log - 11/30/1994 -
+    2/7 [video]. [[https://youtu.be/T2bSMLEQX1o][URL: youtu.be/T2bSMLEQX1o]].
+  * <<minto>> Harrison Metal (2019). Thank You, Barbara Minto
+    [video]. [[https://vimeo.com/305393045][URL: vimeo.com/305393045]].
+  * Lucidchart (2022). What is a Database Model [website]. [[https://www.lucidchart.com/pages/database-diagram/database-models][URL:
+    www.lucidchart.com]].
+  * <<uml>> Lucidchart (Feb 7, 2018). UML Use Case Diagram Tutorial
+    [video]. [[https://youtu.be/zid-MVo7M-E][URL: youtu.be/zid-MVo7M-E]].
+  * Moocall (Nov 27, 2020). Moocall Calving Sensor [video]. [[https://youtu.be/718uGYbUmao][URL:
+    youtu.be/718uGYbUmao]].
+  * Nystrom (2021). Crafting Interpreters. Genever Benning. URL:
+    https://craftinginterpreters.com/
+  * Russell/Norvig (2021). Artificial Intelligence - a Modern Approach
+    (AIMA). Pearson. URL: aima.cs.berkeley.edu.
+  * Spajic (Jan 29, 2018). Understanding Git - Data Model. [[https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5][URL:
+    medium.com/hackernoon]].
+  * Valencia (Feb 28, 2017). The Lisp approach to AI (Part 1). [[https://medium.com/ai-society/the-lisp-approach-to-ai-part-1-a48c7385a913][URL:
+    medium.com/ai-society.]]
 
 * Footnotes
 

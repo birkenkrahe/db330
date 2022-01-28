@@ -292,6 +292,10 @@ Late completion (after the due date): 5 points (50%).
    * Next DataCamp assignment due Feb 1 ("Cloud deployment")
    * Org-file assignment (in Schoology) coming your way
 
+* w4s6 - February 1, 2022
+
+  * [[file:~/Documents/GitHub/org/FAQ.org::Fixing the .emacs problem][Fixing the .emacs problem]]
+  
 * References
 
   System Crafters (Aug 1, 2021). Emacs Has a Built-in Pomodoro Timer??
