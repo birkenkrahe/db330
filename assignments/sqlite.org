@@ -1,3 +1,6 @@
+#+TITLE: SQLite file
+#+AUTHOR: Marcus Birkenkrahe
+
 * Running SQLite code block inside Emacs
 
   The following SQLite file does not do much. It only starts SQLite and
@@ -11,3 +14,7 @@
   #+begin_src sqlite :db sqlite.db
     .database
   #+end_src
+
+  #+RESULTS: check db
+  : main: c:\Users\birkenkrahe\Documents\GitHub\db330\assignments\sqlite.db r/w
+  
