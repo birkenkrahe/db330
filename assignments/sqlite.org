@@ -11,4 +11,3 @@
   #+begin_src sqlite :db sqlite.db
     .database
   #+end_src
-
