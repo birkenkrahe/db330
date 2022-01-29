@@ -1,27 +1,14 @@
+* Running SQLite code block inside Emacs
 
-The following SQLite file does not do much. It only starts SQLite and
-prints the ~PATH~ to the persistent database used by the program.
+  The following SQLite file does not do much. It only starts SQLite and
+  prints the ~PATH~ to the persistent database used by the program.
 
-Before we can execute SQLite, we need to create an (empty) database
-file. This file can have any name but it must end in ~.db~.
+  In the code block, we use ~sqlite.db~ as a header argument. This
+  leads to SQLite creating a persistent database file. However,
+  without any other commands, the file ~sqlite.db~ is empty.
 
-To create an empty file in Windows, open a shell in Emacs and enter
-~touch sqlite.db~ at the prompt, or execute the following code block:
-
-#+name: create db
-#+begin_src bash :results none
-  touch sqlite.db
-#+end_src
-
-In the next code block, we use ~sqlite.db~ as a header argument.
-
-#+name: check db
-#+begin_src sqlite :db sqlite.db
-  .database
-#+end_src
-
-#+RESULTS: check db
-: main: c:\Users\birkenkrahe\Documents\GitHub\db330\assignments\sqlite.db r/w
-
-
+  #+name: check db
+  #+begin_src sqlite :db sqlite.db
+    .database
+  #+end_src
 

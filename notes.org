@@ -382,7 +382,6 @@
 
    * REPL = Read-Eval-Print-Loop - cloud-based application to learn
      programming: [[https://replit.com][replit.com]].
-     
    
 * Glossary = the learning dictionary for your brain
 
