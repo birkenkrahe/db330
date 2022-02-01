@@ -294,7 +294,7 @@ Late completion (after the due date): 5 points (50%).
 
 * w4s6 - February 1, 2022
 
-  * [[file:~/Documents/GitHub/org/FAQ.org::Fixing the .emacs problem][Fixing the .emacs problem]]
+  
   
 * References
 
