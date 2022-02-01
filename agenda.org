@@ -361,6 +361,21 @@
        Administrators (SQL, Linux); Application Developers (e.g. Web
        App); Business Users (SQL).
    
+** Practice: SQLite Basics
+
+   We'll learn more about SQLite in future sessions. This is just to
+   get our feet wet, including some important file system aspects.
+   
+   #+begin_example
+   $ sqlite3
+   sqlite> .database
+   sqlite> .q
+   $ touch test.db
+   $ sqlite3 test.db
+   sqlite> .database
+   sqlite> .q
+   #+end_example   
+   
 ** What's next?
 
    * Architecture and classification of databases (text book)
