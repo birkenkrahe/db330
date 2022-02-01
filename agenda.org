@@ -293,7 +293,6 @@
    * Org-file assignment (in Schoology) coming your way
 
 * w4s6 - February 1, 2022
-
 ** Overview
 
    | HOW      | WHAT                                               |
@@ -308,11 +307,13 @@
 
 ** Objectives
 
-   * [ ] Review quiz 3 - how should you study, learn and rehearse?
+   * [X] Review quiz 3 - how should you study, learn and rehearse?
 
-   * [ ] Review deployment of cloud computing services (DataCamp 2)
+   * [X] Review deployment of cloud computing services (DataCamp 2)
 
-   * [ ] Review database foundations (10 tenets)
+   * [X] Review database foundations (10 tenets)
+
+   * [X] Opened, closed SQLite (DBMS) and tried to write on a db
 
 ** DataCamp assignment: Cloud Deployment
 
