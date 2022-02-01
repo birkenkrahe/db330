@@ -218,7 +218,7 @@
    * Take a look at the Emacs tutorial (CTRL-h t)
    * GNU Emacs practice exercises (in class)
    * DataCamp assignments beginning next week (online)
-   
+
 * w2s4 - January 20, 2022
 ** Overview
 
@@ -241,14 +241,14 @@
    * Cloud computing - relevance for databases
 
 
-Cloud Computing for Everyone
-Cloud Computing for Everyone
-Introduction to Cloud Computing
-I forgot to mention this in the last class. This is the first DataCamp assignment. It is informational and very simple - nothing but drag and drop practice and a few videos. This should not take you longer than 15-20 minutes.
+   Cloud Computing for Everyone
+   Cloud Computing for Everyone
+   Introduction to Cloud Computing
+   I forgot to mention this in the last class. This is the first DataCamp assignment. It is informational and very simple - nothing but drag and drop practice and a few videos. This should not take you longer than 15-20 minutes.
 
-We'll pick up on past assignments in class - short review including questions for the audience (you!)
-Completing this assignment on time gets you 10 points (100%).
-Late completion (after the due date): 5 points (50%).    
+   We'll pick up on past assignments in class - short review including questions for the audience (you!)
+   Completing this assignment on time gets you 10 points (100%).
+   Late completion (after the due date): 5 points (50%).
 * w3s5 - January 25, 2022
 ** Overview
 
@@ -265,15 +265,15 @@ Late completion (after the due date): 5 points (50%).
 
 ** Objectives
 
-   * [ ] Review db foundation and GNU Emacs (quiz 2)
+   * [X] Review db foundation and GNU Emacs (quiz 2)
 
-   * [ ] Review introduction to cloud computing (DataCamp 1)
+   * [X] Review introduction to cloud computing (DataCamp 1)
 
-   * [ ] Understand GNU Emacs Org-mode
+   * [X] Understand GNU Emacs Org-mode
 
-   * [ ] Know how to create a literate Org-mode file
+   * [X] Know how to create a literate Org-mode file
 
-   * [ ] Know how to run a literate Org-mode file
+   * [X] Know how to run a literate Org-mode file
 
 ** DataCamp assignment: Cloud Computing Introduction
 
@@ -281,7 +281,7 @@ Late completion (after the due date): 5 points (50%).
    * What does cloud computing have to do with databases?
    * What did you think about the assignment?
    * What did I think about the assignment? ([[file:notes.org::DataCamp assignment - cloud computing introduction][notes]])
-   
+
    #+caption: Schoology assignment, Jan 21, 2022
    #+attr_html: :width 600px
    [[./img/datacamp1.png]]
@@ -294,8 +294,78 @@ Late completion (after the due date): 5 points (50%).
 
 * w4s6 - February 1, 2022
 
-  
-  
+** Overview
+
+   | HOW      | WHAT                                               |
+   |----------+----------------------------------------------------|
+   | Review   | Quiz 3 - data centers / cloud computing / metadata |
+   |          | DataCamp assignment 2: cloud computing deployment  |
+   |          | Emacs Org-mode assignment (see tutorial videos)    |
+   |----------+----------------------------------------------------|
+   | Lecture  | Database foundations - 10 tenets                   |
+   |----------+----------------------------------------------------|
+   | Practice | SQLite basics                                      |
+
+** Objectives
+
+   * [ ] Review quiz 3 - how should you study, learn and rehearse?
+
+   * [ ] Review deployment of cloud computing services (DataCamp 2)
+
+   * [ ] Review database foundations (10 tenets)
+
+** DataCamp assignment: Cloud Deployment
+
+   * What's the main message of this lesson?
+   * What infrastructure is required? Can you do this yourself?
+   * What're the greatest challenges of deployment?
+   * What did I think about the assignment? ([[file:notes.org::DataCamp assignment - cloud deployment][notes]])
+
+** Database management foundations - 10 tenets
+
+   1) A database (DB) is a collection of related data items within
+      a specific business process or problem setting.
+
+   2) A database management system (DBMS) is the software package used
+      to define, create, use and maintain a database.
+
+   3) We distinguish the file-based vs. DB approach to data management
+      (data from different application stored in different files
+      vs. managed by one application and one shared, central database)
+
+   4) Metadata are data (structure) definitions, like ownership or
+      number of tables, and are stored in the DB catalog or
+      dictionary.
+      
+   5) DBMS provide DB languages (like SQL) that facilitate data
+      definition (DDL), data manipulation (DML), data querying (DQL),
+      and data control (DCL).
+
+   6) The database model (or schema) describes the DB data
+      structure. It does not change easily, and is stored in the
+      catalog. Examples are: entities stored (e.g. as tables), and
+      entity aspects (e.g. as columns). To model, we use ERDs.
+
+   8) The database state, or set of instances, represents the data in
+      the DB at a given moment in time, viewed using the DB language
+      (DQL). Examples are DB records (rows) from subsequent
+      observations.
+
+   9) DB follow a 3-layer design: an internal technical layer
+      (e.g. server, file, network organisation), a conceptual/logical
+      layer (e.g. the schema), and an external layer (views of the
+      data provided e.g. by SQL queries).
+
+   10) There are different types of DB users, with different skill
+       sets: information (cloud) architects; DB designers (ERD); DB
+       Administrators (SQL, Linux); Application Developers (e.g. Web
+       App); Business Users (SQL).
+   
+** What's next?
+
+   * Architecture and classification of databases (text book)
+   * Next DataCamp assignment due Feb 8 ("Cloud providers/cases")
+
 * References
 
   System Crafters (Aug 1, 2021). Emacs Has a Built-in Pomodoro Timer??

@@ -383,6 +383,44 @@
    * REPL = Read-Eval-Print-Loop - cloud-based application to learn
      programming: [[https://replit.com][replit.com]].
    
+* w4s6 (02/01/22)
+** DataCamp assignment - cloud deployment
+
+   * Deployment models: private, public, hybrid, multicloud, community
+
+   * Negative personal example (hybrid): RStudio cloud
+
+   * Positive personal example (public): Colaboratory + GDrive,
+     DataCamp Workspace
+
+   * Nice exercise: build a NextCloud server with Raspberry Pi
+
+   * EU GDPR - the true story: a major pain with unclear gains
+
+   * Is there a US equivalent of the General Data Privacy Regulation
+     act of the EU?[fn:3]
+
+   * "What is personal data?" is an interesting question - why?[fn:4]
+
+   * How international is the Internet really? (What is its backbone,
+     where are public data held, and who owns the infrastructure?
+
+   * How do "cloud computing roles" relate to "database roles"?
+
+   * How can you improve your "cloud computing skills"? What are they?
+     (Examples: [[https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer][IBM@coursera.org]], [[https://www.edx.org/learn/cloud-computing][EdX cloud computing courses]], [[https://cloud.google.com/certification#certification_paths][Google]])
+
+   * Overlap with data science: analysis (EDA), engineering (pipeline
+     building and maintenance), and modeling (ML)
+
+   * Database apps: Tableau etc. all based on SQL = top skill
+
+   * Buzzword (2010-2020): "Digital transformation of the company"
+
+     #+caption: Microsoft Skills Report (2017)
+     #+attr_html: :width 600px
+     [[./img/microsoft.png]]
+
 * Glossary = the learning dictionary for your brain
 
   * Why is it important to have a glossary?
@@ -430,6 +468,17 @@
     medium.com/ai-society.]]
 
 * Footnotes
+
+[fn:4]Privacy is a political term. Private information can also be an
+entry to phishing or other network-based activities compromising the
+security of your PC.
+
+[fn:3] There is no federal data privacy law like GDPR in the United
+States. There are some national laws that have been put in place to
+regulate the use of data in certain industries, e.g. The 1974
+U.S. Privacy Act (rights and restrictions regarding data held by US
+government agencies), or the 2018 California Consumer Privacy Act
+(rights and protection for CA residents).
 
 [fn:2][[https://youtu.be/T2bSMLEQX1o]["Logic, logic...I'm sick to death of logic!"]] (Star Trek:
 Captain's Log)
