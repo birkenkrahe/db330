@@ -291,7 +291,6 @@
      Org-mode) next week.
 
 * w3s5 (01/25/22)
-
 ** Cloud computing - "the old curmudgeon's view"
 
    * Spending on cloud services in 2020: $bn 266 - projected to $bn 308
@@ -337,11 +336,11 @@
      [[./img/services.png]]
 
    * IT services
-     
+
      #+caption: IaaS vs. PaaS vs. SaaS (DataCamp, 2020)
      #+attr_html: :width 600px
      [[./img/services1.png]]
-     
+
    * Use cases (UML anyone?)
 
      #+caption: IaaS vs. PaaS vs. SaaS (DataCamp, 2020)
@@ -382,7 +381,7 @@
 
    * REPL = Read-Eval-Print-Loop - cloud-based application to learn
      programming: [[https://replit.com][replit.com]].
-   
+
 * w4s6 (02/01/22)
 ** DataCamp assignment - cloud deployment
 
@@ -420,6 +419,24 @@
      #+caption: Microsoft Skills Report (2017)
      #+attr_html: :width 600px
      [[./img/microsoft.png]]
+** Captain's Log Stardate 99687.04
+
+   * If you don't have the Linux program ~touch~ on Windows, you can
+     use this command to create an empty file in the current
+     directory:
+     #+begin_example
+      $ fsutil file createNew test.db 0
+     #+end_example
+
+   * [[https://docs.nextcloudpi.com/en/welcome/][NextCloudPi]] contains documentation to use the cloud computing
+     software ~NextCloud~ on the Raspberry Pi. Somewhere in there
+     you'll find what it takes to build a backup server with
+     ~NextCloud~ (which was one of my projects).
+
+   * [[https://www.bbc.co.uk/newsround/47523993#:~:text=The%20world%20wide%20web%2C%20or,connect%20towns%20and%20cities%20together.][World-Wide Web vs. Internet]] ([[bbc][BBC, 2019]]):
+   #+begin_quote
+   "The World Wide Web Is Not The Internet!"
+   #+end_quote
 
 * Glossary = the learning dictionary for your brain
 
@@ -445,7 +462,8 @@
   | Virtualization | Split the server action up across different locations     |
 
 * References
-
+  * <<bbc>> BBC (11 Mar 2019). World wide web vs. internet - what's
+    the difference? [video]. [[https://www.bbc.co.uk/newsround/47523993#:~:text=The%20world%20wide%20web%2C%20or,connect%20towns%20and%20cities%20together.][URL: www.bbc.co.uk]].
   * Birkenkrahe (Jan 11, 2022). Interactive shell vs. interactive
     notebook (literate programming demo). [[https://youtu.be/8HJGz3IYoHI][URL: youtu.be/8HJGz3IYoHI]].
   * bnewall1 (Apr 25, 2010). Star Trek: Captain's Log - 11/30/1994 -
@@ -458,6 +476,8 @@
     [video]. [[https://youtu.be/zid-MVo7M-E][URL: youtu.be/zid-MVo7M-E]].
   * Moocall (Nov 27, 2020). Moocall Calving Sensor [video]. [[https://youtu.be/718uGYbUmao][URL:
     youtu.be/718uGYbUmao]].
+  * NextCloudPi Documentation (2019). Welcome [website]. [[https://docs.nextcloudpi.com/en/welcome/][URL:
+    docs.nextcloudpi.com]].
   * Nystrom (2021). Crafting Interpreters. Genever Benning. URL:
     https://craftinginterpreters.com/
   * Russell/Norvig (2021). Artificial Intelligence - a Modern Approach

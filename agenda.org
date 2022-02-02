@@ -293,7 +293,6 @@
    * Org-file assignment (in Schoology) coming your way
 
 * w4s6 - February 1, 2022
-
 ** Overview
 
    | HOW      | WHAT                                               |
@@ -370,11 +369,18 @@
    $ sqlite3
    sqlite> .database
    sqlite> .q
-   $ touch test.db
+   $ touch test.db  # this only works if you have 'touch' installed, e.g.
+                    # via the cygwin utility bundle
+   $ fsutil file createNew test.db 0 # creates an empty file in ./
    $ sqlite3 test.db
    sqlite> .database
    sqlite> .q
    #+end_example   
+
+   As you can see, it's never easy to do anything in Windows. We're
+   better off writing SQLite code in Emacs where the ~.db~ file is
+   automatically created (see [[https://lyon.schoology.com/assignment/5603361550/info][assignment]]). If this doesn't work for
+   you, contact me and we'll sort you out!
    
 ** What's next?
 
@@ -400,3 +406,4 @@ FAQ]]).
 [fn:1]For installation on your PC, see [[https://github.com/birkenkrahe/org/blob/master/emacs/install.org][these instructions]] ([[https://github.com/birkenkrahe/org/blob/master/emacs/install.pdf][PDF]]). The
 installation is simple: download the ZIP file, unpack it, and set the
 ~PATH~ variable so that sqlite can be found.
+
