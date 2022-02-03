@@ -103,7 +103,7 @@
     - Complete assignments outside of class (homework)
     - Be ready to present your results at any time
 
-*** Weekly DataCamp/H5P assignments (30%)
+*** Weekly DataCamp/programming assignments (30%)
 
     - Complete weekly chapters of DataCamp assignments
     - Spend 30-45 min per week on an assignment
