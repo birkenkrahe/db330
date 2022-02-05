@@ -391,7 +391,7 @@
    * New DataCamp assignment due Feb 15 ("Introduction to SQL: SELECT")
    * SQLite DDL practice
 
-* SQLite introduction - w5s7 - February 1, 2022
+* Cloud providers / SQLite introduction - w5s7 - February 1, 2022
 ** Overview
 
    | HOW      | WHAT                             |
@@ -411,8 +411,9 @@
 ** DataCamp assignment: Cloud Providers and Case Studies
 
    * What's the main message of this lesson?
-   * What did I think about the assignment? ([[file:notes.org::DataCamp assignment - cloud deployment][notes]])
-
+   * How does one pick a cloud provider?
+   * What did I think about the assignment?
+     
 ** TODO Introduction to SQLite
    
 ** TODO Practice: SQLite Basics (cont'd)
