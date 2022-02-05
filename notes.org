@@ -16,7 +16,7 @@
 
   You find the whiteboard photos [[https://drive.google.com/drive/folders/1AUgfVPV26mCglrEPPPKPCwfkmiFhkx8R?usp=sharing][here in GDrive]].
 
-* w1s1 (01/11/22)
+* Intro and GitHub - w1s1 (01/11/22)
 
 ** Homework (by Thursday 13-Jan)
 
@@ -100,7 +100,7 @@
      #+caption: Common Lisp code to create an n-inputs m-units one layer perceptron. Source: AIMA.
      [[./img/lisp.png]]
 
-* w1s2 (01/13/22)
+* DataCamp, History of DB, MooCall - w1s2 (01/13/22)
 ** DataCamp membership
 
    * DataCamp: You should all be in your courses now.
@@ -188,7 +188,7 @@
      (~C-x (~ [key sequence] ~C-x )~) and how to apply it repeatedly
      (~C-u [times] C-x e~). [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html][Here's the documentation]].
 
-* w2s3 (01/18/22)
+* DB elements, GNU Emacs - w2s3 (01/18/22)
 ** Quiz 1
 
    THE QUIZ IS ON ... SCHOOLOGY 1 PM - 1.15 PM
@@ -272,7 +272,7 @@
          Ctrl-h followed by t.
        #+end_quote
 
-* w2s4 (01/20/22)
+* SQLite installation - w2s4 (01/20/22)
 ** Captain's Log
 
    * GNU Emacs reference car ("cheat sheet") [[https://github.com/birkenkrahe/org/blob/master/emacs/refcard.pdf][on GitHub (PDF)]]
@@ -290,7 +290,7 @@
    * We'll go through a more systematic training session (including
      Org-mode) next week.
 
-* w3s5 (01/25/22)
+* Cloud computing intro - w3s5 (01/25/22)
 ** Cloud computing - "the old curmudgeon's view"
 
    * Spending on cloud services in 2020: $bn 266 - projected to $bn 308
@@ -382,7 +382,7 @@
    * REPL = Read-Eval-Print-Loop - cloud-based application to learn
      programming: [[https://replit.com][replit.com]].
 
-* w4s6 (02/01/22)
+* Cloud deployment - w4s6 (02/01/22)
 ** DataCamp assignment - cloud deployment
 
    * Deployment models: private, public, hybrid, multicloud, community
@@ -428,6 +428,10 @@
       $ fsutil file createNew test.db 0
      #+end_example
 
+   * An even simpler way is by opening the RDBM program and create a
+     DB at the same time with the command ~sqlite3 test.db~ at the
+     prompt.
+   
    * [[https://docs.nextcloudpi.com/en/welcome/][NextCloudPi]] contains documentation to use the cloud computing
      software ~NextCloud~ on the Raspberry Pi. Somewhere in there
      you'll find what it takes to build a backup server with
@@ -438,6 +442,13 @@
    "The World Wide Web Is Not The Internet!"
    #+end_quote
 
+* SQLite introduction - w5s7 (02/08/22)
+
+** DataCamp assignment - Cloud providers and case studies
+
+   
+
+   
 * Glossary = the learning dictionary for your brain
 
   * Why is it important to have a glossary?

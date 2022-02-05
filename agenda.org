@@ -3,7 +3,7 @@
 #+SUBTITLE: Agenda DB330 Database Theory and Applications
 #+STARTUP: overview hideblocks
 #+OPTIONS: toc:nil num:nil ^:nil
-* w1s1 - January 11, 2022
+* Intro and GitHub - w1s1 - January 11, 2022
 
   #+attr_html: :width 500px
   [[./img/fivearmies.jpg]]
@@ -80,7 +80,7 @@
      * Upload assignments (esp. Emacs Org-files)
      * Discussion
      * Wiki for collaboration
-     * Complements Schoology[fn:2]
+     * Complements Schoology
 
 **** What will you have to do?
 
@@ -120,7 +120,7 @@
      * You can participate in [[https://github.com/birkenkrahe/cc100/discussions][discussions]] (sometimes I will make you)
      * You can add to the [[https://github.com/birkenkrahe/cc100/wiki][wiki]] (e.g. comments and links to interesting
        resources)
-     * You can install the [[https://github.com/mobile][mobile app]] on your smartphone[fn:3]
+     * You can install the [[https://github.com/mobile][mobile app]] on your smartphone
      * You can use it as a platform for [[https://docs.github.com/en/issues/trying-out-the-new-projects-experience/about-projects][projects]] or [[https://github.com/features/codespaces][coding]]
      * You can download the [[https://desktop.github.com/][desktop client]] to manage repos on your PC
        (see image below).
@@ -162,7 +162,7 @@
    #+attr_html: :width 600px
    [[./img/victor.png]]
 
-* w1s2 - January 13 , 2022
+* DataCamp, History of DB, MooCall - w1s2 - January 13 , 2022
 ** Overview
 
    | HOW         | WHAT                                     |
@@ -189,13 +189,13 @@
 
    * [ ] Make GNU Emacs work for you
 
-* w2s3 - January 18, 2022
+* DB elements, GNU Emacs - w2s3 - January 18, 2022
 ** Overview
 
    | HOW         | WHAT                                     |
    |-------------+------------------------------------------|
    | Review      | [[https://lyon.schoology.com/assignment/5563835679][Quiz 1: Intro to course / databases]]      |
-   | Lecture     | [[file:notes.org::2.1 (01/18/22)][Elements of Database Systems]]             |
+   | Lecture     | Elements of Database Systems             |
    | Demo        | [[https://www.gnu.org/software/emacs/tour/][Emacs guided tour]]                        |
    | Self        | [[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][Work through the Emacs onboard tutorial]]  |
 
@@ -219,12 +219,12 @@
    * GNU Emacs practice exercises (in class)
    * DataCamp assignments beginning next week (online)
 
-* w2s4 - January 20, 2022
+* SQLite installation - w2s4 - January 20, 2022
 ** Overview
 
    | HOW      | WHAT                                    |
    |----------+-----------------------------------------|
-   | Demo     | Installing ~sqlite~[fn:1] (done[fn:4])              |
+   | Demo     | Installing ~sqlite~[fn:1] (done[fn:2])              |
    | Practice | [[file:~/Documents/GitHub/org/emacs/emacs.org::GNU Emacs][Emacs guided tour]] ([[https://www.gnu.org/software/emacs/tour/][tour]])([[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][web-tutorial]])  |
    | Self     | [[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][Work through the Emacs onboard tutorial]] |
 
@@ -249,7 +249,7 @@
    We'll pick up on past assignments in class - short review including questions for the audience (you!)
    Completing this assignment on time gets you 10 points (100%).
    Late completion (after the due date): 5 points (50%).
-* w3s5 - January 25, 2022
+* Cloud computing intro - w3s5 - January 25, 2022
 ** Overview
 
    | HOW        | WHAT                                         |
@@ -280,7 +280,7 @@
    * What's the main message of this lesson?
    * What does cloud computing have to do with databases?
    * What did you think about the assignment?
-   * What did I think about the assignment? ([[file:notes.org::DataCamp assignment - cloud computing introduction][notes]])
+   * What did I think about the assignment? (see notes)
 
    #+caption: Schoology assignment, Jan 21, 2022
    #+attr_html: :width 600px
@@ -292,18 +292,18 @@
    * Next DataCamp assignment due Feb 1 ("Cloud deployment")
    * Org-file assignment (in Schoology) coming your way
 
-* w4s6 - February 1, 2022
+* Cloud deployment - w4s6 - February 1, 2022
 ** Overview
 
    | HOW      | WHAT                                               |
    |----------+----------------------------------------------------|
    | Review   | Quiz 3 - data centers / cloud computing / metadata |
-   |          | DataCamp assignment 2: cloud computing deployment  |
+   |          | DataCamp assignment 2: cloud deployment            |
    |          | Emacs Org-mode assignment (see tutorial videos)    |
    |----------+----------------------------------------------------|
    | Lecture  | Database foundations - 10 tenets                   |
    |----------+----------------------------------------------------|
-   | Practice | SQLite basics                                      |
+   | Practice | SQLite basics - creating/importing a database      |
 
 ** Objectives
 
@@ -313,7 +313,7 @@
 
    * [X] Review database foundations (10 tenets)
 
-   * [X] Opened, closed SQLite (DBMS) and tried to write on a db
+   * [X] Opened, closed SQLite (DBMS) and wrote on a db (see [[file:notes.org::Captain's Log Stardate 99687.04][notes]])
 
 ** DataCamp assignment: Cloud Deployment
 
@@ -386,20 +386,52 @@
    
 ** What's next?
 
-   * Architecture and classification of databases (text book)
+   * +Architecture and classification of databases (text book ch 2)+
    * Next DataCamp assignment due Feb 8 ("Cloud providers/cases")
+   * New DataCamp assignment due Feb 15 ("Introduction to SQL: SELECT")
+   * SQLite DDL practice
+
+* SQLite introduction - w5s7 - February 1, 2022
+** Overview
+
+   | HOW      | WHAT                             |
+   |----------+----------------------------------|
+   | Review   | Cloud Providers and Case Studies |
+   |----------+----------------------------------|
+   | Lecture  | Introduction to SQLite           |
+   |----------+----------------------------------|
+   | Practice | Create a table in SQLite         |
+
+** Objectives
+
+   * [ ] Review DataCamp assignment
+   * [ ] Understand what SQLite is and why it's important
+   * [ ] Understand setup for test 1 (in class)
+
+** DataCamp assignment: Cloud Providers and Case Studies
+
+   * What's the main message of this lesson?
+   * What did I think about the assignment? ([[file:notes.org::DataCamp assignment - cloud deployment][notes]])
+
+** TODO Introduction to SQLite
+   
+** TODO Practice: SQLite Basics (cont'd)
+
+** What's next?
+
+   * Architecture and classification of databases (text book ch 2)
+   * Next DataCamp assignment due Feb 8 ("Cloud providers/cases")
+   * New DataCamp assignment due Feb 15 ("Intro to RDBM with SQL")
+   * SQLite DDL practice
 
 * References
-
-  System Crafters (Aug 1, 2021). Emacs Has a Built-in Pomodoro Timer??
-  [video]. [[https://youtu.be/JbHE819kVGQ][URL: youtu.be/JbHE819kVGQ.]]
-
-  TutorialCup (n.d.) System Catalog [website]. [[https://www.tutorialcup.com/dbms/system-catalog.htm][URL:
-  www.tutorialcup.com.]]
-
+  * Lemahieu et al (2021). Principles of Database Management. Univ of
+    Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
+  * TutorialCup (n.d.) System Catalog [website]. [[https://www.tutorialcup.com/dbms/system-catalog.htm][URL:
+    www.tutorialcup.com.]]
 * Footnotes
 
-[fn:4]In Lyon 104 (Computer lab), the ~PATH~ variable is unfortunately
+[fn:2]In Lyon 104 (Computer lab), the ~PATH~ variable is unfortunately
 stored in the personal user's app data so that I could not set it
 properly for your account (you can do this on your own PC
 easily). However, [[file:FAQ.org::How to run SQLite in Emacs][I seem to have found a solution]] for this ([[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#how-to-run-sqlite-in-emacs][see course
