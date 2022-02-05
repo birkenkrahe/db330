@@ -446,8 +446,30 @@
 
 ** DataCamp assignment - Cloud providers and case studies
 
-   
+*** Disclaimer (limitations / bias statement)
 
+    * "Customers churn"?
+      
+*** AWS - Amazon Web Services
+
+    * Case study with an intense French accent
+
+      #+caption: The benefits of French culture (Source: ila-france.com)
+      #+attr_html: :width 500px
+      [[./img/french.jpg]]
+
+      
+    * Q4/2019 - pre-pandemic (changes in 2021?[fn:5])
+      
+      | WHAT                  |   2019 |    2021 |
+      |-----------------------+--------+---------|
+      | market share          |  32.4% |   51.1% |
+      | revenue               | $9.8bn | [[https://www.geekwire.com/2022/amazon-would-have-posted-1-8-billion-operating-loss-in-q4-2021-if-not-for-amazon-web-services/][$17.8bn]] |
+      | annual revenue growth |  33.2% |     [[https://www.geekwire.com/2022/amazon-would-have-posted-1-8-billion-operating-loss-in-q4-2021-if-not-for-amazon-web-services/][40%]] |
+
+    * Are there jobs with AWS in Arkansas? (Source: [[https://www.indeed.com/q-Aws-l-Arkansas-jobs.html?vjk=4d3725237b6cda53][indeed.com]])
+
+    * 
    
 * Glossary = the learning dictionary for your brain
 
@@ -499,6 +521,9 @@
     medium.com/ai-society.]]
 
 * Footnotes
+
+[fn:5] [[https://www.statista.com/statistics/1202770/hyperscaler-iaas-paas-market-share/][Statista]] numbers (no source given) for 2021: AWS 51.1%, Azure
+31.9%.
 
 [fn:4]Privacy is a political term. Private information can also be an
 entry to phishing or other network-based activities compromising the
