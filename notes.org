@@ -455,9 +455,8 @@
     * Case study with an intense French accent
 
       #+caption: The benefits of French culture (Source: ila-france.com)
-      #+attr_html: :width 500px
+      #+attr_html: :width 700px
       [[./img/french.jpg]]
-
       
     * Q4/2019 - pre-pandemic (changes in 2021?[fn:5])
       
