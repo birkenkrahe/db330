@@ -1,9 +1,9 @@
-#+TITLE:Followup notes
+#+TITLE:DB Class Notes
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:Followup for CSC330 Database Theory & Applications Spring 2022
 #+STARTUP:overview hideblocks
 #+OPTIONS: toc:nil num:nil ^:nil
-* What is this?
+* README
 
   Instead of bugging you with emails, I opt to summarize my course
   observations regarding content, process, in this file. These often
@@ -15,6 +15,10 @@
   [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org][FAQ for CSC 330]].
 
   You find the whiteboard photos [[https://drive.google.com/drive/folders/1AUgfVPV26mCglrEPPPKPCwfkmiFhkx8R?usp=sharing][here in GDrive]].
+
+
+  The companion file to this file, with the agenda and much of the
+  course content, is the [[./agenda.org][agenda.org]] file.
 
 * Intro and GitHub - w1s1 (01/11/22)
 
@@ -442,7 +446,7 @@
    "The World Wide Web Is Not The Internet!"
    #+end_quote
 
-* SQLite introduction - w5s7 (02/08/22)
+* NEXT SQLite introduction - w5s7 (02/08/22)
 
 ** DataCamp assignment - Cloud providers and case studies
 

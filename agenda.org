@@ -1,8 +1,19 @@
-#+TITLE: Agenda
+#+TITLE: DB Agenda
 #+AUTHOR: Marcus Birkenkrahe
 #+SUBTITLE: Agenda DB330 Database Theory and Applications
 #+STARTUP: overview hideblocks
 #+OPTIONS: toc:nil num:nil ^:nil
+* README
+
+  This file contains the agenda overview (what I had planned), the
+  objectives (what we managed to do) and (much of the) content of each
+  taught session of the course. I want to avoid splitting the content
+  up over many files - so that you have to navigate as little as
+  possible (like a book)!
+
+  The companion file to this file, less structured and with the
+  captain's log, is the [[./notes.org][notes.org]] file.
+
 * Intro and GitHub - w1s1 - January 11, 2022
 
   #+attr_html: :width 500px
@@ -391,7 +402,7 @@
    * New DataCamp assignment due Feb 15 ("Introduction to SQL: SELECT")
    * SQLite DDL practice
 
-* SQLite introduction - w5s7 - February 1, 2022
+* NEXT SQLite introduction - w5s7 - February 8, 2022
 ** Overview
 
    | HOW      | WHAT                             |
@@ -414,8 +425,10 @@
    * What did I think about the assignment? ([[file:notes.org::DataCamp assignment - cloud deployment][notes]])
 
 ** TODO Introduction to SQLite
+   DEADLINE: <2022-02-08 Tue>
    
 ** TODO Practice: SQLite Basics (cont'd)
+   DEADLINE: <2022-02-08 Tue>
 
 ** What's next?
 
