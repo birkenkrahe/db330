@@ -435,7 +435,7 @@
    * An even simpler way is by opening the RDBM program and create a
      DB at the same time with the command ~sqlite3 test.db~ at the
      prompt.
-   
+
    * [[https://docs.nextcloudpi.com/en/welcome/][NextCloudPi]] contains documentation to use the cloud computing
      software ~NextCloud~ on the Raspberry Pi. Somewhere in there
      you'll find what it takes to build a backup server with
@@ -450,6 +450,10 @@
 
 ** DataCamp assignment - Cloud providers and case studies
 
+   #+caption: The benefits of French culture (Source: ila-france.com)
+   #+attr_html: :width 700px
+   [[./img/french.jpg]]
+
 *** Disclaimer (limitations / bias statement)
 
     * "Customers churn"?
@@ -458,9 +462,9 @@
 
     * Case studies with a strong French accent (your reaction?)
 
-      #+caption: The benefits of French culture (Source: ila-france.com)
-      #+attr_html: :width 700px
-      [[./img/french.jpg]]
+    #+caption: Global cloud service providers (DataCamp, 2019)
+    #+attr_html: :width 400px
+    [[./img/providers.png]]
 
 *** AWS - Amazon Web Services
 
@@ -504,9 +508,46 @@
       | revenue               | $1.8bn | $65.12bn |
       | annual revenue growth |    67% |      41% |
 
-    * Google Cloud Services < 10% market share
+    * Are there jobs with Google Cloud in Arkansas?
 
-    * Next bigger player: Alibaba (China)
+    * Lush case example (cosmetics retailer): compensate traffic
+      fluctuations on their e-commerce platform
+
+*** Other actors
+
+    * Alibaba Cloud (China) - 5.4% (2021: 8.9%) - AI focus
+    * IBM - 1.8% - SPSS (stats) + Watson (health care)
+    * Oracle Cloud services (owns open source MySQL, VirtualBox)
+
+*** How does one pick a cloud provider?
+
+    * Current infrastructure costs
+    * Cost of running a data center
+    * Cost of applications
+    * Cost of hiring cloud specialists
+    * Benefit for company and customers
+    * Risks (regulation, security, disaster, lock-in)
+
+    *What's the right order (from most important to least important)?*
+
+*** Future of the cloud
+
+    * Data trends (cp. [[https://www.datacamp.com/resources/webinars/webinar-2022-data-trends-and-predictions-1][2022 Data trends by DataCamp]])
+    * [[https://www.datacenters.com/news/cryptocurrency-is-changing-the-data-center-market][Cryptocurrencies]] ([[crypto][Smalley, 2021]]).
+    * Post-pandemic effects
+
+
+    After finishing a DataCamp course:
+    1) download the slides and review if necessary
+    2) download the certificate and add it to your resume
+
+    #+caption: Statement of Accomplishment (DataCamp, 2022)
+    #+attr_html: :width 500px
+    [[./img/certificate.png]]
+
+** TODO Introduction to SQLite
+
+** TODO SQLite Practice   
 
 * Glossary = the learning dictionary for your brain
 
@@ -530,6 +571,11 @@
   | On-premise     | Application + data reside in the company or organization  |
   | Cloud          | Application + data reside in the network                  |
   | Virtualization | Split the server action up across different locations     |
+  | GDPR           | General Data Privacy Regulation act of the European Union |
+  | Internet       | Global digital infrastructure (router,network)            |
+  | Web            | Global collection of digital content (browser,wiki)       |
+  |----------------+-----------------------------------------------------------|
+
 
 * References
   * <<bbc>> BBC (11 Mar 2019). World wide web vs. internet - what's
@@ -538,6 +584,8 @@
     notebook (literate programming demo). [[https://youtu.be/8HJGz3IYoHI][URL: youtu.be/8HJGz3IYoHI]].
   * bnewall1 (Apr 25, 2010). Star Trek: Captain's Log - 11/30/1994 -
     2/7 [video]. [[https://youtu.be/T2bSMLEQX1o][URL: youtu.be/T2bSMLEQX1o]].
+  * <<crypto>> Smalley (22 Oct 2021). Cryptocurrency is changing the
+    Data Center Market [blog]. [[https://www.datacenters.com/news/cryptocurrency-is-changing-the-data-center-market][URL: datacenters.com]].
   * <<minto>> Harrison Metal (2019). Thank You, Barbara Minto
     [video]. [[https://vimeo.com/305393045][URL: vimeo.com/305393045]].
   * Lucidchart (2022). What is a Database Model [website]. [[https://www.lucidchart.com/pages/database-diagram/database-models][URL:
