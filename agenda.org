@@ -405,36 +405,51 @@
 * NEXT SQLite introduction - w5s7 - February 8, 2022
 ** Overview
 
-   | HOW      | WHAT                             |
-   |----------+----------------------------------|
-   | Review   | Cloud Providers and Case Studies |
-   |----------+----------------------------------|
-   | Lecture  | Introduction to SQLite           |
-   |----------+----------------------------------|
-   | Practice | Create a table in SQLite         |
+   | HOW       | WHAT                              |
+   |-----------+-----------------------------------|
+   | Review    | Cloud Providers and Case Studies  |
+   |-----------+-----------------------------------|
+   | Lecture   | Introduction to SQLite            |
+   |-----------+-----------------------------------|
+   | Practice  | Exploring ~sqlite3~               |
+   |-----------+-----------------------------------|
+   | Test info | Test 1 on Thu 10 Feb 1.30-2.15 pm |
 
 ** Objectives
 
+   * [ ] Understand setup for test 1 (online in class)
    * [ ] Review DataCamp assignment
    * [ ] Understand what SQLite is and why it's important
-   * [ ] Understand setup for test 1 (in class)
+** Test 1 info
 
+   * Online in Schoology
+   * Quiz 1-3 are not visible during the test
+   * The 10 hardest questions of quiz 1-3 (< 50%)
+   * 10 brand new questions
+   * Maximum time = 45 min
+   
 ** DataCamp assignment: Cloud Providers and Case Studies
 
    * What's the main message of this lesson?
    * How does one pick a cloud provider?
    * What did I think about the assignment?
      
-** TODO Introduction to SQLite
-   DEADLINE: <2022-02-08 Tue>
+** Introduction to SQLite
+
+   #+caption: Introduction to SQLite (mindmap)
+   #+attr_html: :width 600px
+   [[./img/sqlite.png]]
    
 ** TODO Practice: SQLite Basics (cont'd)
    DEADLINE: <2022-02-08 Tue>
 
+   * We last looked at entering SQLite ([[file:notes.org::Captain's Log Stardate 99687.04][notes]])
+
+   * Today, we'll work with an [[~/Documents/GitHub/admin/spring22/db330/sqlite.org::README][interactive Org-notebook]]
+   
 ** What's next?
 
-   * Architecture and classification of databases (text book ch 2)
-   * Next DataCamp assignment due Feb 8 ("Cloud providers/cases")
+   * Test 1 - Thursday 1.30-2.15
    * New DataCamp assignment due Feb 15 ("Intro to RDBM with SQL")
    * SQLite DDL practice
 
