@@ -12,7 +12,7 @@
   possible (like a book)!
 
   The companion file to this file, less structured and with the
-  captain's log, is the [[./notes.org][notes.org]] file.
+  captain's log, is the [[file:notes.org][notes.org]] file.
 
 * Intro and GitHub - w1s1 - January 11, 2022
 
@@ -178,11 +178,11 @@
 
    | HOW         | WHAT                                     |
    |-------------+------------------------------------------|
-   | Review      | [[file:~/Documents/GitHub/org/FAQ.org::Completing the GitHub "hello world" exercise][GitHub Hello World exercise]] ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#completing-the-github-hello-world-exercise][FAQ]])        |
+   | Review      | [[file:~/Documents/GitHub/org/FAQ.org][GitHub Hello World exercise]] ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#completing-the-github-hello-world-exercise][FAQ]])        |
    | Video       | [[https://youtu.be/KG-mqHoXOXY][History of Databases]] (Codd, Oracle, IBM) |
    | Lecture     | [[https://lyon.schoology.com/link?a=&path=https%3A%2F%2Fwww.pdbmbook.com%2Flecturers%2Fslides%2Faccess][DB applications and basic definitions]]    |
    | Application | [[https://youtu.be/718uGYbUmao][MooCall Calving Sensor App]] (IoT network) |
-   | Practice    | [[file:~/Documents/GitHub/org/FAQ.org:: How to install Emacs (+ESS) under Windows and MacOS][Install GNU Emacs]] (ESS or vanilla) ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-install-emacs-ess-under-windows-and-macos][FAQ]]) |
+   | Practice    | Install GNU Emacs (ESS or vanilla) ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-install-emacs-ess-under-windows-and-macos][FAQ]]) |
    | Demo        | [[https://www.gnu.org/software/emacs/tour/][Emacs guided tour]]                        |
    | Self        | [[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][Work through the Emacs onboard tutorial]]  |
 
@@ -236,7 +236,7 @@
    | HOW      | WHAT                                    |
    |----------+-----------------------------------------|
    | Demo     | Installing ~sqlite~[fn:1] (done[fn:2])              |
-   | Practice | [[file:~/Documents/GitHub/org/emacs/emacs.org::GNU Emacs][Emacs guided tour]] ([[https://www.gnu.org/software/emacs/tour/][tour]])([[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][web-tutorial]])  |
+   | Practice |Emacs guided tour ([[https://www.gnu.org/software/emacs/tour/][tour]])([[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][web-tutorial]])   |
    | Self     | [[https://www.stolaf.edu/people/humke/UNIX/emacs-tutorial.html][Work through the Emacs onboard tutorial]] |
 
 ** Objectives
@@ -402,7 +402,8 @@
    * New DataCamp assignment due Feb 15 ("Introduction to SQL: SELECT")
    * SQLite DDL practice
 
-* TODO SQLite introduction - w5s7 - February 8, 2022
+<<<<<<< HEAD
+* SQLite introduction - w5s7 - February 8, 2022
 ** Overview
 
    | HOW       | WHAT                              |
@@ -440,12 +441,19 @@
    #+attr_html: :width 600px
    [[./img/sqlite.png]]
    
-** TODO Practice: SQLite Basics (cont'd)
-   DEADLINE: <2022-02-08 Tue>
+** IN PROGRESS Practice: SQLite Basics (cont'd)
+   DEADLINE: <2022-02-10 Thu>
 
    * We last looked at entering SQLite ([[file:notes.org::Captain's Log Stardate 99687.04][notes]])
 
-   * Today, we'll work with an [[~/Documents/GitHub/admin/spring22/db330/sqlite.org::README][interactive Org-notebook]]
+   * Today, we look at a few more commands:
+     #+begin_example
+     $ sqlite3 sqlite.db  # starts SQLite on the Command shell
+     $ sqlite3 -help      # options list 
+     sqlite> .databases   # prints current persistent database
+     sqlite> .show        # display and I/O options
+     sqlite> .tables      # check for tables
+     #+end_example
    
 ** What's next?
 
@@ -463,7 +471,7 @@
 [fn:2]In Lyon 104 (Computer lab), the ~PATH~ variable is unfortunately
 stored in the personal user's app data so that I could not set it
 properly for your account (you can do this on your own PC
-easily). However, [[file:FAQ.org::How to run SQLite in Emacs][I seem to have found a solution]] for this ([[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#how-to-run-sqlite-in-emacs][see course
+easily). However, [[file:FAQ.org][I seem to have found a solution]] for this ([[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#how-to-run-sqlite-in-emacs][see course
 FAQ]]).
 
 [fn:1]For installation on your PC, see [[https://github.com/birkenkrahe/org/blob/master/emacs/install.org][these instructions]] ([[https://github.com/birkenkrahe/org/blob/master/emacs/install.pdf][PDF]]). The
