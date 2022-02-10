@@ -17,8 +17,8 @@
 
   #+name: set org-babel-sqlite3-command
   #+begin_src emacs-lisp :exports both :results raw
-	(require 'ob-sqlite) 
-	(setq org-babel-sqlite3-command "\"c:/Program Files (x86)/sqlite-tools-win32-x86-3360000/sqlite3.exe\"")
+    (require 'ob-sqlite)
+    (setq org-babel-sqlite3-command "\"c:/Program Files (x86)/sqlite-tools-win32-x86-3360000/sqlite3.exe\"")
 
   #+end_src
 
@@ -29,7 +29,36 @@
 
   #+begin_example
   C-h v org-babel-sqlite3-command RET
-  #+end_example  
+  #+end_example
 
   Babel reports that "this variable may be risky if used as a
   file-local variable," but I suppose we've got to take our chances!
+
+* Control question (test 1) on cloud services
+
+  #+begin_quote
+  "I just had a question about this particular question.  As you can
+  see, I got it all incorrect. My thought process was that, as a user,
+  I have most control with Infrastructure as a Service (for example,
+  using my own car). And Saas has the least control from the user
+  using a company (like public transport) (I'm using the analogies
+  from Data Camp.)  Could we go over this one later?"
+  #+end_quote
+
+  *Answer*
+  #+begin_quote
+  "IaaS, PaaS, SaaS are specific to cloud infrastructure - the car
+  metaphor is not really very good, I think. It is used in the lesson
+  to suggest that, as a car owner, you have much less responsibility,
+  and nothing to worry about when you go IaaS. Alas, that also means
+  that you have no control. When you look at the image from DataCamp,
+  you can see that the VENDOR (aka provider) MANAGES. Who manages has
+  control, the user has the convenience. In the public transport
+  example: if the vendor (= city/transport company) decides to
+  discontinue the service, you've got nothing. As an On-Premise car
+  owner you have all the trouble, but all the control, too.~
+  #+end_quote
+
+  #+caption: Figure from DataCamp
+  #+attr_html: :width 600px
+  [[./img/services.png]]
