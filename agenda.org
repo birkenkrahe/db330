@@ -403,7 +403,7 @@
    * SQLite DDL practice
 
 <<<<<<< HEAD
-* SQLite introduction - w5s7 - February 8, 2022
+* Cloud providers, SQLite introduction - w5s7 - February 8, 2022
 ** Overview
 
    | HOW       | WHAT                              |

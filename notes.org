@@ -446,8 +446,7 @@
    "The World Wide Web Is Not The Internet!"
    #+end_quote
 
-* NEXT SQLite introduction - w5s7 (02/08/22)
-
+* Cloud providers, SQLite introduction - w5s7 (02/08/22)
 ** DataCamp assignment - Cloud providers and case studies
 
    #+caption: The benefits of French culture (Source: ila-france.com)
@@ -545,10 +544,6 @@
     #+attr_html: :width 500px
     [[./img/certificate.png]]
 
-** TODO Introduction to SQLite
-
-** TODO SQLite Practice   
-
 * Glossary = the learning dictionary for your brain
 
   * Why is it important to have a glossary?
@@ -575,8 +570,7 @@
   | Internet       | Global digital infrastructure (router,network)            |
   | Web            | Global collection of digital content (browser,wiki)       |
   |----------------+-----------------------------------------------------------|
-
-
+  
 * References
   * <<bbc>> BBC (11 Mar 2019). World wide web vs. internet - what's
     the difference? [video]. [[https://www.bbc.co.uk/newsround/47523993#:~:text=The%20world%20wide%20web%2C%20or,connect%20towns%20and%20cities%20together.][URL: www.bbc.co.uk]].
