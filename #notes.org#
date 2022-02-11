@@ -575,6 +575,10 @@
              )
     #+end_src
 
+    #+RESULTS:
+    : 
+    : [1] 21.166667 32.933333 29.616667 16.383333  8.216667
+
 * Glossary = the learning dictionary for your brain
 
   * Why is it important to have a glossary?

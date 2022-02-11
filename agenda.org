@@ -499,7 +499,7 @@
      database that we're currently writing to, 2) where the file is, 3)
      we have no tables (yet).
      #+name: check_db
-     #+begin_src sqlite :db sqlite.db :results output
+     #+begin_src sqlite :db sqlite.db :results output :exports both
        .database
        .tables
      #+end_src
@@ -511,7 +511,7 @@
      commands). In [[create]], the SQL keywords are all capitalized though
      SQLite doesn't actually care about that.
      #+name: create
-     #+begin_src sqlite :db sqlite.db :results silent
+     #+begin_src sqlite :db sqlite.db :results silent :exports both
        CREATE TABLE customer (id INT, name TEXT);
      #+end_src
      - ~customer~ is the name of our table
@@ -522,7 +522,7 @@
    * ~CREATE TABLE~ is a DDL (Data Definition Language) command. We
      now have a table but no content.
      #+name: .tables
-     #+begin_src sqlite :db sqlite.db
+     #+begin_src sqlite :db sqlite.db :exports both
        .tables
      #+end_src
 
@@ -532,7 +532,7 @@
    * ~INSERT INTO~ is a DML (Data Manipulation Language) command. We
      insert two lines. The result is silent.
      #+name: insert
-     #+begin_src sqlite :db sqlite.db :results silent
+     #+begin_src sqlite :db sqlite.db :results silent :exports both
        INSERT INTO customer VALUES (1,"Jimmy Jones");
        INSERT INTO customer VALUES (2,"Jane Jackson");
      #+end_src
@@ -540,7 +540,7 @@
    * To look at what we've entered, we use the ~SELECT~ command, a DQL
      (Data Query Language) command.
      #+name: select
-     #+begin_src sqlite :db sqlite.db
+     #+begin_src sqlite :db sqlite.db :exports both
        SELECT * FROM customer;
      #+end_src
      - This command is best understood as a data pipeline (more later)
