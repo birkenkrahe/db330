@@ -30,15 +30,16 @@
 
 ** Aspirations and ambitions (DS program 2021-2023)
 
-   | CLASS                                 | CODE    | TERM        | Topics                              |
-   |---------------------------------------+---------+-------------+-------------------------------------|
-   | Data Science Tools and Methods        | DSC 101 | Fall 2021   | R, Basic EDA, Base R                |
-   | Introduction to Advanced Data Science | DSC 205 | Spring 2022 | R, Advanced EDA, Tidyverse          |
-   | Database Theory and Applications      | CSC 330 | Spring 2022 | SQL, SQLite                         |
-   | Operating Systems                     | CSC 420 | Spring 2022 | Bash, awk, sed, regular expressions |
-   | Data Visualization                    | DSC 302 | Fall 2022   | D3, Processing, Javascript, Bokeh   |
-   | Machine Learning                      | DSC 305 | Spring 2023 | Predictive algorithms, neural nets  |
-   | Digital Humanities                    | CSC 105 | Spring 2023 | Data science applications           |
+   | CLASS                                 | CODE            | TERM        | Topics                              |
+   |---------------------------------------+-----------------+-------------+-------------------------------------|
+   | Data Science Tools and Methods        | DSC 101         | Fall 2021   | R, Basic EDA, Base R                |
+   | Introduction to Advanced Data Science | DSC 205         | Spring 2022 | R, Advanced EDA, Tidyverse          |
+   | Database Theory and Applications      | CSC 330         | Spring 2022 | SQL, SQLite                         |
+   | Operating Systems                     | CSC 420         | Spring 2022 | Bash, awk, sed, regular expressions |
+   | Applied Math for Data Science         | DSC 482/MTH 360 | Fall 2022   | Probability, Statistics + R         |
+   | Data Visualization                    | DSC 302         | Fall 2022   | D3, Processing, Javascript, Bokeh   |
+   | Machine Learning                      | DSC 305         | Spring 2023 | Predictive algorithms, neural nets  |
+   | Digital Humanities                    | CSC 105         | Spring 2023 | Data science applications           |
 
 ** Introduction to the course & the lecturer
 
@@ -348,7 +349,7 @@
    4) Metadata are data (structure) definitions, like ownership or
       number of tables, and are stored in the DB catalog or
       dictionary.
-      
+
    5) DBMS provide DB languages (like SQL) that facilitate data
       definition (DDL), data manipulation (DML), data querying (DQL),
       and data control (DCL).
@@ -372,12 +373,12 @@
        sets: information (cloud) architects; DB designers (ERD); DB
        Administrators (SQL, Linux); Application Developers (e.g. Web
        App); Business Users (SQL).
-   
+
 ** Practice: SQLite Basics
 
    We'll learn more about SQLite in future sessions. This is just to
    get our feet wet, including some important file system aspects.
-   
+
    #+begin_example
    $ sqlite3
    sqlite> .database
@@ -388,13 +389,13 @@
    $ sqlite3 test.db
    sqlite> .database
    sqlite> .q
-   #+end_example   
+   #+end_example
 
    As you can see, it's never easy to do anything in Windows. We're
    better off writing SQLite code in Emacs where the ~.db~ file is
    automatically created (see [[https://lyon.schoology.com/assignment/5603361550/info][assignment]]). If this doesn't work for
    you, contact me and we'll sort you out!
-   
+
 ** What's next?
 
    * +Architecture and classification of databases (text book ch 2)+
@@ -402,7 +403,7 @@
    * New DataCamp assignment due Feb 15 ("Introduction to SQL: SELECT")
    * SQLite DDL practice
 
-<<<<<<< HEAD
+   <<<<<<< HEAD
 * Cloud providers, SQLite introduction - w5s7 - February 8, 2022
 ** Overview
 
@@ -428,19 +429,19 @@
    * The 10 hardest questions of quiz 1-3 (< 50%)
    * 10 brand new questions
    * Maximum time = 45 min
-   
+
 ** DataCamp assignment: Cloud Providers and Case Studies
 
    * What's the main message of this lesson?
    * How does one pick a cloud provider?
    * What did I think about the assignment?
-     
+
 ** Introduction to SQLite
 
    #+caption: Introduction to SQLite (mindmap)
    #+attr_html: :width 600px
    [[./img/sqlite.png]]
-   
+
 ** IN PROGRESS Practice: SQLite Basics (cont'd)
    DEADLINE: <2022-02-10 Thu>
 
@@ -449,17 +450,111 @@
    * Today, we look at a few more commands:
      #+begin_example
      $ sqlite3 sqlite.db  # starts SQLite on the Command shell
-     $ sqlite3 -help      # options list 
+     $ sqlite3 -help      # options list
      sqlite> .databases   # prints current persistent database
      sqlite> .show        # display and I/O options
      sqlite> .tables      # check for tables
      #+end_example
-   
+
 ** What's next?
 
    * Test 1 - Thursday 1.30-2.15
    * New DataCamp assignment due Feb 15 ("Intro to RDBM with SQL")
    * SQLite DDL practice
+
+* SQLite lab session, test 1 - w5s8 - February 10, 2022
+** Overview
+
+   | HOW                 | WHAT                             |
+   |---------------------+----------------------------------|
+   | Interactive Lecture | Introduction to SQLite 2         |
+   |---------------------+----------------------------------|
+   | Test 1              | Thu 10 Feb 1.30-2.15 pm (online) |
+
+** Objectives
+
+   * [ ] More SQLite command line practice
+
+     * SQLite lab session
+
+** SQLite Lab session
+
+   You should type the commands shown here into your own SQLite shell
+   to get some practice -
+
+   * To open SQLite under Windows, open a CMD shell and type
+     ~sqlite3~. If this does not work, you either have not installed
+     the program, or you don't have the location of the executable
+     ~sqlite3.exe~ in the ~$PATH~ of your PC.
+
+   * To find the ~$PATH~ to the executable, open an ~*eshell*~ in Emacs
+     (~M-x eshell~) and type ~which sqlite3~ (that's a Linux shell command,
+     and Emacs simulates Linux shell commands using Emacs Lisp).
+
+   * Inside SQLite, on the SQLite shell (indicated by the prompt
+     ~sqlite>~), you need to operate with a persistent database file
+     that must have the ending ~*.db~.
+
+   * The output to the code in [[check_db]] shows 1) we have a persistent
+     database that we're currently writing to, 2) where the file is, 3)
+     we have no tables (yet).
+     #+name: check_db
+     #+begin_src sqlite :db sqlite.db :results output
+       .database
+       .tables
+     #+end_src
+
+     #+RESULTS:
+     : main: c:\Users\birkenkrahe\Documents\GitHub\db330\sqlite.db r/w
+
+   * To create a table, we need SQL commands (not just SQLite shell
+     commands). In [[create]], the SQL keywords are all capitalized though
+     SQLite doesn't actually care about that.
+     #+name: create
+     #+begin_src sqlite :db sqlite.db :results silent
+       CREATE TABLE customer (id INT, name TEXT);
+     #+end_src
+     - ~customer~ is the name of our table
+     - ~id~ and ~name~ are the two columns of our table (stuff we wish
+       to store)
+     - ~INT~ and ~TEXT~ are two SQLite data types
+
+   * ~CREATE TABLE~ is a DDL (Data Definition Language) command. We
+     now have a table but no content.
+     #+name: .tables
+     #+begin_src sqlite :db sqlite.db
+       .tables
+     #+end_src
+
+     #+RESULTS: .tables
+     : customer
+
+   * ~INSERT INTO~ is a DML (Data Manipulation Language) command. We
+     insert two lines. The result is silent.
+     #+name: insert
+     #+begin_src sqlite :db sqlite.db :results silent
+       INSERT INTO customer VALUES (1,"Jimmy Jones");
+       INSERT INTO customer VALUES (2,"Jane Jackson");
+     #+end_src
+
+   * To look at what we've entered, we use the ~SELECT~ command, a DQL
+     (Data Query Language) command.
+     #+name: select
+     #+begin_src sqlite :db sqlite.db
+       SELECT * FROM customer;
+     #+end_src
+     - This command is best understood as a data pipeline (more later)
+     - Its general form is ~SELECT [cols] FROM [table] [filter]~
+     - The wildcard symbol ~*~ means "all columns" of the table
+     
+     #+RESULTS: select
+     | 1 | Jimmy Jones  |
+     | 2 | Jane Jackson |
+
+** What's next?
+
+   * New DataCamp assignment due Feb 15 ("Intro to RDBM with SQL")
+   * SQLite DDL/DML/DQL practice continued
 
 * References
   * Lemahieu et al (2021). Principles of Database Management. Univ of
@@ -477,4 +572,3 @@ FAQ]]).
 [fn:1]For installation on your PC, see [[https://github.com/birkenkrahe/org/blob/master/emacs/install.org][these instructions]] ([[https://github.com/birkenkrahe/org/blob/master/emacs/install.pdf][PDF]]). The
 installation is simple: download the ZIP file, unpack it, and set the
 ~PATH~ variable so that sqlite can be found.
-

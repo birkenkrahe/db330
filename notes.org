@@ -544,53 +544,10 @@
     #+attr_html: :width 500px
     [[./img/certificate.png]]
 
-* SQLite lab session
+* Test 1 results - w5s8 (02/10/22)
 
-  You should type the commands shown here into your own SQLite shell
-  to get some practice - 
-
-  * To open SQLite under Windows, open a CMD shell and type
-    ~sqlite3~. If this does not work, you either have not installed
-    the program, or you don't have the location of the executable
-    ~sqlite3.exe~ in the ~$PATH~ of your PC.
-
-  * To find the ~$PATH~ to the executable, open an ~*eshell*~ in Emacs
-    (~M-x eshell~) and type ~which sqlite3~ (that's a Linux shell command,
-    and Emacs simulates Linux shell commands using Emacs Lisp).
-
-  * Inside SQLite, on the SQLite shell (indicated by the prompt
-    ~sqlite>~), you need to operate with a persistent database file
-    that must have the ending ~*.db~.
-
-  * The output to the code in [[check_db]] shows 1) we have a persistent
-    database that we're currently writing to, 2) where the file is, 3)
-    we have no tables (yet).
-    #+name: check_db
-    #+begin_src sqlite :db sqlite.db :results output
-      .database
-      .tables
-    #+end_src
-
-    #+RESULTS:
-    : main: c:\Users\birkenkrahe\Documents\GitHub\db330\sqlite.db r/w
-
-  * To create a table, we need SQL commands (not just SQLite shell
-    commands). In [[create]], the SQL keywords are all capitalized though
-    SQLite doesn't actually care about that.
-    #+name: create
-    #+begin_src sqlite :db sqlite.db :results silent
-      CREATE TABLE customer (id INT, name TEXT);
-    #+end_src
-    - ~customer~ is the name of our table
-    - ~id~ and ~name~ are the two columns of our table (stuff we wish
-      to store)
-    - ~INT~ and ~TEXT~ are two SQLite data types
-
-  * ~CREATE TABLE~ is a DDL (Data Definition Language) command
-
-  * ~INSERT INTO~ is a DML (Data Manipulation Language) command
-
-  
+  * See the FAQ for a question on the problem of "decreasing control" for
+    different cloud computing architectures.
   
 * Glossary = the learning dictionary for your brain
 
