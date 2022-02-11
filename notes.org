@@ -560,21 +560,15 @@
     [[./img/test_1_stats.png]]
 
   * What surprised me most was that many of you did not use the
-    available time. The stats don't show this number. An opportunity
-    to show off R. The data frame ~df~ contains the anonymized results
-    for each student - total points and time taken.
-    #+begin_src R :exports both :session :results output
-      pointsPerTest <- c(17.88,14.8,15.67,12.32,9.54)
-      minPerTest <- c("21:10","32:56","29:37","16:23","8:13")
+    available time. The stats don't show this number[fn:6], but a
+    quick glance does not seem to reveal any clear pattern.
 
-      sapply(strsplit(minPerTest,":"),
-             function(x) {
-                 x <- as.numeric(x)
-                 x[1]+x[2]/60
-             }
-             )
-    #+end_src
-
+  * Study and test taking habits: we'll discuss these next week! I may
+    have disqualified myself personally by confessing that, as a
+    student, I never had to take any tests (in physics, you solve
+    problems instead and turn them in for grading), but I have
+    developed and administered lots of exams.
+  
 * Glossary = the learning dictionary for your brain
 
   * Why is it important to have a glossary?
@@ -632,7 +626,11 @@
 
 * Footnotes
 
-[fn:5] [[https://www.statista.com/statistics/1202770/hyperscaler-iaas-paas-market-share/][Statista]] numbers (no source given) for 2021.
+[fn:6]This is a nice R project that I'm pursuing right now: loading
+the data into a data frame and analysing the results to find out if
+there is a correlation between the different factors.
+
+[fn:5][[https://www.statista.com/statistics/1202770/hyperscaler-iaas-paas-market-share/][Statista]] numbers (no source given) for 2021.
 
 [fn:4]Privacy is a political term. Private information can also be an
 entry to phishing or other network-based activities compromising the
