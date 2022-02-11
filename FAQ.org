@@ -36,6 +36,15 @@
 
 * Control question (test 1) on cloud services
 
+  The test question was:
+  #+begin_quote
+  "Order the three cloud architectures [SaaS, PaaS, IaaS] according to
+  decreasing control (from top = most, to bottom = least
+  control). Tip: more "control" means greater ability of the
+  organization buying the cloud service from a provider, to control
+  the organization's information technology."
+  #+end_quote
+  
   #+begin_quote
   "I just had a question about this particular question.  As you can
   see, I got it all incorrect. My thought process was that, as a user,

@@ -546,7 +546,7 @@
 
 * Test 1 results - w5s8 (02/10/22)
 
-  * See the FAQ for a question on the problem of "decreasing control" for
+  * See [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#control-question-test-1-on-cloud-services][the FAQ]] for a question on the problem of "decreasing control" for
     different cloud computing architectures.
   
 * Glossary = the learning dictionary for your brain
