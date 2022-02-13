@@ -556,6 +556,11 @@
    * New DataCamp assignment due Feb 15 ("Intro to RDBM with SQL")
    * SQLite DDL/DML/DQL practice continued
 
+* w6s9 - February 15, 2022
+
+  #+caption: Test 1 results
+  [[./img/test_1_stats.png]]
+  
 * References
   * Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
