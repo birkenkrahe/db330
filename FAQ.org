@@ -44,7 +44,7 @@
   organization buying the cloud service from a provider, to control
   the organization's information technology."
   #+end_quote
-  
+
   #+begin_quote
   "I just had a question about this particular question.  As you can
   see, I got it all incorrect. My thought process was that, as a user,
@@ -60,14 +60,29 @@
   metaphor is not really very good, I think. It is used in the lesson
   to suggest that, as a car owner, you have much less responsibility,
   and nothing to worry about when you go IaaS. Alas, that also means
-  that you have no control. When you look at the image from DataCamp,
-  you can see that the VENDOR (aka provider) MANAGES. Who manages has
-  control, the user has the convenience. In the public transport
-  example: if the vendor (= city/transport company) decides to
-  discontinue the service, you've got nothing. As an On-Premise car
-  owner you have all the trouble, but all the control, too.~
+  that you have no control as the customer. When you look at the image
+  from DataCamp, you can see that the VENDOR (aka provider)
+  MANAGES. Who manages has control, the user has the convenience. In
+  the public transport example: if the vendor (= city/transport
+  company) decides to discontinue the service, you've got nothing. As
+  an On-Premise car owner you have all the trouble, but all the
+  control, too."
   #+end_quote
 
   #+caption: Figure from DataCamp
   #+attr_html: :width 600px
   [[./img/services.png]]
+
+  The confusion with regard to the diagram shown by DataCamp that
+  ordered SaaS, PaaS and IaaS came because their "control" related to
+  loss of control from greater complexity (or greater "abstraction"),
+  for both provider and customer, while I was asking about the
+  customer specifically.
+
+  Complexity/abstraction is an important parameter in system design
+  but less relevant for the customer, more relevant for the provider..
+
+  #+caption: Figure from DataCamp
+  #+attr_html: :width 600px
+  [[./img/pyramid.png]]
+

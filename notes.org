@@ -551,9 +551,13 @@
     points for giving the correct order, irrespective of the
     direction - because indeed there was a conflict with the DataCamp
     image showing that "control" decreases from IaaS to SaaS, and not
-    the other way around.
+    the other way around - because this was with regard to loss of
+    control from complexity, for both provider and customer, while I
+    was asking about the customer specifically. Complexity/abstraction
+    is an important parameter in system design but less relevant for
+    the customer, more relevant for the provider[fn:7].
 
-  * I think the results are actually very decent - almost 75% is a
+  * I think the results are actually very decent - > 75%% is a
     good result - better next time!
     #+caption: Test 1 results (preliminary)
     #+attr_html: :width 500px
@@ -625,6 +629,9 @@
     medium.com/ai-society.]]
 
 * Footnotes
+
+[fn:7]If you had the order SaaS-Paas-IaaS correct in either direction,
+you got the full point for this question.
 
 [fn:6]This is a nice R project that I'm pursuing right now: loading
 the data into a data frame and analysing the results to find out if
