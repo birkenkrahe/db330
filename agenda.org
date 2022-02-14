@@ -584,6 +584,38 @@
      available time. Alas, the stats don't show this number. A quick
      glance does not seem to reveal any clear pattern[fn:7].
 
+** Individual questions
+
+   Some questions do not accept a feedback option. 
+   
+*** How does MooCall sensor operate?
+
+    Bring the following processes in the right order.
+
+    1) Edge computing: data are generated and pre-processed locally
+    2) Cloud computing: data are processed globally to generate a signal
+    3) Local computing: signal is transmitted to the user
+
+    Feedback: The sensor is attached to the cow's tail. It records
+    data as signals in the form of temperature, motion, etc. In
+    relation to the cloud, the sensor (a microcontroller with minimal
+    operating and processing capabilities) operators "on the edge" (of
+    the cloud). It has likely an SQLite database on board, or perhaps
+    something even simpler. Gathering the data and writing them to a
+    file if only for transport to the cloud is the "preprocessing". In
+    the next step, the signal for the end user is prepared once the
+    data (from different cows, and over a longer period of time) are
+    now "in the cloud". In practice this means that they are now in a
+    database on a server, very likely in tabular form. The processing
+    in the cloud generates a signal for the end user when the evidence
+    is conclusive, and when the software used to process the data has
+    reached a positive prediction: "Cow is ready to calve". Only then
+    the end user, the farmer, will be notified. In another scenario,
+    the farmer is continuously informed about the state of the
+    cow. But this does not change anything in the data processing
+    pipeline.
+
+   
 * References
   * Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
