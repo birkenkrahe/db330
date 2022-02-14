@@ -546,7 +546,7 @@
      - This command is best understood as a data pipeline (more later)
      - Its general form is ~SELECT [cols] FROM [table] [filter]~
      - The wildcard symbol ~*~ means "all columns" of the table
-     
+
      #+RESULTS: select
      | 1 | Jimmy Jones  |
      | 2 | Jane Jackson |
@@ -558,9 +558,32 @@
 
 * w6s9 - February 15, 2022
 
-  #+caption: Test 1 results
-  [[./img/test_1_stats.png]]
-  
+** Test 1 results
+
+   * Test 1 can now be played an unlimited number of times. I have
+     added feedback to all new questions.
+   
+   * See [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#control-question-test-1-on-cloud-services][the FAQ]] for a question on the problem of "decreasing control"
+     for different cloud computing architectures. Some of you will get
+     points for giving the correct order, irrespective of the
+     direction - because indeed there was a conflict with the DataCamp
+     image showing that "control" decreases from IaaS to SaaS, and not
+     the other way around - because this was with regard to loss of
+     control from complexity, for both provider and customer, while I
+     was asking about the customer specifically. Complexity/abstraction
+     is an important parameter in system design but less relevant for
+     the customer, more relevant for the provider[fn:6].
+
+   * I think the results are actually very decent - > 75%% is a
+     good result - better next time!
+     #+caption: Test 1 results (preliminary)
+     #+attr_html: :width 500px
+     [[./img/test_1_stats.png]]
+
+   * What surprised me most was that many of you did not use the
+     available time. Alas, the stats don't show this number. A quick
+     glance does not seem to reveal any clear pattern[fn:7].
+
 * References
   * Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].

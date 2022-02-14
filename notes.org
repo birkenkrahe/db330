@@ -544,35 +544,6 @@
     #+attr_html: :width 500px
     [[./img/certificate.png]]
 
-* SQLite lab session, test 1 results - w5s8 (02/10/22)
-
-  * See [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#control-question-test-1-on-cloud-services][the FAQ]] for a question on the problem of "decreasing control"
-    for different cloud computing architectures. Some of you will get
-    points for giving the correct order, irrespective of the
-    direction - because indeed there was a conflict with the DataCamp
-    image showing that "control" decreases from IaaS to SaaS, and not
-    the other way around - because this was with regard to loss of
-    control from complexity, for both provider and customer, while I
-    was asking about the customer specifically. Complexity/abstraction
-    is an important parameter in system design but less relevant for
-    the customer, more relevant for the provider[fn:7].
-
-  * I think the results are actually very decent - > 75%% is a
-    good result - better next time!
-    #+caption: Test 1 results (preliminary)
-    #+attr_html: :width 500px
-    [[./img/test_1_stats.png]]
-
-  * What surprised me most was that many of you did not use the
-    available time. The stats don't show this number[fn:6], but a
-    quick glance does not seem to reveal any clear pattern.
-
-  * Study and test taking habits: we'll discuss these next week! I may
-    have disqualified myself personally by confessing that, as a
-    student, I never had to take any tests (in physics, you solve
-    problems instead and turn them in for grading), but I have
-    developed and administered lots of exams.
-  
 * Glossary = the learning dictionary for your brain
 
   * Why is it important to have a glossary?
@@ -630,10 +601,10 @@
 
 * Footnotes
 
-[fn:7]If you had the order SaaS-Paas-IaaS correct in either direction,
+[fn:6]If you had the order SaaS-Paas-IaaS correct in either direction,
 you got the full point for this question.
 
-[fn:6]This is a nice R project that I'm pursuing right now: loading
+[fn:7]This is a nice R project that I'm pursuing right now: loading
 the data into a data frame and analysing the results to find out if
 there is a correlation between the different factors.
 
