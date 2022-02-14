@@ -667,6 +667,43 @@
       categories of this language - and probably the easiest at that.
 
     * Here is a short [[https://youtu.be/zid-MVo7M-E][introductory video]] on Use Case diagrams only.
+
+*** In research communication, "limitations" means "bias".
+
+    In the first video of the last DataCamp chapter on cloud computing
+    for everyone, the presenter initially spends a lot of time trying
+    to explain potential bias - e.g. because of the (commercial)
+    sources of information. This bias effectively limits the validity
+    of the presentation - high bias means that we cannot simply believe
+    what we're told. Scientific publications must have a section on
+    "limitations" of the research that is mainly about bias of method,
+    and bias of the researcher.
+
+*** What are "Meta Data"?
+
+    Meta (from Greek, "with", or "alongside") Data come with the data,
+    and they are always data about data - in the case of databases,
+    e.g. about the ownership of the database. Definitions, and queries
+    belong to DDL, and DQL, respectively. Data design issues include
+    both of these.
+
+    An example outside of databases are the control codes for Emacs
+    Org-mode files beginning with the characters ~#+~. They contain
+    layout information (e.g. ~#+OPTIONS: toc:nil~) or information
+    about title or authorship.
+
+*** Database virtualization
+
+    Virtualization is an important principle of system abstraction:
+    one abstracts from (= eliminates) the notion of physical
+    location. The database appears to be in one place (at the external
+    level) but at the internal level, it is distributed. The user
+    never knows this.
+
+    The same concept applies to operating systems whose
+    processes are virtualized in the sense that jobs are executed by a
+    concerted action of CPU, volatile memory (RAM) and non-volatile
+    memory (e.g. Hard disk), while the user knows nothing about it.
     
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
