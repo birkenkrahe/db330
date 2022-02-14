@@ -621,7 +621,14 @@
     This question goes back to a slide from the DB foundation
     presentation ([[pdbm][Lemahieu et al, 2021]]).
 
+    The *external layer* is what the end-user sees - e.g. a manager
+    looking at a dashboard, or using SQL to formulate a database
+    query. In the image [[schema]]
+
+    The *conceptual/logical layer* is the database 
+
     #+caption: Three-layer DBMS architecture (Lemahieu et al, 2021)
+    #+name: schema
     #+attr_html: :width 500px
     [[./img/layers.png]]
     
