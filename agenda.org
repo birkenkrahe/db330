@@ -576,7 +576,7 @@
 
    * I think the results are actually very decent - > 75%% is a
      good result - better next time!
-     #+caption: Test 1 results (preliminary)
+     #+caption: Test 1 results (Schoology)
      #+attr_html: :width 500px
      [[./img/test_1_stats.png]]
 
