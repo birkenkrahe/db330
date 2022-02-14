@@ -635,12 +635,39 @@
     * The *internal layer* refers to the physical implementation,
       e.g. the server infrastructure used to split up, or duplicate,
       databases over an international network.
-    
+
     #+caption: Three-layer DBMS architecture (Lemahieu et al, 2021)
     #+name: schema
     #+attr_html: :width 500px
     [[./img/layers.png]]
 
+*** Pros and Cons of SQLite
+
+    | PROS                    | CONS                              |
+    |-------------------------+-----------------------------------|
+    | Very lightweight        | No concurrency                    |
+    | Zero configuration      | No user management                |
+    | No library dependendies | Security - no data access control |
+    | Highly portable         | Limited data types                |
+
+    * See [[https://github.com/birkenkrahe/db330/blob/main/sqlite/introduction_to_sqlite.png][Introduction to SQLite (mindmap)]]. This mindmap does not give
+      an explanation (or even a source) of these properties, just a
+      listing. For details, see e.g. [[https://www.keycdn.com/support/sqlite-vs-mysql][keycdn]] ([[keycdn][2018]]).
+
+*** Customer control for different cloud architectures
+
+    [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#control-question-test-1-on-cloud-services][See FAQ]].
+
+*** Use case diagrams and UML
+
+    * UML is Unified Modeling Language - an important modeling
+      framework for information systems design - from the small
+      (database system) to the large (e.g. all systems of an
+      airport). Use case diagrams are one of the 14 (standard) diagram
+      categories of this language - and probably the easiest at that.
+
+    * Here is a short [[https://youtu.be/zid-MVo7M-E][introductory video]] on Use Case diagrams only.
+    
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
