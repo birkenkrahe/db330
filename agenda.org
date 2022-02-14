@@ -562,7 +562,7 @@
 
    * Test 1 can now be played an unlimited number of times. I have
      added feedback to all new questions.
-   
+
    * See [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#control-question-test-1-on-cloud-services][the FAQ]] for a question on the problem of "decreasing control"
      for different cloud computing architectures. Some of you will get
      points for giving the correct order, irrespective of the
@@ -588,7 +588,7 @@
 
    Some questions do not accept a feedback option. I have put a GitHub
    link into the question field.
-   
+
 *** How does MooCall sensor operate?
 
     Bring the following processes in the right order.
@@ -621,17 +621,26 @@
     This question goes back to a slide from the DB foundation
     presentation ([[pdbm][Lemahieu et al, 2021]]).
 
-    The *external layer* is what the end-user sees - e.g. a manager
-    looking at a dashboard, or using SQL to formulate a database
-    query. In the image [[schema]]
+    * The *external layer* is what the end-user sees - e.g. a manager
+      looking at a dashboard, or using SQL to formulate a database
+      query. The image shows entities and their attributes.
 
-    The *conceptual/logical layer* is the database 
+    * The *conceptual/logical layer* is the database schema that
+      translates the user requirements - stored entities and their
+      attributes - into a database schema. The "logical" part relates
+      to the fact that this schema needs to fulfil certain conditions
+      to be usable by the RDBMS - e.g. records need to be uniquely
+      identifiable.
 
+    * The *internal layer* refers to the physical implementation,
+      e.g. the server infrastructure used to split up, or duplicate,
+      databases over an international network.
+    
     #+caption: Three-layer DBMS architecture (Lemahieu et al, 2021)
     #+name: schema
     #+attr_html: :width 500px
     [[./img/layers.png]]
-    
+
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
