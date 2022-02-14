@@ -586,7 +586,8 @@
 
 ** Individual questions
 
-   Some questions do not accept a feedback option. 
+   Some questions do not accept a feedback option. I have put a GitHub
+   link into the question field.
    
 *** How does MooCall sensor operate?
 
@@ -615,9 +616,17 @@
     cow. But this does not change anything in the data processing
     pipeline.
 
-   
+*** Database architecture layer and example applications
+
+    This question goes back to a slide from the DB foundation
+    presentation ([[pdbm][Lemahieu et al, 2021]]).
+
+    #+caption: Three-layer DBMS architecture (Lemahieu et al, 2021)
+    #+attr_html: :width 500px
+    [[./img/layers.png]]
+    
 * References
-  * Lemahieu et al (2021). Principles of Database Management. Univ of
+  * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
   * TutorialCup (n.d.) System Catalog [website]. [[https://www.tutorialcup.com/dbms/system-catalog.htm][URL:
     www.tutorialcup.com.]]
