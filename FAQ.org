@@ -75,13 +75,15 @@
   [[./img/services.png]]
 
   The confusion with regard to the diagram shown by DataCamp that
-  ordered SaaS, PaaS and IaaS came because their "control" related to
-  loss of control from greater complexity (or greater "abstraction"),
-  for both provider and customer, while I was asking about the
-  customer specifically.
+  ordered SaaS, PaaS and IaaS came about because their term "control"
+  related to loss of control from greater complexity (or greater
+  "abstraction"), for both provider and customer, while I was asking
+  about the customer specifically - actually more relevant in
+  practice.
 
-  Complexity/abstraction is an important parameter in system design
-  but less relevant for the customer, more relevant for the provider..
+  Complexity/abstraction as used in the DataCamp lesson is an
+  important parameter in system design but less relevant for the
+  customer, more relevant for the provider.
 
   #+caption: Figure from DataCamp
   #+attr_html: :width 600px
