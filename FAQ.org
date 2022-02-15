@@ -45,6 +45,7 @@
   the organization's information technology."
   #+end_quote
 
+  *Student question*
   #+begin_quote
   "I just had a question about this particular question.  As you can
   see, I got it all incorrect. My thought process was that, as a user,

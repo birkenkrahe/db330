@@ -558,13 +558,15 @@
 
 * Review test 1, SELECT - w6s9 - February 15, 2022
 ** News
-   * Matthew Stewart, Stone Ward (Fri 18 Feb 3-3.50 PM) via Google Meet
+
+  * Matthew Stewart, Stone Ward (Fri 18 Feb 3-3.50 PM) via Google Meet
+
 ** Objectives
 
    * [ ] Understand test results
    * [ ] Know what to do different next time
    * [ ] Discuss selected questions and answers
-   * [ ] Introduction to SELECT (DataCamp review)
+   * [ ] Introduction to SELECT (beyond DataCamp
 
 ** Test 1 results
 
@@ -605,7 +607,7 @@
      higher up.
      #+name: histogram
      #+begin_src R :exports both :session :results output graphics file :file ./img/test1hist.png
-       hist(results, main="Histogram of test 1 results, CSC 420 Spring 2022")
+       hist(results, main="Histogram of test 1 results, CSC 330 Spring 2022")
      #+end_src
 
      #+RESULTS: histogram
@@ -613,7 +615,7 @@
 
      #+name: boxplot
      #+begin_src R :exports both :session :results output graphics file :file ./img/test1box.png
-       boxplot(results, main="Test 1 results, CSC 420 Spring 2022")
+       boxplot(results, main="Test 1 results, CSC 330 Spring 2022")
      #+end_src
 
      #+RESULTS: boxplot
@@ -623,7 +625,7 @@
      #+begin_src R :exports both :session :results output graphics file :file ./img/test1density.png
        ave <- mean(results)
        d <- density(results)
-       plot(d, col="steelblue",main="Test 1 Results CSC 420 Spring 2022")
+       plot(d, col="steelblue",main="Test 1 Results CSC 330 Spring 2022")
        abline(v=ave,col="red")
      #+end_src
 
