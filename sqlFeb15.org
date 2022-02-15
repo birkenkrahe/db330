@@ -14,7 +14,7 @@
     | Jimmy Jones  |
     | Jane Jackson |
     | Arabela Ant  |
-
+* Hello world program
   * ~SELECT~ pipes any content into a table - e.g. let us write
     a "hello world" program:
     #+name: hello world
@@ -28,7 +28,7 @@
     | Voreingenommenheit |
     | ------------------ |
     | hello world        |
-
+* Arithmetic with ~SELECT~
   * ~SELECT~ can do arithmetic, too!
     #+name: arithmetic
     #+begin_src sqlite :db select.db
@@ -37,7 +37,7 @@
 
     #+RESULTS: arithmetic
     : 12
-
+* ~DISTINCT~ demo
   * Demo of ~DISTINCT~ using ~customer~
     #+name: DISTINCT
     #+begin_src sqlite :db sqlite.db
