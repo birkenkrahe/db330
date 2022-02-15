@@ -556,23 +556,17 @@
    * New DataCamp assignment due Feb 15 ("Intro to RDBM with SQL")
    * SQLite DDL/DML/DQL practice continued
 
-* w6s9 - February 15, 2022
+* Review test 1, SELECT - w6s9 - February 15, 2022
+** News
+   * Matthew Stewart, Stone Ward (Fri 18 Feb 3-3.50 PM) via Google Meet
+** Objectives
+
+   * [ ] Understand test results
+   * [ ] Know what to do different next time
+   * [ ] Discuss selected questions and answers
+   * [ ] Introduction to SELECT (DataCamp review)
 
 ** Test 1 results
-
-   * Test 1 can now be played an unlimited number of times. I have
-     added feedback to all new questions.
-
-   * See [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#control-question-test-1-on-cloud-services][the FAQ]] for a question on the problem of "decreasing control"
-     for different cloud computing architectures. Some of you will get
-     points for giving the correct order, irrespective of the
-     direction - because indeed there was a conflict with the DataCamp
-     image showing that "control" decreases from IaaS to SaaS, and not
-     the other way around - because this was with regard to loss of
-     control from complexity, for both provider and customer, while I
-     was asking about the customer specifically. Complexity/abstraction
-     is an important parameter in system design but less relevant for
-     the customer, more relevant for the provider[fn:6].
 
    * I think the results are actually very decent - > 75%% is a
      good result - better next time!
@@ -584,10 +578,97 @@
      available time. Alas, the stats don't show this number. A quick
      glance does not seem to reveal any clear pattern[fn:7].
 
+   * I am an obsessive fact-checker. When checking the stats with R, I
+     find slightly different results:
+     #+name: test 1 results
+     #+begin_src R :exports both :session :results output
+       results <- c(17.88,15.8,16.67,12.32,9.54,16.56,12.31,12.78,14.33,
+                    18.67,18,17.56,12.64,15.56,15.86,14.64,13.96,14.75,16.43,
+                    15.58,16.44,13.98,18.56,14.91,13.11,17,16.33,17.21)
+       length(results)
+       sd(results)
+       summary(results)
+     #+end_src
+
+     #+RESULTS: test 1 results
+     : 
+     : [1] 28
+     : 
+     : [1] 2.193788
+     : 
+     :    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+     :    9.54   13.97   15.69   15.34   16.75   18.67
+
+   * Let's make some plots: histogram, boxplot and density plot. I'd
+     like the histogram and the density plot (a smoothened histogram)
+     to peak more to the right, and for the boxplot to be smaller and
+     higher up.
+     #+name: histogram
+     #+begin_src R :exports both :session :results output graphics file :file ./img/test1hist.png
+       hist(results, main="Histogram of test 1 results, CSC 420 Spring 2022")
+     #+end_src
+
+     #+RESULTS: histogram
+     [[file:./img/test1hist.png]]
+
+     #+name: boxplot
+     #+begin_src R :exports both :session :results output graphics file :file ./img/test1box.png
+       boxplot(results, main="Test 1 results, CSC 420 Spring 2022")
+     #+end_src
+
+     #+RESULTS: boxplot
+     [[file:./img/test1box.png]]
+
+     #+name: density
+     #+begin_src R :exports both :session :results output graphics file :file ./img/test1density.png
+       ave <- mean(results)
+       d <- density(results)
+       plot(d, col="steelblue",main="Test 1 Results CSC 420 Spring 2022")
+       abline(v=ave,col="red")
+     #+end_src
+
+     #+RESULTS: density
+     [[file:./img/test1density.png]]
+
+** Analysis - feedback and action points
+
+   * Test 1 can now be played an unlimited number of times. I have
+     added feedback to all new questions.
+
+   * What surprised me most was that many of you did not use the
+     available time. However, I have not (yet) been able to correlate
+     test time and test success.
+
+   * See also: [[https://github.com/birkenkrahe/org/blob/master/diary.org#i-can-teach-it-to-you-but-i-cannot-learn-it-for-you]["I can teach it to you but I cannot learn it for you"]]
+
+   * Questions:
+     - How did you study for this test?
+     - If you didn't perform well, what will you change?
+     - What can I do to help you help yourself?
+
+   * Changes to be applied in future quizzes/tests:
+     - Fewer multiple choices (max. 4)
+     - Announce if a question has > 1 answer (and/or how many)
+
+   #+caption: Feynman (via Twitter)
+   #+attr_html: :width 500px
+   [[./img/feynman.png]]
+
 ** Individual questions
 
    Some questions do not accept a feedback option. I have put a GitHub
    link into the question field.
+
+   * See [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#control-question-test-1-on-cloud-services][the FAQ]] for a question on the problem of "decreasing control"
+     for different cloud computing architectures. Some of you will get
+     points for giving the correct order, irrespective of the
+     direction - because indeed there was a conflict with the DataCamp
+     image showing that "control" decreases from IaaS to SaaS, and not
+     the other way around - because this was with regard to loss of
+     control from complexity, for both provider and customer, while I
+     was asking about the customer specifically. Complexity/abstraction
+     is an important parameter in system design but less relevant for
+     the customer, more relevant for the provider[fn:6].
 
 *** How does MooCall sensor operate?
 
@@ -704,7 +785,15 @@
     processes are virtualized in the sense that jobs are executed by a
     concerted action of CPU, volatile memory (RAM) and non-volatile
     memory (e.g. Hard disk), while the user knows nothing about it.
-    
+
+** Introduction to SELECT
+
+   * Introduction to the SELECT pipeline
+   * Continue SQLite session from last time:
+     - dump SQL data / stdout
+     - alter a table
+     - class assignment
+   
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
