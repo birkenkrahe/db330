@@ -62,7 +62,7 @@
    | WHEN[fn:1]    | DESCRIPTION              | IMPACT |
    |---------------+--------------------------+--------|
    | Every session | Class assignments        |    10% |
-   | Weekly        | DataCamp/H5P assignments |    30% |
+   | Weekly        | DataCamp assignments     |    30% |
    | Monthly       | Tests                    |    30% |
    | End of term   | Final exam               |    30% |
 
