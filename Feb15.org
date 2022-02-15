@@ -1,0 +1,96 @@
+* ~AS~ operator
+
+  * This operator creates aliases for names in SQL
+    #+name: AS
+    #+begin_src sqlite :db sqlite.db
+      .header ON
+      .mode column
+      SELECT name AS nome FROM customer;
+    #+end_src
+
+    #+RESULTS: AS
+    | nome         |
+    | ------------ |
+    | Jimmy Jones  |
+    | Jane Jackson |
+    | Arabela Ant  |
+
+  * ~SELECT~ pipes any content into a table - e.g. let us write
+    a "hello world" program:
+    #+name: hello world
+    #+begin_src sqlite :db select.db
+      .header ON
+      .mode column
+      SELECT 'hello world' AS Voreingenommenheit;
+    #+end_src
+
+    #+RESULTS: hello world
+    | Voreingenommenheit |
+    | ------------------ |
+    | hello world        |
+
+  * ~SELECT~ can do arithmetic, too!
+    #+name: arithmetic
+    #+begin_src sqlite :db select.db
+	SELECT 1*3*4;
+    #+end_src
+
+    #+RESULTS: arithmetic
+    : 12
+
+  * Demo of ~DISTINCT~ using ~customer~
+    #+name: DISTINCT
+    #+begin_src sqlite :db sqlite.db
+      .header ON
+      .mode column
+      .tables
+      SELECT * FROM customer;
+      INSERT INTO customer VALUES (4, "Peter Piper");
+      SELECT * FROM customer;
+    #+end_src   
+
+    #+RESULTS: DISTINCT
+    | customer         |
+    | id  name         |
+    | --  ------------ |
+    | 1   Jimmy Jones  |
+    | 2   Jane Jackson |
+    | 3   Arabela Ant  |
+    | 4   Peter Piper  |
+    | id  name         |
+    | --  ------------ |
+    | 1   Jimmy Jones  |
+    | 2   Jane Jackson |
+    | 3   Arabela Ant  |
+    | 4   Peter Piper  |
+    | 4   Peter Piper  |
+
+    #+begin_src sqlite :db sqlite.db
+      .header ON
+      .mode column
+      SELECT * FROM customer;
+      SELECT DISTINCT * FROM customer;       
+    #+end_src   
+
+    #+RESULTS:
+    | id  name         |
+    | --  ------------ |
+    | 1   Jimmy Jones  |
+    | 2   Jane Jackson |
+    | 3   Arabela Ant  |
+    | 4   Peter Piper  |
+    | 4   Peter Piper  |
+    | id  name         |
+    | --  ------------ |
+    | 1   Jimmy Jones  |
+    | 2   Jane Jackson |
+    | 3   Arabela Ant  |
+    | 4   Peter Piper  |
+
+  #+begin_src sqlite :db sqlite.db
+    CREATE TABLE customer1 (id INT, name TEXT);
+    .tables
+  #+end_src
+
+  #+RESULTS:
+  : customer   customer1

@@ -677,6 +677,10 @@
       is an important parameter in system design but less relevant for
       the customer, more relevant for the provider[fn:6].
 
+**** Customer control for different cloud architectures (Ø=0.46)
+
+     [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#control-question-test-1-on-cloud-services][See FAQ]] - student question and answer.
+
 **** How does MooCall sensor operate? (Ø=0.96)
 
      Bring the following processes in the right order.
@@ -742,10 +746,6 @@
        an explanation (or even a source) of these properties, just a
        listing. For details, see e.g. [[https://www.keycdn.com/support/sqlite-vs-mysql][keycdn]] ([[keycdn][2018]]).
 
-**** Customer control for different cloud architectures (Ø=0.46)
-
-     [[https://github.com/birkenkrahe/db330/blob/main/FAQ.org#control-question-test-1-on-cloud-services][See FAQ]] - student question and answer.
-
 **** Use case diagrams and UML (Ø=0.71)
 
      * UML is Unified Modeling Language - an important modeling
@@ -796,6 +796,8 @@
 **** Entering sqlite3 at the prompt opens SQLite to a transient database (Ø=0.54)
 **** Which database language properties does SQLite have? (Ø=0.64)
 
+     DDL, DML, DQL
+     
 ** How do class assignments work?
 
    * In-class assignments are *10%* of your total grade
