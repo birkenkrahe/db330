@@ -506,6 +506,8 @@
 
      #+RESULTS:
      : main: c:\Users\birkenkrahe\Documents\GitHub\db330\sqlite.db r/w
+     : 1,"Jimmy Jones"
+     : 2,"Jane Jackson"
 
    * To create a table, we need SQL commands (not just SQLite shell
      commands). In [[create]], the SQL keywords are all capitalized though
@@ -556,7 +558,7 @@
    * New DataCamp assignment due Feb 15 ("Intro to RDBM with SQL")
    * SQLite DDL/DML/DQL practice continued
 
-* Review test 1, SELECT - w6s9 - February 15, 2022
+* Review test 1, introduction to SELECT - w6s9 - February 15, 2022
 ** News
 
    * Matthew Stewart, Stone Ward (Fri 18 Feb 3-3.50 PM) via Google Meet
@@ -566,8 +568,9 @@
    * [ ] Understand test results
    * [ ] Know what to do different next time
    * [ ] Discuss selected questions and answers
-   * [ ] Get an introduction to SELECT
+   * [ ] Understand how "in class assignments" work
    * [ ] Review DataCamp lesson "Selecting columns"
+   * [ ] Get an introduction to SELECT
 
 ** Test review
 *** Test 1 results
@@ -793,7 +796,15 @@
 **** Entering sqlite3 at the prompt opens SQLite to a transient database (Ø=0.54)
 **** Which database language properties does SQLite have? (Ø=0.64)
 
-** Review of DataCamp
+** How do class assignments work?
+
+   * In-class assignments are *10%* of your total grade
+   * They are labeled *class assignments* in the Schoology gradebook
+   * You get the points if you attend and participate *actively*
+   * If you check your phone instead, you're *not* active
+   * If you could not attend (with a good excuse), submit *late*
+
+** Review of DataCamp (interactive)
 
    * Review dashboard: SQL shell / table view
 
@@ -848,8 +859,18 @@
      | Jimmy Jones      |
      | Jane Jackson     |
 
-   * Demonstration of ~COUNT~ 
-   
+   * Demonstration of ~COUNT~ using our table ~customer~.
+     #+name: COUNT
+     #+begin_src sqlite :db sqlite.db :results output
+       SELECT COUNT(*) FROM customer;
+       INSERT INTO customer VALUES (3,"Arabela Ant");
+       SELECT COUNT(*) FROM customer;
+     #+end_src
+
+     #+RESULTS: COUNT
+     : 2
+     : 3
+
 *** GLOSSARY
 
      | TERM       | EXPLANATION                                               |
@@ -866,6 +887,11 @@
 
    * Overview of the SELECT pipeline (mindmap)
 
+** Next
+
+   * More SQLite gymnastics: ~stdout~, ~.dump~
+   * DataCamp: filtering results
+   
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
