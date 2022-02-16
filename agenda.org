@@ -583,7 +583,7 @@
 
     * What surprised me most was that many of you did not use the
       available time. Alas, the stats don't show this number. A quick
-      glance does not seem to reveal any clear pattern[fn:7].
+      glance does not seem to reveal any clear pattern.
 
     * I am an obsessive fact-checker. When checking the stats with R, I
       find slightly different results:
@@ -805,6 +805,7 @@
    * You get the points if you attend and participate *actively*
    * If you check your phone instead, you're *not* active
    * If you could not attend (with a good excuse), submit *late*
+   * Submit an Org-mode file, not a screenshot
 
 ** Review of DataCamp (interactive)
 
@@ -916,7 +917,6 @@ computation. Org-mode tables are actually spreadsheet-enabled:
      | 4.6666667 |
      #+TBLFM: @5$1=vmean(@1..@4)
      #+end_example
-
 
 [fn:2]In Lyon 104 (Computer lab), the ~PATH~ variable is unfortunately
 stored in the personal user's app data so that I could not set it
