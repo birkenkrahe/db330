@@ -565,11 +565,11 @@
 
 ** Objectives
 
-   * [ ] Understand test results
-   * [ ] Know what to do different next time
-   * [ ] Discuss selected questions and answers
-   * [ ] Understand how "in class assignments" work
-   * [ ] Review DataCamp lesson "Selecting columns"
+   * [X] Understand test results
+   * [X] Know what to do different next time
+   * [X] Discuss selected questions and answers
+   * [X] Understand how "in class assignments" work
+   * [X] Review DataCamp lesson "Selecting columns"
    * [ ] Get an introduction to SELECT
 
 ** Test review
@@ -885,15 +885,19 @@
      | ~DISTINCT~ | Selector of unique values from one column                 |
      | ~COUNT~    | SQL aggregator function                                   |
 
-** Overview of ~SELECT~
-
-   * Overview of the SELECT pipeline (mindmap)
-
 ** Next
 
+   * Overview of the ~SELECT~ pipeline
    * More SQLite gymnastics: ~stdout~, ~.dump~
    * DataCamp: filtering results
    
+* The SELECT pipeline - w6s10 - February 17, 2022
+** Objectives
+** TODO Init class assignment
+** TODO Overview of ~SELECT~
+
+   * Overview of the SELECT pipeline (mindmap)
+** Next     
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
