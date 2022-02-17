@@ -907,7 +907,7 @@
    keep it, or on the command line, if you don't care about losing it.
 
    1) [ ] Start SQLite with header on and column mode switched on from
-      the command line (to find out, look at ~sqlite3 --help)
+      the command line (to find out, look at ~sqlite3 --help~)
 
    2) [ ] Check that you don't have a persistent database with ~.database~
 
@@ -920,7 +920,7 @@
       - with ~SELECT~
    6) [ ] Switch the output to a file with ~.output feb17.sql~
    7) [ ] Dump the content of your database with ~.dump~
-   8) [ ] Switch the output back to stdout
+   8) [ ] Switch the output back to ~stdout~
    9) [ ] Dump the content of your database again
    10) [ ] Leave the SQLite shell and look at ~feb17.sql~
    
