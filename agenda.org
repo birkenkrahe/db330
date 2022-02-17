@@ -575,7 +575,7 @@
 ** Test review
 *** Test 1 results
 
-    * I think the results are actually very decent - > 75%% is a
+    * I think the results are actually very decent - > 75% is a
       good result - better next time!
       #+caption: Test 1 results (Schoology)
       #+attr_html: :width 500px
@@ -898,6 +898,7 @@
 ** TODO Overview of ~SELECT~
 
    * Overview of the SELECT pipeline (mindmap)
+
 ** Next     
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
