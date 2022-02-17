@@ -33,8 +33,10 @@ stuff we did prior.
     #+end_src
 
 * Hello world program
-  * ~SELECT~ pipes any content into a table - e.g. let us write
-    a "hello world" program:
+
+  * ~SELECT~ pipes any content into a table - e.g. let us write a
+    "hello world" program (with a long German column name meaning
+    'bias'):
     #+name: hello world
     #+begin_src sqlite :db select.db
       .header ON

@@ -894,8 +894,37 @@
    
 * The SELECT pipeline - w6s10 - February 17, 2022
 ** Objectives
-** TODO Init class assignment
-** TODO Overview of ~SELECT~
+
+   * [ ] Review: Feb 15 in-class exercises
+
+   * [ ] Practice: SQLite stdout and dump
+
+   * [ ] Lecture: SELECT pipeline
+
+** Init class assignment
+
+   You can perform all of these commands inside an Org-mode file to
+   keep it, or on the command line, if you don't care about losing it.
+
+   1) [ ] Start SQLite with header on and column mode switched on from
+      the command line (to find out, look at ~sqlite3 --help)
+
+   2) [ ] Check that you don't have a persistent database with ~.database~
+
+   3) [ ] Open your (existing) database ~sqlite.db~ with ~.open~
+
+   4) [ ] Check that you're now writing to ~sqlite.db~
+
+   5) [ ] Check that in fact header is ~ON~ and the mode is ~column~
+      - with ~.show~ to show all output values
+      - with ~SELECT~
+   6) [ ] Switch the output to a file with ~.output feb17.sql~
+   7) [ ] Dump the content of your database with ~.dump~
+   8) [ ] Switch the output back to stdout
+   9) [ ] Dump the content of your database again
+   10) [ ] Leave the SQLite shell and look at ~feb17.sql~
+   
+** Overview of ~SELECT~
 
    * Overview of the SELECT pipeline (mindmap)
 
