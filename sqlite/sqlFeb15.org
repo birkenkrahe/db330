@@ -1,3 +1,4 @@
+#+STARTUP: hideblocks overview
 The material from 15 Feb begins [[below]]. The first two sections are
 stuff we did prior.
 
