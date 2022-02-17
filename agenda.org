@@ -901,7 +901,7 @@
 
    * [ ] Lecture: SELECT pipeline
 
-** Init class assignment
+** "Be the shell!": in-class assignment
 
    You can perform all of these commands inside an Org-mode file to
    keep it, or on the command line, if you don't care about losing it.
@@ -928,6 +928,14 @@
 
    * Overview of the SELECT pipeline (mindmap)
 
+   #+caption: High level overview of SELECT
+   #+attr_html: :width 700px
+   [[./img/select.png]]
+
+   #+caption: SELECT in detail
+   #+attr_html: :width 700px
+   [[./img/select1.png]]
+   
 ** Next     
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
