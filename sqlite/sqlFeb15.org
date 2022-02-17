@@ -1,11 +1,28 @@
+The material from 15 Feb begins [[below]]. The first two sections are
+stuff we did prior.
+
 * ~CREATE TABLE~
 
   For the code chunk below to work, you need to have created a table
   ~customer~.
-  
-  
+  #+name: create table
+  #+begin_src sqlite :db sqlite.db
+    CREATE TABLE customer (id INT, name TEXT);
+    .tables
+  #+end_src
+
+* ~INSERT INTO~ table
+
+  If running this chunk results in the message that the table already
+  exists, but you don't get any output, then you need to add at least one line:
+  #+name: insert row
+  #+begin_src sqlite :db sqlite.db
+    INSERT INTO customer VALUES (1,"Bob Bauman");
+    SELECT * FROM customer;
+  #+end_src
 
 * ~AS~ operator
+  <<below>>
 
   * This operator creates aliases for names in SQL
     #+name: AS
@@ -29,9 +46,9 @@
   * ~SELECT~ can do arithmetic, too!
     #+name: arithmetic
     #+begin_src sqlite :db select.db
-	SELECT 1*3*4;
+      SELECT 1*3*4;
     #+end_src
-    
+
 * ~DISTINCT~ demo
   * Demo of ~DISTINCT~ using ~customer~
     #+name: DISTINCT
@@ -42,17 +59,16 @@
       SELECT * FROM customer;
       INSERT INTO customer VALUES (4, "Peter Piper");
       SELECT * FROM customer;
-    #+end_src   
+    #+end_src
 
     #+begin_src sqlite :db sqlite.db
       .header ON
       .mode column
       SELECT * FROM customer;
-      SELECT DISTINCT * FROM customer;       
-    #+end_src   
+      SELECT DISTINCT * FROM customer;
+    #+end_src
 
   #+begin_src sqlite :db sqlite.db
     CREATE TABLE customer1 (id INT, name TEXT);
     .tables
   #+end_src
-
