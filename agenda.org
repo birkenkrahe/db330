@@ -892,7 +892,7 @@
    * More SQLite gymnastics: ~stdout~, ~.dump~
    * DataCamp: filtering results
    
-* The SELECT pipeline - w6s10 - February 17, 2022
+* DB dump and output, SELECT pipeline - w6s10 - February 17, 2022
 ** Objectives
 
    * [ ] Review: Feb 15 in-class exercises
