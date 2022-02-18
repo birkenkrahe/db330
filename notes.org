@@ -3,6 +3,7 @@
 #+SUBTITLE:Followup for CSC330 Database Theory & Applications Spring 2022
 #+STARTUP:overview hideblocks
 #+OPTIONS: toc:nil num:nil ^:nil
+#+PROPERTY: header-args:sqlite :header :column :results output
 * README
 
   Instead of bugging you with emails, I opt to summarize my course
@@ -573,30 +574,126 @@
 
 * DB dump and output, SELECT pipeline - w6s10 - February 17, 2022
 
+** Introduction to Org-mode for SQLite
+
+   The respective [[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sqlite.html][section in the Orgmode-Manual]] is short and contains
+   many examples for you to try out.
+   
 ** "Be the shell!": in-class assignment
 
    You can perform all of these commands inside an Org-mode file to
    keep it, or on the command line, if you don't care about losing it.
 
-   1) [ ] Start SQLite with header on and column mode switched on from
-      the command line (to find out, look at ~sqlite3 --help~)
+   1) Start SQLite with header on and column mode switched on from
+      the command line (to find out, look at ~sqlite3 --help~).
 
-   2) [ ] Check that you don't have a persistent database with ~.database~
+      *Solution:* On the command line[fn:9], enter
+      #+begin_example
+      $ sqlite3 -header -column~
+      #+end_example
 
-   3) [ ] Open your (existing) database ~sqlite.db~ with ~.open~
+   2) Check that you don't have a persistent database with ~.database~.
 
-   4) [ ] Check that you're now writing to ~sqlite.db~
+      *Solution:*
+      #+begin_example
+      sqlite>  .database
+      #+end_example
 
-   5) [ ] Check that in fact header is ~ON~ and the mode is ~column~
+   3) Open your (existing) database ~sqlite.db~ with ~.open~
+
+      *Solution:*
+      #+begin_example
+      sqlite>  .open sqlite.db
+      #+end_example
+
+      This database does not need to exist yet - if it does not, the
+      binary file is created as an empty file in the directory where
+      you were when you opened SQLite.
+   
+   4) Check that you're now writing to ~sqlite.db~
+
+      *Solution:*
+      #+begin_example
+      sqlite>  .database
+      #+end_example
+
+      You could also enter ~.show~ - the last line of its output shows
+      the currently active database. You can change databases and have
+      as many open as you like.
+   
+   5) Check that in fact header is ~ON~ and the mode is ~column~
       - with ~.show~ to show all output values
       - with ~SELECT~
-   6) [ ] Switch the output to a file with ~.output feb17.sql~
-   7) [ ] Dump the content of your database with ~.dump~
-   8) [ ] Switch the output back to ~stdout~
-   9) [ ] Dump the content of your database again
-   10) [ ] Leave the SQLite shell and look at ~feb17.sql~
-   
 
+      *Solution:*
+      #+begin_example
+      sqlite> .show
+      sqlite> SELECT * FROM customer;
+      #+end_example
+
+      This presumes that you have created at least one table named
+      ~customer~, and that it is in your database ~sqlite.db~, and
+      that the table has at least one row - otherwise nothing will be
+      displayed. 
+   
+   6) Switch the output to a file with ~.output sqlite.sql~
+
+      *Solution:*
+      #+begin_example
+      sqlite> .output feb17.sql
+      #+end_example
+
+      ~.output~ is one of the settings you saw with ~.show~. It shows
+      where the output is directed. The default is ~stdout~, or the
+      screen. You have now reset this to pipe all output into a file
+      ~sqlite.sql~.
+   
+   7) Dump the content of your database with ~.dump~
+
+      *Solution:*
+      #+begin_example
+      sqlite> .dump
+      #+end_example
+
+      This writes a version of the binary ~.db~ file to a text file
+      ~.sql~. It contains all the information necessary to recreate
+      the database. This ~.sql~ can be used to port the database. On
+      another computer, SQLite will recreate ~sqlite.db~ from
+      ~sqlite.sql~ by importing it with the ~.read~ command.
+   
+   8) Switch the output back to ~stdout~
+
+      *Solution:*
+      #+begin_example
+      sqlite> .output stdout
+      sqlite> .show
+      #+end_example
+
+      Until we redirect the output to ~stdout~, every output we
+      generate, including error messages, will be redirected to the
+      ~.sql~ file.
+   
+   9) Dump the content of your database again.
+
+      *Solution:*
+      #+begin_example
+      sqlite> .dump
+      #+end_example
+
+      Instead of dumping to an SQL file, we are now dumping the
+      database to the screen.
+      
+   10) Leave the SQLite shell and look at ~sqlite.sql~
+
+      *Solution:*
+      #+begin_example
+      sqlite> .q
+      #+end_example
+
+      Depending on your PC (it doesn't seem to work under MacOS), the
+      ~.shell~ command can be used to peek beyond the SQLite shell,
+      and you could use this command to look at the directory
+      listing - under Windows: ~.shell DIR~.
 * References
   * <<bbc>> BBC (11 Mar 2019). World wide web vs. internet - what's
     the difference? [video]. [[https://www.bbc.co.uk/newsround/47523993#:~:text=The%20world%20wide%20web%2C%20or,connect%20towns%20and%20cities%20together.][URL: www.bbc.co.uk]].
@@ -618,6 +715,8 @@
     docs.nextcloudpi.com]].
   * Nystrom (2021). Crafting Interpreters. Genever Benning. URL:
     https://craftinginterpreters.com/
+  * orgmode.org (n.d.). SQLite Source Code Blocks in Org Mode
+    [website]. [[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sqlite.html][URL: orgmode.org]].
   * Russell/Norvig (2021). Artificial Intelligence - a Modern Approach
     (AIMA). Pearson. URL: aima.cs.berkeley.edu.
   * Spajic (Jan 29, 2018). Understanding Git - Data Model. [[https://medium.com/hackernoon/https-medium-com-zspajich-understanding-git-data-model-95eb16cc99f5][URL:
@@ -626,6 +725,24 @@
     medium.com/ai-society.]]
 
 * Footnotes
+
+[fn:9] Org-mode has 11 different header arguments ([[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sqlite.html][see here]]) - you can
+initialize SQLite with the header shown below. A separate session
+buffer is not supported[fn:8] - SQLite is run outside of Emacs and the
+results are displayed here. For a session demonstrating SQLite
+commands (which begin with a ~.~), Org-mode is not well suited. For
+SQL commands, it is well suited.
+#+begin_example
+  #+begin_src sqlite :db ./sqlite/sqlite.db :header :column :results output
+    ...
+  #+end_src
+#+end_example
+
+
+#+end_src
+
+
+[fn:8]Such a session buffer opens e.g. when you start R with ~M-x R~.
 
 [fn:6]If you had the order SaaS-Paas-IaaS correct in either direction,
 you got the full point for this question.
