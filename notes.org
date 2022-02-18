@@ -573,16 +573,9 @@
   |----------------+-----------------------------------------------------------|
 
 * DB dump and output, SELECT pipeline - w6s10 - February 17, 2022
-
-** Introduction to Org-mode for SQLite
-
-   The respective [[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sqlite.html][section in the Orgmode-Manual]] is short and contains
-   many examples for you to try out.
-   
 ** "Be the shell!": in-class assignment
 
-   You can perform all of these commands inside an Org-mode file to
-   keep it, or on the command line, if you don't care about losing it.
+   See also screencase video on YouTube (12 min).
 
    1) Start SQLite with header on and column mode switched on from
       the command line (to find out, look at ~sqlite3 --help~).
@@ -694,6 +687,11 @@
       ~.shell~ command can be used to peek beyond the SQLite shell,
       and you could use this command to look at the directory
       listing - under Windows: ~.shell DIR~.
+
+      #+caption: sqlite.sql with the sqlite.db database dump
+      #+attr_html: :width 600px
+      [[./img/dump.png]]
+   
 * References
   * <<bbc>> BBC (11 Mar 2019). World wide web vs. internet - what's
     the difference? [video]. [[https://www.bbc.co.uk/newsround/47523993#:~:text=The%20world%20wide%20web%2C%20or,connect%20towns%20and%20cities%20together.][URL: www.bbc.co.uk]].
