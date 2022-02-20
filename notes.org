@@ -633,7 +633,7 @@
 
       *Solution:*
       #+begin_example
-      sqlite> .output feb17.sql
+      sqlite> .output sqlite.sql
       #+end_example
 
       ~.output~ is one of the settings you saw with ~.show~. It shows
