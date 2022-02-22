@@ -904,7 +904,8 @@
 ** "Be the shell!": in-class assignment
 
    You can perform all of these commands inside an Org-mode file to
-   keep it, or on the command line, if you don't care about losing it.
+   keep them[fn:4], or on the command line, if you don't care about losing
+   it - see class notes and my screencast on YouTube.
 
    1) [X] Start SQLite with header on and column mode switched on from
       the command line (to find out, look at ~sqlite3 --help~)
@@ -948,6 +949,8 @@
   * TutorialCup (n.d.) System Catalog [website]. [[https://www.tutorialcup.com/dbms/system-catalog.htm][URL:
     www.tutorialcup.com.]]
 * Footnotes
+
+[fn:4]On Windows, Emacs Org-mode cannot handle 
 
 [fn:3]It is not true that a "table is like a
 spreadsheet". Spreadsheets contain active fields for
