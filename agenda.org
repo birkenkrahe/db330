@@ -953,12 +953,17 @@
 ** Objectives
 
    * [ ] Understand how to export table data
-   * [ ] 
+   * [ ] Understand how to import data, especially CSV files
+   * [ ] Know how to delete tables
+   * [ ] Understand unique constraints (PRIMARY KEY)
+   * [ ] Remaining DML commands: UPDATE TABLE
+   * [ ] Remaining DDL commands: ALTER TABLE
+   * [ ] NULL values and how to enforce them
      
 ** SQLite
 *** Delete tables
 
-    * ~DROP TABLE;~
+    * ~DROP TABLE [table];~
 
     * PRACTICE
       
@@ -1005,17 +1010,19 @@
 
    * PRACTICE
 
-*** UPDATE TABLE
+*** UPDATE TABLE (DML)
     
    * ~UPDATE~ table values with ~UPDATE [table] SET [col]=[new];~
 
    * If you're not careful you update entries that don't need it
 
    * How can you specify a row and leave others unchanged?
+
+   * Use a filter with ~WHERE~ to specify the row!
      
    * PRACTICE
 
-*** ALTER TABLE
+*** ALTER TABLE (DDL)
 
    * SQLite has limited capabilities to alter tables
 
@@ -1026,7 +1033,7 @@
    * Add a column with ~ALTER TABLE [table] ADD COLUMN [name] TEXT;~
 
    * PRACTICE
-
+     
 *** NULL values
     
    * ~NULL~ values are special, too
