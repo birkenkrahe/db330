@@ -575,7 +575,7 @@
 * DB dump and output, SELECT pipeline - w6s10 - February 17, 2022
 ** "Be the shell!": in-class assignment
 
-   See also screencase video on YouTube (12 min).
+   See also my [[https://youtu.be/-mKBQdgZFTE][screencast]] (12 min) with script in [[https://github.com/birkenkrahe/db330/blob/main/sqlite/Be_The_Shell_Feb_17.pdf][GitHub]] (PDF).
 
    1) Start SQLite with header on and column mode switched on from
       the command line (to find out, look at ~sqlite3 --help~).
