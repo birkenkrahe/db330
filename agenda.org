@@ -904,8 +904,9 @@
 ** "Be the shell!": in-class assignment
 
    You can perform all of these commands inside an Org-mode file to
-   keep them[fn:4], or on the command line, if you don't care about losing
-   it - see class notes and my screencast on YouTube.
+   keep them[fn:4], or on the command line, if you don't care about
+   losing it - see [[https://github.com/birkenkrahe/db330/blob/main/notes.org#db-dump-and-output-select-pipeline---w6s10---february-17-2022][class notes]] (GitHub) and my [[https://youtu.be/-mKBQdgZFTE][screencast on YouTube]]
+   with a [[https://github.com/birkenkrahe/db330/blob/main/sqlite/Be_The_Shell_Feb_17.pdf][script]] (PDF).
 
    1) [X] Start SQLite with header on and column mode switched on from
       the command line (to find out, look at ~sqlite3 --help~)
