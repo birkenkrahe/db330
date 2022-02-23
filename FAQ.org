@@ -8,7 +8,27 @@
   This is a Frequently Asked Questions (FAQ) file for this course. For
   the FAQs across courses, see the [[https://github.com/birkenkrahe/org][org repo]].
 
-* How to run SQLite in Emacs
+* Running SQLite in an Emacs shell
+
+  * It's bugged me from the start of the course that GNU Emacs on
+    Windoze did not seem to allow to run SQLite in a shell. Turns out
+    that's not true! The issue is merely cosmetic: the SQLite shell
+    prompt is not shown is all.
+
+  * Here are a couple of screenshots both from Windoze - the first is
+    the SQLite shell inside an terminal Emacs shell (start Emacs from
+    the CMD line with ~emacs -nw~), the second is from within the
+    Ubuntu app (20.04 LTS), also the terminal Emacs.
+
+    #+caption: Terminal GNU Emacs in Windows
+    #+attr_html: :width 500px
+    [[./img/CMD.png]]
+
+    #+caption: Terminal GNU Emacs in Windows' Ubuntu app
+    #+attr_html: :width 500px
+    [[./img/ubuntu.png]]
+
+* How to run SQLite in Emacs Org-mode
 
   This refers to running SQLite inside an Emacs Org-mode code block -
   the ability to program SQLite in a literate way. This ability is
@@ -88,4 +108,3 @@
   #+caption: Figure from DataCamp
   #+attr_html: :width 600px
   [[./img/pyramid.png]]
-

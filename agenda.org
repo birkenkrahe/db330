@@ -948,8 +948,7 @@
    * More SQLite (import, export, delete)
 
    * More SELECT (joins, filter, arithmetic)
-* SQLite import/export, SELECT joins _ w7s11 - February 22, 2022
-
+* SQLite import/export, NULL, UNIQUE - w7s11 - February 22, 2022
 ** Objectives
 
    * [ ] Understand how to export table data
@@ -1052,7 +1051,6 @@
 
    * Interactive notebook (Org) to practice all of this
 
-     
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].

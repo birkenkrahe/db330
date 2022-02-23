@@ -692,6 +692,37 @@
       #+attr_html: :width 600px
       [[./img/dump.png]]
    
+* SQLite import/export, NULL, UNIQUE - w7s11 - February 22, 2022
+
+  * [[https://en.wikipedia.org/wiki/Apache_HTTP_Server][Apache HTTP server]] still seems to be the dominant HTTP server
+    software. [[https://www.apachefriends.org/index.html][XAMPP]], the package featured in class, contains a fork of
+    MySQL, MariaDB, and a GUI to use the RDBMS graphically. There are
+    many GUIs and XAMPP is still the easiest to install, I
+    think. XAMPP's original purpose is not for DB training though but
+    for easy web development (you have all the tools you need on your
+    PC). We're going to look at this in class - however, I'm not going
+    to install XAMPP on every lab PC, so if you wish to tag along, you
+    need to bring your laptop to class. I'm going to make an
+    installation video.
+    
+  * FAQ: It's bugged me from the start of the course that GNU Emacs on
+    Windoze did not seem to allow to run SQLite in a shell. Turns out
+    that's not true! The issue is merely cosmetic: the SQLite shell
+    prompt is not shown is all.
+
+  * Here are a couple of screenshots both from Windoze - the first is
+    the SQLite shell inside an terminal Emacs shell (start Emacs from
+    the CMD line with ~emacs -nw~), the second is from within the
+    Ubuntu app (20.04 LTS), also the terminal Emacs.
+
+    #+caption: Terminal GNU Emacs in Windows
+    #+attr_html: :width 500px
+    [[./img/CMD.png]]
+
+    #+caption: Terminal GNU Emacs in Windows' Ubuntu app
+    #+attr_html: :width 500px
+    [[./img/ubuntu.png]]
+  
 * References
   * <<bbc>> BBC (11 Mar 2019). World wide web vs. internet - what's
     the difference? [video]. [[https://www.bbc.co.uk/newsround/47523993#:~:text=The%20world%20wide%20web%2C%20or,connect%20towns%20and%20cities%20together.][URL: www.bbc.co.uk]].
