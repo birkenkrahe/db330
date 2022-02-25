@@ -1054,8 +1054,23 @@
 * w8s12 - March 1 
 ** News
 
-   * DataCamp course changes - wait for Schoology
-   * Mid-term grades
+   * DataCamp course changes
+   * To count, courses must be published in Schoology
+   * Mid-term grades: check if you want to submit late
+
+** Objectives
+
+** SQLite Code Blocks in Org Mode
+
+   * Do you remember what Org-mode is?
+   * Do you remember what tangling and weaving means?
+
+   https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sqlite.html
+
+   #+caption: literate programming - "foo.w" is the Org-mode file
+   #+attr_html: :width 600px
+   [[./img/cweb.png]]
+
    
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
