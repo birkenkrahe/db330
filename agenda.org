@@ -1051,7 +1051,7 @@
 
    * Interactive notebook (Org) to practice all of this
 
-* 
+* w8s12 - March 1 
 ** News
 
    * DataCamp course changes - wait for Schoology
