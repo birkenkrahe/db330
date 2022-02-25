@@ -54,7 +54,12 @@
 
 * Footnotes
 
-[fn:5] 
+[fn:5] How do class assignments work? In-class assignments are 10% of
+your total grade. They are labeled class assignments in the Schoology
+gradebook. You get the points if you attend and participate
+actively. If you check your phone instead, you're not active. If you
+could not attend (with a good excuse), submit late (via email). Submit
+an Org-mode file, not a screenshot.
 
 [fn:4]Extra credit 
 
