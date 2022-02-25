@@ -14,7 +14,7 @@
    |    |      | +Thu-27-Jan+ |                               |                                    | Run SQLite code block   |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
    |  6 |    4 | Tue-01-Feb   | Cloud deployment              | Cloud Deployment                   |                         | Quiz 3       |
-   |    |      | +Thu-03-Feb+ |                               |                                    |                         |              |
+   |    |      | +Thu-03-Feb+ | CANCELLED (weather)           |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
    |  7 |    5 | Tue-08-Feb   | Cloud providers/SQLite        | Cloud Providers and Case Studies   |                         |              |
    |  8 |      | Thu-10-Feb   | SQLite lab session 1          |                                    |                         | Test 1       |
@@ -23,13 +23,13 @@
    | 10 |      | Thu-17-Feb   | DB dump and output            |                                    | SQLite - be the shell 1 |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
    | 11 |    7 | Tue-22-Feb   | SQLite commands               | SQL: Filtering rows                | SQLite - be the shell 2 | Quiz 4       |
-   | 12 |      | Thu-24-Feb   | SQLite lab session 2          |                                    |                         |              |
+   | 12 |      | +Thu-24-Feb+ | CANCELLED (weather)           |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
    | 13 |    8 | Tue-01-Mar   | SELECT pipeline 2             | SQL: Aggregate functions           |                         | Quiz 5       |
-   | 14 |      | Thu-03-Mar   |                               |                                    |                         |              |
+   | 14 |      | Thu-03-Mar   | SQLite lab session 2          |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 15 |    9 | Tue-08-Mar   |                               | SQL: Sorting and grouping          |                         | Quiz 6       |
-   | 16 |      | Thu-10-Mar   |                               |                                    |                         |              |
+   | 15 |    9 | Tue-08-Mar   | SELECT pipeline 2             | SQL: Sorting and grouping          |                         | Quiz 6       |
+   | 16 |      | Thu-10-Mar   | SQLite lab session 3          |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
    | 17 |   10 | Tue-15-Mar   | DataCamp project review       | Project: Analyze Int. Debt Stats   |                         |              |
    | 18 |      | Thu-17-Mar   |                               |                                    |                         | Test 2       |
