@@ -1051,6 +1051,12 @@
 
    * Interactive notebook (Org) to practice all of this
 
+* 
+** News
+
+   * DataCamp course changes - wait for Schoology
+   * Mid-term grades
+   
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
