@@ -20,7 +20,7 @@
   3) [ ] Each time you see the ~[ ]~ symbol after a bullet point or
      number, you have something to do. When you're done, go with the
      cursor to the top of this paragraph and check it off with ~C-c
-     C-c~ (That's two times CTRL+c). Do it now if you read and
+     C-c~ (That's two times ~CTRL+c~). Do it now if you read and
      understood this!
 
   4) [ ] How to use the interactive notebook:
@@ -33,48 +33,62 @@
      - Check this task if you got that.
 
   5) [ ] Here is a *named code chunk*. The name is [[hello world]] like
-     the SQLite command that it contains. Run the code block by
-     putting your cursor anywhere on the block (boundary is OK) and
-     type ~C-c C-c~.
+     the SQLite string that it contains. Run the code block by putting
+     your cursor anywhere on the block (boundary is OK) and type ~C-c
+     C-c~.
      #+name: hello world
-     #+begin_src sqlite :db sqlite.db
-       .echo ON
-       
+     #+begin_src sqlite :db sqlite.db :echo
+       .echo "hello world"
      #+end_src
 
-     #+RESULTS: hello world
-
-  6) Note that not all SQLite managing commands will work in code
+  6) [ ] The code block's meta data must be identical to the one in [[hello
+     world]]: same spaces, etc. The arguments ~sqlite :db sqlite.db~ are
+     crucial - though the name of the database, ~sqlite.db~ can be any
+     name if you're working with SQLite files - the database only
+     serves to make your results persistent.
+     
+  7) [ ] Note that not all SQLite managing commands will work in code
      blocks. I am not really sure why. The ~.show~ command won't work,
      alas.
 
-  7) If [[hello world]] worked, you should see the following output below
+  8) [ ] If [[hello world]] worked, you should see the following output below
      the code block[fn:1], and then you can check the task off. The
      code below is not a codeblock, by the way, but only an example
      (i.e. ~C-c C-c~ will not have an effect).
      #+begin_example
      #+RESULTS: hello world
-     : hello world
+      : .echo "hello world"
      #+end_example
 
-  8) [ ] To create a code block, you can type ~<s~ followed by the
-     <TAB> key[fn:2]. This will expand and you only have to add
-     ~sqlite~ after ~#+begin_src~ (leaving 1 space) to turn it into a
-     mini SQL script.
+  9) If the code block does not run, any number of things might be
+     the case:
+     1. syntax mistake in the code block meta data
+     2. syntax mistake in the SQLite statement
+     3. SQLite cannot be found
+     4. You're not using my ~/.emacs~ file
 
-  9) [ ] That's all there is to it! To test your new found powers:
-     * create a ~sqlite~ code block below
-     * name the code block ~.database~
-     * add the statement ~.database~ inside the block
-     * run the block with ~C-c C-c~
-     * check off this task if successful.
+  10) Troubleshooting for point (4): Put the file ~init.el~ that you
+      downloaded into the directory ~/ (Emacs' home
+      directory). Restart Emacs.
+  
+  11) [ ] To create a code block, you can type ~<s~ followed by the
+      <TAB> key[fn:2]. This will expand and you only have to add
+      ~sqlite~ after ~#+begin_src~ (leaving 1 space) to turn it into a
+      mini SQL script.
 
-  10) [ ] To close, see how documentation and code work together in
+  12) [ ] That's all there is to it! To test your new found powers:
+      * create a ~sqlite~ code block below
+      * name the code block ~.database~
+      * add the statement ~.database~ inside the block
+      * run the block with ~C-c C-c~
+      * check off this task if successful.
+
+  13) [ ] To close, see how documentation and code work together in
       Emacs. Weave this entire notebook by pressing the key sequence:
       ~C-c C-e h o~. This should open a browser with an HTML version of
       this file - for a web page or to print out as PDF.
 
-  11) [ ] Lastly, take a look at the meta data at the top of this
+  14) [ ] Lastly, take a look at the meta data at the top of this
       file. They occur in every notebook and you should copy them if
       you created your own. I have copied them here. Let's look at
       them one by one.
@@ -92,8 +106,8 @@
       - The ~#+STARTUP:~ line folds sections and codeblocks upon entry
       - The ~#+OPTIONS:~ line suppresses printing a TOC
       - The ~#+PROPERTY:~ lines set arguments for the codeblocks
-	
-  12) [ ] This should open the file as an HTML file in a browser. If it
+
+  15) [ ] This should open the file as an HTML file in a browser. If it
       worked, check it off, save this file with ~C-x C-s~ and move on to
       bigger and better things. Otherwise let me know.
 
