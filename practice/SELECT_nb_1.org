@@ -68,7 +68,6 @@
 
     #+end_src
 
-
 * References
 
   * Kreibich (2010). Using SQLite. O'Reilly.

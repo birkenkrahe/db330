@@ -1062,10 +1062,10 @@
 
 ** Objectives
 
-   * Review quiz 4-5
-   * Lecture: SELECT with examples
-   * Interactive SQLite notebook tutorial
-   * SELECT notebook 1
+   * [X] Review quiz 4-5 (I'm waiting for your comments/questions)
+   * [ ] Interactive SQLite notebook tutorial
+   * [ ] SELECT notebook 1
+   * [ ] Lecture: SELECT with examples
    
 ** SQLite Code Blocks in Org Mode
 
@@ -1080,6 +1080,8 @@
      - ~init.el~ / ~.emacs~ Emacs init file
      - ~start_nb.org~ file
      - ~SELECT_nb_1.org~ file
+
+   * Download from GitHub: ~foods.sql~
 
    * Work throught the getting started tutorial
 

@@ -37,9 +37,12 @@
      putting your cursor anywhere on the block (boundary is OK) and
      type ~C-c C-c~.
      #+name: hello world
-     #+begin_src bash
-       echo hello world
+     #+begin_src sqlite :db sqlite.db
+       .echo ON
+       
      #+end_src
+
+     #+RESULTS: hello world
 
   6) Note that not all SQLite managing commands will work in code
      blocks. I am not really sure why. The ~.show~ command won't work,
