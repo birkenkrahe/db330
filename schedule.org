@@ -25,7 +25,7 @@
    | 11 |    7 | Tue-22-Feb   | SQLite commands               | SQL: Filtering rows                | SQLite - be the shell 2 | Quiz 4       |
    | 12 |      | +Thu-24-Feb+ | CANCELLED (weather)           |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 13 |    8 | Tue-01-Mar   | SELECT pipeline 2             | SQL: Aggregate functions           |                         | Quiz 5       |
+   | 13 |    8 | Tue-01-Mar   | SELECT pipeline 2             | SQL: Aggregate functions           | SELECT                  | Quiz 5       |
    | 14 |      | Thu-03-Mar   | SQLite lab session 2          |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
    | 15 |    9 | Tue-08-Mar   | SELECT pipeline 2             | SQL: Sorting and grouping          |                         | Quiz 6       |

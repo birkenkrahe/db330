@@ -951,13 +951,13 @@
 * SQLite import/export, NULL, UNIQUE - w7s11 - February 22, 2022
 ** Objectives
 
-   * [ ] Understand how to export table data
-   * [ ] Understand how to import data, especially CSV files
-   * [ ] Know how to delete tables
-   * [ ] Understand unique constraints (PRIMARY KEY)
-   * [ ] Remaining DML commands: UPDATE TABLE
-   * [ ] Remaining DDL commands: ALTER TABLE
-   * [ ] NULL values and how to enforce them
+   * [X] Understand how to export table data
+   * [X] Understand how to import data, especially CSV files
+   * [X] Know how to delete tables
+   * [X] Understand unique constraints (PRIMARY KEY)
+   * [X] Remaining DML commands: UPDATE TABLE
+   * [X] Remaining DDL commands: ALTER TABLE
+   * [X] NULL values and how to enforce them
      
 ** SQLite
 *** Delete tables
@@ -1050,16 +1050,21 @@
 ** Next
 
    * Interactive notebook (Org) to practice all of this
+   * More realistic database (~food.sql~) to practice
+   * DataCamp
 
-* w8s12 - March 1 
+* SQL notebooks - w8s12 - March 1 
 ** News
 
-   * DataCamp course changes
+   * DataCamp course changes - Intermediate SQL, 2 projects
    * To count, courses must be published in Schoology
    * Mid-term grades: check if you want to submit late
 
 ** Objectives
 
+   * Review quiz 4-5
+   * 
+   
 ** SQLite Code Blocks in Org Mode
 
    * Do you remember what Org-mode is?
