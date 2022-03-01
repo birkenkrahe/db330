@@ -1071,6 +1071,9 @@
    #+attr_html: :width 600px
    [[./img/cweb.png]]
 
+** Notebook
+
+   * Download from Schoology folder Notebooks
    
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
