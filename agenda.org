@@ -1063,23 +1063,28 @@
 ** Objectives
 
    * Review quiz 4-5
-   * 
+   * Lecture: SELECT with examples
+   * Interactive SQLite notebook tutorial
+   * SELECT notebook 1
    
 ** SQLite Code Blocks in Org Mode
 
    * Do you remember what Org-mode is?
    * Do you remember what tangling and weaving means?
+   * [[file:~/Documents/GitHub/org/FAQ.org::literate programming][See FAQs]] ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#what-does-weaving-doc-and-tangling-c-code-from-org-mode-mean][GitHub]])
+   * See Orgmode documentation "[[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sqlite.html][SQLite code blocks in Org-mode]]"
 
-   https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sqlite.html
+** Download practice material
 
-   #+caption: literate programming - "foo.w" is the Org-mode file
-   #+attr_html: :width 600px
-   [[./img/cweb.png]]
+   * Download from [[https://lyon.schoology.com/course/5516220926/materials?f=572696570][Schoology folder Notebooks]]:
+     - ~init.el~ / ~.emacs~ Emacs init file
+     - ~start_nb.org~ file
+     - ~SELECT_nb_1.org~ file
 
-** Notebook
+   * Work throught the getting started tutorial
 
-   * Download from Schoology folder Notebooks
-   
+   * Begin with the ~SELECT~ notebook
+       
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].

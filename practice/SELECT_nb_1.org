@@ -1,0 +1,75 @@
+#+TITLE:SELECT notebook 1
+#+AUTHOR:Marcus Birkenkrahe
+#+SUBTITLE:DB Practice CSC 330 Spring 2022
+#+STARTUP:overview hideblocks
+#+OPTIONS: toc:nil num:nil ^:nil
+#+PROPERTY: header-args:sqlite :exports both
+#+PROPERTY: header-args:sqlite :results output
+#+PROPERTY: header-args:sqlite :db foods.db
+#+PROPERTY: header-args:sqlite :header :column
+* README
+
+  * This is the first of several notebooks to practice SQL using the
+    SQLite database management system with real data.
+
+* Download sample data
+
+  * [ ] Download the sample data ~foods.sql~ from Schoology using your
+    browser.
+
+  * [ ] Open a terminal and go to the download directory - most likely
+    ~C:\Downloads~ - with the command ~cd C:\Downloads~.
+
+  * [ ] Create an SQLite database by typing at the terminal prompt:
+    #+begin_example
+    sqlite3 foods.db < foods.sql
+    #+end_example
+    This runs SQLite on the SQLite data and generates a binary
+    database file.
+
+  * [ ] Check your progress by looking up the tables in ~foods.db~.
+    #+begin_src sqlite :db foods.db
+
+    #+end_src
+    There should be four tables: ~episodes~, ~food_types~, ~foods~,
+    and ~foods_episodes~.
+
+* Getting to know the data
+
+  * [ ] You'll learn more about the data later. Here is an Entity
+    Relationship Diagram that shows the four different tables together
+    with their attributes:
+
+    #+caption: Entity-Relationship Diagram for foods.db
+    [[./img/erd.png]]
+
+  * The database contains all episode titles of the popular TV show
+    "Seinfeld" together with the foods shown in each episode, and the
+    types of food.
+
+  * Let's get started with two simple queries.
+
+  * [ ] How many food types are there?
+    #+name: no_of_food_types_1
+    #+begin_src sqlite :db foods.db
+
+    #+end_src
+
+  * [ ] Run the previous query again, but this time show what the
+    result means.
+    #+name: no_of_food_types_2
+    #+begin_src sqlite :db foods.db
+
+    #+end_src
+
+  * [ ] Let's use another function: what is the (alphabetically) last
+    episode?
+    #+begin_src sqlite :db foods.db :results raw
+
+    #+end_src
+
+
+* References
+
+  * Kreibich (2010). Using SQLite. O'Reilly.
+  * Allen/Owens (2010). The Definitive Guide to SQLite. APress.
