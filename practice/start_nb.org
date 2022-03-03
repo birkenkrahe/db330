@@ -34,8 +34,8 @@
 
   5) [ ] Here is a *named code chunk*. The name is [[hello world]] like
      the SQLite string that it contains. Run the code block by putting
-     your cursor anywhere on the block (boundary is OK) and type ~C-c
-     C-c~.
+     your cursor anywhere on or in the block and type ~C-c C-c~.
+
      #+name: hello world
      #+begin_src sqlite :db sqlite.db :echo
        .echo "hello world"
@@ -55,7 +55,8 @@
      the code block[fn:1], and then you can check the task off. The
      code below is not a codeblock, by the way, but only an example
      (i.e. ~C-c C-c~ will not have an effect).
-     #+begin_example
+
+          #+begin_example
      #+RESULTS: hello world
       : .echo "hello world"
      #+end_example
@@ -92,6 +93,7 @@
       file. They occur in every notebook and you should copy them if
       you created your own. I have copied them here. Let's look at
       them one by one.
+
       #+begin_example
       #+TITLE:Notebook Tutorial
       #+AUTHOR:Marcus Birkenkrahe

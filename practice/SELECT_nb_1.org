@@ -41,15 +41,17 @@
     with their attributes:
 
     #+caption: Entity-Relationship Diagram for foods.db
-    [[./img/erd.png]]
+    [[./erd.png]]
 
-  * The database contains all episode titles of the popular TV show
+  * [ ] The database contains all episode titles of the popular TV show
     "Seinfeld" together with the foods shown in each episode, and the
     types of food.
 
-  * Let's get started with two simple queries.
+  * Let's get started with a few simple queries. Put the query into
+    the code block and run it with ~C-c C-c~.
 
   * [ ] How many food types are there?
+
     #+name: no_of_food_types_1
     #+begin_src sqlite :db foods.db
 
@@ -57,6 +59,7 @@
 
   * [ ] Run the previous query again, but this time show what the
     result means.
+
     #+name: no_of_food_types_2
     #+begin_src sqlite :db foods.db
 
@@ -64,6 +67,7 @@
 
   * [ ] Let's use another function: what is the (alphabetically) last
     episode?
+
     #+begin_src sqlite :db foods.db :results raw
 
     #+end_src
