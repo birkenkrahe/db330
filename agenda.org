@@ -1086,7 +1086,7 @@
    * Work throught the getting started tutorial
 
    * Begin with the ~SELECT~ notebook
-       
+       * 
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
