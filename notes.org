@@ -737,7 +737,7 @@
     of even though I left particle physics long ago.
 
   * <<Docker>> explains it well ([[https://www.docker.com/resources/what-container][docker.com]]):
-    
+
     #+begin_quote
     "A container is a standard unit of software that packages up code and
     all its dependencies so the application runs quickly and reliably from
@@ -763,11 +763,33 @@
 
     Long story short: important concept and technology, you should try
     it out and explore it a little, perhaps you fall in love, and in
-    the least you get another marketable skill. 
-    
+    the least you get another marketable skill.
+
     #+caption: Containerized applications (docker.com)
     #+attr_html: :width 500px
     [[./img/docker.png]]
+
+  * You can imagine an ~INNER JOIN~ operation between two tables as a
+    zipping together of the tables using any two columns. If these two
+    columns are primary keys (= columns that uniquely identify every
+    row of their table), then the primary key of the new table that
+    exists only for querying purposes, consists of not one, but two
+    columns.
+
+    #+caption: PK1 of 1 and PK2 of  2 become PK3 = (PK1, PK2) of 3
+    #+attr_html: :width 300px
+    [[./img/joins.png]]
+
+  * The ~INNER JOIN~ works also if the two columns are not primary
+    keys. E.g. in the statement shown in [[join]], all rows for which the
+    condition is fulfilled that the value of ~a~ in the table ~x~
+    equals the value of ~b~ in the table ~y~, are selected. For code
+    examples, see the notebook ~SELECT_xyz_nb.org~.
+
+    #+name: join
+  #+begin_example
+    SELECT * FROM x INNER JOIN y ON x.a = y.b;
+  #+end_example
 
 * References
   * <<bbc>> BBC (11 Mar 2019). World wide web vs. internet - what's
