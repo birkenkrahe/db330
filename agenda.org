@@ -1196,13 +1196,10 @@
      the ~sqlite3.exe~ file in your ~PATH~. For Windows, you need
      ~sqlite-tools-win32-x86-3380000.zip (1.87 MiB)~.)
 
-** NEXT
-
-   * SELECT round-up continued - down the pipeline
-
 * NEXT SELECT round-up - w8s14 - March 3
 ** Objectives
 
+   * [ ] Review Docker/container technology ([[file:notes.org::Docker][notes]])
    * [ ] Review the entire SELECT pipeline (for SQLite)
 
 ** NEXT SELECT round-up
