@@ -1087,6 +1087,121 @@
 
    * Begin with the ~SELECT~ notebook
        * 
+* Midterm grades, SQLite cloud REPL - w8s13 - March 3
+** Objectives
+
+   * [X] How to improve your mid-term grades ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-can-i-improve-my-mid-term-grades][FAQ]])
+   * [X] Learn how to access SQLite in the cloud (REPL)
+   * [X] Find the updated notebook materials [[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][in GDrive]]
+   * [ ] Review the entire SELECT pipeline (for SQLite)
+
+   #+caption: SELECT round-up
+   #+attr_html: :width 500px
+   [[./img/gdrive.png]]
+     
+** Mid-term grades improvement
+
+   * You can ask me personally and specifically, what to do to get
+     your grades up
+     
+   * There is no reason not to have at good grade in my class:
+
+     1. You can usually submit in-class assignments late
+     2. The deadlines of the DataCamp assignments are well known
+     3. The quizzes contain ample instructions and can be repeated
+     4. Class attendance + Whiteboard screenshots + GitHub info
+     5. You can always talk to me for personal support
+
+   * Hence, to improve your grade, do:
+
+     - Submit in-class assignments if you could not attend class
+     - Complete DataCamp assignments on time
+     - Play the quizzes until you have 100% and read the feedback
+     - Attend class + look at screenshots + files afterwards
+     - Practice your skills whenever you can (e.g. DataCamp)
+     - When you are attending in person, really attend
+     - Ask me in or outside of class if anything is unclear
+
+   * These skills are related to successful studying, which in turn is
+     related to success in life through traditional values:
+     *discipline*, *duty*, and *diligence*. This doesn't have anything
+     to do with computer science.
+
+   * What I'm going for in my classes is what I think computer
+     scientists (and everyone!) need more than anything else:
+
+     1. Critical thinking and analysis skills
+     2. Troubleshooting skills
+     3. Research skills
+
+     This is nicely mirrored in [[https://github.com/birkenkrahe/org/issues/19][this comment]] to the question "Why are
+     computer science degrees so math intensive when the field doesn't
+     seem to use much math at all?" on Quora.
+
+     #+caption: What's math got do to with computer science?
+     #+attr_html: :width 500px
+     [[./img/quora.png]]
+
+** SQLite Read-Eval-Printing-Loop in the cloud
+
+   * Instead of a local terminal or application bundle like XAMPP, you
+     can also use a cloud REPL to learn and practice SQL, SQLite
+
+   * [X] To begin login to your Google or GitHub account
+
+   * [ ] Register with Replit.com
+
+     #+caption: Replit.com startup screen
+     #+attr_html: :width 500px
+     [[./img/replit.png]]
+
+   * Once registered, you can pick among many language templates
+
+   * You can create as many REPLs as you like on a free account
+
+     #+caption: Replit.com language templates
+     #+attr_html: :width 500px
+     [[./img/replit1.png]]
+
+   * Find and pick SQLite! Your REPLs are now public and shareable.
+
+   * For example, to join the bash REPL shown below, [[https://replit.com/join/knkmkbgutq-birkenkrahe][use this link]].
+
+     #+caption: Create a titled, shareable repl
+     #+attr_html: :width 500px
+     [[./img/replit2.png]]
+     
+   * You can now run SQLite commands and also access the ~bash~ shell.
+
+     #+caption: My SQLite REPL dashboard
+     #+attr_html: :width 500px
+     [[./img/replsqlite.png]]
+
+   * When you execute a command in the dashboard, it's the same thing
+     as
+     #+begin_src bash
+
+       sqlite3 < main.sql
+
+     #+end_src
+   
+   * This is all made possible with a "Docker" container (with
+     nix). More about that in the notes.
+
+   * We'll get back to this when we connect SQLite to other programs
+
+   * Today, just follow along using the REPL (or your local terminal,
+     and if you don't have SQLite on your PC, [[https://www.sqlite.org/download.html][download it now]]!
+     Installation is trivial. All you need is to put the location of
+     the ~sqlite3.exe~ file in your ~PATH~. For Windows, you need
+     ~sqlite-tools-win32-x86-3380000.zip (1.87 MiB)~.)
+
+* NEXT SELECT round-up - w8s14 - March 3
+** Objectives
+
+   * [ ] Review the entire SELECT pipeline (for SQLite)
+
+** NEXT SELECT round-up
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
