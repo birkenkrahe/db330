@@ -725,6 +725,11 @@
 
 * Midterm grades, SQLite cloud REPL - w8s13 - March 3
 
+  * If you want to improve your grade, you can talk to me about doing
+    a small, independent research project leading to a writeup in the
+    form of a notebook, or a short (10-15 min) presentation. The topic
+    must be related to the topic of this course.
+
   * The physicist I was talking about was [[https://en.wikipedia.org/wiki/Harry_Lehmann][Harry Lehmann (1924-1998)]],
     one of three fathers of the [[https://en.wikipedia.org/wiki/LSZ_reduction_formula][LSZ reduction formula]]. He was already
     retired when he ran the physics tutorial that I attended (if you
@@ -785,9 +790,8 @@
     condition is fulfilled that the value of ~a~ in the table ~x~
     equals the value of ~b~ in the table ~y~, are selected. For code
     examples, see the notebook ~SELECT_xyz_nb.org~.
-
     #+name: join
-  #+begin_example
+    #+begin_example
     SELECT * FROM x INNER JOIN y ON x.a = y.b;
   #+end_example
 
