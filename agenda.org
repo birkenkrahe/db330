@@ -404,7 +404,7 @@
    * SQLite DDL practice
 
    <<<<<<< HEAD
-* Cloud providers, SQLite introduction - w5s7 - February 8, 2022
+* Cloud providers, SQLite introduction - w5s7 (8-Feb)
 ** Overview
 
    | HOW       | WHAT                              |
@@ -462,7 +462,7 @@
    * New DataCamp assignment due Feb 15 ("Intro to RDBM with SQL")
    * SQLite DDL practice
 
-* SQLite lab session, test 1 - w5s8 - February 10, 2022
+* SQLite lab session, test 1 - w5s8 (10-Feb)
 ** Overview
 
    | HOW                 | WHAT                             |
@@ -558,7 +558,7 @@
    * New DataCamp assignment due Feb 15 ("Intro to RDBM with SQL")
    * SQLite DDL/DML/DQL practice continued
 
-* Review test 1, introduction to SELECT - w6s9 - February 15, 2022
+* Review test 1, introduction to SELECT - w6s9 (15-Feb)
 ** News
 
    * Matthew Stewart, Stone Ward (Fri 18 Feb 3-3.50 PM) via Google Meet
@@ -892,7 +892,7 @@
    * More SQLite gymnastics: ~stdout~, ~.dump~
    * DataCamp: filtering results
    
-* DB dump and output, SELECT pipeline - w6s10 - February 17, 2022
+* DB dump and output, SELECT pipeline - w6s10 (17-Feb)
 ** Objectives
 
    * [X] Review: Feb 15 in-class exercises
@@ -948,7 +948,7 @@
    * More SQLite (import, export, delete)
 
    * More SELECT (joins, filter, arithmetic)
-* SQLite import/export, NULL, UNIQUE - w7s11 - February 22, 2022
+* SQLite import/export, NULL, UNIQUE - w7s11 (22-Feb)
 ** Objectives
 
    * [X] Understand how to export table data
@@ -1053,7 +1053,7 @@
    * More realistic database (~food.sql~) to practice
    * DataCamp
 
-* SQL notebooks - w8s12 - March 1 
+* SQL notebooks - w8s12 (1-Mar)
 ** News
 
    * DataCamp course changes - Intermediate SQL, 2 projects
@@ -1087,7 +1087,7 @@
 
    * Begin with the ~SELECT~ notebook
        * 
-* Midterm grades, SQLite cloud REPL - w8s13 - March 3
+* Midterm grades, SQLite cloud REPL - w8s13 (3-Mar)
 ** Objectives
 
    * [X] How to improve your mid-term grades ([[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-can-i-improve-my-mid-term-grades][FAQ]])
@@ -1196,11 +1196,16 @@
      the ~sqlite3.exe~ file in your ~PATH~. For Windows, you need
      ~sqlite-tools-win32-x86-3380000.zip (1.87 MiB)~.)
 
-* NEXT SELECT round-up - w8s14 - March 3
+* NEXT SELECT round-up - w8s14 (8-Mar)
+** News
+
+   * [ ] Waking up in ~AppData/Roaming~? [[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-set-a-new-emacs-home-directory][Change your Emacs HOME now]].
+
 ** Objectives
 
    * [ ] Review Docker/container technology ([[file:notes.org::Docker][notes]])
    * [ ] Review the entire SELECT pipeline (for SQLite)
+   * [ ] Review DataCamp (deadline 'sorting/grouping')
 
 ** NEXT SELECT round-up
 * References
