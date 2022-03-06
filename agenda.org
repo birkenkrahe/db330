@@ -14,7 +14,7 @@
   The companion file to this file, less structured and with the
   captain's log, is the [[file:notes.org][notes.org]] file.
 
-* Intro and GitHub - w1s1 - January 11, 2022
+* Intro and GitHub - w1s1 (11-Jan)
 
   #+attr_html: :width 500px
   [[./img/fivearmies.jpg]]
@@ -174,7 +174,7 @@
    #+attr_html: :width 600px
    [[./img/victor.png]]
 
-* DataCamp, History of DB, MooCall - w1s2 - January 13 , 2022
+* DataCamp, History of DB, MooCall - w1s2 (13-Jan)
 ** Overview
 
    | HOW         | WHAT                                     |
@@ -201,7 +201,7 @@
 
    * [ ] Make GNU Emacs work for you
 
-* DB elements, GNU Emacs - w2s3 - January 18, 2022
+* DB elements, GNU Emacs - w2s3 (18-Jan)
 ** Overview
 
    | HOW         | WHAT                                     |
@@ -231,7 +231,7 @@
    * GNU Emacs practice exercises (in class)
    * DataCamp assignments beginning next week (online)
 
-* SQLite installation - w2s4 - January 20, 2022
+* SQLite installation - w2s4 (20-Jan)
 ** Overview
 
    | HOW      | WHAT                                    |
@@ -261,7 +261,7 @@
    We'll pick up on past assignments in class - short review including questions for the audience (you!)
    Completing this assignment on time gets you 10 points (100%).
    Late completion (after the due date): 5 points (50%).
-* Cloud computing intro - w3s5 - January 25, 2022
+* Cloud computing intro - w3s5 (25-Jan)
 ** Overview
 
    | HOW        | WHAT                                         |
@@ -304,7 +304,7 @@
    * Next DataCamp assignment due Feb 1 ("Cloud deployment")
    * Org-file assignment (in Schoology) coming your way
 
-* Cloud deployment - w4s6 - February 1, 2022
+* Cloud deployment - w4s6 (1-Feb)
 ** Overview
 
    | HOW      | WHAT                                               |
