@@ -23,33 +23,33 @@
    | 10 |      | Thu-17-Feb   | DB dump and output            |                                    | SQLite - be the shell 1 |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
    | 11 |    7 | Tue-22-Feb   | SQLite commands               | SQL: Filtering rows                | SQLite - be the shell 2 | Quiz 4       |
-   | 12 |      | +Thu-24-Feb+ | CANCELLED (weather)           |                                    |                         |              |
+   |    |      | +Thu-24-Feb+ | CANCELLED (weather)           |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 13 |    8 | Tue-01-Mar   | SELECT pipeline 2             | SQL: Aggregate functions           | SELECT                  | Quiz 5       |
-   | 14 |      | Thu-03-Mar   | SQLite lab session 2          |                                    |                         |              |
+   | 12 |    8 | Tue-01-Mar   | SELECT pipeline 2             | SQL: Aggregate functions           | SELECT                  | Quiz 5       |
+   | 13 |      | Thu-03-Mar   | SQLite lab session 2          |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 15 |    9 | Tue-08-Mar   | SELECT pipeline 2             | SQL: Sorting and grouping          |                         | Quiz 6       |
-   | 16 |      | Thu-10-Mar   | SQLite lab session 3          |                                    |                         |              |
+   | 14 |    9 | Tue-08-Mar   | SELECT pipeline 2             | SQL: Sorting and grouping          |                         | Quiz 6       |
+   | 15 |      | Thu-10-Mar   | SQLite lab session 3          |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 17 |   10 | Tue-15-Mar   | DataCamp project review       | Project: Analyze Int. Debt Stats   |                         |              |
-   | 18 |      | Thu-17-Mar   | Quiz review                   |                                    |                         | Test 2       |
+   |    |   10 | Tue-15-Mar   | DataCamp project review       | Project: Analyze Int. Debt Stats   |                         |              |
+   |    |      | Thu-17-Mar   | Quiz review                   |                                    |                         | Test 2       |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 19 |   11 | Tue-29-Mar   |                               | Intermediate SQL: CASE             |                         |              |
-   | 20 |      | Thu-31-Mar   |                               |                                    |                         |              |
+   |    |   11 | Tue-29-Mar   |                               | Intermediate SQL: CASE             |                         |              |
+   |    |      | Thu-31-Mar   |                               |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 21 |   12 | Tue-05-Apr   |                               | Intermediate SQL: Subqueries       |                         | Quiz 7       |
-   | 22 |      | Thu-07-Apr   |                               |                                    |                         |              |
+   |    |   12 | Tue-05-Apr   |                               | Intermediate SQL: Subqueries       |                         | Quiz 7       |
+   |    |      | Thu-07-Apr   |                               |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 23 |   13 | Tue-12-Apr   |                               | Intermediate SQL: CTEs             |                         | Quiz 8       |
-   | 24 |      | Thu-14-Apr   |                               |                                    |                         |              |
+   |    |   13 | Tue-12-Apr   |                               | Intermediate SQL: CTEs             |                         | Quiz 8       |
+   |    |      | Thu-14-Apr   |                               |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 25 |   14 | Thu-19-Apr   |                               | Intermediate SQL: Window Functions |                         | Quiz 9       |
-   | 26 |      | Fri-21-Apr   |                               |                                    |                         |              |
+   |    |   14 | Thu-19-Apr   |                               | Intermediate SQL: Window Functions |                         | Quiz 9       |
+   |    |      | Fri-21-Apr   |                               |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 27 |   15 | Tue-26-Apr   |                               | Project: The Oldest Companies      |                         | Test 3       |
-   | 28 |      | Thu-28-Apr   |                               |                                    |                         |              |
+   |    |   15 | Tue-26-Apr   |                               | Project: The Oldest Companies      |                         | Test 3       |
+   |    |      | Thu-28-Apr   |                               |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 29 |   16 | Tue-03-May   |                               | SUMMARY AND OUTLOOK                |                         |              |
+   |    |   16 | Tue-03-May   |                               | SUMMARY AND OUTLOOK                |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
 
 * Footnotes
