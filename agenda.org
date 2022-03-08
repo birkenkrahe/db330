@@ -1200,6 +1200,11 @@
 ** News
 
    * [ ] Waking up in ~AppData/Roaming~? [[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-set-a-new-emacs-home-directory][Change your Emacs HOME now]].
+** Preparations for test 2 (Thu 17-Mar)
+
+   * Test 2 will only cover questions from quiz 4-6 + new questions.
+   * You can find quiz 4-6 with solutions + feedback as PDF ([[https://github.com/birkenkrahe/os420/tree/main/quiz][in /quiz]])
+   * I will create an update of content Org files ([[https://github.com/birkenkrahe/os420/tree/main/pdf][in pdf/]])
 
 ** Objectives
 
