@@ -1192,10 +1192,13 @@
      the ~sqlite3.exe~ file in your ~PATH~. For Windows, you need
      ~sqlite-tools-win32-x86-3380000.zip (1.87 MiB)~.)
 
-* NEXT SELECT round-up - w8s14 (8-Mar)
-** News
+* SELECT round-up - w8s14 (8-Mar)
+** Agenda
 
    * [ ] Waking up in ~AppData/Roaming~? [[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-set-a-new-emacs-home-directory][Change your Emacs HOME now]].
+   * [ ] Test preparations (Test on Thursday 17-Mar)
+   * [ ] Review Docker/container technology ([[file:notes.org::Docker][notes]])
+
 ** Preparations for test 2 (Thu 17-Mar)
 
    * Test 2 will only cover questions from quiz 4-6 + new questions.
@@ -1204,11 +1207,18 @@
 
 ** Objectives
 
-   * [ ] Review Docker/container technology ([[file:notes.org::Docker][notes]])
    * [ ] Review the entire SELECT pipeline (for SQLite)
    * [ ] Review DataCamp (deadline 'sorting/grouping')
+   * [ ] Prepare for DataCamp project (sample project SQL)
 
-** NEXT SELECT round-up
+** SELECT round-up
+
+   * Download the notebook ~SELECT_roundup.org~ from GDrive (link in
+     Schoology)
+   * Code along with me
+   * Finish the notebook on your own
+   * Work through this independently using ~foods.sql~ on Thursday
+     
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
