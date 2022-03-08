@@ -31,7 +31,7 @@
     left)?
 
     #+begin_quote
-    Answer: 
+    Answer: The commands follow the SELECT pipeline (clock-wise)
     #+end_quote
 
 * Create some tables
@@ -44,11 +44,17 @@
 
     #+name: read tables
     #+begin_src sqlite :db xyz.db :header :column :exports both :results output
-
+    .read xyz.sql
+    .database
+    .tables
     #+end_src
 
+    #+RESULTS: read tables
+    : main: c:\Users\birkenkrahe\GitHub\db330\practice\xyz.db r/w
+    : x  y  z
 
-  * [ ] Challenge: if the tables already exist in ~xyz.db~ (and you
+
+  * [X] Challenge: if the tables already exist in ~xyz.db~ (and you
     don't have the ~IF NOT EXISTS~ clause in the ~CREATE TABLE~
     statement), you need to delete the database before loading the
     tables. But even if you do that, the ~INSERT~ commands will add to
@@ -56,7 +62,7 @@
     duplicate entries?
 
     #+begin_quote
-    ANSWER: 
+    ANSWER: you have to SELECT DISTINCT to remove duplicate values
     #+end_quote
 
   * We use ~SELECT~ with the wildcard ~*~ for the column selection,
@@ -67,24 +73,46 @@
 
     #+name: select from x
     #+begin_src sqlite :db xyz.db :header :column :exports both
-
+	SELECT * FROM x;
     #+end_src
+
+    #+RESULTS: select from x
+    | a | b       |
+    | - | ------- |
+    | 1 | Alice   |
+    | 2 | Bob     |
+    | 3 | Charlie |
 
 
   * [ ] Print table ~y~ - one integer column and one column of floats.
 
     #+name: select from y
     #+begin_src sqlite :db xyz.db :header :column :exports both
-
+	SELECT * FROM y;
     #+end_src
 
+    #+RESULTS: select from y
+    | c |       d |
+    | - | ------- |
+    | 1 | 3.14159 |
+    | 1 | 2.71828 |
+    | 2 | 1.61803 |
 
-  * [ ] Print table ~y~ - two integer columns
+
+  * [ ] Print table ~z~ - two integer columns
 
     #+name: select from z
     #+begin_src sqlite :db xyz.db :header :column :exports both
-
+	SELECT * FROM z;
     #+end_src
+
+    #+RESULTS: select from z
+    | a |   e |
+    | - | --- |
+    | 1 | 100 |
+    | 1 | 150 |
+    | 3 | 300 |
+    | 9 | 900 |
 
 
   #+caption: Sample tables x,y,z
@@ -101,26 +129,72 @@
       SELECT * FROM x JOIN y;
     #+end_src
 
+    #+RESULTS: join1
+    | a | b       | c |       d |
+    | - | ------- | - | ------- |
+    | 1 | Alice   | 1 | 3.14159 |
+    | 1 | Alice   | 1 | 2.71828 |
+    | 1 | Alice   | 2 | 1.61803 |
+    | 2 | Bob     | 1 | 3.14159 |
+    | 2 | Bob     | 1 | 2.71828 |
+    | 2 | Bob     | 2 | 1.61803 |
+    | 3 | Charlie | 1 | 3.14159 |
+    | 3 | Charlie | 1 | 2.71828 |
+    | 3 | Charlie | 2 | 1.61803 |
+
 
     #+name: join2
     #+begin_src sqlite :db xyz.db :header :column :exports both
     SELECT * FROM x CROSS JOIN y;
   #+end_src
 
+  #+RESULTS: join2
+  | a | b       | c |       d |
+  | - | ------- | - | ------- |
+  | 1 | Alice   | 1 | 3.14159 |
+  | 1 | Alice   | 1 | 2.71828 |
+  | 1 | Alice   | 2 | 1.61803 |
+  | 2 | Bob     | 1 | 3.14159 |
+  | 2 | Bob     | 1 | 2.71828 |
+  | 2 | Bob     | 2 | 1.61803 |
+  | 3 | Charlie | 1 | 3.14159 |
+  | 3 | Charlie | 1 | 2.71828 |
+  | 3 | Charlie | 2 | 1.61803 |
+
     #+name: join3
     #+begin_src sqlite :db xyz.db :header :column :exports both
     SELECT * FROM x,y;
     #+end_src
 
+    #+RESULTS: join3
+    | a | b       | c |       d |
+    | - | ------- | - | ------- |
+    | 1 | Alice   | 1 | 3.14159 |
+    | 1 | Alice   | 1 | 2.71828 |
+    | 1 | Alice   | 2 | 1.61803 |
+    | 2 | Bob     | 1 | 3.14159 |
+    | 2 | Bob     | 1 | 2.71828 |
+    | 2 | Bob     | 2 | 1.61803 |
+    | 3 | Charlie | 1 | 3.14159 |
+    | 3 | Charlie | 1 | 2.71828 |
+    | 3 | Charlie | 2 | 1.61803 |
+
 * JOIN ... ON
 
-  * [ ] INNER JOIN: Remember the zipper principle - identify 2 columns to
+  * [X] INNER JOIN: Remember the zipper principle - identify 2 columns to
     zip together. This identification a = c follows after the ~ON~ keyword.
 
     #+name: join4
     #+begin_src sqlite :db xyz.db :header :column :exports both
-
+	SELECT * FROM x JOIN y ON a = c;
     #+end_src
+
+    #+RESULTS: join4
+    | a | b     | c |       d |
+    | - | ----- | - | ------- |
+    | 1 | Alice | 1 | 2.71828 |
+    | 1 | Alice | 1 | 3.14159 |
+    | 2 | Bob   | 2 | 1.61803 |
 
 
     - Compare with the CROSS JOIN before. This time, Only those
@@ -131,8 +205,15 @@
 
     #+name: join5
     #+begin_src sqlite :db xyz.db :header :column :exports both
-
+	SELECT * FROM x JOIN z ON x.a = z.a;
     #+end_src
+
+    #+RESULTS: join5
+    | a | b       | a |   e |
+    | - | ------- | - | --- |
+    | 1 | Alice   | 1 | 100 |
+    | 1 | Alice   | 1 | 150 |
+    | 3 | Charlie | 3 | 300 |
 
 
   * [ ] You can resolve column name confusions (same column name in
@@ -141,8 +222,15 @@
 
     #+name: join7
     #+begin_src sqlite :db xyz.db :header :column :nullvalue [NULL]
-
+	SELECT * FROM x AS t_x JOIN z AS t_z ON t_x.a = t_z.a;
     #+end_src
+
+    #+RESULTS: join7
+    | a | b       | a |   e |
+    | - | ------- | - | --- |
+    | 1 | Alice   | 1 | 100 |
+    | 1 | Alice   | 1 | 150 |
+    | 3 | Charlie | 3 | 300 |
 
 
   * [ ] There are five (!) more ~JOIN~ commands:
@@ -156,6 +244,15 @@
       SELECT * FROM x JOIN y ON x.a=y.c LEFT OUTER JOIN z ON y.c=z.a;
     #+end_src
 
+    #+RESULTS: join6
+    | a | b     | c |       d |      a |      e |
+    | - | ----- | - | ------- | ------ | ------ |
+    | 1 | Alice | 1 | 2.71828 |      1 |    100 |
+    | 1 | Alice | 1 | 2.71828 |      1 |    150 |
+    | 1 | Alice | 1 | 3.14159 |      1 |    100 |
+    | 1 | Alice | 1 | 3.14159 |      1 |    150 |
+    | 2 | Bob   | 2 | 1.61803 | [NULL] | [NULL] |
+
     * Work through this example until you reall understand what this
       multiple join = INNER JOIN + LEFT JOIN does!
 
@@ -165,25 +262,42 @@
 
     #+name: row
     #+begin_src sqlite :db xyz.db :header :column
-
+	SELECT * FROM x WHERE x.b='Alice';
     #+end_src
 
+    #+RESULTS: row
+    | a | b     |
+    | - | ----- |
+    | 1 | Alice |
+
     
-  * [ ] Print a range of values, for 1.0 < d < 3.0.
+  * [ ] Print a range of values of table y - for 1.0 < d < 3.0.
     
     #+name: between
     #+begin_src sqlite :db xyz.db :header :column
-
+	SELECT d from y WHERE d BETWEEN 1.0 AND 3.0;
     #+end_src
 
+    #+RESULTS: between
+    |       d |
+    | ------- |
+    | 2.71828 |
+    | 1.61803 |
 
-  * [ ] Print columns c, d and a column for the sum of c+d with the
-    condition that the sum is smaller than 4.
+
+  * [ ] Print columns y.c, y.d and a column for the sum of y.c+y.d
+    (call it PLUS) with the condition that the sum is smaller than 4.
 
     #+name: sum
     #+begin_src sqlite :db xyz.db :header :column
-
+	SELECT c, d, (c+d) AS PLUS FROM y WHERE c+d < 4.0;
     #+end_src
+
+    #+RESULTS: sum
+    | c |       d |    PLUS |
+    | - | ------- | ------- |
+    | 1 | 2.71828 | 3.71828 |
+    | 2 | 1.61803 | 3.61803 |
 
 
   * [ ] The next block [[sum1]] uses foods.db to select a range of values
@@ -192,9 +306,15 @@
 
     #+name: sum1
     #+begin_src sqlite :db foods.db
-      Select name from foods where name between 'Ta%' AND 'Ti%';
+      SELECT name FROM foods WHERE name BETWEEN 'Ta%' AND 'Ti%';
     #+end_src
 
+    #+RESULTS: sum1
+    | Tarragon         |
+    | Tea              |
+    | Three Musketeers |
+    | Tamale           |
+    | Tamales          |
 
 * GROUP BY Examples
 
@@ -260,3 +380,4 @@
   * [ ] LIMIT and OFFSET
     
     
+  
