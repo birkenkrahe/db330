@@ -1,0 +1,169 @@
+#+STARTUP: overview hideblocks
+#+OPTIONS: toc:nil num:nil ^:nil
+* SELECT round-up - w9s15
+
+** Preliminaries
+
+   * For the presentation, I'm going to use the XMind-map from GitHub.
+
+     #+caption: SELECT round-up
+     #+attr_html: :width 600px
+     [[./img/select1.png]]
+
+   * [X] How are the commands in the mindmap ordered (from right to
+     left)? Answer: this is the pipeline order for ~SELECT~
+
+   * [ ] Let's load some tables to play with. The file ~xyz.sql~ is
+     available from [[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][GDrive's notebook directory]]. It contains a
+     complete database dump. We load it with the SQLite command
+     ~.read~, then check database and tables. There should be three,
+     named ~x~, ~y~, and ~z~.
+
+     #+name: read tables
+     #+begin_src sqlite :db xyz.db :header :column :exports both :results output
+       .read xyz.sql
+       .database
+       .tables
+     #+end_src
+
+     #+RESULTS: read tables
+     : main: c:\Users\birkenkrahe\Documents\GitHub\admin\spring22\db330\xyz.db r/w
+     : x  y  z
+
+   * [ ] Challenge: if the tables already exist in ~xyz.db~ (and you
+     don't have the ~IF NOT EXISTS~ clause in the ~CREATE TABLE~
+     statement, you need to delete the database before loading the
+     tables. But even if you do that, the ~INSERT~ commands will add
+     to the existing tables. So how can you limit the import or delete
+     duplicate entries?[fn:1]
+
+   * We use ~SELECT~ with column wildcard ~*~ and without conditions
+     (i.e. conditions on row selections) to look at each table.
+
+   * [ ] Print table ~x~ - one integer column and one column of strings.
+
+     #+name: select from x
+     #+begin_src sqlite :db xyz.db :header :column :exports both
+       SELECT * FROM x;
+     #+end_src
+
+     #+RESULTS: select from x
+     | a | b       |
+     | - | ------- |
+     | 1 | Alice   |
+     | 2 | Bob     |
+     | 3 | Charlie |
+
+   * [ ] Print table ~y~ - one integer column and one column of floats.
+
+     #+name: select from y
+     #+begin_src sqlite :db xyz.db :header :column :exports both
+       SELECT * FROM y;
+     #+end_src
+
+     #+RESULTS: select from y
+     | c |       d |
+     | - | ------- |
+     | 1 | 3.14159 |
+     | 1 | 2.71828 |
+     | 2 | 1.61803 |
+
+   * [ ] Print table ~y~ - two integer columns
+
+     #+name: select from z
+     #+begin_src sqlite :db xyz.db :header :column :exports both
+       SELECT * FROM z;
+     #+end_src
+
+     #+RESULTS: select from z
+     | a |   e |
+     | - | --- |
+     | 1 | 100 |
+     | 1 | 150 |
+     | 3 | 300 |
+     | 9 | 900 |
+
+   #+caption: Sample tables x,y,z
+   #+attr_html: :width 800px
+   [[./img/xyz.png]]
+
+   * CROSS JOIN: Since both tables had 3 rows and 2 colums, the result
+     set has 9=3*3 rows and 4=2*2 columns.
+
+     #+name: join1
+     #+begin_src sqlite :db xyz.db :header :column :exports both
+       SELECT * FROM x JOIN y;
+     #+end_src
+
+   #+name: join2
+   #+begin_src sqlite :db xyz.db :header :column :exports both
+     SELECT * FROM x CROSS JOIN y;
+   #+end_src
+
+   #+name: join3
+   #+begin_src sqlite :db xyz.db :header :column :exports both
+     SELECT * FROM x,y;
+   #+end_src
+
+   * INNER JOIN: zipper principle - identify 2 columns to zip together
+
+     #+name: join4
+     #+begin_src sqlite :db xyz.db :header :column :exports both
+       SELECT * FROM x JOIN y ON a = c;
+     #+end_src
+
+     - Only those columns that satisfy the condition ~a=c~ are
+       included in [[join4]]
+
+     * What if we want to ~JOIN~ tables ~x~ and ~z~? They both have a
+       column named ~a~. We now need to qualify the selection with ~.~
+
+     #+name: join5
+     #+begin_src sqlite :db xyz.db :header :column :exports both
+       SELECT * FROM x JOIN z ON x.a = z.a;
+     #+end_src
+
+     * There are five (!) more ~JOIN~ commands:
+       - ~LEFT OUTER JOIN~ will also include not matched items
+       - ~COMPOUND JOIN~ joins multiple tables
+
+     #+name: join6
+     #+begin_src sqlite :db xyz.db :header :column :nullvalue [NULL]
+       SELECT * FROM x JOIN y ON x.a=y.c LEFT OUTER JOIN z ON y.c=z.a;
+     #+end_src
+
+     #+RESULTS: join6
+     | a | b     | c |       d |      a |      e |
+     | - | ----- | - | ------- | ------ | ------ |
+     | 1 | Alice | 1 | 2.71828 |      1 |    100 |
+     | 1 | Alice | 1 | 2.71828 |      1 |    150 |
+     | 1 | Alice | 1 | 3.14159 |      1 |    100 |
+     | 1 | Alice | 1 | 3.14159 |      1 |    150 |
+     | 2 | Bob   | 2 | 1.61803 | [NULL] | [NULL] |
+
+     * You may have to work through the joins to see what's going on!
+
+   * WHERE Examples
+
+     Pick out a row or a range of values:
+
+     #+name: row
+     #+begin_src sqlite :db xyz.db :header :column
+       SELECT * FROM x WHERE b = 'Alice';
+     #+end_src
+
+     #+name: between
+     #+begin_src sqlite :db xyz.db :header :column
+       SELECT * FROM y WHERE d BETWEEN 1.0 AND 3.0;
+     #+end_src
+
+     #+name: sum
+     #+begin_src sqlite :db xyz.db :header :column
+       SELECT c, d, c+d AS sum FROM y WHERE sum < 4.0
+     #+end_src
+
+* Footnotes
+
+[fn:1]You have to select the unique entries with ~DISTINCT~.
+
+

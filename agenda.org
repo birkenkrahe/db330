@@ -1173,10 +1173,6 @@
      
    * You can now run SQLite commands and also access the ~bash~ shell.
 
-     #+caption: My SQLite REPL dashboard
-     #+attr_html: :width 500px
-     [[./img/replsqlite.png]]
-
    * When you execute a command in the dashboard, it's the same thing
      as
      #+begin_src bash
