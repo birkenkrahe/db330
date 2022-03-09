@@ -1219,6 +1219,15 @@
    * Finish the notebook on your own
    * Work through this independently using ~foods.sql~ on Thursday
      
+* w8s15 (10-Mar)
+
+  * Finish SELECT workbook
+  * Prepare DataCamp project
+* w9s16 (15-Mar)
+
+  * Review quiz questions
+  * Review DataCamp project
+    
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].

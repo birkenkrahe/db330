@@ -28,8 +28,8 @@
    | 12 |    8 | Tue-01-Mar   | SELECT pipeline 2             | SQL: Aggregate functions           | SELECT                  | Quiz 5       |
    | 13 |      | Thu-03-Mar   | SQLite lab session 2          |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   | 14 |    9 | Tue-08-Mar   | SELECT pipeline 2             | SQL: Sorting and grouping          |                         | Quiz 6       |
-   | 15 |      | Thu-10-Mar   | SQLite lab session 3          |                                    |                         |              |
+   | 14 |    9 | Tue-08-Mar   | SELECT pipeline 2             | SQL: Sorting and grouping          | SELECT_roundup.org      | Quiz 6       |
+   |    |      | Thu-10-Mar   | SELECT pipeline 3             |                                    | SELECT_roundup2.org     |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
    |    |   10 | Tue-15-Mar   | DataCamp project review       | Project: Analyze Int. Debt Stats   |                         |              |
    |    |      | Thu-17-Mar   | Quiz review                   |                                    |                         | Test 2       |
