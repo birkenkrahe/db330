@@ -797,7 +797,7 @@
 **** Which database language properties does SQLite have? (Ø=0.64)
 
      DDL, DML, DQL
-     
+
 ** How do class assignments work?
 
    * In-class assignments are *10%* of your total grade
@@ -815,9 +815,9 @@
      column name.
      #+name: AS
      #+begin_src sqlite :db sqlite.db
-     .header ON
-     .mode column
-     SELECT name AS result FROM customer;
+       .header ON
+       .mode column
+       SELECT name AS result FROM customer;
      #+end_src
 
      #+RESULTS:
@@ -830,9 +830,9 @@
      "pipe" anything into a table format.
      #+name: AS1
      #+begin_src sqlite :db select.db
-      .header ON
-      .mode column
-      SELECT 'Hello world' AS hello;
+       .header ON
+       .mode column
+       SELECT 'Hello world' AS hello;
      #+end_src
 
      #+RESULTS: as1
@@ -876,22 +876,22 @@
 
 *** GLOSSARY
 
-     | TERM       | EXPLANATION                                               |
-     |------------+-----------------------------------------------------------|
-     | SQL        | Structured Query Language                                 |
-     | table      | Rectangular data structure, set of rows and columns[fn:3] |
-     | record     | Row for set of observations on one entity                 |
-     | field      | Column for attribute of all rows in that table            |
-     | ~AS~       | SQL alias operator                                        |
-     | ~DISTINCT~ | Selector of unique values from one column                 |
-     | ~COUNT~    | SQL aggregator function                                   |
+    | TERM       | EXPLANATION                                               |
+    |------------+-----------------------------------------------------------|
+    | SQL        | Structured Query Language                                 |
+    | table      | Rectangular data structure, set of rows and columns[fn:3] |
+    | record     | Row for set of observations on one entity                 |
+    | field      | Column for attribute of all rows in that table            |
+    | ~AS~       | SQL alias operator                                        |
+    | ~DISTINCT~ | Selector of unique values from one column                 |
+    | ~COUNT~    | SQL aggregator function                                   |
 
 ** Next
 
    * Overview of the ~SELECT~ pipeline
    * More SQLite gymnastics: ~stdout~, ~.dump~
    * DataCamp: filtering results
-   
+
 * DB dump and output, SELECT pipeline - w6s10 (17-Feb)
 ** Objectives
 
@@ -925,7 +925,7 @@
    8) [X] Switch the output back to ~stdout~
    9) [X] Dump the content of your database again
    10) [X] Leave the SQLite shell and look at ~feb17.sql~
-   
+
 ** Overview of ~SELECT~
 
    * Overview of the SELECT pipeline (mindmap)
@@ -942,7 +942,7 @@
    #+caption: SELECT in detail
    #+attr_html: :width 700px
    [[./img/select1.png]]
-   
+
 ** Next
 
    * More SQLite (import, export, delete)
@@ -958,32 +958,32 @@
    * [X] Remaining DML commands: UPDATE TABLE
    * [X] Remaining DDL commands: ALTER TABLE
    * [X] NULL values and how to enforce them
-     
+
 ** SQLite
 *** Delete tables
 
     * ~DROP TABLE [table];~
 
     * PRACTICE
-      
+
 *** Export table content only
 
-   * You already know how to ~.dump~ an SQLite database ~.db~
+    * You already know how to ~.dump~ an SQLite database ~.db~
 
-   * Sometimes, you only want to export the data only, without the
-     .~schema~
+    * Sometimes, you only want to export the data only, without the
+      .~schema~
 
-   * For this, you can use ~.mode insert~, then redirect the ~.output~
-     and ~SELECT~ the data for the output file
+    * For this, you can use ~.mode insert~, then redirect the ~.output~
+      and ~SELECT~ the data for the output file
 
-   * PRACTICE 
+    * PRACTICE
 
 *** Export a CSV file
 
     * First export your file as a CSV file
 
     * Change ~.mode~, ~SELECT~, change ~.output~, ~SELECT~ again
-      
+
     * Now you have a CSV file to import
 
     * PRACTICE
@@ -997,55 +997,55 @@
     * If you have an error, how can you fix it?
 
     * PRACTICE
-    
+
 *** Unique constraints
-   * Unique constraints: ~PRIMARY KEY~
+    * Unique constraints: ~PRIMARY KEY~
 
-   * What happens if you have defined a column ~id~ as ~PRIMARY KEY~?
+    * What happens if you have defined a column ~id~ as ~PRIMARY KEY~?
 
-   * Try to ~INSERT~ the same ~VALUE~ in a table that already has one
+    * Try to ~INSERT~ the same ~VALUE~ in a table that already has one
 
-   * Use ~.schema [table]~ to see your table definitions
+    * Use ~.schema [table]~ to see your table definitions
 
-   * PRACTICE
+    * PRACTICE
 
 *** UPDATE TABLE (DML)
-    
-   * ~UPDATE~ table values with ~UPDATE [table] SET [col]=[new];~
 
-   * If you're not careful you update entries that don't need it
+    * ~UPDATE~ table values with ~UPDATE [table] SET [col]=[new];~
 
-   * How can you specify a row and leave others unchanged?
+    * If you're not careful you update entries that don't need it
 
-   * Use a filter with ~WHERE~ to specify the row!
-     
-   * PRACTICE
+    * How can you specify a row and leave others unchanged?
+
+    * Use a filter with ~WHERE~ to specify the row!
+
+    * PRACTICE
 
 *** ALTER TABLE (DDL)
 
-   * SQLite has limited capabilities to alter tables
+    * SQLite has limited capabilities to alter tables
 
-   * You can change the name, or you can add a column, that's it
+    * You can change the name, or you can add a column, that's it
 
-   * ~ALTER TABLE [table] RENAME TO [newname];~
+    * ~ALTER TABLE [table] RENAME TO [newname];~
 
-   * Add a column with ~ALTER TABLE [table] ADD COLUMN [name] TEXT;~
+    * Add a column with ~ALTER TABLE [table] ADD COLUMN [name] TEXT;~
 
-   * PRACTICE
-     
+    * PRACTICE
+
 *** NULL values
-    
-   * ~NULL~ values are special, too
 
-   * Check out the ~.nullvalue~ setting via ~.show~
+    * ~NULL~ values are special, too
 
-   * Set it to ~[NULL]~ (default is "")
+    * Check out the ~.nullvalue~ setting via ~.show~
 
-   * ~SELECT~ all columns of the table you just added a column to
+    * Set it to ~[NULL]~ (default is "")
 
-   * Add a new column and label it ~NOT NULL~
-     
-   * PRACTICE
+    * ~SELECT~ all columns of the table you just added a column to
+
+    * Add a new column and label it ~NOT NULL~
+
+    * PRACTICE
 
 ** Next
 
@@ -1066,7 +1066,7 @@
    * [ ] Interactive SQLite notebook tutorial
    * [ ] SELECT notebook 1
    * [ ] Lecture: SELECT with examples
-   
+
 ** SQLite Code Blocks in Org Mode
 
    * Do you remember what Org-mode is?
@@ -1086,7 +1086,7 @@
    * Work throught the getting started tutorial
 
    * Begin with the ~SELECT~ notebook
-       * 
+     *
 * Midterm grades, SQLite cloud REPL - w8s13 (3-Mar)
 ** Objectives
 
@@ -1098,12 +1098,12 @@
    #+caption: SELECT round-up
    #+attr_html: :width 500px
    [[./img/gdrive.png]]
-     
+
 ** Mid-term grades improvement
 
    * You can ask me personally and specifically, what to do to get
      your grades up
-     
+
    * There is no reason not to have at good grade in my class:
 
      1. You can usually submit in-class assignments late
@@ -1170,7 +1170,7 @@
      #+caption: Create a titled, shareable repl
      #+attr_html: :width 500px
      [[./img/replit2.png]]
-     
+
    * You can now run SQLite commands and also access the ~bash~ shell.
 
    * When you execute a command in the dashboard, it's the same thing
@@ -1180,7 +1180,7 @@
        sqlite3 < main.sql
 
      #+end_src
-   
+
    * This is all made possible with a "Docker" container (with
      nix). More about that in the notes.
 
@@ -1218,17 +1218,54 @@
    * Code along with me
    * Finish the notebook on your own
    * Work through this independently using ~foods.sql~ on Thursday
-     
-* SELECT round-up: ORDER BY, GROUP BY - w8s15 (10-Mar)
 
-  * [ ] Finish SELECT workbook [[https://drive.google.com/drive/u/0/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y][SELECT_roundup.org (GDrive)]]
-  * [ ] Prepare DataCamp project: [[https://projects.datacamp.com/projects/571][Introductory SQL project]]
+* SELECT round-up: ORDER BY, GROUP BY, LIMIT, OFFSET - w8s15 (10-Mar)
 
-* w9s16 (15-Mar)
+  * [X] Finish SELECT workbook [[https://drive.google.com/drive/u/0/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y][SELECT_roundup.org (GDrive)]]
+  * [X] Prepare DataCamp project: [[https://projects.datacamp.com/projects/571][Introductory SQL project]]
+
+** Prepare DataCamp project
+
+   The upcoming DataCamp assignment is a "guided project", which means
+   that you're told, in the usual DataCamp fashion, what to do, then
+   enter and run the code. This time, however, you'll be working in a
+   so-called Jupyter Notebook. That's a literate programming
+   environment like Emacs Org-mode (just not nearly as flexible).
+
+   Before attempting the assigned project (deadline March 15), I
+   recommend you look at the Introduction to Projects in DataCamp -
+   it's very short and gives you the necessary background. [[https://projects.datacamp.com/projects/571][You find it
+   here.]] You can then head over to the SQL project on international
+   debt statistics.
+
+   That's what I'm going to do!
+
+   #+name: project
+   #+attr_html: :width 600px
+   #+caption: Screenshot of the Intro to Projects project
+   [[./img/project1.png]]
+
+* Quiz review, project review - w9s16 (15-Mar)
 
   * Review quiz questions Quiz 4 - 6 (PDF)
   * Review DataCamp project [[https://projects.datacamp.com/projects/754]["Analyze International Debt Statistics"]]
-    
+  * Preview: European Soccer League database in SQLite format
+
+** Preview Soccer database
+
+   I have tracked down the SQLite database version of the European
+   Soccer league games. This is the dataset used in the upcoming
+   DataCamp lessons. If you want to play with a much larger dataset -
+   this is it: the SQLite db file is 300MB. To run it on the command
+   line, use "sqlite3 soccer.sqlite" - then you're already
+   there. Perfect opportunity to try some of the commands we've been
+   learning on a larger canvas.
+
+   #+name: soccer
+   #+attr_html: :width 600px
+   #+caption: Loading soccer.sqlite on the CMD line
+   [[./img/soccer.png]]
+
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
@@ -1236,19 +1273,19 @@
     www.tutorialcup.com.]]
 * Footnotes
 
-[fn:4]On Windows, Emacs Org-mode cannot handle 
+[fn:4]On Windows, Emacs Org-mode cannot handle
 
 [fn:3]It is not true that a "table is like a
 spreadsheet". Spreadsheets contain active fields for
 computation. Org-mode tables are actually spreadsheet-enabled:
-     #+begin_example
-     |         2 |
-     |         5 |
-     |         7 |
-     |-----------|
-     | 4.6666667 |
-     #+TBLFM: @5$1=vmean(@1..@4)
-     #+end_example
+#+begin_example
+|         2 |
+|         5 |
+|         7 |
+|-----------|
+| 4.6666667 |
+#+TBLFM: @5$1=vmean(@1..@4)
+#+end_example
 
 [fn:2]In Lyon 104 (Computer lab), the ~PATH~ variable is unfortunately
 stored in the personal user's app data so that I could not set it
