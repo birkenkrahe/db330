@@ -1192,7 +1192,7 @@
      the ~sqlite3.exe~ file in your ~PATH~. For Windows, you need
      ~sqlite-tools-win32-x86-3380000.zip (1.87 MiB)~.)
 
-* SELECT round-up - w8s14 (8-Mar)
+* SELECT round-up: JOINs, WHERE - w8s14 (8-Mar)
 ** Agenda
 
    * [ ] Waking up in ~AppData/Roaming~? [[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-set-a-new-emacs-home-directory][Change your Emacs HOME now]].
@@ -1219,14 +1219,15 @@
    * Finish the notebook on your own
    * Work through this independently using ~foods.sql~ on Thursday
      
-* w8s15 (10-Mar)
+* SELECT round-up: ORDER BY, GROUP BY - w8s15 (10-Mar)
 
-  * Finish SELECT workbook
-  * Prepare DataCamp project
+  * [ ] Finish SELECT workbook [[https://drive.google.com/drive/u/0/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y][SELECT_roundup.org (GDrive)]]
+  * [ ] Prepare DataCamp project: [[https://projects.datacamp.com/projects/571][Introductory SQL project]]
+
 * w9s16 (15-Mar)
 
-  * Review quiz questions
-  * Review DataCamp project
+  * Review quiz questions Quiz 4 - 6 (PDF)
+  * Review DataCamp project [[https://projects.datacamp.com/projects/754]["Analyze International Debt Statistics"]]
     
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of

@@ -81,7 +81,7 @@
     | 1 | Alice   |
     | 2 | Bob     |
     | 3 | Charlie |
-    
+
   * [ ] Print table ~y~ - one integer column and one column of floats.
 
     #+name: select from y
@@ -140,12 +140,12 @@
 
     #+name: join2
     #+begin_src sqlite :db xyz.db :header :column :exports both
-    SELECT * FROM x CROSS JOIN y;
-  #+end_src
+      SELECT * FROM x CROSS JOIN y;
+    #+end_src
 
     #+name: join3
     #+begin_src sqlite :db xyz.db :header :column :exports both
-    SELECT * FROM x,y;
+      SELECT * FROM x,y;
     #+end_src
 
 * JOIN ... ON
@@ -221,7 +221,7 @@
       multiple join = INNER JOIN + LEFT JOIN does!
 
 * WHERE examples
-    
+
   * [ ] Print a row: the value ~Alice~ for the attribute ~x.b~.
 
     #+name: row
@@ -235,7 +235,7 @@
     | 1 | Alice |
 
   * [ ] Print a range of values, for 1.0 < d < 3.0.
-    
+
     #+name: between
     #+begin_src sqlite :db xyz.db :header :column
       SELECT * FROM y WHERE y.d BETWEEN 1.0 AND 3.0;
@@ -277,14 +277,13 @@
     | Tamales          |
 
 * GROUP BY Examples
-
-  * [ ] Group table z by the column z.a. Can
-    you guess how many rows are going to be printed?
+  * [ ] Group table z by the column z.a. Can you guess how many rows
+    are going to be printed?
 
     #+name: groupBy
-    #+begin_src sqlite :db xyz.db :header :column
-	SELECT a FROM z GROUP BY z.a;
-    #+end_src    
+    #+begin_src sqlite :db xyz.db :header :column :exports both
+      SELECT a FROM z GROUP BY z.a;
+    #+end_src
 
     #+RESULTS: groupBy
     | a |
@@ -297,9 +296,9 @@
     new column 'count'n.
 
     #+name: groupBy1
-    #+begin_src sqlite :db xyz.db :header :column
-	SELECT a, COUNT(a) AS count FROM z GROUP BY z.a;
-    #+end_src    
+    #+begin_src sqlite :db xyz.db :header :column :exports both
+      SELECT a, COUNT(a) AS count FROM z GROUP BY z.a;
+    #+end_src
 
     #+RESULTS: groupBy1
     | a | count |
@@ -313,9 +312,9 @@
     'TOTAL'.
 
     #+name: groupBy2
-    #+begin_src sqlite :db xyz.db :header :column
-	SELECT a, sum(e) AS TOTAL FROM z GROUP BY z.a;
-    #+end_src    
+    #+begin_src sqlite :db xyz.db :header :column :exports both
+      SELECT a, sum(e) AS TOTAL FROM z GROUP BY z.a;
+    #+end_src
 
     #+RESULTS: groupBy2
     | a | TOTAL |
@@ -323,7 +322,7 @@
     | 1 |   250 |
     | 3 |   300 |
     | 9 |   900 |
-    
+
   * [ ] Run [[groupBy]] again (group by z.a) but now also compute
     - the sum(e) as SUM
     - the count(e) as TOTAL
@@ -331,9 +330,9 @@
     - the average as AVG computed with the aggregate function
 
     #+name: groupBy3
-    #+begin_src sqlite :db xyz.db :header :column
-	SELECT a, sum(e) as SUM, count(e) as TOTAL, sum(e)/count(e) AS AGG, avg(e) AS AVG FROM z GROUP BY z.a;
-    #+end_src    
+    #+begin_src sqlite :db xyz.db :header :column :exports both
+      SELECT a, sum(e) as SUM, count(e) as TOTAL, sum(e)/count(e) AS AGG, avg(e) AS AVG FROM z GROUP BY z.a;
+    #+end_src
 
     #+RESULTS: groupBy3
     | a | SUM | TOTAL | AGG |   AVG |
@@ -341,36 +340,195 @@
     | 1 | 250 |     2 | 125 | 125.0 |
     | 3 | 300 |     1 | 300 | 300.0 |
     | 9 | 900 |     1 | 900 | 900.0 |
-    
+
   * [ ] A HAVING clause can be used to filter rows based off the
-    results of the sum() aggregation. Run the block [[having]].
+    results of the sum() aggregation. Run the block [[having1]].
 
-    #+name: having
-    #+begin_src sqlite :db xyz.db :header :column
-	SELECT a, sum(e) AS TOTAL FROM z GROUP BY z.a HAVING total > 500;
-    #+end_src    
+    #+name: having1
+    #+begin_src sqlite :db xyz.db :header :column :exports both
+      SELECT a, sum(e) AS TOTAL FROM z GROUP BY z.a HAVING total > 500;
+    #+end_src
 
-    #+RESULTS: having
+    #+RESULTS: having1
     | a | TOTAL |
     | - | ----- |
     | 9 | 900   |
+
+  * [ ] An example with the foods database, and the table ~foods~;
+    print the food type ID and the total number of food types per food
+    type group, and print those IDs whose group has less than 20 foods
+    in it.
+
+    #+name: having 2
+    #+begin_src sqlite :db foods.db :header :column :exports both
+      SELECT type_id, COUNT(*)
+      FROM foods
+      GROUP BY type_id
+      HAVING COUNT(*) < 20;
+    #+end_src
+
+    #+RESULTS: having 2
+    | type_id | COUNT(*) |
+    | ------- | -------- |
+    |       2 |       15 |
+    |       5 |       17 |
+    |       6 |        4 |
+    |      11 |       16 |
+    |      13 |       14 |
+    |      14 |       19 |
+
+    #+RESULTS:
+    | type_id | COUNT(*) |
+    | ------- | -------- |
+    |       2 |       15 |
+    |       5 |       17 |
+    |       6 |        4 |
+    |      11 |       16 |
+    |      13 |       14 |
+    |      14 |       19 |
 
 * ORDER BY examples
 
   * [ ] Order table y by the numbers in y.d, and print all columns.
 
     #+name: orderBy
-    #+begin_src sqlite :db xyz.db :header :column
-	SELECT * FROM y ORDER BY d;
-    #+end_src    
+    #+begin_src sqlite :db xyz.db :header :column :exports both
+      SELECT * FROM y ORDER BY d;
+    #+end_src
 
-    #+RESULTS: orderBy
+    #+RESULTS: orderBy1
     | c |       d |
     | - | ------- |
     | 2 | 1.61803 |
     | 1 | 2.71828 |
     | 1 | 3.14159 |
+
+  * [ ] An example from the foods database. Display all columns from
+    the table ~foods~, and filter those rows whose ~name~ begins with
+    a ~B~. Print only 10 lines.
+
+    #+name: orderBy2
+    #+begin_src sqlite :db foods.db :header :column :export both :results output
+      SELECT * FROM foods WHERE name LIKE 'B%' LIMIT 10;
+    #+end_src
+
+    #+RESULTS: orderBy2
+    #+begin_example
+    id  type_id  name
+    --  -------  -----------------------
+    1   1        Bagels
+    2   1        Bagels, raisin
+    3   1        Bavarian Cream Pie
+    4   1        Bear Claws
+    5   1        Black and White cookies
+    6   1        Bread (with nuts)
+    7   1        Butterfingers
+    48  2        Bran
+    63  3        Broiled Chicken
+    87  4        Barbeque Sauce
+    #+end_example
+
+  * [ ] Now take the command from [[orderBy2]] and order by food type ID
+    in descending order. To do this, put ~DESC~ after the column name.
+
+    #+name: orderBy3
+    #+begin_src sqlite :db foods.db :header :column :export both :results output
+      SELECT * FROM foods WHERE name LIKE 'B%'
+      ORDER BY type_id DESC
+      LIMIT 10;
+    #+end_src
+
+    #+RESULTS: orderBy3
+    #+begin_example
+    id   type_id  name
+    ---  -------  -------------------------
+    382  15       Baked Beans
+    383  15       Baked Potato w/Sour Cream
+    384  15       Big Salad
+    385  15       Brocolli
+    362  14       Bouillabaisse
+    326  12       Bologna
+    327  12       Bacon Club (no turkey)
+    328  12       BLT
+    329  12       Brisket Sandwich
+    274  10       Bacon
+    #+end_example
+
+  * [ ] You can order by any number of columns. Modify the command in
+    [[orderBy3]]: order in descending order on ~type_id~, and then order the
+    result in ascending order alphabetically on ~name~.
+
+    #+name: orderBy4
+    #+begin_src sqlite :db foods.db :header :column :export both :results output
+      SELECT * FROM foods WHERE name LIKE 'B%'
+      ORDER BY type_id DESC, name ASC
+      LIMIT 10;
+    #+end_src
     
-  * [ ] LIMIT and OFFSET
-    
+    #+RESULTS: orderBy4
+    #+begin_example
+    id   type_id  name
+    ---  -------  -------------------------
+    382  15       Baked Beans
+    383  15       Baked Potato w/Sour Cream
+    384  15       Big Salad
+    385  15       Brocolli
+    362  14       Bouillabaisse
+    328  12       BLT
+    327  12       Bacon Club (no turkey)
+    326  12       Bologna
+    329  12       Brisket Sandwich
+    274  10       Bacon
+    #+end_example
+
+* LIMIT and OFFSET examples
+
+  * [ ] From foods, print the first 5 lines of all columns.
+
+    #+name: limit1
+    #+begin_src sqlite :db foods.db :header :column :exports both :results output
+      SELECT * FROM foods LIMIT 5;
+    #+end_src    
+
+    #+RESULTS: limit1
+    : id  type_id  name                   
+    : --  -------  -----------------------
+    : 1   1        Bagels                 
+    : 2   1        Bagels, raisin         
+    : 3   1        Bavarian Cream Pie     
+    : 4   1        Bear Claws             
+    : 5   1        Black and White cookies
+
+  * [ ] Change the code in [[limit1]] only to skip the first 2 lines.
+
+    #+name: limit2
+    #+begin_src sqlite :db foods.db :header :column :exports both :results output
+      SELECT * FROM foods LIMIT 5 OFFSET 2;
+    #+end_src    
+
+    #+RESULTS: limit2
+    : id  type_id  name                   
+    : --  -------  -----------------------
+    : 3   1        Bavarian Cream Pie     
+    : 4   1        Bear Claws             
+    : 5   1        Black and White cookies
+    : 6   1        Bread (with nuts)      
+    : 7   1        Butterfingers          
+
+  * [ ] Skip the first 2 lines without using the keyword ~OFFSET~.
+
+    #+name: limit3
+    #+begin_src sqlite :db foods.db :header :column :exports both :results output
+      SELECT * FROM foods LIMIT 2, 5;
+    #+end_src    
+
+    #+RESULTS: limit3
+    : id  type_id  name                   
+    : --  -------  -----------------------
+    : 3   1        Bavarian Cream Pie     
+    : 4   1        Bear Claws             
+    : 5   1        Black and White cookies
+    : 6   1        Bread (with nuts)      
+    : 7   1        Butterfingers          
+
     

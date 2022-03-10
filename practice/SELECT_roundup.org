@@ -317,23 +317,22 @@
     | Tamales          |
 
 * GROUP BY Examples
-
-  * [ ] Group table z by the column z.a. Can
-    you guess how many rows are going to be printed?
+  * [ ] Group table z by the column z.a. Can you guess how many rows
+    are going to be printed?
 
     #+name: groupBy
-    #+begin_src sqlite :db xyz.db :header :column
+    #+begin_src sqlite :db xyz.db :header :column :exports both
 
-    #+end_src    
+    #+end_src
 
 
-  * [ ] Print the total number of rows next to every value of z.a. Call this
-    new column 'count'.
+  * [ ] Print the number of rows next to every value of z.a. Call this
+    new column 'count'n.
 
     #+name: groupBy1
-    #+begin_src sqlite :db xyz.db :header :column
+    #+begin_src sqlite :db xyz.db :header :column :exports both
 
-    #+end_src    
+    #+end_src
 
 
   * [ ] Run [[groupBy]] again (group by z.a) but now also print out the
@@ -341,11 +340,11 @@
     'TOTAL'.
 
     #+name: groupBy2
-    #+begin_src sqlite :db xyz.db :header :column
+    #+begin_src sqlite :db xyz.db :header :column :exports both
 
-    #+end_src    
+    #+end_src
 
-    
+
   * [ ] Run [[groupBy]] again (group by z.a) but now also compute
     - the sum(e) as SUM
     - the count(e) as TOTAL
@@ -353,31 +352,94 @@
     - the average as AVG computed with the aggregate function
 
     #+name: groupBy3
-    #+begin_src sqlite :db xyz.db :header :column
+    #+begin_src sqlite :db xyz.db :header :column :exports both
 
-    #+end_src    
+    #+end_src
 
-    
+
   * [ ] A HAVING clause can be used to filter rows based off the
-    results of the sum() aggregation. Run the block [[having]] and
-    understand what's happening.
+    results of the sum() aggregation. Run the block [[having1]].
 
-    #+name: having
-    #+begin_src sqlite :db xyz.db :header :column
-	SELECT a, sum(e) AS TOTAL FROM z GROUP BY z.a HAVING total > 500;
-    #+end_src    
+    #+name: having1
+    #+begin_src sqlite :db xyz.db :header :column :exports both
+      SELECT a, sum(e) AS TOTAL FROM z GROUP BY z.a HAVING total > 500;
+    #+end_src
+
+  * [ ] An example with the foods database, and the table ~foods~;
+    print the food type ID and the total number of food types per food
+    type group, and print those IDs whose group has less than 20 foods
+    in it.
+
+    #+name: having 2
+    #+begin_src sqlite :db foods.db :header :column :exports both
+
+        #+end_src
+
 
 * ORDER BY examples
 
   * [ ] Order table y by the numbers in y.d, and print all columns.
 
     #+name: orderBy
-    #+begin_src sqlite :db xyz.db :header :column
+    #+begin_src sqlite :db xyz.db :header :column :exports both
+
+    #+end_src
+
+
+  * [ ] An example from the foods database. Display all columns from
+    the table ~foods~, and filter those rows whose ~name~ begins with
+    a ~B~. Print only 10 lines.
+
+    #+name: orderBy2
+    #+begin_src sqlite :db foods.db :header :column :export both :results output
+
+    #+end_src
+
+
+  * [ ] Now take the command from [[orderBy2]] and order by food type ID
+    in descending order. To do this, put ~DESC~ after the column name.
+
+    #+name: orderBy3
+    #+begin_src sqlite :db foods.db :header :column :export both :results output
+
+
+    #+end_src
+
+
+  * [ ] You can order by any number of columns. Modify the command in
+    [[orderBy3]]: order in descending order on ~type_id~, and then order the
+    result in ascending order alphabetically on ~name~.
+
+    #+name: orderBy4
+    #+begin_src sqlite :db foods.db :header :column :export both :results output
+
+    #+end_src
+    
+
+* LIMIT and OFFSET examples
+
+  * [ ] From foods, print the first 5 lines of all columns.
+
+    #+name: limit1
+    #+begin_src sqlite :db foods.db :header :column :exports both :results output
 
     #+end_src    
 
+
+  * [ ] Change the code in [[limit1]] only to skip the first 2 lines.
+
+    #+name: limit2
+    #+begin_src sqlite :db foods.db :header :column :exports both :results output
+
+    #+end_src    
+
+
+  * [ ] Skip the first 2 lines without using the keyword ~OFFSET~.
+
+    #+name: limit3
+    #+begin_src sqlite :db foods.db :header :column :exports both :results output
+
+    #+end_src    
+
+
     
-  * [ ] LIMIT and OFFSET
-    
-    
-  
