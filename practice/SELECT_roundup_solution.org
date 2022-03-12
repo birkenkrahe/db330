@@ -1,6 +1,7 @@
 #+TITLE: SELECT ROUND-UP
 #+STARTUP: overview hideblocks
-#+OPTIONS: toc:nil num:nil ^:nil
+#+OPTIONS: toc:1 num:nil ^:nil
+#+PROPERTY: header-args:sqlite :exports both
 * README
 
   This notebook contains a round-up of the entire SELECT command

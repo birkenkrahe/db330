@@ -2,7 +2,7 @@
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:Followup for CSC330 Database Theory & Applications Spring 2022
 #+STARTUP:overview hideblocks
-#+OPTIONS: toc:nil num:nil ^:nil
+#+OPTIONS: toc:1 num:nil ^:nil
 #+PROPERTY: header-args:sqlite :header :column :results output
 * README
 
