@@ -1252,9 +1252,9 @@
 
 * Quiz review, project review - w9s16 (15-Mar)
 
+  * Preview: European Soccer League database in SQLite format
   * Review DataCamp project [[https://projects.datacamp.com/projects/754]["Analyze International Debt Statistics"]]
   * Review quiz questions Quiz 4 - 6 (PDF)
-  * Preview: European Soccer League database in SQLite format
 
 ** Preview Soccer database
 
@@ -1270,6 +1270,245 @@
    #+attr_html: :width 600px
    #+caption: Loading soccer.sqlite on the CMD line
    [[./img/soccer.png]]
+
+** Introduction to DataCamp Projects
+
+   * Jupyter notebooks
+   * iPython
+   * [[https://www.postgresql.org/][PostgreSQL database]]
+   * [[https://github.com/catherinedevlin/ipython-sql#pandas][Python pandas/DataFrame]]
+   * Object relation mapper
+   * [[https://editor.ponyorm.com/user/birkenkrahe/xyz/designer][Ponyorm.com]]
+   * [[https://www.sqlalchemy.org/][SQLalchemy toolkit]]
+** Analyze International Debt Statistics
+*** THE WORLD BANK's INTERNATIONAL DEBT DATA
+    * [[https://www.worldbank.org/en/home][World Bank]] - what's the World Bank's mission?
+
+      #+name: WorldBank
+      #+begin_quote
+      "The World Bank Group has two goals, to end extreme poverty and
+      promote shared prosperity in a sustainable way"
+      #+end_quote
+
+    * What are the purposes of this project?
+
+      #+name: purpose
+      #+begin_quote
+      * What is the total amount of debt that is owed by the countries
+        listed in the dataset?
+      * Which country owns the maximum amount of debt and what does
+        that amount look like?
+      * What is the average amount of debt owed by countries across
+        different debt indicators?
+      #+end_quote
+
+    * [ ] Attributes of interest:
+      - total debt by country
+      - maximum of debt by country
+      - average debt by country
+
+      #+name: entities
+      #+begin_example sqlite
+        SELECT debt, MAX(debt), AVG(debt)
+          FROM [table]
+          WHERE country='...'
+      #+end_example
+
+    * [ ] Connecting to ~international_debt~ database
+
+      What exactly is "PostgreSQL" (technically)?
+      - ???
+
+      What is the "cell magic" ~%%sql~ (technically)?
+      - ???
+
+      #+name: table
+      #+begin_example sqlite
+      SELECT * FROM international_debt;
+      #+end_example
+
+    * [ ] Output ~LIMIT~ to first 10 rows
+
+      #+name: limit
+      #+begin_example sqlite
+      LIMIT 10 OFFSET 0;
+      LIMIT 0, 10;
+      LIMIT 10;
+      #+end_example
+
+    * [ ] Connecting to a database - what is generally involved?
+
+      #+name: dbConnect
+      #+begin_quote
+      * Picking the database type (e.g. PostgreSQL, MySQL, SQLite)
+      * Opening the database (e.g. ~.open sqlite.db~)
+      * Tables are loaded automatically
+      #+end_quote
+
+*** FINDING THE NUMBER OF DISTINCT COUNTRIES
+
+    * [ ] DISTINCT inside or outside of COUNT()?
+
+      Can you explain the difference?
+
+      #+name: distinct1
+      #+begin_example sql
+        SELECT DISTINCT
+        COUNT(country_name) AS total_distinct_countries
+        FROM international_debt;
+      #+end_example
+
+      #+name: distinct2
+    #+begin_example sql
+      SELECT
+      COUNT(DISTINCT country_name) AS total_distinct_countries
+      FROM international_debt;
+    #+end_example
+
+    #+begin_quote
+    In [[distinct1]], no column has been selected so the
+    operator/function ~DISTINCT~ has nothing to act upon.
+
+    In [[distinct2]], the number of unique countries is selected -
+    ~DISTINCT country_name~ throws away any rows with the same
+    value in ~country_name~.
+    #+end_quote
+
+*** FINDING OUT THE DISTINCT DEBT INDICATORS
+
+    * [ ] ORDER BY
+      - what does it order?
+      - what's the default?
+      - how can the default be changed?
+
+      #+begin_quote
+      ORDER BY orders all values of a column in ascending (ASC) order
+      unless the keyword DESC is used (descending order) after the
+      column name.
+      #+end_quote
+
+*** TOTALING THE AMOUNT OF DEBT OWED BY THE COUNTRIES
+
+    * [ ] Aggregate function with 2nd argument: ROUND(column,precision)
+
+      - [[https://www.postgresqltutorial.com/postgresql-round/][More about ~ROUND~]]
+      - A 'million million" is a trillion, better: 10^12 (1e+12)
+
+      #+name: round
+      #+begin_example sql
+        SELECT
+        ROUND(SUM(debt)/100000, 2) AS total_debt
+        FROM international_debt;
+      #+end_example
+
+*** COUNTRY WITH THE HIGHEST DEBT
+
+    * Did you expect the answer?
+    * [[https://www.visualcapitalist.com/global-debt-to-gdp-ratio/][Check out this visualization (2021)]] - what's the difference?
+    * [[https://datatopics.worldbank.org/debt/ids/country/CHN][International debt statistics breakdown]]
+
+    #+name: highestDebt
+    #+begin_example sql
+      SELECT country_name, sum(debt) AS total_debt
+       FROM international_debt
+       GROUP BY country_name
+       ORDER BY total_debt DESC
+       LIMIT 1;
+    #+end_example
+
+*** AVERAGE AMOUNT OF DEBT ACROSS INDICATORS
+
+    * GROUP BY two columns - what does that mean?
+    * What happens if you take the 2nd argument away?
+
+    #+name: groupBy1
+    #+begin_quote
+    GROUP BY x,y means "put all rows with the same values for BOTH x
+    and y in the same group".
+    #+end_quote
+
+    #+name: groupBy2
+    #+begin_example sql
+      SELECT
+       indicator_code AS debt_indicator,
+       indicator_name,
+       AVG(debt) AS average_debt
+       FROM international_debt
+       GROUP BY debt_indicator, indicator_name
+       ORDER BY average_debt DESC
+       LIMIT 10;
+    #+end_example
+
+    System message:
+    #+begin_example sql
+      * postgresql:///international_debt
+      (psycopg2.ProgrammingError) column "international_debt.indicator_name"
+      must appear in the GROUP BY clause or be used in an aggregate function
+      LINE 3:     indicator_name,
+            ^
+      [SQL: 'SELECT \n    indicator_code AS debt_indicator,\n    indicator_name,\n    AVG(debt) AS average_debt\nFROM international_debt\nGROUP BY debt_indicator\nORDER BY average_debt DESC\nLIMIT 10;']
+      (Background on this error at: http://sqlalche.me/e/f405)
+    #+end_example
+
+    [[http://sqlalche.me/e/f405][See SQLalchemy link]]
+
+*** THE HIGHEST AMOUNT OF PRINCIPAL REPAYMENTS
+
+    * What's special about the filtering with WHERE?
+    * What's the [[https://www.w3resource.com/PostgreSQL/postgresql-subqueries.php][subquery nesting]] depth allowed?
+
+    #+name: where
+    #+begin_example sql
+      SELECT country_name, indicator_name
+       FROM international_debt
+       WHERE debt= (SELECT max(debt)
+                     FROM international_debt
+                     WHERE indicator_code='DT.AMT.DLXF.CD');
+    #+end_example
+
+*** THE MOST COMMON DEBT INDICATOR
+
+    * ORDER BY with two arguments - is the order important?
+
+    * What happens if you turn the arguments around?
+
+      #+name: orderBy
+      #+begin_example sql
+        SELECT indicator_code, COUNT(indicator_code) AS indicator_count
+        FROM international_debt
+        GROUP BY indicator_code
+        ORDER BY indicator_count DESC, indicator_code DESC
+        LIMIT 20;
+      #+end_example
+
+*** OTHER VIABLE DEBT ISSUES AND CONCLUSION
+
+    #+caption: DataCamp project last code/output cell
+    [[./img/debt.png]]
+
+*** DISCUSSION
+
+    * [ ] What's left out in this analysis of debt?
+
+    * [ ] Has the exercise changed your point of view?
+
+    * [ ] Should analysis like this change your point of view?
+
+      #+begin_quote
+      "This debt is the sum of different debts owed by a country
+      across several categories. This will help to understand more
+      about the country in terms of its socio-economic scenarios."
+      #+end_quote
+
+      #+begin_quote
+      "we took a look at debt owed by countries across the globe. We
+      extracted a few summary statistics from the data and unraveled
+      some interesting facts and figures. We also validated our
+      findings to make sure the investigations are correct."
+      #+end_quote
+
+
+
 
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
