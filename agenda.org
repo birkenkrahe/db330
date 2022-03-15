@@ -1252,8 +1252,8 @@
 
 * Quiz review, project review - w9s16 (15-Mar)
 
-  * Review quiz questions Quiz 4 - 6 (PDF)
   * Review DataCamp project [[https://projects.datacamp.com/projects/754]["Analyze International Debt Statistics"]]
+  * Review quiz questions Quiz 4 - 6 (PDF)
   * Preview: European Soccer League database in SQLite format
 
 ** Preview Soccer database
