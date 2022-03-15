@@ -1272,7 +1272,6 @@
    [[./img/soccer.png]]
 
 ** Introduction to DataCamp Projects
-
    * Jupyter notebooks
    * iPython
    * [[https://www.postgresql.org/][PostgreSQL database]]
@@ -1287,7 +1286,7 @@
       #+name: WorldBank
       #+begin_quote
       "The World Bank Group has two goals, to end extreme poverty and
-      promote shared prosperity in a sustainable way"
+      promote shared prosperity in a sustainable way."
       #+end_quote
 
     * What are the purposes of this project?
@@ -1314,20 +1313,20 @@
           WHERE country='...'
       #+end_example
 
-    * [ ] Connecting to ~international_debt~ database
+    * [X] Connecting to ~international_debt~ database
 
       What exactly is "PostgreSQL" (technically)?
-      - ???
+      - A (object-) relational database management system
 
       What is the "cell magic" ~%%sql~ (technically)?
-      - ???
+      - meta data to enable query execution by the RDBMS
 
       #+name: table
       #+begin_example sqlite
       SELECT * FROM international_debt;
       #+end_example
 
-    * [ ] Output ~LIMIT~ to first 10 rows
+    * [X] Output ~LIMIT~ to first 1-20 rows
 
       #+name: limit
       #+begin_example sqlite
@@ -1376,7 +1375,7 @@
 
 *** FINDING OUT THE DISTINCT DEBT INDICATORS
 
-    * [ ] ORDER BY
+    * [X] ORDER BY
       - what does it order?
       - what's the default?
       - how can the default be changed?
@@ -1389,7 +1388,7 @@
 
 *** TOTALING THE AMOUNT OF DEBT OWED BY THE COUNTRIES
 
-    * [ ] Aggregate function with 2nd argument: ROUND(column,precision)
+    * [X] Aggregate function with 2nd argument: ROUND(column,precision)
 
       - [[https://www.postgresqltutorial.com/postgresql-round/][More about ~ROUND~]]
       - A 'million million" is a trillion, better: 10^12 (1e+12)
@@ -1469,7 +1468,6 @@
 *** THE MOST COMMON DEBT INDICATOR
 
     * ORDER BY with two arguments - is the order important?
-
     * What happens if you turn the arguments around?
 
       #+name: orderBy
@@ -1488,11 +1486,11 @@
 
 *** DISCUSSION
 
-    * [ ] What's left out in this analysis of debt?
+    * [X] What's left out in this analysis of debt?
 
-    * [ ] Has the exercise changed your point of view?
+    * [X] Has the exercise changed your point of view?
 
-    * [ ] Should analysis like this change your point of view?
+    * [X] Should analysis like this change your point of view?
 
       #+begin_quote
       "This debt is the sum of different debts owed by a country
@@ -1506,9 +1504,6 @@
       some interesting facts and figures. We also validated our
       findings to make sure the investigations are correct."
       #+end_quote
-
-
-
 
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
