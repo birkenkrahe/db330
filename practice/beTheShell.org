@@ -1,0 +1,89 @@
+** SQLite
+*** Delete tables
+
+    * ~DROP TABLE [table];~
+
+    * PRACTICE
+
+*** Export table content only
+
+    * You already know how to ~.dump~ an SQLite database ~.db~
+
+    * Sometimes, you only want to export the data only, without the
+      .~schema~
+
+    * For this, you can use ~.mode insert~, then redirect the ~.output~
+      and ~SELECT~ the data for the output file
+
+    * PRACTICE
+
+*** Export a CSV file
+
+    * First export your file as a CSV file
+
+    * Change ~.mode~, ~SELECT~, change ~.output~, ~SELECT~ again
+
+    * Now you have a CSV file to import
+
+    * PRACTICE
+
+*** Import a CSV file
+
+    * ~.import [csv file] [table]~
+
+    * See help for ~.import~ on the SQLite shell
+
+    * If you have an error, how can you fix it?
+
+    * PRACTICE
+
+*** Unique constraints
+    * Unique constraints: ~PRIMARY KEY~
+
+    * What happens if you have defined a column ~id~ as ~PRIMARY KEY~?
+
+    * Try to ~INSERT~ the same ~VALUE~ in a table that already has one
+
+    * Use ~.schema [table]~ to see your table definitions
+
+    * PRACTICE
+
+*** UPDATE TABLE (DML)
+
+    * ~UPDATE~ table values with ~UPDATE [table] SET [col]=[new];~
+
+    * If you're not careful you update entries that don't need it
+
+    * How can you specify a row and leave others unchanged?
+
+    * Use a filter with ~WHERE~ to specify the row!
+
+    * PRACTICE
+
+*** ALTER TABLE (DDL)
+
+    * SQLite has limited capabilities to alter tables
+
+    * You can change the name, or you can add a column, that's it
+
+    * ~ALTER TABLE [table] RENAME TO [newname];~
+
+    * Add a column with ~ALTER TABLE [table] ADD COLUMN [name] TEXT;~
+
+    * PRACTICE
+
+*** NULL values
+
+    * ~NULL~ values are special, too
+
+    * Check out the ~.nullvalue~ setting via ~.show~
+
+    * Set it to ~[NULL]~ (default is "")
+
+    * ~SELECT~ all columns of the table you just added a column to
+
+    * Add a new column and label it ~NOT NULL~
+
+    * PRACTICE
+
+
