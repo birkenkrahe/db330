@@ -1365,12 +1365,12 @@
     #+end_example
 
     #+begin_quote
-    In [[distinct1]], no column has been selected so the
+    In the first example, no column has been selected so the
     operator/function ~DISTINCT~ has nothing to act upon.
 
-    In [[distinct2]], the number of unique countries is selected -
-    ~DISTINCT country_name~ throws away any rows with the same
-    value in ~country_name~.
+    In the second example, the number of unique countries is
+    selected - ~DISTINCT country_name~ throws away any rows with the
+    same value in ~country_name~.
     #+end_quote
 
 *** FINDING OUT THE DISTINCT DEBT INDICATORS
