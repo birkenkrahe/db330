@@ -29,12 +29,12 @@
    | 13 |      | Thu-03-Mar   | SQLite lab session 2          |                                    |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
    | 14 |    9 | Tue-08-Mar   | SELECT pipeline 2             | SQL: Sorting and grouping          | SELECT_roundup.org      | Quiz 6       |
-   |    |      | Thu-10-Mar   | SELECT pipeline 3 / Projects  |                                    | SELECT_roundup2.org     |              |
+   | 15 |      | Thu-10-Mar   | SELECT pipeline 3 / Projects  |                                    | SELECT_roundup2.org     |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   |    |   10 | Tue-15-Mar   | Quiz review                   | Project: Analyze Int. Debt Stats   |                         |              |
-   |    |      | Thu-17-Mar   | DataCamp project review       |                                    |                         | Test 2       |
+   | 16 |   10 | Tue-15-Mar   | Quiz review                   | Project: Analyze Int. Debt Stats   |                         |              |
+   | 17 |      | Thu-17-Mar   | DataCamp project review       |                                    |                         | Test 2       |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
-   |    |   11 | Tue-29-Mar   |                               |                                    |                         |              |
+   | 18 |   11 | Tue-29-Mar   |                               |                                    |                         |              |
    |    |      | Thu-31-Mar   |                               | Intermediate SQL: CASE             |                         |              |
    |----+------+--------------+-------------------------------+------------------------------------+-------------------------+--------------|
    |    |   12 | Tue-05-Apr   |                               |                                    |                         | Quiz 7       |

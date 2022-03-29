@@ -498,7 +498,7 @@
    * The output to the code in [[check_db]] shows 1) we have a persistent
      database that we're currently writing to, 2) where the file is, 3)
      we have no tables (yet).
-     
+
      #+name: check_db
      #+begin_src sqlite :db sqlite.db :results output :exports both
        .database
@@ -1197,7 +1197,7 @@
      the ~sqlite3.exe~ file in your ~PATH~. For Windows, you need
      ~sqlite-tools-win32-x86-3380000.zip (1.87 MiB)~.)
 
-* SELECT round-up: JOINs, WHERE - w8s14 (8-Mar)
+* SELECT round-up: JOINs, WHERE - w9s14 (8-Mar)
 ** Agenda
 
    * [ ] Waking up in ~AppData/Roaming~? [[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-set-a-new-emacs-home-directory][Change your Emacs HOME now]].
@@ -1224,7 +1224,7 @@
    * Finish the notebook on your own
    * Work through this independently using ~foods.sql~ on Thursday
 
-* SELECT round-up: ORDER BY, GROUP BY, LIMIT, OFFSET - w8s15 (10-Mar)
+* SELECT round-up: ORDER BY, GROUP BY, LIMIT, OFFSET - w9s15 (10-Mar)
 
   * [X] Finish SELECT workbook [[https://drive.google.com/drive/u/0/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y][SELECT_roundup.org (GDrive)]]
   * [X] Prepare DataCamp project: [[https://projects.datacamp.com/projects/571][Introductory SQL project]]
@@ -1250,7 +1250,7 @@
    #+caption: Screenshot of the Intro to Projects project
    [[./img/project1.png]]
 
-* Quiz review, project review - w9s16 (15-Mar)
+* Quiz review, project review - w10s16 (15-Mar)
 
   * Preview: European Soccer League database in SQLite format
   * Review DataCamp project [[https://projects.datacamp.com/projects/754]["Analyze International Debt Statistics"]]
@@ -1505,16 +1505,77 @@
       findings to make sure the investigations are correct."
       #+end_quote
 
-* Relational database thinking
+* Relational database thinking - w11s18 (29-Mar)
 
-  * [ ] Group exercise
+  * [ ] Group exercise: relational database thinking
   * [ ] Object-relational mapping in editor.ponyorm.com
   * [ ] Presentation of your ideas
 
+** Group exercise
+
+   Most importantly: DO NOT FEEL RESTRAINED BY REALITY (including your
+   own technical abilities). Areas of interest could include:
+
+   - Video games
+   - Sports
+   - Alien civilizations
+   - Weather on Mars
+   - Tank movements in the Ukraine-Russia war
+   - Ecological data
+   - Immigration
+   - Kardashians
+   - The 100 richest people on Earth
+   - etc.
+
+
+   - [ ] Go into groups of 2-3 people - generate 1 solution per group
+
+   - [ ] Which database content you'd find personally interesting
+     1. [ ] which area of knowledge or activity?
+     2. [ ] which entities are worth measuring and recording?
+     3. [ ] which variables would you measure?
+     4. [ ] which data types do these variables come in?
+     5. [ ] how "big" are your data?
+     6. [ ] which queries would be interesting?
+     7. [ ] write a couple of queries in pseudocode!
+     8. [ ] which graphical outcomes would you like to see?
+     9. [ ] is your information tabular/relational or not? If it is,
+        how many tables do you think there are and what are their
+        relationships?
+     10. [ ] Put your results into the ponyorm editor (see below)
+
+     Get ready to present your results as a group!
+
+** Example: Seinfeld foods
+
+   1. *Area:* of interest: Food science, advertising, marketing
+   2. *Entities:* Food types, foods, shows, actors, humor, US food sales data, viewer data
+   3. *Variables:* Food type, food name, show episode, actor name, humor index, food type sales figures, viewer age
+   4. *Data types*: text, integer, double
+   5. *Big data*: yes if sales and viewers included, certainly when doing this in real time
+   6. *Queries:* "how many more burgers were sold after Kramer ate a burger in episode 5?"
+   7. *Pseudocode:* SELECT count(*) FROM food_type, actors, episodes WHERE episode = 5 GROUP BY burgers
+   8. *Graphs:*
+   9. *DB type:* relational (tables)
+   10. See [[https://editor.ponyorm.com/user/birkenkrahe/food/designer][foods database in ponyorm]]
+
+** Ponyorm editor
+
+   * Go to editor.ponyorm.com and sign up for the free plan
+   * Click on "Create diagram" (blue button)
+   * Name your diagram, describe it briefly, set to PUBLIC
+   * Create entities with "New Entity"
+   * Add attributes (= variables) with "Add attribute"
+   * Add relationships with "Add relation"
+   * Share the public link with everyone when presenting
+
+** Presentation
+
 * SELECT lab with the foods database (31-Mar)
 
-  * [ ] Crowfoot notation
+  * [ ] Crowfoot notation and ERD intro
   * [ ] [[https://editor.ponyorm.com/user/birkenkrahe/food/designer][foods database in ponyorm]]
+  * [ ] Work through the notebook at your own pace
 
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
