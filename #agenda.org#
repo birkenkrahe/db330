@@ -1508,9 +1508,9 @@
 #+OPTIONS: toc:nil
 * Relational database thinking - w11s18 (29-Mar)
 
-  * [X] Group exercise: relational database thinking
-  * [X] Object-relational mapping in editor.ponyorm.com
-  * [X] Presentation of your ideas
+  * [ ] Group exercise: relational database thinking
+  * [ ] Object-relational mapping in editor.ponyorm.com
+  * [ ] Presentation of your ideas
 
 ** Group exercise
 
@@ -1572,14 +1572,12 @@
 
 ** Presentations
 
-   * [[https://drive.google.com/drive/folders/11CwBYwgqzCz76anccEFGHyMQaU910D5_?usp=sharing][See GDrive for results (ponyorm designs)]]
+
 
 * SELECT lab with the foods database (31-Mar)
 
-  * [ ] DataCamp deadlines adjusted
   * [ ] Crowfoot notation and ERD intro
-    - See YouTube tutorials in [[https://www.youtube.com/playlist?list=PLwgb17bzeNyiH-DtBvxBBELvdYlOxQDUy][Playlist]].
-  * [ ] See [[https://editor.ponyorm.com/user/birkenkrahe/food/designer][foods database in ponyorm]]
+  * [ ] [[https://editor.ponyorm.com/user/birkenkrahe/food/designer][foods database in ponyorm]]
   * [ ] Work through the notebook at your own pace
 
 * References

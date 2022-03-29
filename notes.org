@@ -795,6 +795,16 @@
     SELECT * FROM x INNER JOIN y ON x.a = y.b;
   #+end_example
 
+* Relational database thinking - w11s18 (29-Mar)
+
+  * Q: What is the difference between entities and attributes (two
+    different questions in the list relate to this)?
+
+    A: entities cannot be measured/recorded directly, e.g. "food", or
+    "customer". You measure entities by defining measurable entities,
+    e.g. "food_type", "food_temperature", "customer_age",
+    "time_of_sale" etc.
+
 * References
   * <<bbc>> BBC (11 Mar 2019). World wide web vs. internet - what's
     the difference? [video]. [[https://www.bbc.co.uk/newsround/47523993#:~:text=The%20world%20wide%20web%2C%20or,connect%20towns%20and%20cities%20together.][URL: www.bbc.co.uk]].
