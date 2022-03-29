@@ -1505,6 +1505,17 @@
       findings to make sure the investigations are correct."
       #+end_quote
 
+* Relational database thinking
+
+  * [ ] Group exercise
+  * [ ] Object-relational mapping in editor.ponyorm.com
+  * [ ] Presentation of your ideas
+
+* SELECT lab with the foods database (31-Mar)
+
+  * [ ] Crowfoot notation
+  * [ ] [[https://editor.ponyorm.com/user/birkenkrahe/food/designer][foods database in ponyorm]]
+
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].

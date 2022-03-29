@@ -1,4 +1,4 @@
-#+TITLE:SELECT notebook 1
+#+TITLE:SELECT lab
 #+AUTHOR:Marcus Birkenkrahe
 #+SUBTITLE:DB Practice CSC 330 Spring 2022
 #+STARTUP:overview hideblocks
@@ -12,6 +12,9 @@
   * This is the first of several notebooks to practice SQL using the
     SQLite database management system with real data.
 
+  * Take a look at the meta data header of this file and make sure
+    that you understand what the ~#+PROPERTY~ lines mean.
+  
 * Download sample data
 
   * [ ] Download the sample data ~foods.sql~ from Schoology using your
@@ -41,7 +44,7 @@
     with their attributes:
 
     #+caption: Entity-Relationship Diagram for foods.db
-    [[./erd.png]]
+    [[./img/erd.png]]
 
   * [ ] The database contains all episode titles of the popular TV show
     "Seinfeld" together with the foods shown in each episode, and the
@@ -57,20 +60,23 @@
 
     #+end_src
 
+
   * [ ] Run the previous query again, but this time show what the
-    result means.
+    result means by naming the header appropriately.
 
     #+name: no_of_food_types_2
-    #+begin_src sqlite :db foods.db
+    #+begin_src sqlite :db foods.db :results output
 
     #+end_src
 
+    
   * [ ] Let's use another function: what is the (alphabetically) last
     episode?
 
-    #+begin_src sqlite :db foods.db :results raw
+    #+begin_src sqlite :db foods.db :results output
 
     #+end_src
+
 
 * References
 
