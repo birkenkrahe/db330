@@ -1068,9 +1068,9 @@
 ** Objectives
 
    * [X] Review quiz 4-5 (I'm waiting for your comments/questions)
-   * [ ] Interactive SQLite notebook tutorial
-   * [ ] SELECT notebook 1
-   * [ ] Lecture: SELECT with examples
+   * [X] Interactive SQLite notebook tutorial
+   * [X] SELECT notebook 1
+   * [X] Lecture: SELECT with examples
 
 ** SQLite Code Blocks in Org Mode
 
