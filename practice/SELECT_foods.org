@@ -1,0 +1,283 @@
+#+TITLE:SELECT Lab 2 - Problems
+#+AUTHOR:Marcus Birkenkrahe
+#+SUBTITLE:DB Practice CSC 330 Spring 2022
+#+STARTUP:overview hideblocks
+#+OPTIONS: toc:nil num:nil ^:nil
+#+PROPERTY: header-args:sqlite :exports both
+#+PROPERTY: header-args:sqlite :results output
+#+PROPERTY: header-args:sqlite :db foods.db
+#+PROPERTY: header-args:sqlite :header :column
+* README
+
+  * This is a notebook for you to review SQL using the SQLite database
+    management system using a small but fully formed database 'foods'.
+
+  * This notebook also introduces you to some aspects of the Entity
+    Relational Model which underlies the design of relational DB
+
+  * In another notebook we'll look at JOINs using this database.
+
+* Download sample data
+
+  * [ ] Download the sample data ~foods.sql~ from GDrive using your
+    browser.
+
+  * [ ] Open a terminal and go to the download directory - most likely
+    ~C:\Downloads~ - with the command ~cd C:\Downloads~.
+
+  * [ ] Create an SQLite database by typing at the terminal prompt:
+
+    #+name: create_db
+    #+begin_example
+    sqlite3 foods.db < foods.sql
+    #+end_example
+
+    This runs SQLite on the SQLite data and generates a binary
+    database file.
+
+  * [ ] Check your progress by looking up the tables in ~foods.db~.
+
+    #+begin_src sqlite :db foods.db :exports both
+
+    #+end_src
+
+  * There should be four tables: ~episodes~, ~food_types~, ~foods~,
+    and ~foods_episodes~.
+
+* Getting to know the data
+** The data
+
+   * The database contains all episode titles of the popular TV show
+     "Seinfeld" together with the foods shown in each episode, and the
+     types of food.
+     
+   * For an overview of the variables contained in each table, see the
+     schema printed in the code block [[orm_schema]].
+
+** Entity relationship diagrams
+   
+   * [ ] You'll learn more about the data later. Here is an Entity
+     Relationship Diagram that shows the four different tables
+     together with their attributes [to open the PNG files, type C-c
+     C-x C-v).
+
+     #+attr_html: :width 600px
+     #+caption: Entity-Relationship Diagram for foods.db
+     [[./img/erd.png]]
+
+   * You can create such diagrams yourself in an Object-Relationship
+     Mapper (ORM) application like /ponyorm/. This is more than a
+     drawing program because it generates DDL code for different RDBMS
+     automatically. See [[https://editor.ponyorm.com/user/birkenkrahe/food/designer][foods database in ponyorm]].
+
+     #+attr_html: :width 600px
+     #+caption: Object-relationship map for foods (ponyorm.com)
+     [[./img/ponyorm.png]]
+
+   * [ ] In the next code blocks list the commands that are needed
+     to import the ORM schema, stored in a file ~orm.sql~ into SQLite.
+     - Create a database orm.db (in [[orm_import]])
+     - Open SQLite on orm.db (in [[orm_import]])
+
+     If the code block [[org_import]] does not work, you can also execute
+     these commands in the Windows CMD line terminal.
+     
+     #+name: orm_import
+     #+begin_src bash :results silent
+       sqlite3 orm.db < orm.sql ## creates foods_orm.db
+       sqlite3 orm.db           ## open sqlite3 on orm.db
+     #+end_src
+
+     - Check if the tables are there (in [[orm_schema]])
+     - Check the data definitions (in [[orm_schema]])
+
+     #+name: orm_schema
+     #+begin_src sqlite :db orm.db :results output :exports both
+
+	
+     #+end_src
+
+** Simple queries
+
+   * Let's get started with two simple queries.
+
+   * [ ] How many food types are there?
+
+     #+name: no_of_food_types_1
+     #+begin_src sqlite :db foods.db :exports both
+
+     #+end_src
+
+
+   * [ ] Run the previous query again, but this time show what the
+     result means by creating a meaningful header.
+
+     #+name: no_of_food_types_2
+     #+begin_src sqlite :db foods.db :exports both
+
+     #+end_src
+
+
+   * [ ] Let's use another function: what is the (alphabetically) last
+     episode?
+
+     #+name: last_episode
+     #+begin_src sqlite :db foods.db :results output :exports both
+
+     #+end_src
+
+     
+* Translate SQL query into natural language
+
+  * SQL is a declarative, natural language. You are able to speak
+    commands easily while writing efficient code. Example: the DDL
+    command [[create]] would read:
+
+    #+begin_quote
+    "Create a table ~tbl~ with only one column named ~id~, which is an
+    ~integer~ number, and which cannot be empty or unknown (i.e. a
+    value has to be assigned to it."
+    #+end_quote
+
+    #+name: create
+    #+begin_example sqlite
+      CREATE TABLE tbl (id INTEGER NOT NULL);
+    #+end_example
+
+  * [ ] Your turn! Turn the following SQL query into a normal sentence.
+
+    #+name: translate
+    #+begin_src sqlite :db foods.db :exports both
+      SELECT foods.name
+      FROM foods
+      WHERE foods.name LIKE 'M%';
+    #+end_src
+
+    #+name: translate_solution
+    #+begin_quote
+    "..."
+    #+end_quote
+
+* Operator Types
+
+  * [ ] The SELECT command can execute many operators. How many
+    operators can you distinguish in the code block [[operators]]? List
+    them below in [[operators_solution]].
+
+    #+name: operators
+    #+begin_src sqlite :db foods.db :results output :exports both
+      SELECT (-1) +
+      (SELECT 1=1) *
+      (SELECT AVG(foods.id)
+      FROM foods
+      WHERE foods.id < 100);
+    #+end_src
+
+    #+name: operators_solution
+    #+begin_quote
+    Answer:
+    1) ...
+    2) ...
+       ...
+    #+end_quote
+
+  * [ ] Do you think this code will run? Try it. If you cannot
+    understand what's going on, dissect the command and run it in
+    parts.
+
+* Restrict output rows
+
+  * [ ] Write a query to get all names of Seinfeld episodes, and
+    restrict the output to the episodes 5-15 only.
+
+    #+name: restrict
+    #+begin_src sqlite :db foods.db :results output :exports both
+
+
+    #+end_src
+
+* Filter patterns
+
+  * [ ] Write a query that returns the names of all foods in the table
+    foods, which begin with the letter P. Print the first 5 entries of
+    that list, and name the column "P foods".
+
+    #+name: filter
+    #+begin_src sqlite :db foods.db :results output :exports both
+
+
+    #+end_src
+
+* Ordering rows
+
+  * [ ] Write a query that returns the ~season~ and the episode ~name~
+    for all episodes in the seasons 5 to 10, whose name contains the
+    letters 'ng'. Print the output so that the later seasons are
+    displayed first.
+
+    #+name: ordering
+    #+begin_src sqlite :db foods.db :results output :exports both
+
+
+    #+end_src
+
+* Functions
+
+  * [ ] How many letters does the Seinfeld episode with the shortest
+    ~name~ have? Write one query to find it and print both length of
+    the episode title (as 'Length') and the title (as 'Title').
+
+    #+name: function
+    #+begin_src sqlite :db foods.db :results output :exports both
+
+
+    #+end_src
+
+    
+* Grouping rows
+
+  * [ ] How many episodes did each of the 10 seasons of the Seinfeld
+    show have? Write a query that returns the episode count for each
+    ~season~, and call the output 'Episode Count'.
+
+    #+name: grouping
+    #+begin_src sqlite :db foods.db :results output :exports both
+
+
+    #+end_src
+
+* Eliminate duplicates
+
+  * [ ] How many different episode counts per season did the Seinfeld
+    show have? Write a query that eliminates duplicate entries from
+    the previous query [[grouping]].
+
+    #+name: duplicates
+    #+begin_src sqlite :db foods.db :results output :exports both
+
+
+    #+end_src
+
+    
+* Coercion
+
+  * [ ] Explain the difference between the results of these three queries!
+
+    #+name: equality
+    #+begin_src sqlite :db foods.db :results output  :exports both
+      SELECT LENGTH("2==3");
+      SELECT LENGTH("2=3");
+      SELECT LENGTH(2==3);
+    #+end_src
+
+    #+name: equality_solution    
+    #+begin_src :exports both 
+    1) LENGTH("2==3") is ...
+    2) LENGTH("2=3") is ...
+    3) LENGTH(2==3) is ...
+    #+end_src
+
+* References
+
+  * Kreibich (2010). Using SQLite. O'Reilly.
+  * Allen/Owens (2010). The Definitive Guide to SQLite. APress.
