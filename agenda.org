@@ -1576,11 +1576,9 @@
 
 * SELECT lab with the foods database (31-Mar)
 
-  * [ ] DataCamp deadlines adjusted
-  * [ ] Crowfoot notation and ERD intro
-    - See YouTube tutorials in [[https://www.youtube.com/playlist?list=PLwgb17bzeNyiH-DtBvxBBELvdYlOxQDUy][Playlist]].
-  * [ ] See [[https://editor.ponyorm.com/user/birkenkrahe/food/designer][foods database in ponyorm]]
-  * [ ] Work through the notebook at your own pace
+  * [ ] FYI: DataCamp deadlines adjusted
+
+  * [ ] Work through the notebook at your own pace (GDrive)
 
 * References
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of

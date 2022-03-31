@@ -27,11 +27,11 @@
     #+attr_html: :width 600px
     [[./img/select1.png]]
 
-  * [X] How are the commands in the mindmap ordered (from right to
+  * [ ] How are the commands in the mindmap ordered (from right to
     left)?
 
     #+begin_quote
-    Answer: The commands follow the SELECT pipeline (clock-wise)
+    Answer:
     #+end_quote
 
 * Create some tables
@@ -44,17 +44,12 @@
 
     #+name: read tables
     #+begin_src sqlite :db xyz.db :header :column :exports both :results output
-    .read xyz.sql
-    .database
-    .tables
+
+
+
     #+end_src
 
-    #+RESULTS: read tables
-    : main: c:\Users\birkenkrahe\GitHub\db330\practice\xyz.db r/w
-    : x  y  z
-
-
-  * [X] Challenge: if the tables already exist in ~xyz.db~ (and you
+  * [ ] Challenge: if the tables already exist in ~xyz.db~ (and you
     don't have the ~IF NOT EXISTS~ clause in the ~CREATE TABLE~
     statement), you need to delete the database before loading the
     tables. But even if you do that, the ~INSERT~ commands will add to
@@ -62,7 +57,7 @@
     duplicate entries?
 
     #+begin_quote
-    ANSWER: you have to SELECT DISTINCT to remove duplicate values
+    ANSWER:
     #+end_quote
 
   * We use ~SELECT~ with the wildcard ~*~ for the column selection,
@@ -73,46 +68,24 @@
 
     #+name: select from x
     #+begin_src sqlite :db xyz.db :header :column :exports both
-	SELECT * FROM x;
-    #+end_src
 
-    #+RESULTS: select from x
-    | a | b       |
-    | - | ------- |
-    | 1 | Alice   |
-    | 2 | Bob     |
-    | 3 | Charlie |
+    #+end_src
 
 
   * [ ] Print table ~y~ - one integer column and one column of floats.
 
     #+name: select from y
     #+begin_src sqlite :db xyz.db :header :column :exports both
-	SELECT * FROM y;
-    #+end_src
 
-    #+RESULTS: select from y
-    | c |       d |
-    | - | ------- |
-    | 1 | 3.14159 |
-    | 1 | 2.71828 |
-    | 2 | 1.61803 |
+    #+end_src
 
 
   * [ ] Print table ~z~ - two integer columns
 
     #+name: select from z
     #+begin_src sqlite :db xyz.db :header :column :exports both
-	SELECT * FROM z;
-    #+end_src
 
-    #+RESULTS: select from z
-    | a |   e |
-    | - | --- |
-    | 1 | 100 |
-    | 1 | 150 |
-    | 3 | 300 |
-    | 9 | 900 |
+    #+end_src
 
 
   #+caption: Sample tables x,y,z
@@ -129,73 +102,25 @@
       SELECT * FROM x JOIN y;
     #+end_src
 
-    #+RESULTS: join1
-    | a | b       | c |       d |
-    | - | ------- | - | ------- |
-    | 1 | Alice   | 1 | 3.14159 |
-    | 1 | Alice   | 1 | 2.71828 |
-    | 1 | Alice   | 2 | 1.61803 |
-    | 2 | Bob     | 1 | 3.14159 |
-    | 2 | Bob     | 1 | 2.71828 |
-    | 2 | Bob     | 2 | 1.61803 |
-    | 3 | Charlie | 1 | 3.14159 |
-    | 3 | Charlie | 1 | 2.71828 |
-    | 3 | Charlie | 2 | 1.61803 |
-
-
     #+name: join2
     #+begin_src sqlite :db xyz.db :header :column :exports both
-    SELECT * FROM x CROSS JOIN y;
-  #+end_src
-
-  #+RESULTS: join2
-  | a | b       | c |       d |
-  | - | ------- | - | ------- |
-  | 1 | Alice   | 1 | 3.14159 |
-  | 1 | Alice   | 1 | 2.71828 |
-  | 1 | Alice   | 2 | 1.61803 |
-  | 2 | Bob     | 1 | 3.14159 |
-  | 2 | Bob     | 1 | 2.71828 |
-  | 2 | Bob     | 2 | 1.61803 |
-  | 3 | Charlie | 1 | 3.14159 |
-  | 3 | Charlie | 1 | 2.71828 |
-  | 3 | Charlie | 2 | 1.61803 |
+      SELECT * FROM x CROSS JOIN y;
+    #+end_src
 
     #+name: join3
     #+begin_src sqlite :db xyz.db :header :column :exports both
-    SELECT * FROM x,y;
+      SELECT * FROM x,y;
     #+end_src
-
-    #+RESULTS: join3
-    | a | b       | c |       d |
-    | - | ------- | - | ------- |
-    | 1 | Alice   | 1 | 3.14159 |
-    | 1 | Alice   | 1 | 2.71828 |
-    | 1 | Alice   | 2 | 1.61803 |
-    | 2 | Bob     | 1 | 3.14159 |
-    | 2 | Bob     | 1 | 2.71828 |
-    | 2 | Bob     | 2 | 1.61803 |
-    | 3 | Charlie | 1 | 3.14159 |
-    | 3 | Charlie | 1 | 2.71828 |
-    | 3 | Charlie | 2 | 1.61803 |
 
 * JOIN ... ON
 
-  * [X] INNER JOIN: Remember the zipper principle - identify 2 columns to
+  * [ ] INNER JOIN: Remember the zipper principle - identify 2 columns to
     zip together. This identification a = c follows after the ~ON~ keyword.
 
     #+name: join4
     #+begin_src sqlite :db xyz.db :header :column :exports both
-	SELECT * FROM x JOIN y ON a = c;
+      SELECT * FROM x JOIN y ON a = c;
     #+end_src
-
-    #+RESULTS: join4
-    | a | b     | c |       d |
-    | - | ----- | - | ------- |
-    | 1 | Alice | 1 | 2.71828 |
-    | 1 | Alice | 1 | 3.14159 |
-    | 2 | Bob   | 2 | 1.61803 |
-
 
     - Compare with the CROSS JOIN before. This time, Only those
       columns that satisfy the condition ~a=c~ are included in [[join4]]
@@ -205,15 +130,8 @@
 
     #+name: join5
     #+begin_src sqlite :db xyz.db :header :column :exports both
-	SELECT * FROM x JOIN z ON x.a = z.a;
+      SELECT * FROM x JOIN z ON x.a = z.a;
     #+end_src
-
-    #+RESULTS: join5
-    | a | b       | a |   e |
-    | - | ------- | - | --- |
-    | 1 | Alice   | 1 | 100 |
-    | 1 | Alice   | 1 | 150 |
-    | 3 | Charlie | 3 | 300 |
 
 
   * [ ] You can resolve column name confusions (same column name in
@@ -222,15 +140,8 @@
 
     #+name: join7
     #+begin_src sqlite :db xyz.db :header :column :nullvalue [NULL]
-	SELECT * FROM x AS t_x JOIN z AS t_z ON t_x.a = t_z.a;
+      SELECT * FROM x AS t_x JOIN z AS t_z ON t_x.a = t_z.a;
     #+end_src
-
-    #+RESULTS: join7
-    | a | b       | a |   e |
-    | - | ------- | - | --- |
-    | 1 | Alice   | 1 | 100 |
-    | 1 | Alice   | 1 | 150 |
-    | 3 | Charlie | 3 | 300 |
 
 
   * [ ] There are five (!) more ~JOIN~ commands:
@@ -238,51 +149,30 @@
     - ~COMPOUND JOIN~ joins multiple tables
 
     Here is an example for you to run and understand:
-    
+
     #+name: join6
     #+begin_src sqlite :db xyz.db :header :column :nullvalue [NULL]
       SELECT * FROM x JOIN y ON x.a=y.c LEFT OUTER JOIN z ON y.c=z.a;
     #+end_src
 
-    #+RESULTS: join6
-    | a | b     | c |       d |      a |      e |
-    | - | ----- | - | ------- | ------ | ------ |
-    | 1 | Alice | 1 | 2.71828 |      1 |    100 |
-    | 1 | Alice | 1 | 2.71828 |      1 |    150 |
-    | 1 | Alice | 1 | 3.14159 |      1 |    100 |
-    | 1 | Alice | 1 | 3.14159 |      1 |    150 |
-    | 2 | Bob   | 2 | 1.61803 | [NULL] | [NULL] |
-
     * Work through this example until you reall understand what this
       multiple join = INNER JOIN + LEFT JOIN does!
 
 * WHERE examples
-    
+
   * [ ] Print a row: the value ~Alice~ for the attribute ~x.b~.
 
     #+name: row
     #+begin_src sqlite :db xyz.db :header :column
-	SELECT * FROM x WHERE x.b='Alice';
+
     #+end_src
 
-    #+RESULTS: row
-    | a | b     |
-    | - | ----- |
-    | 1 | Alice |
-
-    
   * [ ] Print a range of values of table y - for 1.0 < d < 3.0.
-    
+
     #+name: between
     #+begin_src sqlite :db xyz.db :header :column
-	SELECT d from y WHERE d BETWEEN 1.0 AND 3.0;
-    #+end_src
 
-    #+RESULTS: between
-    |       d |
-    | ------- |
-    | 2.71828 |
-    | 1.61803 |
+    #+end_src
 
 
   * [ ] Print columns y.c, y.d and a column for the sum of y.c+y.d
@@ -290,14 +180,8 @@
 
     #+name: sum
     #+begin_src sqlite :db xyz.db :header :column
-	SELECT c, d, (c+d) AS PLUS FROM y WHERE c+d < 4.0;
-    #+end_src
 
-    #+RESULTS: sum
-    | c |       d |    PLUS |
-    | - | ------- | ------- |
-    | 1 | 2.71828 | 3.71828 |
-    | 2 | 1.61803 | 3.61803 |
+    #+end_src
 
 
   * [ ] The next block [[sum1]] uses foods.db to select a range of values
@@ -306,15 +190,8 @@
 
     #+name: sum1
     #+begin_src sqlite :db foods.db
-      SELECT name FROM foods WHERE name BETWEEN 'Ta%' AND 'Ti%';
-    #+end_src
 
-    #+RESULTS: sum1
-    | Tarragon         |
-    | Tea              |
-    | Three Musketeers |
-    | Tamale           |
-    | Tamales          |
+    #+end_src
 
 * GROUP BY Examples
   * [ ] Group table z by the column z.a. Can you guess how many rows
@@ -322,31 +199,17 @@
 
     #+name: groupBy
     #+begin_src sqlite :db xyz.db :header :column :exports both
-	SELECT * FROM z GROUP BY z.a;
+
     #+end_src
 
-    #+RESULTS: groupBy
-    | a |   e |
-    | - | --- |
-    | 1 | 100 |
-    | 3 | 300 |
-    | 9 | 900 |
 
-
-  * [X] Print the number of rows next to every value of z.a. Call this
+  * [ ] Print the number of rows next to every value of z.a. Call this
     new column 'count'.
 
     #+name: groupBy1
     #+begin_src sqlite :db xyz.db :header :column :exports both
-	SELECT *, COUNT(*) AS count FROM z GROUP BY z.a;
-    #+end_src
 
-    #+RESULTS: groupBy1
-    | a |   e | count |
-    | - | --- | ----- |
-    | 1 | 100 |     2 |
-    | 3 | 300 |     1 |
-    | 9 | 900 |     1 |
+    #+end_src
 
 
   * [X] Run [[groupBy]] again (group by z.a) but now also print out the
@@ -355,15 +218,8 @@
 
     #+name: groupBy2
     #+begin_src sqlite :db xyz.db :header :column :exports both
-	SELECT *, SUM(z.e) as TOTAL FROM z GROUP BY z.a;
-    #+end_src
 
-    #+RESULTS: groupBy2
-    | a |   e | TOTAL |
-    | - | --- | ----- |
-    | 1 | 100 |   250 |
-    | 3 | 300 |   300 |
-    | 9 | 900 |   900 |
+    #+end_src
 
 
   * [ ] Run [[groupBy]] again (group by z.a) but now also compute
@@ -374,34 +230,19 @@
 
     #+name: groupBy3
     #+begin_src sqlite :db xyz.db :header :column :exports both
-      SELECT a,SUM(e) AS SUM, COUNT(e) AS TOTAL,
-       SUM(e)/COUNT(e) AS AGG, AVG(e) AS AVG 
-       FROM z GROUP BY z.a;
+
     #+end_src
 
-    #+RESULTS: groupBy3
-    | a | SUM | TOTAL | AGG |   AVG |
-    | - | --- | ----- | --- | ----- |
-    | 1 | 250 |     2 | 125 | 125.0 |
-    | 3 | 300 |     1 | 300 | 300.0 |
-    | 9 | 900 |     1 | 900 | 900.0 |
+    * [ ] A HAVING clause can be used to filter rows based off the
+      results of the sum() aggregation. Run the block [[having1]].
 
-
-  * [ ] A HAVING clause can be used to filter rows based off the
-    results of the sum() aggregation. Run the block [[having1]].
-
-    #+name: having1
-    #+begin_src sqlite :db xyz.db :header :column :exports both
-      SELECT a, sum(e) AS TOTAL
+      #+name: having1
+      #+begin_src sqlite :db xyz.db :header :column :exports both
+        SELECT a, sum(e) AS TOTAL
         FROM z
         GROUP BY z.a
-          HAVING total > 500;
-    #+end_src
-
-    #+RESULTS: having1
-    | a | TOTAL |
-    | - | ----- |
-    | 9 | 900   |
+        HAVING total > 500;
+      #+end_src
 
   * [ ] An example with the foods database, and the table ~foods~;
     print the food ~type_ID~ and the total number of food types per
@@ -410,37 +251,20 @@
 
     #+name: having 2
     #+begin_src sqlite :db foods.db :header :column :exports both
-      SELECT type_ID, COUNT(*) 
-	FROM foods
-	GROUP BY type_ID
-        HAVING COUNT(*) < 20;
-            #+end_src
 
-	#+RESULTS: having 2
-	| type_id | COUNT(*) |
-	| ------- | -------- |
-	|       2 |       15 |
-	|       5 |       17 |
-	|       6 |        4 |
-	|      11 |       16 |
-	|      13 |       14 |
-	|      14 |       19 |
+
+
+    #+end_src
+
 
 * ORDER BY examples
 
-  * [X] Order table y by the numbers in y.d, and print all columns.
+  * [ ] Order table y by the numbers in y.d, and print all columns.
 
     #+name: orderBy
     #+begin_src sqlite :db xyz.db :header :column :exports both
-	SELECT * FROM y ORDER BY y.d ASC;
-    #+end_src
 
-    #+RESULTS: orderBy
-    | c |       d |
-    | - | ------- |
-    | 2 | 1.61803 |
-    | 1 | 2.71828 |
-    | 1 | 3.14159 |
+    #+end_src
 
   * [ ] An example from the foods database. Display all columns from
     the table ~foods~, and filter those rows whose ~name~ begins with
@@ -448,24 +272,8 @@
 
     #+name: orderBy2
     #+begin_src sqlite :db foods.db :header :column :export both :results output
-      SELECT * FROM foods WHERE name LIKE 'B%' LIMIT 10;
-    #+end_src
 
-    #+RESULTS: orderBy2
-    #+begin_example
-    id  type_id  name                   
-    --  -------  -----------------------
-    1   1        Bagels                 
-    2   1        Bagels, raisin         
-    3   1        Bavarian Cream Pie     
-    4   1        Bear Claws             
-    5   1        Black and White cookies
-    6   1        Bread (with nuts)      
-    7   1        Butterfingers          
-    48  2        Bran                   
-    63  3        Broiled Chicken        
-    87  4        Barbeque Sauce         
-    #+end_example
+    #+end_src
 
 
   * [ ] Now take the command from [[orderBy2]] and order by food type ID
@@ -473,28 +281,10 @@
 
     #+name: orderBy3
     #+begin_src sqlite :db foods.db :header :column :export both :results output
-      SELECT type_ID, name
-        FROM foods
-        WHERE name LIKE 'B%'
-          ORDER BY type_ID DESC
-          LIMIT 10;
-    #+end_src
 
-    #+RESULTS: orderBy3
-    #+begin_example
-    type_id  name                     
-    -------  -------------------------
-    15       Baked Beans              
-    15       Baked Potato w/Sour Cream
-    15       Big Salad                
-    15       Brocolli                 
-    14       Bouillabaisse            
-    12       Bologna                  
-    12       Bacon Club (no turkey)   
-    12       BLT                      
-    12       Brisket Sandwich         
-    10       Bacon                    
-    #+end_example
+
+
+    #+end_src
 
 
   * [ ] You can order by any number of columns. Modify the command in
@@ -503,80 +293,31 @@
 
     #+name: orderBy4
     #+begin_src sqlite :db foods.db :header :column :export both :results output
-      SELECT type_ID, name
-        FROM foods
-        WHERE name LIKE 'B%'
-          ORDER BY type_ID DESC, name ASC
-          LIMIT 10;
+
     #+end_src
 
-    #+RESULTS: orderBy4
-    #+begin_example
-    type_id  name                     
-    -------  -------------------------
-    15       Baked Beans              
-    15       Baked Potato w/Sour Cream
-    15       Big Salad                
-    15       Brocolli                 
-    14       Bouillabaisse            
-    12       BLT                      
-    12       Bacon Club (no turkey)   
-    12       Bologna                  
-    12       Brisket Sandwich         
-    10       Bacon                    
-    #+end_example
-    
 * LIMIT and OFFSET examples
 
   * [ ] From foods, print the first 5 lines of all columns.
 
     #+name: limit1
     #+begin_src sqlite :db foods.db :header :column :exports both :results output
-	SELECT * FROM foods LIMIT 5;
-    #+end_src    
 
-    #+RESULTS: limit1
-    : id  type_id  name                   
-    : --  -------  -----------------------
-    : 1   1        Bagels                 
-    : 2   1        Bagels, raisin         
-    : 3   1        Bavarian Cream Pie     
-    : 4   1        Bear Claws             
-    : 5   1        Black and White cookies
+    #+end_src
 
 
   * [ ] Change the code in [[limit1]] only to skip the first 2 lines.
 
     #+name: limit2
     #+begin_src sqlite :db foods.db :header :column :exports both :results output
-	SELECT * FROM foods LIMIT 5 OFFSET 2;
-    #+end_src    
 
-    #+RESULTS: limit2
-    : id  type_id  name                   
-    : --  -------  -----------------------
-    : 3   1        Bavarian Cream Pie     
-    : 4   1        Bear Claws             
-    : 5   1        Black and White cookies
-    : 6   1        Bread (with nuts)      
-    : 7   1        Butterfingers          
+    #+end_src
 
 
   * [ ] Skip the first 2 lines without using the keyword ~OFFSET~.
 
     #+name: limit3
     #+begin_src sqlite :db foods.db :header :column :exports both :results output
-	SELECT * FROM foods LIMIT 2,5;
-    #+end_src    
 
-    #+RESULTS: limit3
-    : id  type_id  name                   
-    : --  -------  -----------------------
-    : 3   1        Bavarian Cream Pie     
-    : 4   1        Bear Claws             
-    : 5   1        Black and White cookies
-    : 6   1        Bread (with nuts)      
-    : 7   1        Butterfingers          
+    #+end_src
 
-
-    
