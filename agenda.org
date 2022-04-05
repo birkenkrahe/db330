@@ -1583,19 +1583,18 @@
 * Entity Relationship Diagrams (ERD) (5-Apr/7-Apr)
 ** Emacs tip: hide emphasis markers in Emacs
 
-     * [ ] Add the string ~"(setq-default org-hide-emphasis-markers t)"~
+     * [ ] Add the string ~(setq-default org-hide-emphasis-markers t)~
        to your ~$HOME/.emacs~ file so that you don't see the emphasis
        markers in Org-mode.
-    
 
-   #+attr_html: :width 500px
-   #+caption: ERD of a bank (Source: Beaulieu, 2008)
-   [[./img/bank.png]]
+     #+attr_html: :width 500px
+     #+caption: ERD of a bank (Source: Beaulieu, 2008)
+     [[./img/bank.png]]
 
 ** ERD
 
-   * [ ] ERD in Crowfoot notation
-   * [ ] Cardinality
+   * [ ] ERD in Crowfoot notation and Chen notation
+   * [ ] Cardinality/Multiplicity
    * [ ] Drawing a correct relational DB ER Diagram
    * [ ] Primary Key, Foreign Key, Composite Key
    * [ ] Bridge tables and data types

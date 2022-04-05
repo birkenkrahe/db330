@@ -43,18 +43,17 @@
    * The ~BOOK~ has attributes ~TITLE~ and ~BOOK_ID~
    * ~BOOK_ID~ is a /Primary Key/ (~PK~) of ~BOOK~
    * The ~CHAPTER~ has attributes ~TITLE~ and ~CHAPTER_ID~
-   * The ~CHAPTER/ID~ is a /Primary Key/ (~PK~) of ~CHAPTER~
+   * The ~CHAPTER_ID~ is a /Primary Key/ (~PK~) of ~CHAPTER~
 
-
-** Crow's foot
+** Crow's foot--
 
    * *Notation summary*
 
      * A box represents an *entity*, e.g. ~book~
-      
+       
      * An entity has *attributes*, e.g. ~book_id~, ~book_title~ etc.
 
-       #+attr_html: :width 500px
+       #+attr_html: :width 300px
        #+caption: Entity with attributes
        [[./img/entity.png]]
 
@@ -62,7 +61,7 @@
        like /Primary Key/, /Foreign Key/, and they have types like
        /integer/, /text/ etc.
 
-       #+attr_html: :width 500px
+       #+attr_html: :width 300px
        #+caption: Entity with overloaded attributes
        [[./img/overloaded.png]]
                      
@@ -95,16 +94,25 @@
      #+caption: ERD of a bank (Source: Beaulieu, 2008)
      [[./img/bank.png]]
 
+
 * Food database revisited
 
-** Register and open template
+** Create diagram with ~draw.io~
 
-   * [ ] Go to [[https://lucid.app/][lucid.app]] and register using your Lyon Google account
-   * [ ] Create a *new* diagram by clicking on /+New/
-   * [ ] Select /Lucidchart/ > /Create from Template/
-   * [ ] Type /ERD/ in the search field
-   * [ ] Select the /DBMS ER diagram (crow's foot)/
-   * [ ] Click on the /Use template/ button
+   * [ ] Open [[https://draw.io][draw.io]] - you can choose where to save your diagrams
+
+   * [ ] If you choose Google Drive, you need to sign in to authorize
+     as shown in the image.
+
+     #+attr_html: :width 500px
+     #+caption: draw.io authorization dialog
+     [[./img/drawio.png]]
+     
+   * [ ] When you've authorized the storage place, you can create a
+     new diagram. Don't bother with the templates.
+
+   * [ ] [[https://youtu.be/gCranxLqZDI][This short video]] shows how to create an entity and
+     relationships between them using the crow's foot notation.
 
 ** Create diagram
 
@@ -116,40 +124,65 @@
      #+attr_html: :width 500px
      #+caption: ERD of the food database (Source: Allen/Owens, 2010)
      [[./img/food.png]]
-   * [ ] Write down the relationships between ~food_types~ and ~food~.
+
+   * [ ] Write down the relationships between ~food_types~ and
+     ~food~. Remember that you're not trying to describe all possible
+     relationships but only the relationship for the purpose of this
+     database with its narrow meaning: types of foods shown in
+     episodes of the Seinfeld TV show.
 
      #+begin_quote
-     ~food_types~ to ~food~:
-     ~food~ to ~food_types~:
+
+     * ~food_types~ to ~food~: each food type has zero or many instances
+       of food in the show.
+       
+     * ~food~ to ~food_types~: each food on the show is exactly one type
+       of food.
+       
      #+end_quote
-     
+
 * Practice: customer orders 
 
-   * [ ] Develop an ER diagram with three tables: ~customer~, ~order~, and ~product~
+   * [X] Develop an ER diagram with three tables: ~customer~, ~order~, and ~product~
 
-   * [ ] Use the ~Key | Field~ template in Lucidchart
+   * [X] Identify suitable attributes
 
-   * [ ] Identify suitable attributes
-
-   * [ ] The diagram should allow for relationships like
+   * [X] The diagram should allow for relationships like
      - "A customer submits an order"
      - "An order contains a product"
      - "An order belongs to a customer"
      - "A product is part of an order."
 
-   * [ ] Draw relationships with the correct minimum/maximum
+   * [X] Use draw.io to draw the diagram
+
+   * [X] Draw relationships with the correct minimum/maximum
 
    * [ ] Give your diagram a title
 
    * [ ] Share the link to your solution with me via Email
-  
+
+   #+attr_html: :width 500px
+   #+caption: Customer orders products ERD
+   [[./img/customer1.png]]
+   
 * Practice exercise (due Thursday, 7 April 4 pm)
 
-   * [ ] Develop an ER diagram with three tables: ~student~, ~order~, and ~product~
+   * [ ] Develop an ER diagram with relationships between *four* tables:
+     ~Student~, ~Course~, ~Lecturer~, and ~Class~ (or meeting).
 
-   * [ ] Use the ~Key | Field~ template in Lucidchart
+   * [ ] Identify suitable attributes: make sure that they are
+     - measurable (you can think of a suitable data type)
+     - atomic (~address~ is composite, ~street~, ~street number~ are atomic)
+     - attributes and not entities themselves
 
-   * [ ] Identify suitable attributes
+   * [ ] The diagram should allow for relationships like
+     - "A student is enroled in a course."
+     - "A class is attended by students."
+     - "An lecturer offers a course."
+     - "A class is taught by an lecturer."
+     - etc.
+
+   * [ ] Use draw.io to draw the final ERD (see [[https://youtu.be/gCranxLqZDI][demo video]])
 
    * [ ] Draw relationships with the correct minimum/maximum
 
@@ -159,6 +192,8 @@
 
 * References
 
+  * Birkenkrahe (April 5, 2022). Drawing ERD in draw.io [video]. [[https://youtu.be/gCranxLqZDI][URL:
+    youtu.be/gCranxLqZDI]].
   * Dybka (August 2, 2014). Chen Notation [blog]. [[https://vertabelo.com/blog/chen-erd-notation/][URL: vertabelo.com]].
   * Dybka (August 31, 2016). Crow's Foot Notation [blog]. [[https://vertabelo.com/blog/crow-s-foot-notation/][URL:
     vertabelo.com]].
@@ -173,3 +208,4 @@ faithfully represent the modeling standard. You can in fact become
 famous with notation - [[https://en.wikipedia.org/wiki/Feynman_diagram][Feynman diagrams]] are an example: they are a
 diagrammatic language for complicated integrals that represent
 elementary particle interactions.
+
