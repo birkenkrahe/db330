@@ -173,7 +173,8 @@
    * [ ] Identify suitable attributes: make sure that they are
      - measurable (you can think of a suitable data type)
      - atomic (~address~ is composite, ~street~, ~street number~ are atomic)
-     - attributes and not entities themselves
+     - attributes (like ~name~) and not entities (like ~registrar~) or
+       relationships (like ~attendance~) themselves
 
    * [ ] The diagram should allow for relationships like
      - "A student is enroled in a course."
@@ -186,7 +187,8 @@
 
    * [ ] Draw relationships with the correct minimum/maximum
 
-   * [ ] Give your diagram a title
+   * [ ] Put ~ERD assignment by [Your name] - Pledged~ in the title of
+     your diagram
 
    * [ ] Upload a screenshot of your solution to Schoology
 
