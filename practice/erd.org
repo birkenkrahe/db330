@@ -81,8 +81,8 @@
        #+attr_html: :width 500px
        #+caption: Minimum (Source: Dybka, 2016)
        [[./img/minimum.png]]
-  
-          * Example 3: "A book has at least one chapter."
+ 
+     * Example 3: "A book has at least one chapter."
      * Example 4: "A book has no or many new editions."
 
      #+attr_html: :width 500px
