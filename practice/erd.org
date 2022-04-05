@@ -6,13 +6,17 @@
 * README
 
   * This is a notebook for learning and practicing modeling relational
-    databases using Entity Relationship Diagrams.
+    databases using Entity Relationship Diagrams, keys and bridge
+    tables
 
-  * The notebook also contains a practice exercise for you to complete
-    on your own in a self-guided lab session.
+  * Though we won't get more deeply into database design,
+    understanding relationships, you need to understand this to
+    understand ~JOIN~ commands when querying relational databases
 
+  * The notebook also contains two practice exercises for you to
+    complete on your own in a self-guided lab session.
 
-  * Modeling is an essential IT design skill. You can model:
+  * *Modeling* is an essential IT design skill. You can model:
     - Technical processes (e.g. with UML)
     - Human processes (e.g. with BPMN)
     - Algorithms (e.g. with pseudocode or flowcharts)
@@ -20,43 +24,152 @@
 
 * ERD notations
 
-  * There are two dominant notations for ERD
-  * Why isn't there just one?[fn:1]
-  
-** Crow's foot
-
-   * Notation summary
-   
-   * Realistic example: bank tables
-
-   #+attr_html: :width 500px
-   #+caption: ERD of a bank (Source: Beaulieu, 2008)
-   [[./img/bank.png]]
+  * Relational database design relies on table relationships
+  * This is especially important for ~JOIN~ operations
+  * There are two dominant notations for ERD[fn:1]
 
 ** Chen
 
-   #+attr_html: :width
+   * *Notation Example*
 
-   (See also: Dybka, 2014)
+   #+attr_html: :width 500px
+   #+caption: ERD Chen notation example (Source: Dybka, 2014)
+   [[./img/chen.png]]
+
+   * ~BOOK~ and ~CHAPTER~ are two entities (tables)
+   * A ~BOOK~ fully ~CONTAINS~ 1...N ~CHAPTER~ entities
+   * The ~CHAPTER~ is a fully dependent child of ~BOOK~
+   * The ~CHAPTER~ totally participates in the ~BOOK~
+   * The ~BOOK~ has attributes ~TITLE~ and ~BOOK_ID~
+   * ~BOOK_ID~ is a /Primary Key/ (~PK~) of ~BOOK~
+   * The ~CHAPTER~ has attributes ~TITLE~ and ~CHAPTER_ID~
+   * The ~CHAPTER/ID~ is a /Primary Key/ (~PK~) of ~CHAPTER~
+
+
+** Crow's foot
+
+   * *Notation summary*
+
+     * A box represents an *entity*, e.g. ~book~
+      
+     * An entity has *attributes*, e.g. ~book_id~, ~book_title~ etc.
+
+       #+attr_html: :width 500px
+       #+caption: Entity with attributes
+       [[./img/entity.png]]
+
+     * The attributes can be overloaded with additional properties
+       like /Primary Key/, /Foreign Key/, and they have types like
+       /integer/, /text/ etc.
+
+       #+attr_html: :width 500px
+       #+caption: Entity with overloaded attributes
+       [[./img/overloaded.png]]
+                     
+     * Lines between entities represent a (binary) *relationship*
+
+     * Relationships have two indicators: *maximum* (aka multiplicity) and *minimum*
+
+     * Multiplicity = /maximum/ number of associations between the entities
+
+       #+attr_html: :width 500px
+       #+caption: Multiplicity (Source: Dybka, 2016)
+       [[./img/multiplicity.png]]
+
+     * Example 1: "A book has one and only one ISBN."
+     * Example 2: "A book has many chapters."
+
+     #+attr_html: :width 500px
+     #+caption: Minimum (Source: Dybka, 2016)
+     [[./img/minimum.png]]--
+     * Example 3: "A book has at least one chapter."
+     * Example 4: "A book has no or many new editions."
+
+     #+attr_html: :width 500px
+     #+caption: ERD crow's foot notation summary
+     [[./img/crowfoot.jpeg]]
+
+   * Realistic example: bank tables
+
+     #+attr_html: :width 500px
+     #+caption: ERD of a bank (Source: Beaulieu, 2008)
+     [[./img/bank.png]]
 
 * Food database revisited
 
-* Customer orders
+** Register and open template
 
-* Primary and foreign keys
+   * [ ] Go to [[https://lucid.app/][lucid.app]] and register using your Lyon Google account
+   * [ ] Create a *new* diagram by clicking on /+New/
+   * [ ] Select /Lucidchart/ > /Create from Template/
+   * [ ] Type /ERD/ in the search field
+   * [ ] Select the /DBMS ER diagram (crow's foot)/
+   * [ ] Click on the /Use template/ button
 
+** Create diagram
+
+   * [ ] /Zoom to Width/ using the menu (left bottom of screen)
+   * [ ] Highlight and delete the diagrams on the screen
+   * [ ] Drag a table template onto the drawing board
+   * [ ] Draw the 4 entity diagrams for the food database
+
+     #+attr_html: :width 500px
+     #+caption: ERD of the food database (Source: Allen/Owens, 2010)
+     [[./img/food.png]]
+   * [ ] Write down the relationships between ~food_types~ and ~food~.
+
+     #+begin_quote
+     ~food_types~ to ~food~:
+     ~food~ to ~food_types~:
+     #+end_quote
+     
+* Practice: customer orders 
+
+   * [ ] Develop an ER diagram with three tables: ~customer~, ~order~, and ~product~
+
+   * [ ] Use the ~Key | Field~ template in Lucidchart
+
+   * [ ] Identify suitable attributes
+
+   * [ ] The diagram should allow for relationships like
+     - "A customer submits an order"
+     - "An order contains a product"
+     - "An order belongs to a customer"
+     - "A product is part of an order."
+
+   * [ ] Draw relationships with the correct minimum/maximum
+
+   * [ ] Give your diagram a title
+
+   * [ ] Share the link to your solution with me via Email
+  
 * Practice exercise (due Thursday, 7 April 4 pm)
+
+   * [ ] Develop an ER diagram with three tables: ~student~, ~order~, and ~product~
+
+   * [ ] Use the ~Key | Field~ template in Lucidchart
+
+   * [ ] Identify suitable attributes
+
+   * [ ] Draw relationships with the correct minimum/maximum
+
+   * [ ] Give your diagram a title
+
+   * [ ] Upload a screenshot of your solution to Schoology
 
 * References
 
   * Dybka (August 2, 2014). Chen Notation [blog]. [[https://vertabelo.com/blog/chen-erd-notation/][URL: vertabelo.com]].
+  * Dybka (August 31, 2016). Crow's Foot Notation [blog]. [[https://vertabelo.com/blog/crow-s-foot-notation/][URL:
+    vertabelo.com]].
   * Lucidchart (2017). Entity Relationship Diagram (ERD) Tutorial Part
     1 [video]. [[https://youtu.be/QpdhBUYk7Kk][URL: youtu.be/QpdhBUYk7Kk]].
-  * Lucidchart (2017). Entity Relationship Diagram (ERD) Tutorial Part
-    2 [video]. [[https://youtu.be/-CuY5ADwn24][URL: youtu.be/-CuY5ADwn24]].
 
 * Footnotes
 
 [fn:1]Notation reflects priorities, e.g. readibility vs. detail. It is
-therefore surprising that there aren't more popular notations!
-Notation must faithfully represent the modeling standard.
+surprising that there aren't more popular notations!  Notation must
+faithfully represent the modeling standard. You can in fact become
+famous with notation - [[https://en.wikipedia.org/wiki/Feynman_diagram][Feynman diagrams]] are an example: they are a
+diagrammatic language for complicated integrals that represent
+elementary particle interactions.

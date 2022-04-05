@@ -1581,19 +1581,27 @@
   * [ ] Work through the notebook at your own pace (GDrive)
 
 * Entity Relationship Diagrams (ERD) (5-Apr/7-Apr)
+** Emacs tip: hide emphasis markers in Emacs
 
-  #+attr_html: :width 500px
-  #+caption: ERD of a bank (Source: Beaulieu, 2008)
-  [[./img/bank.png]]
+     * [ ] Add the string ~"(setq-default org-hide-emphasis-markers t)"~
+       to your ~$HOME/.emacs~ file so that you don't see the emphasis
+       markers in Org-mode.
+    
 
-  * [ ] ERD in Crowfoot notation
-  * [ ] Cardinality
-  * [ ] Drawing a correct relational DB ER Diagram
-  * [ ] Primary Key, Foreign Key, Composite Key
-  * [ ] Bridge tables and data types
-  * [ ] ERD Practice
+   #+attr_html: :width 500px
+   #+caption: ERD of a bank (Source: Beaulieu, 2008)
+   [[./img/bank.png]]
 
-  See also: Lucidchart Tutorial (2017)
+** ERD
+
+   * [ ] ERD in Crowfoot notation
+   * [ ] Cardinality
+   * [ ] Drawing a correct relational DB ER Diagram
+   * [ ] Primary Key, Foreign Key, Composite Key
+   * [ ] Bridge tables and data types
+   * [ ] ERD Practice
+
+   See also: Lucidchart Tutorial (2017)
 
 * Next week: JOINs and CASEs
 * References
