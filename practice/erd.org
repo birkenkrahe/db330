@@ -78,10 +78,11 @@
      * Example 1: "A book has one and only one ISBN."
      * Example 2: "A book has many chapters."
 
-     #+attr_html: :width 500px
-     #+caption: Minimum (Source: Dybka, 2016)
-     [[./img/minimum.png]]--
-     * Example 3: "A book has at least one chapter."
+       #+attr_html: :width 500px
+       #+caption: Minimum (Source: Dybka, 2016)
+       [[./img/minimum.png]]
+  
+          * Example 3: "A book has at least one chapter."
      * Example 4: "A book has no or many new editions."
 
      #+attr_html: :width 500px
@@ -93,7 +94,6 @@
      #+attr_html: :width 500px
      #+caption: ERD of a bank (Source: Beaulieu, 2008)
      [[./img/bank.png]]
-
 
 * Food database revisited
 
