@@ -1197,7 +1197,7 @@
      the ~sqlite3.exe~ file in your ~PATH~. For Windows, you need
      ~sqlite-tools-win32-x86-3380000.zip (1.87 MiB)~.)
 
-* SELECT round-up: JOINs, WHERE - w9s14 (8-Mar)
+* SELECT lab 1: JOINs, WHERE - w9s14 (8-Mar)
 ** Agenda
 
    * [ ] Waking up in ~AppData/Roaming~? [[https://github.com/birkenkrahe/org/blob/master/FAQ.org#how-to-set-a-new-emacs-home-directory][Change your Emacs HOME now]].
@@ -1224,7 +1224,7 @@
    * Finish the notebook on your own
    * Work through this independently using ~foods.sql~ on Thursday
 
-* SELECT round-up: ORDER BY, GROUP BY, LIMIT, OFFSET - w9s15 (10-Mar)
+* SELECT lab 1: ORDER BY, GROUP BY, LIMIT, OFFSET - w9s15 (10-Mar)
 
   * [X] Finish SELECT workbook [[https://drive.google.com/drive/u/0/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y][SELECT_roundup.org (GDrive)]]
   * [X] Prepare DataCamp project: [[https://projects.datacamp.com/projects/571][Introductory SQL project]]
@@ -1574,15 +1574,36 @@
 
    * [[https://drive.google.com/drive/folders/11CwBYwgqzCz76anccEFGHyMQaU910D5_?usp=sharing][See GDrive for results (ponyorm designs)]]
 
-* SELECT lab with the foods database (31-Mar)
+* SELECT lab 2 - foods database (31-Mar)
 
   * [ ] FYI: DataCamp deadlines adjusted
 
   * [ ] Work through the notebook at your own pace (GDrive)
 
+* Entity Relationship Diagrams (ERD) (5-Apr/7-Apr)
+
+  #+attr_html: :width 500px
+  #+caption: ERD of a bank (Source: Beaulieu, 2008)
+  [[./img/bank.png]]
+
+  * [ ] ERD in Crowfoot notation
+  * [ ] Cardinality
+  * [ ] Drawing a correct relational DB ER Diagram
+  * [ ] Primary Key, Foreign Key, Composite Key
+  * [ ] Bridge tables and data types
+  * [ ] ERD Practice
+
+  See also: Lucidchart Tutorial (2017)
+
+* Next week: JOINs and CASEs
 * References
+  * Beaulieu (2008). Learning SQL. O'Reilly.
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
     Cambridge Press. [[https://www.pdbmbook.com/][URL: pdbmbook.com]].
+  * Lucidchart (2017). Entity Relationship Diagram (ERD) Tutorial Part
+    1 [video]. [[https://youtu.be/QpdhBUYk7Kk][URL: youtu.be/QpdhBUYk7Kk]].
+  * Lucidchart (2017). Entity Relationship Diagram (ERD) Tutorial Part
+    2 [video]. [[https://youtu.be/-CuY5ADwn24][URL: youtu.be/-CuY5ADwn24]].
   * TutorialCup (n.d.) System Catalog [website]. [[https://www.tutorialcup.com/dbms/system-catalog.htm][URL:
     www.tutorialcup.com.]]
 * Footnotes

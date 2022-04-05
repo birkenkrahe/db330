@@ -1,0 +1,62 @@
+#+TITLE:Entity Relationship Diagrams
+#+AUTHOR:Marcus Birkenkrahe
+#+SUBTITLE:DB Practice CSC 330 Spring 2022
+#+STARTUP:overview hideblocks
+#+OPTIONS: toc:nil num:nil ^:nil
+* README
+
+  * This is a notebook for learning and practicing modeling relational
+    databases using Entity Relationship Diagrams.
+
+  * The notebook also contains a practice exercise for you to complete
+    on your own in a self-guided lab session.
+
+
+  * Modeling is an essential IT design skill. You can model:
+    - Technical processes (e.g. with UML)
+    - Human processes (e.g. with BPMN)
+    - Algorithms (e.g. with pseudocode or flowcharts)
+    - Entity relationships (e.g. with ERDs)
+
+* ERD notations
+
+  * There are two dominant notations for ERD
+  * Why isn't there just one?[fn:1]
+  
+** Crow's foot
+
+   * Notation summary
+   
+   * Realistic example: bank tables
+
+   #+attr_html: :width 500px
+   #+caption: ERD of a bank (Source: Beaulieu, 2008)
+   [[./img/bank.png]]
+
+** Chen
+
+   #+attr_html: :width
+
+   (See also: Dybka, 2014)
+
+* Food database revisited
+
+* Customer orders
+
+* Primary and foreign keys
+
+* Practice exercise (due Thursday, 7 April 4 pm)
+
+* References
+
+  * Dybka (August 2, 2014). Chen Notation [blog]. [[https://vertabelo.com/blog/chen-erd-notation/][URL: vertabelo.com]].
+  * Lucidchart (2017). Entity Relationship Diagram (ERD) Tutorial Part
+    1 [video]. [[https://youtu.be/QpdhBUYk7Kk][URL: youtu.be/QpdhBUYk7Kk]].
+  * Lucidchart (2017). Entity Relationship Diagram (ERD) Tutorial Part
+    2 [video]. [[https://youtu.be/-CuY5ADwn24][URL: youtu.be/-CuY5ADwn24]].
+
+* Footnotes
+
+[fn:1]Notation reflects priorities, e.g. readibility vs. detail. It is
+therefore surprising that there aren't more popular notations!
+Notation must faithfully represent the modeling standard.

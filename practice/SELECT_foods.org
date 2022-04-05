@@ -236,8 +236,8 @@
     
 * Grouping rows
 
-  * [ ] How many episodes did each of the 10 seasons of the Seinfeld
-    show have? Write a query that returns the episode count for each
+  * [ ] How many episodes did each of the seasons of the Seinfeld show
+    have? Write a query that returns the episode count for each
     ~season~, and call the output 'Episode Count'.
 
     #+name: grouping
