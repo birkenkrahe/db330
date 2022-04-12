@@ -1,0 +1,85 @@
+
+* Practice exercise: primary and foreign keys and ~SELECT~ on ~JOIN~  
+
+  * [ ] In editor.ponyorm.com create two entities: ~Lecturer~ and ~Course~
+
+  * [ ] Add attributes ~Lecturer.name~ and ~Course.title~
+
+  #+caption: Entities Lecturer and Course
+  [[./img/erd1.png]]
+
+  * [ ] Add a relationship between the entities:
+    - A lecturer may be related to *many* courses
+    - Each course may be related to *exactly one* lecturer
+
+  * You see that the ORM creates *foreign keys* in each entity:
+    ~Lecturer.courses~ and ~Courses.lecturer~.
+
+  #+caption: Foreign key attributes courses and lecturer
+  [[./img/erd2.png]]
+
+  * [ ] How would these entities look as relations (tables)?
+
+    | ER MODEL (ORM)   | DATABASE         | EXAMPLE                    |
+    |------------------+------------------+----------------------------|
+    | Entity           | Table            | Lecturer                   |
+    | Entity attribute | Tuple/record/row | ("2", "Birkenkrahe")       |
+    | Attribute        | Column           | Lecturer.name              |
+    | Attribute type   | Column data type | integer/int                |
+
+  * [ ] Copy the SQLite code from Ponyorm and save it in a file ~students.sql~
+
+  * [ ] Create an SQLite database ~students.db~
+
+    #+begin_src bash :results silent
+
+    #+end_src
+
+  * [ ] Generate sample tables which look like this:
+
+    Table ~Lecturer~:
+
+    Sample command:  ~SELECT * FROM Lecturer;~
+
+    #+begin_example
+     : id  name
+     : --  -----------
+     : 1   Sonnier
+     : 2   Birkenkrahe
+     : 3   Jones
+    #+end_example
+
+    #+begin_src sqlite :db student.db :results output
+
+    #+end_src
+
+    Table ~Course~:
+
+    Sample command: ~SELECT * FROM Course;~
+
+    #+begin_example
+    id  title              lecturer
+    --  -----------------  --------
+    1   Databases          2
+    2   Modeling           2
+    3   Logic              1
+    4   Algorithms         1
+    5   Operating_Systems  2
+    6   Python             3
+    7   Data_structures    1
+    8   Data_science       2
+    #+end_example
+
+    Put the code here:
+
+    #+begin_src sqlite :db student.db :results output
+
+    #+end_src
+
+
+  * [ ] How would you find out, which courses a lecturer offers?
+
+    #+begin_example sqlite :db students.db
+
+
+    #+end_example
