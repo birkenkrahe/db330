@@ -1602,7 +1602,10 @@
 
    See also: Lucidchart Tutorial (2017)
 
-* Next week: JOINs and CASEs
+* ERD and the Relational Model (12-Apr)
+  
+  * [ ] Review ERD practice exercise ([[https://lyon.schoology.com/assignment/5853760880/info][Schoology]])
+
 * References
   * Beaulieu (2008). Learning SQL. O'Reilly.
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
