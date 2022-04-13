@@ -40,16 +40,16 @@
    | 20 |   12 | Tue-05-Apr | Entity-Relationship Diagrams  |                                           |                         |              |
    | 21 |      | Thu-07-Apr |                               | Intermediate SQL: CASE                    | ERD assignment          | Quiz 7       |
    |----+------+------------+-------------------------------+-------------------------------------------+-------------------------+--------------|
-   |    |   13 | Tue-12-Apr |                               |                                           |                         |              |
-   |    |      | Thu-14-Apr |                               | Intermediate SQL: Subqueries              |                         | Quiz 8       |
+   | 22 |   13 | Tue-12-Apr | ERD 2: Keys, bridge tables    |                                           | erd_practice.org        |              |
+   | 23 |      | Thu-14-Apr |                               | Intermediate SQL:                         | intermediate_sql_1.org  | Quiz 8       |
    |----+------+------------+-------------------------------+-------------------------------------------+-------------------------+--------------|
-   |    |   14 | Thu-19-Apr |                               |                                           |                         |              |
-   |    |      | Fri-21-Apr |                               | Intermediate SQL: CTEs                    |                         | Quiz 9       |
+   |    |   14 | Thu-19-Apr | [MATH DEMONSTRATION 1]        |                                           |                         |              |
+   |    |      | Fri-21-Apr | [MATH DEMONSTRATION 2]        | Intermediate SQL:  Subqueries             |                         | Quiz 9       |
    |----+------+------------+-------------------------------+-------------------------------------------+-------------------------+--------------|
-   |    |   15 | Tue-26-Apr |                               |                                           |                         | Test 3       |
-   |    |      | Thu-28-Apr |                               | Intermediate SQL: Window Functions        |                         |              |
+   | 24 |   15 | Tue-26-Apr |                               |                                           | intermediate_sql_2.org  | Test 3       |
+   | 25 |      | Thu-28-Apr |                               | BONUS Project: The Oldest Companies[fn:4] |                         |              |
    |----+------+------------+-------------------------------+-------------------------------------------+-------------------------+--------------|
-   |    |   16 | Tue-03-May |                               | BONUS Project: The Oldest Companies[fn:4] |                         |              |
+   | 26 |   16 | Tue-03-May |                               |                                           |                         |              |
    |----+------+------------+-------------------------------+-------------------------------------------+-------------------------+--------------|
 
 * Footnotes

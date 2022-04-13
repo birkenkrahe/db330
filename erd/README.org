@@ -91,7 +91,8 @@
 
    * Realistic example: bank tables
 
-     #+attr_html: :width 500px
+     #+name: bankerd
+     #+attr_html: :width 700px
      #+caption: ERD of a bank (Source: Beaulieu, 2008)
      [[./img/bank.png]]
 
@@ -120,7 +121,7 @@
    * [ ] Drag a table template onto the drawing board
    * [ ] Draw the 4 entity diagrams for the food database
 
-     #+attr_html: :width 500px
+     #+attr_html: :width 700px
      #+caption: ERD of the food database (Source: Allen/Owens, 2010)
      [[./img/food.png]]
 
@@ -132,17 +133,18 @@
 
      #+begin_quote
 
-* ~food_types~ to ~food~: each food type has zero or many instances
-  of food in the show.
+     ~food_types~ to ~food~: each food type has zero or many instances
+     of food in the show.
 
-* ~food~ to ~food_types~: each food on the show is exactly one type
-  of food.
+     ~food~ to ~food_types~: each food on the show is exactly one type of
+     food.
 
   #+end_quote
 
 * Practice: customer orders
 
-  * [X] Develop an ER diagram with three tables: ~customer~, ~order~, and ~product~
+  * [X] Develop an ER diagram with three tables: ~customer~, ~order~, and
+    ~product~
 
   * [X] Identify suitable attributes
 
@@ -161,7 +163,7 @@
   * [ ] Share the link to your solution with me via Email
 
     #+name: fig:customer_ERD
-    #+attr_html: :width 500px
+    #+attr_html: :width 700px
     #+caption: Customer orders products ERD
     [[./img/customer1.png]]
 
@@ -204,7 +206,7 @@
      relationship diagram, reflects this ([[https://editor.ponyorm.com/user/birkenkrahe/Team/designer][source diagram at ponyorm]]).
 
      #+name: fig:students
-     #+attr_html: :width 600px
+     #+attr_html: :width 700px
      #+caption: Sample solution (part) for students db
      [[./img/students.png]]
 
@@ -215,7 +217,24 @@
      - Each student can have many courses (or none)
 
 * Keys and bridge tables
+** ERD and relational model
 
+  * The ER model maps the relational database model - using the
+    ~Lecturer~ table as an example.
+
+    | ER MODEL (ORM)   | DATABASE         | EXAMPLE                    |
+    |------------------+------------------+----------------------------|
+    | Entity           | Table            | Lecturer                   |
+    | Entity attribute | Tuple/record/row | ("2", "Birkenkrahe")       |
+    | Attribute        | Column           | Lecturer.name              |
+    | Attribute type   | Column data type | integer/int                |
+
+   #+caption: Lecturer table
+   [[./img/Lecturer.png]]
+  
+  * Some database design necessities such as normalization (removal of
+    logical dependencies between cells) can be done using ERDs.
+  
 ** PK Definition
 
    * A *primary key* (~PK~) is an attribute (or column) that uniquely
@@ -228,47 +247,51 @@
 
      1) *UNIQUE* (across the database, i.e. all tables)
      2) *unchangeable* (while the table exists)
-     3) *NOT NULL*
+     3) *NOT NULL* (when data are inserted)
 
 ** Key candidate identification
 
-   Example table:
+   * In any table, the tuple of potential primary keys form the
+     *candidate key*.
+     
+     Example table:
+     #+name: tab:pk
+     |    id | fname | lname | street          | city       |   zip |        phone |
+     |-------+-------+-------+-----------------+------------+-------+--------------|
+     | 30014 | John  | Smith | 1014 Main St    | Batesville | 72501 | 870-307-4245 |
+     | 30067 | John  | Smith | 2300 College Rd | Batesville | 72501 | 501-444-4287 |
+     | 30333 | Jane  | Doe   | 1014 Main St    | Conway     | 72004 | 877-223-4445 |
 
-   |    id | fname | lname | street          | city       |   zip |        phone |
-   |-------+-------+-------+-----------------+------------+-------+--------------|
-   | 30014 | John  | Smith | 1014 Main St    | Batesville | 72501 | 870-307-4245 |
-   | 30067 | John  | Smith | 2300 College Rd | Batesville | 72501 | 501-444-4287 |
-   | 30333 | Jane  | Doe   | 1014 Main St    | Conway     | 72004 | 877-223-4445 |
+   - Names, phones, addresses are not /unique/ or /unchangeable/
+   - Only ~id~ is designed to fulfil the PK rules
+   - Can be "randomly" assigned (are there problems with that?)[fn:2]
 
-   - Names, phones, addresses are not unique or unchangeable
-   - ~id~ is designed to fulfil the PK rules
-   - Can be "randomly" assigned (is there a problem with that?)[fn:2]
-
-** Website example
+** Example: web sites
 
    - If a website does not let you change your username, it likely
-     uses your ~username~ as a primary key
+     uses your ~username~ as a primary key (/unchangeable/)
 
-   - If you're told that a username is already taken, the ~UNIQUE~
-     condition would otherwise be violated
+   - If you're told that a username is already taken, it likely uses
+     your ~username~ as a primary key (/unique/)
 
    - A website will force you to enter certain information for
      database reasons if the information is used to create your PK
-     (~NOT NULL~)
+     (must be ~NOT NULL~)
 
 ** Foreign Keys
 
-   * Foreign keys are primary keys in other (linked) tables
+   * Foreign keys are primary keys in other (linked) tables in the
+     same database
 
    * Example from the customer example:
 
      #+name: fig:customer_ERD_2
-     #+attr_html: :width 500px
+     #+attr_html: :width 700px
      #+caption: PK and FK in Customer and Order (ERD)
      [[./img/customer2.png]]
 
      #+name: tab:customer_ERD_2
-     #+attr_html: :width 500px
+     #+attr_html: :width 700px
      #+caption: PK and FK in Customer and Order (tables)
      [[./img/customer2table.png]]
 
@@ -280,11 +303,18 @@
      two foreign keys, ~customer_id~ and ~product_id~.
 
      #+name: fig:customer_ERD_3
-     #+attr_html: :width 500px
+     #+attr_html: :width 700px
      #+caption: PK and FK in Order and Product (ERD)
      [[./img/customer3.png]]
 
-
+   * Example bank ERD [[bankerd]]:
+     - the ~employee~ table has the FKs ~dept_id~ and ~assigned_branch~, 
+       linking each employee to a department and a branch.
+     - the ~transaction~ table logs bank transactions; its FKs are the
+       ~account_id~ for the account used, the ~teller_emp_id~ of the
+       teller responsible for the transaction, and the
+       ~execution_branch_id~ for the executing bank branch.
+   
 ** Composite primary key
 
    * Let's say, an order is sent in two different shipments.
@@ -298,7 +328,7 @@
      IDs will satisfy our rules - none are unique:
      - Someone else might order the same product (~Product_ID~)
      - Products might be in the same order (~Order_ID~)
-     - Time and date could coincide
+     - Time and date information of two orders could coincide
 
    * The pair ~(Product_ID, Order_ID)~ is unique for the shipment - it's
      a valid *composite primary key*.
@@ -307,7 +337,12 @@
      - use the fewest number of attributes possible
      - attributes should be unchangeable
 
-   * Alternative: add a ~Shipping_ID~.
+   * Alternative: add a ~Shipping_ID~. There are arguments for either
+     method.
+
+   * In the bank ERD [[bankerd]] there is one composite key in the table
+     ~business~. It consists of the PK ~cust_id~ in the ~customer~ table,
+     and the ~FK~ that points at ~cust_id~ in the ~officer~ table. 
 
 ** Bridge tables
 
@@ -330,6 +365,9 @@
      table ~enrolment~ with the primary key ~(student_id,
      course_id)~. Such a table could record all kinds of enrolment
      data.
+
+   * [ ] You see another example in the bank ERD [[bankerd]]: can you find
+     the bridge table with the composite key?
 
 * Object relations mapper
 

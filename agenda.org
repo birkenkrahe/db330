@@ -1505,7 +1505,7 @@
       findings to make sure the investigations are correct."
       #+end_quote
 
-#+OPTIONS: toc:nil
+    #+OPTIONS: toc:nil
 * Relational database thinking - w11s18 (29-Mar)
 
   * [X] Group exercise: relational database thinking
@@ -1556,7 +1556,7 @@
    5. *Big data*: yes if sales and viewers included, certainly when doing this in real time
    6. *Queries:* "how many more burgers were sold after Kramer ate a burger in episode 5?"
    7. *Pseudocode:* SELECT count(*) FROM food_type, actors, episodes WHERE episode = 5 GROUP BY burgers
-   8. *Graphs:* 
+   8. *Graphs:*
    9. *DB type:* relational (tables)
    10. See [[https://editor.ponyorm.com/user/birkenkrahe/food/designer][foods database in ponyorm]]
 
@@ -1583,9 +1583,9 @@
 * Entity Relationship Diagrams (ERD) (5-Apr/7-Apr)
 ** Emacs tip: hide emphasis markers in Emacs
 
-     * [ ] Add the string ~(setq-default org-hide-emphasis-markers t)~
-       to your ~$HOME/.emacs~ file so that you don't see the emphasis
-       markers in Org-mode.
+   * [ ] Add the string ~(setq-default org-hide-emphasis-markers t)~
+     to your ~$HOME/.emacs~ file so that you don't see the emphasis
+     markers in Org-mode.
 
      #+attr_html: :width 500px
      #+caption: ERD of a bank (Source: Beaulieu, 2008)
@@ -1593,18 +1593,56 @@
 
 ** ERD
 
-   * [ ] ERD in Crowfoot notation and Chen notation
-   * [ ] Cardinality/Multiplicity
-   * [ ] Drawing a correct relational DB ER Diagram
+   * [X] ERD in Crowfoot notation and Chen notation
+   * [X] Cardinality/Multiplicity
+   * [X] Drawing a correct relational DB ER Diagram
    * [ ] Primary Key, Foreign Key, Composite Key
    * [ ] Bridge tables and data types
-   * [ ] ERD Practice
+   * [X] ERD Practice
 
    See also: Lucidchart Tutorial (2017)
 
 * ERD and the Relational Model (12-Apr)
-  
+
   * [ ] Review ERD practice exercise ([[https://lyon.schoology.com/assignment/5853760880/info][Schoology]])
+  * [ ] ERD II: keys & bridge tables (practice/ [[https://github.com/birkenkrahe/db330/tree/main/practice][in GitHub]])
+  * [ ] ERD practice exercise ([[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][GDrive]])
+
+* NEXT ERD practice / Intermediate SQL lab: CASE (14-Apr)
+
+  * [ ] No class on Tue 19-Apr and Thu 21-Apr.
+
+    #+begin_quote
+    On *Tuesday, April 19*, and on *Thursday, April 21* at *1 pm* in *Derby
+    Science room 16*, instead of class, you are invited to join the
+    teaching presentations of two candidates for a math professor
+    position at Lyon. *This will count as your attendance on Tue/Thu.*
+    The presentation will take about 45 minutes. It will be followed
+    by Q&A. At the start of the week, you'll get a notebook from me
+    (30-60 minutes completion time) to practice your intermediate SQL
+    skills in line with the DataCamp lessons. Thank you!
+    #+end_quote
+
+  * [ ] Dropped last two DataCamp assignments - one mandatory
+    assignment remains (deadline 21 April), and a bonus assignment
+    (project). If you finished "Intermediate SQL" => extra credit.
+
+    #+begin_quote
+    FYI: I have removed the last couple of DataCamp assignments since
+    the total number of assignments was already 12 for this course,
+    and that's enough - also we won't have enough time to go over the
+    material in class. Instead, we'll take a look at a couple of
+    important topics like NoSQL/unstructured data, and the last
+    project (bonus assignment). However, if you already finished
+    "Intermediate SQL", let me know and I give you extra credit.
+    #+end_quote
+
+  * [ ] Finish the ERD exercise from last Tuesday if you have not
+    already done so. Ask for my help if you can't do it!
+
+  * [ ] Everybody else, please work on Intermediate SQL notebook
+    ~intermediate.org~ in [[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][GDrive]]. Finish this at home if you need
+    to. (Solutions as PDF in the ~pdf/~ directory [[https://github.com/birkenkrahe/db330/tree/main/pdf][in GitHub]]).
 
 * References
   * Beaulieu (2008). Learning SQL. O'Reilly.

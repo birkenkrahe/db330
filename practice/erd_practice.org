@@ -5,8 +5,8 @@
 
   * [ ] Add attributes ~Lecturer.name~ and ~Course.title~
 
-  #+caption: Entities Lecturer and Course
-  [[./img/erd1.png]]
+    #+caption: Entities Lecturer and Course
+    [[./img/erd1.png]]
 
   * [ ] Add a relationship between the entities:
     - A lecturer may be related to *many* courses
@@ -15,24 +15,23 @@
   * You see that the ORM creates *foreign keys* in each entity:
     ~Lecturer.courses~ and ~Courses.lecturer~.
 
-  #+caption: Foreign key attributes courses and lecturer
-  [[./img/erd2.png]]
+    #+caption: Foreign key attributes courses and lecturer
+    [[./img/erd2.png]]
 
-  * [ ] How would these entities look as relations (tables)?
+  * [ ] You can open a third column with the menu button at the top of
+    each table to see key properties:
 
-    | ER MODEL (ORM)   | DATABASE         | EXAMPLE                    |
-    |------------------+------------------+----------------------------|
-    | Entity           | Table            | Lecturer                   |
-    | Entity attribute | Tuple/record/row | ("2", "Birkenkrahe")       |
-    | Attribute        | Column           | Lecturer.name              |
-    | Attribute type   | Column data type | integer/int                |
+    #+attr_html: :width 500px      
+    #+caption: Foreign key attributes courses and lecturer
+    [[./img/erd3.png]]
 
-  * [ ] Copy the SQLite code from Ponyorm and save it in a file ~students.sql~
+  * [ ] Copy the SQLite code from Ponyorm and save it in a file
+    ~students.sql~
 
   * [ ] Create an SQLite database ~students.db~
 
     #+begin_src bash :results silent
-
+      
     #+end_src
 
   * [ ] Generate sample tables which look like this:
