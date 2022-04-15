@@ -1506,6 +1506,7 @@
       #+end_quote
 
     #+OPTIONS: toc:nil
+
 * Relational database thinking - w11s18 (29-Mar)
 
   * [X] Group exercise: relational database thinking
@@ -1604,13 +1605,13 @@
 
 * ERD and the Relational Model (12-Apr)
 
-  * [ ] Review ERD practice exercise ([[https://lyon.schoology.com/assignment/5853760880/info][Schoology]])
-  * [ ] ERD II: keys & bridge tables (practice/ [[https://github.com/birkenkrahe/db330/tree/main/practice][in GitHub]])
-  * [ ] ERD practice exercise ([[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][GDrive]])
+  * [X] Review ERD practice exercise ([[https://lyon.schoology.com/assignment/5853760880/info][Schoology]])
+  * [X] ERD II: keys & bridge tables (practice/ [[https://github.com/birkenkrahe/db330/tree/main/practice][in GitHub]])
+  * [X] ERD practice exercise ([[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][GDrive]])
 
 * NEXT ERD practice / Intermediate SQL lab: CASE (14-Apr)
 
-  * [ ] No class on Tue 19-Apr and Thu 21-Apr.
+  * [X] No class on Tue 19-Apr and Thu 21-Apr.
 
     #+begin_quote
     On *Tuesday, April 19*, and on *Thursday, April 21* at *1 pm* in *Derby
@@ -1623,7 +1624,7 @@
     skills in line with the DataCamp lessons. Thank you!
     #+end_quote
 
-  * [ ] Dropped last two DataCamp assignments - one mandatory
+  * [X] Dropped last two DataCamp assignments - one mandatory
     assignment remains (deadline 21 April), and a bonus assignment
     (project). If you finished "Intermediate SQL" => extra credit.
 
@@ -1637,10 +1638,10 @@
     "Intermediate SQL", let me know and I give you extra credit.
     #+end_quote
 
-  * [ ] Finish the ERD exercise from last Tuesday if you have not
+  * [X] Finish the ERD exercise from last Tuesday if you have not
     already done so. Ask for my help if you can't do it!
 
-  * [ ] Everybody else, please work on Intermediate SQL notebook
+  * [X] Everybody else, please work on Intermediate SQL notebook
     ~intermediate.org~ in [[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][GDrive]]. Finish this at home if you need
     to. (Solutions as PDF in the ~pdf/~ directory [[https://github.com/birkenkrahe/db330/tree/main/pdf][in GitHub]]).
 
