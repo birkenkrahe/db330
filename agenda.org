@@ -1609,7 +1609,7 @@
   * [X] ERD II: keys & bridge tables (practice/ [[https://github.com/birkenkrahe/db330/tree/main/practice][in GitHub]])
   * [X] ERD practice exercise ([[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][GDrive]])
 
-* NEXT ERD practice / Intermediate SQL lab: CASE (14-Apr)
+* ERD practice / Intermediate SQL lab: CASE (14-Apr)
 
   * [X] No class on Tue 19-Apr and Thu 21-Apr.
 

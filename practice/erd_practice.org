@@ -1,4 +1,8 @@
-
+#+TITLE:ERD Practice Notebook 
+#+AUTHOR:ERD Practice Notebook 
+#+SUBTITLE:ERD Practice Notebook CSC330 Database Theory & Appl Spring 2022 
+#+STARTUP:overview hideblocks
+#+OPTIONS: toc:nil num:nil ^:nil
 * Practice exercise: primary and foreign keys and ~SELECT~ on ~JOIN~  
 
   * [ ] In editor.ponyorm.com create two entities: ~Lecturer~ and ~Course~
@@ -28,7 +32,7 @@
   * [ ] Copy the SQLite code from Ponyorm and save it in a file
     ~students.sql~
 
-  * [ ] Create an SQLite database ~students.db~
+  * [ ] Create an SQLite database ~student.db~
 
     #+begin_src bash :results silent
       
@@ -78,7 +82,7 @@
 
   * [ ] How would you find out, which courses a lecturer offers?
 
-    #+begin_example sqlite :db students.db
+    #+begin_example sqlite :db student.db
 
 
     #+end_example
