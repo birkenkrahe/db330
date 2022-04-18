@@ -1645,6 +1645,15 @@
     ~intermediate.org~ in [[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][GDrive]]. Finish this at home if you need
     to. (Solutions as PDF in the ~pdf/~ directory [[https://github.com/birkenkrahe/db330/tree/main/pdf][in GitHub]]).
 
+** Visualize with R via Kaggle
+
+   If there is time, we'll take a look at visualizing some of the
+   relationships using R or Python.
+
+   * [[https://www.kaggle.com/datasets/hugomathien/soccer][Kaggle database link]]
+   * [[https://www.kaggle.com/code/scratchpad/notebook1f7ce72033/edit][Kaggle notebook link]]
+
+
 * References
   * Beaulieu (2008). Learning SQL. O'Reilly.
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
