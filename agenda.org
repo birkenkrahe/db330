@@ -1645,6 +1645,17 @@
     ~intermediate.org~ in [[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][GDrive]]. Finish this at home if you need
     to. (Solutions as PDF in the ~pdf/~ directory [[https://github.com/birkenkrahe/db330/tree/main/pdf][in GitHub]]).
 
+* NEXT Graph databases / NoSQL
+** How to solve it  
+
+  * [ ] Book recommendation for the holidays! [[https://www.amazon.com/How-Solve-Mathematical-Penguin-Science/dp/0140124993/]["How to solve it"]] by
+    George Pólya (1990 - see also [[https://www.wtamu.edu/academic/anns/mps/math/mathlab/int_algebra/int_alg_tut8_probsol.htm][application example]]).
+
+    #+attr_html: :width 200px
+    #+caption: Perennial classic: Pólya's HOW TO SOLVE IT
+    [[./img/polya.jpg]]
+
+** ~CASE~, SQL subqueries and the pipeline  
 ** Visualize with R via Kaggle
 
    If there is time, we'll take a look at visualizing some of the
@@ -1652,6 +1663,7 @@
 
    * [[https://www.kaggle.com/datasets/hugomathien/soccer][Kaggle database link]]
    * [[https://www.kaggle.com/code/scratchpad/notebook1f7ce72033/edit][Kaggle notebook link]]
+
 
 
 * References
