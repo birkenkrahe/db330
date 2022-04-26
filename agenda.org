@@ -1666,6 +1666,29 @@
 
 
 
+** Plans for the last weeks of term (Schoology update)
+
+   * On *Tuesday, April 26*, we will review NoSQL and graph databases
+     (this is also the deadline for the [[https://lyon.schoology.com/assignment/5897254286][video-based assignment]]).
+   * On *Thursday, April 28*, we will review the 3 quizzes for /test 3/
+     (scheduled for online submission Thursday 28-April 3 pm am to
+     Friday 29-April 3 pm).
+   * On our last meeting, on *Tuesday May 3*, we will talk about the
+     final exam (scheduled Thursday 5-May 6 pm to Saturday 7-May 8 am),
+     summarize what we've achieved together, and wrap up with
+     leftovers (1-2 items to be chosen from a large menu including
+     Tableau, R and SQLite, Count.io and other SQL dashboards, the
+     final [[https://lyon.schoology.com/assignment/5727147750][DataCamp bonus project]], and much more).
+   * You will get a detailed list with curated links and other
+     sources from me for the DIY continuation of your database theory
+     and applications journey (@ end of May), and a /bonus video/ if
+     the muse cooperates and if your evaluations are mostly positive
+     :-)
+
+   #+caption: Two German soccer players shouting "finals!"
+   [[./img/finals_db330.gif]]
+    
+
 * References
   * Beaulieu (2008). Learning SQL. O'Reilly.
   * <<pdbm>> Lemahieu et al (2021). Principles of Database Management. Univ of
