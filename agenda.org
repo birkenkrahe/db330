@@ -1645,6 +1645,48 @@
     ~intermediate.org~ in [[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][GDrive]]. Finish this at home if you need
     to. (Solutions as PDF in the ~pdf/~ directory [[https://github.com/birkenkrahe/db330/tree/main/pdf][in GitHub]]).
 
+
+* Review Quizzes before Test 3 (26-April)
+
+
+** Course evaluations - open until May 5
+
+   * [ ] Made a lot of changes after the last evaluations.
+   * [ ] Support the development of this course
+   * [ ] Help me and Lyon College decide if I stay or if I go
+
+     *Extra credit* for evaluating! - Don't forget to click the box.
+
+     [[./img/survey.png]]
+
+     ... or send me an email that you did it (I'll verify with admin)x
+
+** Plans for the last weeks of term (Schoology update)
+
+   * On *Tuesday, April 26*, we will review the 3 quizzes for /test 3/
+     (scheduled for online submission Thursday 28-April 6 pm am to
+     Saturday 30-April 8 am).
+   * On *Thursday, April 28*, we will review NoSQL and graph databases
+     (this is also the deadline for the [[https://lyon.schoology.com/assignment/5897254286][video-based assignment]]).
+   * On our last meeting, on *Tuesday May 3*, we will talk about the
+     final exam (scheduled Thursday 5-May 6 pm to Saturday 7-May 8 am),
+     summarize what we've achieved together, and wrap up with
+     leftovers (1-2 items to be chosen from a large menu including
+     Tableau, R and SQLite, Count.io and other SQL dashboards, the
+     final [[https://lyon.schoology.com/assignment/5727147750][DataCamp bonus project]], and much more).
+   * You will get a detailed list with curated links and other
+     sources from me for the DIY continuation of your database theory
+     and applications journey (@ end of May), and a /bonus video/ if
+     the muse cooperates and if your evaluations are mostly positive
+     :-)
+
+   #+caption: Two German soccer players shouting "finals!"
+   [[./img/finals_db330.gif]]
+    
+** Review quiz 7-8
+
+   
+
 * NEXT Graph databases / NoSQL
 ** How to solve it  
 
@@ -1666,28 +1708,6 @@
 
 
 
-** Plans for the last weeks of term (Schoology update)
-
-   * On *Tuesday, April 26*, we will review NoSQL and graph databases
-     (this is also the deadline for the [[https://lyon.schoology.com/assignment/5897254286][video-based assignment]]).
-   * On *Thursday, April 28*, we will review the 3 quizzes for /test 3/
-     (scheduled for online submission Thursday 28-April 3 pm am to
-     Friday 29-April 3 pm).
-   * On our last meeting, on *Tuesday May 3*, we will talk about the
-     final exam (scheduled Thursday 5-May 6 pm to Saturday 7-May 8 am),
-     summarize what we've achieved together, and wrap up with
-     leftovers (1-2 items to be chosen from a large menu including
-     Tableau, R and SQLite, Count.io and other SQL dashboards, the
-     final [[https://lyon.schoology.com/assignment/5727147750][DataCamp bonus project]], and much more).
-   * You will get a detailed list with curated links and other
-     sources from me for the DIY continuation of your database theory
-     and applications journey (@ end of May), and a /bonus video/ if
-     the muse cooperates and if your evaluations are mostly positive
-     :-)
-
-   #+caption: Two German soccer players shouting "finals!"
-   [[./img/finals_db330.gif]]
-    
 
 * References
   * Beaulieu (2008). Learning SQL. O'Reilly.
