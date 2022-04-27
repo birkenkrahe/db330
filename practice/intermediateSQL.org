@@ -25,7 +25,7 @@
 * We'll take the ~CASE~
 ** Selecting from the European Soccer Database
 
-   #+begin_src sqlite :db soccer.sqlite
+   #+begin_src sqlite :db soccer.sqlite :exports both
      SELECT
      l.name AS League,
      COUNT (m.country_id) as Total_matches
@@ -61,7 +61,7 @@
      the respective goals of the team that played 'home' vs. the
      'away' team that visited them.
 
-     #+begin_src sqlite :db soccer.sqlite :header :column :results output
+     #+begin_src sqlite :db soccer.sqlite :header :column :results output  :exports both
        SELECT date, id, home_team_goal, away_team_goal
        FROM match
        WHERE season = '2013/2014'
@@ -80,7 +80,7 @@
      ties as separate queries, but that's not very efficient if you
      want to compare these separate outcomes in a single data set.
 
-     #+begin_src sqlite :db soccer.sqlite :header :column :results output
+     #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
        SELECT date, id, home_team_goal, away_team_goal
        FROM match
        WHERE season = '2013/2014'
@@ -112,7 +112,7 @@
      wins, or ties. A new column is created with the appropriate text
      for each match given the outcome.
 
-     #+begin_src sqlite :db soccer.sqlite :header :column :results output
+     #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
        SELECT id, home_team_goal, away_team_goal,
        CASE WHEN (home_team_goal > away_team_goal) THEN 'Home Team Win'
        WHEN (home_team_goal < away_team_goal) THEN 'Away Team Win'
@@ -134,7 +134,7 @@
    * Since there are only three outcomes, the last one can be replaced
      by the default ~ELSE~:
 
-     #+begin_src sqlite :db soccer.sqlite :header :column :results output
+     #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
        SELECT id, home_team_goal, away_team_goal,
        CASE WHEN (home_team_goal > away_team_goal) THEN 'Home Team Win'
        WHEN (home_team_goal < away_team_goal) THEN 'Away Team Win'
@@ -177,7 +177,7 @@
       Bayern Munich using IN, giving you the team_api_IDs needed for
       the next step.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         -- Select the team long name and team API id
         team_long_name,
@@ -204,7 +204,7 @@
 
     * Explore the ~Teams~ table
 
-      #+begin_src sqlite :db soccer.sqlite :results output
+      #+begin_src sqlite :db soccer.sqlite :results output :exports both
         .schema Team
       #+end_src
 
@@ -222,7 +222,7 @@
       the home team. Group the query by the CASE statement alias,
       home_team.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         -- Identify the home team as Bayern Munich, Schalke 04, or neither
         SELECT
         CASE
@@ -276,7 +276,7 @@
     * [X] Select the date of the match and create a CASE statement to
       identify matches as home wins, home losses, or ties.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         -- Select the date of the match
         date,
@@ -305,7 +305,7 @@
       Select team_long_name from teams_spain as opponent and complete
       the CASE statement from Step 1.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         m.date,
         --Select the team long name column and call it 'opponent'
@@ -335,7 +335,7 @@
       Filter for matches where the home team is FC Barcelona (id =
       8634).
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         m.date,
         t.team_long_name AS opponent,
@@ -376,7 +376,7 @@
       identity of the home team opponent.  Filter the query to only
       include matches where Barcelona was the away team.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         m.date, t.team_long_name AS opponent,
         CASE WHEN m.home_team_goal > m.away_team_goal THEN 'Barcelona win!'
@@ -406,7 +406,7 @@
      statement, you can use AND inside your WHEN clause. For example,
      let's see if each match was played, and won, by the team Chelsea.
 
-     #+begin_src sqlite :db soccer.sqlite :header :column :results output
+     #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
        SELECT date, home_team_api_id, away_team_api_id,
        CASE
        WHEN home_team_api_id = 8455 AND home_team_goal > away_team_goal
@@ -440,7 +440,7 @@
      tie'~. Only with the filter will Chelsea have been part of the
      game, and its ID will appear in the output table.
 
-     #+begin_src sqlite :db soccer.sqlite :header :column :results output
+     #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
        SELECT date, home_team_api_id, away_team_api_id,
        CASE
        WHEN home_team_api_id = 8455 AND home_team_goal > away_team_goal
@@ -472,7 +472,7 @@
      results. When removing the ~ELSE~ clause,
 
      #+name: nonull
-     #+begin_src sqlite :db soccer.sqlite :header :column :results output
+     #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
        SELECT date,
        CASE WHEN date > '2015-01-01' THEN 'More Recently'
        WHEN date < '2012-01-01' THEN 'Older'
@@ -482,7 +482,7 @@
      #+end_src
 
      #+name: null
-     #+begin_src sqlite :db soccer.sqlite :header :column :results output
+     #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
        SELECT date,
        CASE WHEN date > '2015-01-01' THEN 'More Recently'
        WHEN date < '2012-01-01' THEN 'Older'
@@ -494,7 +494,7 @@
    * [X] Chelsea example without the ~ELSE~ clause shows a lot of ~NULL~
      values. If ~ELSE~ is missing, outcome values are replaced by ~NULL~.
 
-     #+begin_src sqlite :db soccer.sqlite :header :column :results output
+     #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
        -- SQLite command to show NULL instead of ""
        .nullvalue "[NULL]"
 
@@ -529,7 +529,7 @@
      entire ~CASE~ section after the ~WHERE~, and specifying to exclude
      rows where the ~NOT NULL~ condition is not met.
 
-     #+begin_src sqlite :db soccer.sqlite :header :column :results output
+     #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
        -- SQLite command to show NULL instead of ""
        .nullvalue "[NULL]"
 
@@ -578,7 +578,7 @@
       column. Complete the second CASE statement in the same way,
       using awayteam_id.
 
-    #+begin_src  sqlite  :db soccer.sqlite :header :column :results output
+    #+begin_src  sqlite  :db soccer.sqlite :header :column :results output :exports both
       SELECT
       date,
       -- Identify the home team as Barcelona or Real Madrid
@@ -611,7 +611,7 @@
       /Q: what are the combinatorics? Two places, three values, no
       replacement./
 
-      #+begin_src  sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src  sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT date,
         CASE WHEN home_team_api_id = 8634 THEN 'FC Barcelona'
         ELSE 'Real Madrid CF' END AS home,
@@ -677,7 +677,7 @@
       by selecting the team_long_name and team_api_id.
 
       Get the equivalent attributes from the schema for ~Team~.
-      #+begin_src sqlite  :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite  :db soccer.sqlite :header :column :results output :exports both
         .schema Team
       #+end_src
 
@@ -691,7 +691,7 @@
       : );
 
       Solution:
-      #+begin_src sqlite  :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite  :db soccer.sqlite :header :column :results output :exports both
         SELECT
         t.team_long_name,
         t.team_api_id
@@ -709,7 +709,7 @@
       identified.
 
       Get the equivalent attributes from the schema for ~Match~.
-      #+begin_src sqlite  :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite  :db soccer.sqlite :header :column :results output :exports both
         .schema Match
       #+end_src
 
@@ -860,7 +860,7 @@
       );
       #+end_example
 
-      #+begin_src sqlite  :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite  :db soccer.sqlite :header :column :results output :exports both
         .nullvalue "[NULL]"
         SELECT
         m.season, m.date,
@@ -892,7 +892,7 @@
       CASE statement in the WHERE clause to filter all NULL values
       generated by the statement in the previous step.
 
-      #+begin_src sqlite  :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite  :db soccer.sqlite :header :column :results output :exports both
 	.nullvalue "[NULL]"
 	SELECT
 	m.season, m.date, home_team_goal, away_team_goal
@@ -928,7 +928,7 @@
     * [X] Check the ~Match~ and ~Country~ schemas for alignment between
       column names (PostgreSQL db different from SQLite db).
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         .schema Match
       #+end_src
 
@@ -1079,7 +1079,7 @@
       );
       #+end_example
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         .schema Country
       #+end_src
 
@@ -1096,7 +1096,7 @@
 
       To answer this, you can use a ~CASE WHEN~ condition as an argument of ~COUNT~.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         season,
         COUNT(CASE WHEN home_team_api_id = 8650 -- Liverpool
@@ -1127,7 +1127,7 @@
       the other condition, but not for both of them in the same
       statement.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         season,
         COUNT(*) as home_team_wins
@@ -1153,7 +1153,7 @@
 
     * [X] Not equivalent:
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         season,
         COUNT(*) as "home_team_wins or away_team_wins"
@@ -1185,7 +1185,7 @@
     * [X] Question: "Number of home and away *goals* that Liverpool
       scored in each season?"
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         season,
         SUM(CASE WHEN home_team_api_id = 8650 -- Liverpool
@@ -1214,7 +1214,7 @@
 
     * [ ] "How many goals did Liverpool score on average per season?"
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         season,
         AVG(CASE WHEN home_team_api_id = 8650 -- Liverpool
@@ -1241,7 +1241,7 @@
 
     * [ ] Same question but rounded output (to 2 decimals) with ~ROUND~.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         season,
         ROUND(AVG(CASE WHEN home_team_api_id = 8650 -- Liverpool
@@ -1268,7 +1268,7 @@
 
     * [ ] "Which percentage of home/away games did Liverpool win?"
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         season,
         ROUND(AVG(CASE WHEN home_team_api_id = 8650 AND home_team_goal > away_team_goal THEN 1
@@ -1314,7 +1314,7 @@
       values to be NULL. Wrap the CASE statement in a COUNT function
       and group the query by the country alias.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         c.name AS country,
         COUNT -- count games from 2012/13 season
@@ -1345,7 +1345,7 @@
       each country across the 3 seasons. END your CASE statement
       without an ELSE clause.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         c.name AS country,
         COUNT
@@ -1396,7 +1396,7 @@
         played in each season.  Group the query by the country name
         alias.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         c.name AS country,
         SUM
@@ -1453,7 +1453,7 @@
       examine the total number of records. The ~Match~ table is filtered
       to include all matches from the 2013/2014 and 2014/2015 seasons.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         c.name AS country,
         COUNT
@@ -1494,7 +1494,7 @@
 
       - Use the ROUND function to round to 2 decimal points.
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
         SELECT
         c.name AS country,
         ROUND (
@@ -1539,7 +1539,7 @@
    team player.  How might you set up a query to start identifying the
    first two home team players?
 
-   #+begin_src sqlite :db soccer.sqlite :header :column :results output
+   #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
      SELECT
      p1.date,
      p1.player_name AS home_pl1,
@@ -1584,7 +1584,7 @@
      #+end_example
 
 
-   #+begin_src sqlite :db soccer.sqlite :header :column :results output
+   #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
      SELECT DISTINCT p.player_name, p.id, p.height, pa.penalties
      FROM Player AS p INNER JOIN Player_Attributes AS pa
      ON p.player_api_id = pa.player_api_id
