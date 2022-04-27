@@ -204,7 +204,7 @@
 
     * Explore the ~Teams~ table
 
-      #+begin_src sqlite :db soccer.sqlite :results output :exports both
+      #+begin_src sqlite :db soccer.sqlite :results output
         .schema Team
       #+end_src
 
@@ -677,7 +677,7 @@
       by selecting the team_long_name and team_api_id.
 
       Get the equivalent attributes from the schema for ~Team~.
-      #+begin_src sqlite  :db soccer.sqlite :header :column :results output :exports both
+      #+begin_src sqlite  :db soccer.sqlite :header :column :results output
         .schema Team
       #+end_src
 
@@ -709,7 +709,7 @@
       identified.
 
       Get the equivalent attributes from the schema for ~Match~.
-      #+begin_src sqlite  :db soccer.sqlite :header :column :results output :exports both
+      #+begin_src sqlite  :db soccer.sqlite :header :column :results output
         .schema Match
       #+end_src
 
@@ -1079,7 +1079,7 @@
       );
       #+end_example
 
-      #+begin_src sqlite :db soccer.sqlite :header :column :results output :exports both
+      #+begin_src sqlite :db soccer.sqlite :header :column :results output
         .schema Country
       #+end_src
 
