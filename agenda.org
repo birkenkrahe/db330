@@ -1651,19 +1651,19 @@
 
 ** Course evaluations - open until May 5
 
-   * [ ] Made a lot of changes after the last evaluations.
-   * [ ] Support the development of this course
-   * [ ] Help me and Lyon College decide if I stay or if I go
+   * [X] Made a lot of changes after the last evaluations.
+   * [X] Support the development of this course
+   * [X] Help me and Lyon College decide if I stay or if I go
 
      *Extra credit* for evaluating! - Don't forget to click the box.
 
      [[./img/survey.png]]
 
-     ... or send me an email that you did it (I'll verify with admin)x
+     ... or send me an email that you did it (I'll verify with admin)
 
 ** Plans for the last weeks of term (Schoology update)
 
-   * On *Tuesday, April 26*, we will review the 3 quizzes for /test 3/
+   * On *Tuesday, April 26*, we will review the 2 quizzes for /test 3/
      (scheduled for online submission Thursday 28-April 6 pm am to
      Saturday 30-April 8 am).
    * On *Thursday, April 28*, we will review NoSQL and graph databases
@@ -1685,9 +1685,11 @@
     
 ** Review quiz 7-8
 
-   
+   * [X] We will review quiz 9 (SQL subqueries) on Thursday
+   * [X] Quiz 7: Entity Relationship Diagrams
+   * [X] Quiz 8: Intermediate SQL 1 
 
-* NEXT Graph databases / NoSQL
+* NEXT Graph databases, NoSQL, review quiz 9 (28-April)
 ** How to solve it  
 
   * [ ] Book recommendation for the holidays! [[https://www.amazon.com/How-Solve-Mathematical-Penguin-Science/dp/0140124993/]["How to solve it"]] by
@@ -1705,9 +1707,6 @@
 
    * [[https://www.kaggle.com/datasets/hugomathien/soccer][Kaggle database link]]
    * [[https://www.kaggle.com/code/scratchpad/notebook1f7ce72033/edit][Kaggle notebook link]]
-
-
-
 
 * References
   * Beaulieu (2008). Learning SQL. O'Reilly.
