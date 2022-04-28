@@ -1698,13 +1698,44 @@
 
 ** How to solve it  
 
+  * [ ] Practical remedy against getting overwhelmed by too much
+    detail: develop powerful heuristic strategies
 
-  * [ ] Book recommendation for the holidays! [[https://www.amazon.com/How-Solve-Mathematical-Penguin-Science/dp/0140124993/]["How to solve it"]] by
-    George Pólya (1990 - see also [[https://www.wtamu.edu/academic/anns/mps/math/mathlab/int_algebra/int_alg_tut8_probsol.htm][application example]]).
+  * [ ] Use Euclid's math (2,500 years of proven problems) - or read a
+    lot of blogs on the same problem and identify the patterns
+
+  * [ ] Go with Euclid: book recommendation for the holidays! [[https://www.amazon.com/How-Solve-Mathematical-Penguin-Science/dp/0140124993/]["How to
+    solve it"]] by George Pólya (1990 - see also [[https://www.wtamu.edu/academic/anns/mps/math/mathlab/int_algebra/int_alg_tut8_probsol.htm][application example]]).
 
     #+attr_html: :width 200px
     #+caption: Perennial classic: Pólya's HOW TO SOLVE IT
     [[./img/polya.jpg]]
+
+  * [ ] Traditional teaching vs. modern problem solving
+
+    #+begin_quote
+
+    »The traditional math professor of the popular legend is
+    absentminded. He usually appears in public with a lost umbrella in
+    each hand. He prefers to face the blackboard and to turn his back
+    on the class. He writes ~a~, he says ~b~, he means ~c~, but it should be
+    ~d~. Some of his sayings are handed down from generation to
+    generation:
+
+    /"In order to solve this differential equation you look at it till
+    a solution *occurs* to you."/
+
+    /"This principle is so perfectly general that no particular
+    *application* of it is possible."/
+
+    /"Geometry is the art of correct *reasoning* on incorrect figures."/
+
+    /"My method to overcome a difficulty is to *go round* it."/
+
+    /"What is the difference between method and device? A method is a
+    *device* which you use twice."/
+
+    #+end_quote
 
 ** ~CASE~, SQL subqueries and the pipeline  
 ** Visualize with R via Kaggle
