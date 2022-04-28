@@ -1645,7 +1645,6 @@
     ~intermediate.org~ in [[https://drive.google.com/drive/folders/1_7g2QHnAEc_4pQki6r-KRJYGcl_mdq3Y?usp=sharing][GDrive]]. Finish this at home if you need
     to. (Solutions as PDF in the ~pdf/~ directory [[https://github.com/birkenkrahe/db330/tree/main/pdf][in GitHub]]).
 
-
 * Review Quizzes before Test 3 (26-April)
 
 
@@ -1689,8 +1688,16 @@
    * [X] Quiz 7: Entity Relationship Diagrams
    * [X] Quiz 8: Intermediate SQL 1 
 
-* NEXT Graph databases, NoSQL, review quiz 9 (28-April)
+* NEXT Graph databases, NoSQL, review quiz 9 (26-April)
+** What's so difficult about computer science?
+
+   * [ ] What's difficult for you?
+   * [ ] What's difficult for me?
+   * [ ] What can you do about it?
+   * [ ] Will this ever change?
+
 ** How to solve it  
+
 
   * [ ] Book recommendation for the holidays! [[https://www.amazon.com/How-Solve-Mathematical-Penguin-Science/dp/0140124993/]["How to solve it"]] by
     George Pólya (1990 - see also [[https://www.wtamu.edu/academic/anns/mps/math/mathlab/int_algebra/int_alg_tut8_probsol.htm][application example]]).
