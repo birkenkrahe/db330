@@ -13,7 +13,7 @@
 
   The companion file to this file, less structured and with the
   captain's log, is the [[file:notes.org][notes.org]] file.
-
+  
 * Intro and GitHub - w1s1 (11-Jan)
 
   #+attr_html: :width 500px
@@ -1688,15 +1688,15 @@
    * [X] Quiz 7: Entity Relationship Diagrams
    * [X] Quiz 8: Intermediate SQL 1 
 
-* NEXT Graph databases, NoSQL, review quiz 9 (26-April)
-** What's so difficult about computer science?
+* Review quiz 9 (28-April)
+** What's so difficult about computer science/data science?
 
-   * [ ] What's difficult for you?
-   * [ ] What's difficult for me?
-   * [ ] What can you do about it?
-   * [ ] Will this ever change?
+   * [X] What's difficult for you?
+   * [X] What's difficult for me?
+   * [X] What can you do about it?
+   * [X] Will this ever change?
 
-** How to solve it  
+** "How to solve it"
 
   * [ ] Practical remedy against getting overwhelmed by too much
     detail: develop powerful heuristic strategies
@@ -1737,14 +1737,47 @@
 
     #+end_quote
 
-** ~CASE~, SQL subqueries and the pipeline  
-** Visualize with R via Kaggle
+** Intermediate SQL notebook
 
-   If there is time, we'll take a look at visualizing some of the
-   relationships using R or Python.
+   * [X] My personal notebook for the course is on GDrive/GitHub
+   * [X] Took me about 1 full work day to complete
+   * [X] Highly recommend this way of working with online courses
+   * [X] You should hold yourself accountable for time you spend on X
+   * [X] You should be able to recall an online course like a book
+     ([fn:5])
 
-   * [[https://www.kaggle.com/datasets/hugomathien/soccer][Kaggle database link]]
-   * [[https://www.kaggle.com/code/scratchpad/notebook1f7ce72033/edit][Kaggle notebook link]]
+** Deadlines
+
+   * [ ] *Test 3 from Thu-28-Apr 6 pm to Sat-30-Apr 8 am*
+     - Open for unlimited play from now
+     - Quizzes will be disabled before the test
+
+   * [ ] *Final exam from Thu-5-May 6 pm to Sat-7-May 8 am*
+     - Random draw from all questions + minor modifications
+     - Quizzes and tests will be disabled before the exam
+
+* NEXT Project && (MongoDB (NoSQL DB) && Final Exam Review || RSQLite) (3-May)
+
+** Bonus DataCamp project
+
+** MongoDB (NoSQL DB)
+
+** Final Exam Review
+
+** "Last Rites" / Outlook
+
+  * [ ] *Any outstanding work must be finished by Monday May 9*
+
+* Final exam (Thu 5-May 6pm-8pm)
+
+  | COURSE NO | MEETS    | TIME                    | ROOM      |
+  |-----------+----------+-------------------------+-----------|
+  | *CSC 330*   | *TR 1.00p* | *Sat 7-May 1.00p - 3.00p* | *Lyon 104*  |
+  |-----------+----------+-------------------------+-----------|
+  |           |          | Fri 6-May 1.00p - 3.00p | Derby 209 |
+  |           |          | Fri 6-May 3.30p - 5.30p | Derby 209 |
+  |           |          | Mon 9-May 1.00p - 3.00p | Derby 209 |
+  |           |          | Mon 9-May 3.30p - 5.30p | Derby 209 |
 
 * References
   * Beaulieu (2008). Learning SQL. O'Reilly.
@@ -1757,6 +1790,15 @@
   * TutorialCup (n.d.) System Catalog [website]. [[https://www.tutorialcup.com/dbms/system-catalog.htm][URL:
     www.tutorialcup.com.]]
 * Footnotes
+
+[fn:5]Think about it: when you read a book (on paper, not on the
+screen), you work your way through much more like with a notebook:
+e.g. you read around the text, you flip through pages to find stuff
+you forgot, you look way ahead to see what else is there etc. This is
+arguably much more effective than just watching something, though less
+effective (I find) than trying to comprehend through re-creating the
+material (which also double-checks it - never trust anyone blindly
+:-).
 
 [fn:4]On Windows, Emacs Org-mode cannot handle
 
