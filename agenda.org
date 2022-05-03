@@ -1756,7 +1756,7 @@ a solution *occurs* to you."/
      - Random draw from all questions + minor modifications
      - Quizzes and tests will be disabled before the exam
 
-* NEXT Project, NoSQL DB, Final Exam Review (3-May)
+* Beyond SQL, Final Exam Review (3-May)
 ** Final Exam Schedule ([[https://lyon.schoology.com/event/5920003460/profile][Schoology]])
 
    | COURSE NO | MEETS      | TOPIC             | TIME                     | ROOM      |
@@ -1768,6 +1768,8 @@ a solution *occurs* to you."/
    |           |            |                   | Mon 9-May 1.00p - 3.00p  | Derby 209 |
    |           |            |                   | Mon 9-May 3.30p - 5.30p  | Derby 209 |
 
+
+   #+begin_quote Schoology
    The final exam will take place *in room 104 of the Lyon building*
    (our usual classroom) on *Saturday, May 7 from 1.00 pm to 3.00 pm*
    ([[https://assets.speakcdn.com/assets/2433/sp22_final_exam_schedule_final-2022042203012665.pdf][see exam schedule]]).
@@ -1781,27 +1783,146 @@ a solution *occurs* to you."/
    this time. I'm going to offer a limited number of seats to take
    this exam on Friday May 6 or on Monday May 9. Graduating seniors
    must complete the exam no later than May 8.
+   #+end_quote
 
    #+caption: Black and white movie GIF
    [[./img/sailing.gif]]
 
-** TODO Final Exam Review
-** TODO Bonus DataCamp project
-** TODO MongoDB (NoSQL DB)
+** Beyond SQL
+*** MongoDB playground
+**** Video summary & analysis
 
-** TODO Evaluation
+     * Entities = Collections + Tables
+     * Documents = Schema-less (Rows)
+     * Good for: missing values (NAs)
+     * Advantage: flexibility for expansion
+     * Graph sorting algorithms
+     * Programming with dictionaries (Python), lists (R)
+     * Less merging, faster searches, duplicate data
+
+     * Video presents possibilities - for OLAP, storage, performance
+       and scaling are only two aspects. More important to providers
+       than to (analytical) users.
+
+     * Additional issue: hardware dependency - which technology makes
+       best use of existing and potential performance boosts like
+       - parallelization (code issue = RDBMS + query)
+       - quantum computing (e.g. cybersecurity applications)
+       - distributed data (e.g. many small data centers)
+
+     * Meta issue: the way in which data are organized impact our
+       ability to discern and display facts about the world!
+
+     * Real world dependencies: Google had to go back to SQL services
+       because most real world web applications rely on SQL databases
+
+     * NoSQL is not a new paradigm. There hasn't been a new paradigm in
+       database technology for 70 years... (something like OOP)
+
+     * NoSQL is actually kind of an old paradigm because collections
+       resemble spreadsheets more than relational databases
+
+**** Playing with MongoDB
+
+    * If you want to try out MongoDB (popular NoSQL database) [[https://www.pdbmbook.com/practice][see here]]
+    * Docker container image for download or online playground
+    * Regular SQL (MySQL), MongoDB, Cypher (graph database language)
+    * NoSQL databases require much more effort to do OLAP
+
+    * To try:
+      - ~db.getCollectionNames();~ (returns collection names)
+      - ~db.products.dataSize();~ (returns collection size)
+
+    #+attr_html: :width 500px
+    #+caption: MongoDB reference commands (mongodb.com)
+    [[./img/mongodb.png]]
+
+*** RDBMS for data science: DuckDB
+
+    * Data scientists (and OLAP[fn:7] people) don't like/use RDBMS:
+      - They're really slow (subqueries?)
+      - Queries are hard to optimize (1960s programming)
+      - Little parallelism
+      - No out-of-memory computation (like interpreted language)
+      - No transactional storage
+
+    * Re-think RDBMS from the benefit backwards, not from the available
+      technology forward!
+
+    * Some *Germans* (!) have created a state-of-the-art analytical DBMS
+      - It's free, open source and bypasses expensive consultants
+      - It's fast and comfortable
+      - It's written in C++ and supports SQL (PostgreSQL syntax)
+      - APIs for C, C++, Python, CLI, Python, R, Java, Julia, Go...
+      - It's in-process like SQLite (!)
+      - No external dependencies (like "Tidyverse") - raw power
+      - [[https://arrow.apache.org/docs/index.html][Apache Arrow]] table and [[https://parquet.apache.org/][Apache Parquet]] format support[fn:6]
+      - Focus on R (visualization and analysis > table munging)
+
+    * They called it DuckDB because ducks are cute (and tasty)
+
+    * [[https://duckdb.org/demo/][Online playground available]]
+
+    * [[https://youtu.be/Z-6SnP6yzgo][Intro talk by Hannes Mühleisen]] at NYhackr (Mar 1, 2022)
+
+*** DataCamp webinar: work of a Data Engineer
+
+    * [[https://www.datacamp.com/resources/webinars/impactful-data-engineering-with-datadogs-wouter-de-bie][Check out the recent webinar + slides]]
+    * Interesting industry-relevant take on data work
+    * "Custom SQL" and management tools
+      - Versioning (= Git as in GitHub)
+      - Data Warehousing (OLAP, Apache tools)
+      - Dashboarding (Tableau, R Shiny)
+
+    #+caption: ETL data engineering (Source: DataCamp)
+    [[./img/webinar.png]]
+
+    #+caption: ETL data engineering (Source: DataCamp)
+    [[./img/webinar1.png]]
+
+** Final Exam Review
 
    * [ ] *Any outstanding work must be finished by Monday May 9*
+   * [ ] Discuss questions not in the last block (Q7-Q9/Test 3)
+   * [ ] Will curate & modify questions here and there before Sat
+
+** Evaluation
+
+   * [ ] Changes that I would make:
+     1. More non-SQL: MongoDB demo, DuckDB, GraphDB, XML
+     2. Group project: building, connecting, running a DB
+     3. Fewer DataCamp assignments, more DIY notebooks
+     4. Homework should include reading articles/book chapters
+
    * [ ] *Please take 10 minutes to complete the course evaluation now*
 
      [[./img/evaluation.jpg]]
 
+
 * Final exam (Sat 7 May 1-3 pm)
 
-  | COURSE NO | MEETS      | TOPIC             | TIME                     | ROOM      |
-  |-----------+------------+-------------------+--------------------------+-----------|
-  | CSC 330   | TR 1.00p   | Databases         | Sat 7-May 1.00p - 3.00p  | Lyon 104  |
-  |-----------+------------+-------------------+--------------------------+-----------|
+  | COURSE NO | MEETS    | TOPIC     | TIME                    | ROOM      |
+  |-----------+----------+-----------+-------------------------+-----------|
+  | CSC 330   | TR 1.00p | Databases | Sat 7-May 1.00p - 3.00p | Lyon 104  |
+  |-----------+----------+-----------+-------------------------+-----------|
+  |           |          |           | Fri 6-May 1.00p - 3.00p | Derby 209 |
+  |           |          |           | Fri 6-May 3.30p - 5.30p | Derby 209 |
+  |           |          |           | Mon 9-May 1.00p - 3.00p | Derby 209 |
+  |           |          |           | Mon 9-May 3.30p - 5.30p | Derby 209 |
+
+    The final exam will take place *in room 104 of the Lyon building*
+    (our usual classroom) on *Saturday, May 7 from 1.00 pm to 3.00 pm*
+    ([[https://assets.speakcdn.com/assets/2433/sp22_final_exam_schedule_final-2022042203012665.pdf][see exam schedule]]).
+
+    The exam will consist of 40 questions drawn at random from the
+    pool of quiz and test questions. Completing the various quizzes
+    and tests until you've reached 100%, and revisiting your past
+    tests should enable you to pass this exam with flying colors!
+
+    Please reach out to me if you have difficulties taking the exam at
+    this time. I'm going to offer a limited number of seats to take
+    this exam on Friday May 6 or on Monday May 9. Graduating seniors
+    must complete the exam no later than May 8.
 
 * References
   * Beaulieu (2008). Learning SQL. O'Reilly.
@@ -1814,6 +1935,13 @@ a solution *occurs* to you."/
   * TutorialCup (n.d.) System Catalog [website]. [[https://www.tutorialcup.com/dbms/system-catalog.htm][URL:
     www.tutorialcup.com.]]
 * Footnotes
+
+[fn:7]OLAP = OnLine Analytic Processing, part of Business Intelligence
+or BI, including relational database querying, data and process mining
+
+[fn:6]Arrow is for efficient tabular formatting of data, Parquet for
+efficient storage, where "efficiency" relates to the ability to
+analyze very large amounts of data fast.
 
 [fn:5]Think about it: when you read a book (on paper, not on the
 screen), you work your way through much more like with a notebook:
