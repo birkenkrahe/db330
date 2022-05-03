@@ -13,7 +13,7 @@
 
   The companion file to this file, less structured and with the
   captain's log, is the [[file:notes.org][notes.org]] file.
-  
+
 * Intro and GitHub - w1s1 (11-Jan)
 
   #+attr_html: :width 500px
@@ -1681,12 +1681,12 @@
 
    #+caption: Two German soccer players shouting "finals!"
    [[./img/finals_db330.gif]]
-    
+
 ** Review quiz 7-8
 
    * [X] We will review quiz 9 (SQL subqueries) on Thursday
    * [X] Quiz 7: Entity Relationship Diagrams
-   * [X] Quiz 8: Intermediate SQL 1 
+   * [X] Quiz 8: Intermediate SQL 1
 
 * Review quiz 9 (28-April)
 ** What's so difficult about computer science/data science?
@@ -1698,44 +1698,44 @@
 
 ** "How to solve it"
 
-  * [ ] Practical remedy against getting overwhelmed by too much
-    detail: develop powerful heuristic strategies
+   * [ ] Practical remedy against getting overwhelmed by too much
+     detail: develop powerful heuristic strategies
 
-  * [ ] Use Euclid's math (2,500 years of proven problems) - or read a
-    lot of blogs on the same problem and identify the patterns
+   * [ ] Use Euclid's math (2,500 years of proven problems) - or read a
+     lot of blogs on the same problem and identify the patterns
 
-  * [ ] Go with Euclid: book recommendation for the holidays! [[https://www.amazon.com/How-Solve-Mathematical-Penguin-Science/dp/0140124993/]["How to
-    solve it"]] by George Pólya (1990 - see also [[https://www.wtamu.edu/academic/anns/mps/math/mathlab/int_algebra/int_alg_tut8_probsol.htm][application example]]).
+   * [ ] Go with Euclid: book recommendation for the holidays! [[https://www.amazon.com/How-Solve-Mathematical-Penguin-Science/dp/0140124993/]["How to
+     solve it"]] by George Pólya (1990 - see also [[https://www.wtamu.edu/academic/anns/mps/math/mathlab/int_algebra/int_alg_tut8_probsol.htm][application example]]).
 
-    #+attr_html: :width 200px
-    #+caption: Perennial classic: Pólya's HOW TO SOLVE IT
-    [[./img/polya.jpg]]
+     #+attr_html: :width 200px
+     #+caption: Perennial classic: Pólya's HOW TO SOLVE IT
+     [[./img/polya.jpg]]
 
-  * [ ] Traditional teaching vs. modern problem solving
+   * [ ] Traditional teaching vs. modern problem solving
 
-    #+begin_quote
+     #+begin_quote
 
-    »The traditional math professor of the popular legend is
-    absentminded. He usually appears in public with a lost umbrella in
-    each hand. He prefers to face the blackboard and to turn his back
-    on the class. He writes ~a~, he says ~b~, he means ~c~, but it should be
-    ~d~. Some of his sayings are handed down from generation to
-    generation:
+»The traditional math professor of the popular legend is
+absentminded. He usually appears in public with a lost umbrella in
+each hand. He prefers to face the blackboard and to turn his back
+on the class. He writes ~a~, he says ~b~, he means ~c~, but it should be
+~d~. Some of his sayings are handed down from generation to
+generation:
 
-    /"In order to solve this differential equation you look at it till
-    a solution *occurs* to you."/
+/"In order to solve this differential equation you look at it till
+a solution *occurs* to you."/
 
-    /"This principle is so perfectly general that no particular
-    *application* of it is possible."/
+/"This principle is so perfectly general that no particular
+*application* of it is possible."/
 
-    /"Geometry is the art of correct *reasoning* on incorrect figures."/
+/"Geometry is the art of correct *reasoning* on incorrect figures."/
 
-    /"My method to overcome a difficulty is to *go round* it."/
+/"My method to overcome a difficulty is to *go round* it."/
 
-    /"What is the difference between method and device? A method is a
-    *device* which you use twice."/
+/"What is the difference between method and device? A method is a
+*device* which you use twice."/
 
-    #+end_quote
+     #+end_quote
 
 ** Intermediate SQL notebook
 
@@ -1756,28 +1756,52 @@
      - Random draw from all questions + minor modifications
      - Quizzes and tests will be disabled before the exam
 
-* NEXT Project && (MongoDB (NoSQL DB) && Final Exam Review || RSQLite) (3-May)
+* NEXT Project, NoSQL DB, Final Exam Review (3-May)
+** Final Exam Schedule ([[https://lyon.schoology.com/event/5920003460/profile][Schoology]])
 
-** Bonus DataCamp project
+   | COURSE NO | MEETS      | TOPIC             | TIME                     | ROOM      |
+   |-----------+------------+-------------------+--------------------------+-----------|
+   | CSC 330   | TR 1.00p   | Databases         | Sat 7-May 1.00p - 3.00p  | Lyon 104  |
+   |-----------+------------+-------------------+--------------------------+-----------|
+   |           |            |                   | Fri 6-May 1.00p - 3.00p  | Derby 209 |
+   |           |            |                   | Fri 6-May 3.30p - 5.30p  | Derby 209 |
+   |           |            |                   | Mon 9-May 1.00p - 3.00p  | Derby 209 |
+   |           |            |                   | Mon 9-May 3.30p - 5.30p  | Derby 209 |
 
-** MongoDB (NoSQL DB)
+   The final exam will take place *in room 104 of the Lyon building*
+   (our usual classroom) on *Saturday, May 7 from 1.00 pm to 3.00 pm*
+   ([[https://assets.speakcdn.com/assets/2433/sp22_final_exam_schedule_final-2022042203012665.pdf][see exam schedule]]).
 
-** Final Exam Review
+   The exam will consist of 40 questions drawn at random from the
+   pool of quiz and test questions. Completing the various quizzes
+   and tests until you've reached 100%, and revisiting your past
+   tests should enable you to pass this exam with flying colors!
 
-** "Last Rites" / Outlook
+   Please reach out to me if you have difficulties taking the exam at
+   this time. I'm going to offer a limited number of seats to take
+   this exam on Friday May 6 or on Monday May 9. Graduating seniors
+   must complete the exam no later than May 8.
 
-  * [ ] *Any outstanding work must be finished by Monday May 9*
+   #+caption: Black and white movie GIF
+   [[./img/sailing.gif]]
 
-* Final exam (Thu 5-May 6pm-8pm)
+** TODO Final Exam Review
+** TODO Bonus DataCamp project
+** TODO MongoDB (NoSQL DB)
 
-  | COURSE NO | MEETS    | TIME                    | ROOM      |
-  |-----------+----------+-------------------------+-----------|
-  | *CSC 330*   | *TR 1.00p* | *Sat 7-May 1.00p - 3.00p* | *Lyon 104*  |
-  |-----------+----------+-------------------------+-----------|
-  |           |          | Fri 6-May 1.00p - 3.00p | Derby 209 |
-  |           |          | Fri 6-May 3.30p - 5.30p | Derby 209 |
-  |           |          | Mon 9-May 1.00p - 3.00p | Derby 209 |
-  |           |          | Mon 9-May 3.30p - 5.30p | Derby 209 |
+** TODO Evaluation
+
+   * [ ] *Any outstanding work must be finished by Monday May 9*
+   * [ ] *Please take 10 minutes to complete the course evaluation now*
+
+     [[./img/evaluation.jpg]]
+
+* Final exam (Sat 7 May 1-3 pm)
+
+  | COURSE NO | MEETS      | TOPIC             | TIME                     | ROOM      |
+  |-----------+------------+-------------------+--------------------------+-----------|
+  | CSC 330   | TR 1.00p   | Databases         | Sat 7-May 1.00p - 3.00p  | Lyon 104  |
+  |-----------+------------+-------------------+--------------------------+-----------|
 
 * References
   * Beaulieu (2008). Learning SQL. O'Reilly.
