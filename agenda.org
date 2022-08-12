@@ -1882,9 +1882,9 @@ a solution *occurs* to you."/
 
 ** Final Exam Review
 
-   * [ ] *Any outstanding work must be finished by Monday May 9*
-   * [ ] Discuss questions not in the last block (Q7-Q9/Test 3)
-   * [ ] Will curate & modify questions here and there before Sat
+   * [X] *Any outstanding work must be finished by Monday May 9*
+   * [X] Discuss questions not in the last block (Q7-Q9/Test 3)
+   * [X] Will curate & modify questions here and there before Sat
 
 ** Evaluation
 
@@ -1897,7 +1897,6 @@ a solution *occurs* to you."/
    * [ ] *Please take 10 minutes to complete the course evaluation now*
 
      [[./img/evaluation.jpg]]
-
 
 * Final exam (Sat 7 May 1-3 pm)
 
