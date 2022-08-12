@@ -442,8 +442,7 @@
    #+attr_html: :width 600px
    [[./img/sqlite.png]]
 
-** IN PROGRESS Practice: SQLite Basics (cont'd)
-   DEADLINE: <2022-02-10 Thu>
+** Practice: SQLite Basics (cont'd)
 
    * We last looked at entering SQLite ([[file:notes.org::Captain's Log Stardate 99687.04][notes]])
 
