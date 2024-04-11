@@ -167,7 +167,7 @@
     #+caption: Customer orders products ERD
     [[./img/customer1.png]]
 
-* Practice exercise (due Thursday, 7 April 4 pm)
+* Practice exercise
 
   * [ ] Develop an ER diagram with relationships between *four* tables:
     ~Student~, ~Course~, ~Lecturer~, and ~Class~ (or meeting).
